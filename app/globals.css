@@ -1,0 +1,211 @@
+/* ───────────────────────────────────────────────────────────
+   このサイトの見た目の芯：「夜の無人インドア練習場」
+   屋内シミュレーションゴルフは、暗い室内でスクリーンだけが光り、
+   打った球の軌跡が線になって出る。その1点だけを画面に持ち込む。
+
+   色は3つ。墨緑(base) / 骨色(bone) / 弾道の線(trace)。
+   trace は軌跡・計測値・現在地といった「計測されたもの」にしか使わない。
+   装飾で緑を足すと、数字が目立たなくなる。
+   ─────────────────────────────────────────────────────────── */
+:root {
+  --base: #0a0d0c;
+  --base-2: #111614;
+  --panel: #151b18;
+  --line: #222d27;
+  --line-soft: #1a221e;
+  --bone: #e6e8e2;
+  --muted: #8b958d;
+  --trace: #c4f542;
+  --warn: #ffb347;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--base);
+  color: var(--bone);
+  font-family: var(--font-jp), sans-serif;
+  line-height: 1.9;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+}
+
+/* 背景に、ごく薄い計測グリッド。飛距離の目盛りの気配だけ残す。 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    linear-gradient(var(--line-soft) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+  background-size: 96px 96px;
+  opacity: 0.5;
+  mask-image: radial-gradient(ellipse 120% 60% at 50% 0%, #000 20%, transparent 78%);
+}
+body > * { position: relative; z-index: 1; }
+
+a { color: inherit; }
+img { max-width: 100%; height: auto; }
+
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 22px; }
+.narrow { max-width: 780px; }
+
+/* 数値と英字は別書体。このサイトは数字が主役（打席数・飛距離・料金）。 */
+.mono, .num {
+  font-family: var(--font-tech), monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+/* ── ヘッダー ───────────────────────────────── */
+header.site {
+  border-bottom: 1px solid var(--line);
+  background: rgba(10, 13, 12, 0.86);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+header.site .inner {
+  display: flex; align-items: center; gap: 26px; flex-wrap: wrap;
+  max-width: 1040px; margin: 0 auto; padding: 15px 22px;
+}
+header.site .logo {
+  font-family: var(--font-tech), sans-serif;
+  font-weight: 700; font-size: 17px; letter-spacing: 0.12em;
+  text-decoration: none; text-transform: uppercase; line-height: 1.1;
+}
+header.site .logo em {
+  display: block; font-style: normal; font-size: 9.5px;
+  letter-spacing: 0.34em; color: var(--muted); margin-top: 3px;
+}
+header.site nav { display: flex; gap: 20px; font-size: 13px; margin-left: auto; flex-wrap: wrap; }
+header.site nav a { text-decoration: none; color: var(--muted); transition: color 0.18s; }
+header.site nav a:hover { color: var(--trace); }
+
+/* ── 見出し ───────────────────────────────── */
+h1 {
+  font-size: clamp(25px, 4.6vw, 40px);
+  line-height: 1.34; letter-spacing: 0.005em; margin: 0 0 16px; font-weight: 700;
+}
+h2 {
+  font-size: 20px; margin: 62px 0 18px; padding-bottom: 11px;
+  border-bottom: 1px solid var(--line); font-weight: 700;
+  display: flex; align-items: baseline; gap: 11px;
+}
+/* 見出しの前に短い軌跡の線を1本だけ引く */
+h2::before {
+  content: ''; width: 22px; height: 2px; background: var(--trace);
+  flex: none; transform: translateY(-5px); border-radius: 2px;
+}
+h3 { font-size: 16px; margin: 34px 0 10px; font-weight: 700; }
+p { margin: 0 0 15px; }
+small { color: var(--muted); font-size: 12.5px; line-height: 1.8; }
+
+/* ── ヒーロー：打った球の軌跡 ─────────────────── */
+.hero { padding: 58px 0 34px; position: relative; overflow: hidden; }
+.hero .kicker {
+  font-family: var(--font-tech), sans-serif; font-size: 11px;
+  letter-spacing: 0.3em; color: var(--trace); text-transform: uppercase; margin-bottom: 16px;
+}
+.hero .lead { color: var(--muted); font-size: 15px; max-width: 62ch; }
+.trace-arc { position: absolute; right: -40px; top: 10px; width: 460px; max-width: 62%; opacity: 0.5; pointer-events: none; }
+@media (max-width: 760px) { .trace-arc { display: none; } }
+
+/* ── 数値サマリー ───────────────────────────── */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(148px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); margin: 26px 0 8px; }
+.stats div { background: var(--base-2); padding: 17px 18px; }
+.stats .v { font-family: var(--font-tech), monospace; font-size: 27px; font-weight: 700; line-height: 1.15; color: var(--trace); }
+.stats .k { font-size: 11.5px; color: var(--muted); letter-spacing: 0.05em; margin-top: 3px; }
+
+/* ── 結論の箱 ───────────────────────────────── */
+.verdict {
+  background: var(--panel); border: 1px solid var(--line);
+  border-left: 3px solid var(--trace); padding: 22px 24px; margin: 26px 0;
+}
+.verdict .tag {
+  font-family: var(--font-tech), sans-serif; font-size: 10.5px; letter-spacing: 0.24em;
+  color: var(--trace); text-transform: uppercase; display: block; margin-bottom: 9px;
+}
+.verdict p:last-child { margin-bottom: 0; }
+
+/* 情報が無いことを、無いと書くための箱 */
+.nodata {
+  border: 1px dashed var(--line); color: var(--muted);
+  padding: 14px 16px; font-size: 13px; margin: 16px 0; background: transparent;
+}
+
+/* ── 施設カード ─────────────────────────────── */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; margin: 22px 0; }
+.card {
+  display: block; text-decoration: none; background: var(--base-2);
+  border: 1px solid var(--line); padding: 18px 19px; transition: border-color 0.18s, transform 0.18s;
+}
+.card:hover { border-color: var(--trace); transform: translateY(-2px); }
+.card .brand { font-family: var(--font-tech), sans-serif; font-size: 10.5px; letter-spacing: 0.18em; color: var(--trace); text-transform: uppercase; }
+.card .nm { font-size: 15.5px; font-weight: 700; margin: 6px 0 8px; line-height: 1.45; }
+.card .ad { font-size: 12.5px; color: var(--muted); line-height: 1.7; }
+.card .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 11px; }
+
+.tag-chip {
+  font-size: 11px; border: 1px solid var(--line); color: var(--muted);
+  padding: 2px 8px; border-radius: 2px; white-space: nowrap;
+}
+.tag-chip.on { border-color: var(--trace); color: var(--trace); }
+
+/* ── 表 ───────────────────────────────────── */
+.tablewrap { overflow-x: auto; margin: 20px 0; border: 1px solid var(--line); }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; min-width: 520px; }
+th, td { padding: 11px 13px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+th { background: var(--panel); font-weight: 700; font-size: 12.5px; color: var(--muted); white-space: nowrap; }
+tbody tr:last-child td { border-bottom: none; }
+td.num { font-family: var(--font-tech), monospace; white-space: nowrap; }
+
+/* 項目一覧（施設ページの基本情報） */
+dl.spec { margin: 20px 0; border-top: 1px solid var(--line); }
+dl.spec > div { display: grid; grid-template-columns: 128px 1fr; gap: 14px; border-bottom: 1px solid var(--line); padding: 12px 2px; }
+dl.spec dt { color: var(--muted); font-size: 12.5px; margin: 0; }
+dl.spec dd { margin: 0; font-size: 14px; }
+dl.spec dd.none { color: var(--muted); font-size: 13px; }
+@media (max-width: 560px) { dl.spec > div { grid-template-columns: 1fr; gap: 3px; } }
+
+/* ── リンクの列 ─────────────────────────────── */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+.chips a {
+  text-decoration: none; border: 1px solid var(--line); color: var(--bone);
+  padding: 6px 13px; font-size: 13px; background: var(--base-2); transition: border-color 0.18s, color 0.18s;
+}
+.chips a:hover { border-color: var(--trace); color: var(--trace); }
+.chips a .c { color: var(--muted); font-family: var(--font-tech), monospace; font-size: 11.5px; margin-left: 6px; }
+
+/* ── 出典 ───────────────────────────────────── */
+.source { font-size: 12px; color: var(--muted); margin: 10px 0 0; line-height: 1.75; }
+.source a { color: var(--muted); }
+.source a:hover { color: var(--trace); }
+
+/* ── パンくず ───────────────────────────────── */
+.crumbs { font-size: 12px; color: var(--muted); padding: 16px 0 0; }
+.crumbs a { text-decoration: none; }
+.crumbs a:hover { color: var(--trace); }
+
+/* ── フッター ───────────────────────────────── */
+footer.site { border-top: 1px solid var(--line); margin-top: 78px; padding: 34px 0 54px; background: var(--base-2); }
+footer.site .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 26px; }
+footer.site h4 { font-family: var(--font-tech), sans-serif; font-size: 11px; letter-spacing: 0.2em; color: var(--trace); margin: 0 0 10px; text-transform: uppercase; }
+footer.site ul { list-style: none; margin: 0; padding: 0; font-size: 13px; }
+footer.site li { margin-bottom: 6px; }
+footer.site a { text-decoration: none; color: var(--muted); }
+footer.site a:hover { color: var(--bone); }
+footer.site .note { color: var(--muted); font-size: 11.5px; margin-top: 26px; line-height: 1.8; }
+
+/* 外部リンクのボタン */
+.official {
+  display: inline-block; text-decoration: none; border: 1px solid var(--trace);
+  color: var(--trace); padding: 9px 18px; font-size: 13.5px; margin: 8px 12px 8px 0;
+  transition: background 0.18s, color 0.18s;
+}
+.official:hover { background: var(--trace); color: var(--base); }

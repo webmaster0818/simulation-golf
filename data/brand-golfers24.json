@@ -1,0 +1,118 @@
+{
+ "brand": "GOLFERS24",
+ "source_url": "https://www.golfers24.jp/store",
+ "fetched_at": "2026-09-12",
+ "count": 11,
+ "stores": [
+  {
+   "brand": "GOLFERS24",
+   "brand_slug": "golfers24",
+   "name": "向島店",
+   "zip": "131-0033",
+   "address": "東京都墨田区向島2-9-13 向島MTビル1階",
+   "pref": "東京都",
+   "source_url": "https://www.golfers24.jp/store",
+   "fetched_at": "2026-09-12"
+  },
+  {
+   "brand": "GOLFERS24",
+   "brand_slug": "golfers24",
+   "name": "日本橋馬喰町店",
+   "zip": "103-0002",
+   "address": "東京都中央区日本橋馬喰町 1-12-3 Daiwa 日本橋馬喰町ビル1F B区画",
+   "pref": "東京都",
+   "source_url": "https://www.golfers24.jp/store",
+   "fetched_at": "2026-09-12"
+  },
+  {
+   "brand": "GOLFERS24",
+   "brand_slug": "golfers24",
+   "name": "五反田店",
+   "zip": "141-0031",
+   "address": "東京都品川区西五反田7-9-4 TOC ANNEX B1F",
+   "pref": "東京都",
+   "source_url": "https://www.golfers24.jp/store",
+   "fetched_at": "2026-09-12"
+  },
+  {
+   "brand": "GOLFERS24",
+   "brand_slug": "golfers24",
+   "name": "大手町店",
+   "zip": "101-0047",
+   "address": "東京都千代田区内神田1-8-11 東京保井ビル1F",
+   "pref": "東京都",
+   "source_url": "https://www.golfers24.jp/store",
+   "fetched_at": "2026-09-12"
+  },
+  {
+   "brand": "GOLFERS24",
+   "brand_slug": "golfers24",
+   "name": "高崎店",
+   "zip": "370-0073",
+   "address": "群馬県高崎市緑町3-2-1 M3ビル2階A",
+   "pref": "群馬県",
+   "source_url": "https://www.golfers24.jp/store",
+   "fetched_at": "2026-09-12"
+  },
+  {
+   "brand": "GOLFERS24",
+   "brand_slug": "golfers24",
+   "name": "宇都宮駅東口店",
+   "zip": "321-0954",
+   "address": "栃木県 宇都宮市元今泉4-19-6 TSUTAYA宇都宮駅東口店2F",
+   "pref": "栃木県",
+   "source_url": "https://www.golfers24.jp/store",
+   "fetched_at": "2026-09-12"
+  },
+  {
+   "brand": "GOLFERS24",
+   "brand_slug": "golfers24",
+   "name": "大宮店",
+   "zip": "330-0852",
+   "address": "埼玉県さいたま市大宮区大成町1-402 MARINO1 1F",
+   "pref": "埼玉県",
+   "source_url": "https://www.golfers24.jp/store",
+   "fetched_at": "2026-09-12"
+  },
+  {
+   "brand": "GOLFERS24",
+   "brand_slug": "golfers24",
+   "name": "豊中店",
+   "zip": "560-0003",
+   "address": "大阪府豊中市東豊中町6-23-30 エレガンス東豊中2F",
+   "pref": "大阪府",
+   "source_url": "https://www.golfers24.jp/store",
+   "fetched_at": "2026-09-12"
+  },
+  {
+   "brand": "GOLFERS24",
+   "brand_slug": "golfers24",
+   "name": "西長堀店",
+   "zip": "550-0013",
+   "address": "大阪府大阪市西区新町3-8-18 西長堀ビジネスゾーン102",
+   "pref": "大阪府",
+   "source_url": "https://www.golfers24.jp/store",
+   "fetched_at": "2026-09-12"
+  },
+  {
+   "brand": "GOLFERS24",
+   "brand_slug": "golfers24",
+   "name": "平尾高宮店",
+   "zip": "815-0082",
+   "address": "福岡県福岡市南区大楠3-28-43",
+   "pref": "福岡県",
+   "source_url": "https://www.golfers24.jp/store",
+   "fetched_at": "2026-09-12"
+  },
+  {
+   "brand": "GOLFERS24",
+   "brand_slug": "golfers24",
+   "name": "福岡大濠公園店",
+   "zip": "810-0074",
+   "address": "福岡県福岡市中央区大手門2-1-11 NX福岡大手門テラス1F",
+   "pref": "福岡県",
+   "source_url": "https://www.golfers24.jp/store",
+   "fetched_at": "2026-09-12"
+  }
+ ]
+}
