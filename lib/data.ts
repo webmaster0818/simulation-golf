@@ -44,7 +44,7 @@ export const GENERATED_AT: string = (raw as { generated_at: string }).generated_
 export const SITE = {
   name: 'シミュレーションゴルフ ナビ',
   // ⚠️ ドメイン確定後にここだけ差し替える。canonical・sitemap・構造化データが全てここを見る。
-  origin: 'https://simulation-golf-deploy.pages.dev',
+  origin: 'https://golf-simulate.com',
   description:
     '全国のシミュレーションゴルフ施設を、公式サイトの情報だけで比較できるサイト。個室の有無・打席数・24時間営業・駐車場・弾道計測の機材まで、出典つきで掲載しています。',
 }

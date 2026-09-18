@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
-const ORIGIN = 'https://simulation-golf-deploy.pages.dev'
+const ORIGIN = 'https://golf-simulate.com'
 const today = new Date().toISOString().slice(0, 10)
 
 const data = JSON.parse(readFileSync(join(ROOT, 'data/facilities.json'), 'utf-8'))
