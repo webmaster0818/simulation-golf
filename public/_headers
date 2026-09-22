@@ -1,4 +1,6 @@
-# ビルドごとにハッシュが変わる資産は1年キャッシュしてよい
+# ⚠️ Cloudflare Pages は一致したルールを**合成**する。/* に Cache-Control を書くと
+#    /_next/static/* にも混ざり、immutable と must-revalidate が同時に付いて矛盾する。
+#    キャッシュ指定はパスごとに1つだけにする。
 /_next/static/*
   Cache-Control: public, max-age=31536000, immutable
 /og-image.png
@@ -6,9 +8,7 @@
 /favicon.ico
   Cache-Control: public, max-age=604800
 
-# HTMLは毎回検証させる（施設データを更新したら即入れ替わるように）
 /*
-  Cache-Control: public, max-age=0, must-revalidate
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: SAMEORIGIN
