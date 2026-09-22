@@ -4,6 +4,7 @@ import {
   SITE, OPEN_FACILITIES, PREF_SLUG, asOf, GENERATED_AT,
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
+import { JsonLd, breadcrumb, itemListLd } from '../../../lib/seo'
 
 const trace = () => OPEN_FACILITIES.filter((f) => f.equipment === 'トップトレーサー・レンジ')
 
@@ -28,8 +29,17 @@ export default function Toptracer() {
   }
   const list = [...groups.entries()].sort((a, b) => b[1].length - a[1].length)
 
+  const ld = [
+    breadcrumb([
+      { name: 'ホーム', url: '/' },
+      { name: '機材から探す', url: '/equipment/' },
+      { name: 'トップトレーサー', url: '/equipment/toptracer/' },
+    ]),
+    itemListLd('トップトレーサー導入施設', trace().map((f) => `/facility/${f.slug}/`)),
+  ]
   return (
     <main className="wrap">
+      <JsonLd data={ld} />
       <nav className="crumbs">
         <Link href="/">ホーム</Link> / <Link href="/equipment/">機材から探す</Link> / トップトレーサー
       </nav>

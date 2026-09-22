@@ -1,6 +1,6 @@
 // ビルド後に out/sitemap.xml と robots.txt を作る。
 // ⚠️ ページを増やしたらここにも足す（全サイト共通のルール）。
-import { readFileSync, writeFileSync } from 'node:fs'
+import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 
@@ -37,3 +37,14 @@ writeFileSync(
   `User-agent: *\nAllow: /\n\nSitemap: ${ORIGIN}/sitemap.xml\n`
 )
 console.log(`sitemap.xml: ${urls.length} URL`)
+
+// 404 は not-found.tsx に metadata を書いても App Router では効かない（ルートlayoutの
+// 既定タイトルのまま＝トップと重複する）。noindex なので実害は無いが、
+// レポートで毎回「title重複1件」として出てくるのでここで書き換える。
+for (const f of ['out/404.html', 'out/404/index.html']) {
+  const p = join(ROOT, f)
+  if (!existsSync(p)) continue
+  let h = readFileSync(p, 'utf8')
+  h = h.replace(/<title>[^<]*<\/title>/, '<title>ページが見つかりません｜シミュレーションゴルフ ナビ</title>')
+  writeFileSync(p, h)
+}

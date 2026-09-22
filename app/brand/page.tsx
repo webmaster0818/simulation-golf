@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { SITE, brands, PREF_SLUG } from '../../lib/data'
+import { JsonLd, breadcrumb, itemListLd } from '../../lib/seo'
 
 export const metadata: Metadata = {
   title: 'ブランドから探す｜シミュレーションゴルフのチェーン一覧',
@@ -11,8 +12,13 @@ export const metadata: Metadata = {
 
 export default function BrandIndex() {
   const bs = brands()
+  const ld = [
+    breadcrumb([{ name: 'ホーム', url: '/' }, { name: 'ブランドから探す', url: '/brand/' }]),
+    itemListLd('ブランドから探す', bs.map((b) => `/brand/${b.slug}/`)),
+  ]
   return (
     <main className="wrap">
+      <JsonLd data={ld} />
       <nav className="crumbs"><Link href="/">ホーム</Link> / ブランドから探す</nav>
       <section className="hero">
         <div className="kicker">Brand</div>

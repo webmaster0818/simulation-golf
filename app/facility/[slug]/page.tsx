@@ -4,6 +4,7 @@ import {
   SITE, PREF_SLUG, FACILITIES, OPEN_FACILITIES, bySlug, byPref, cityOf, asOf,
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
+import { JsonLd, breadcrumb, facilityCrumbs, facilityLd, facilityDescription, clip } from '../../../lib/seo'
 
 type Params = { slug: string }
 
@@ -17,12 +18,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   if (!f) return {}
   const where = [f.pref, cityOf(f)].filter(Boolean).join('')
   return {
-    title: `${f.name}｜${where}のシミュレーションゴルフ`,
-    description:
-      `${f.name}（${f.address ?? where}）の基本情報。` +
-      [f.hours && `営業時間 ${f.hours}`, f.bays && `打席 ${f.bays}`, f.parking && `駐車場 ${f.parking}`]
-        .filter(Boolean).join('／') +
-      '。公式サイトの掲載内容をそのまま記載しています。',
+    title: clip(`${f.name}｜${where}のシミュレーションゴルフ`),
+    description: facilityDescription(f),
     alternates: { canonical: `${SITE.origin}/facility/${slug}/` },
   }
 }
@@ -51,20 +48,11 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
     : []
 
   // 構造化データ。住所が取れているものだけ出す（不完全なデータを機械に渡さない）。
-  const ld = {
-    '@context': 'https://schema.org',
-    '@type': 'SportsActivityLocation',
-    name: f.name,
-    ...(f.address ? { address: { '@type': 'PostalAddress', streetAddress: f.address, addressRegion: f.pref, postalCode: f.zip ?? undefined, addressCountry: 'JP' } } : {}),
-    ...(f.tel ? { telephone: f.tel } : {}),
-    ...(f.official ? { sameAs: [f.official] } : {}),
-    url: `${SITE.origin}/facility/${f.slug}/`,
-  }
+  const ld = [facilityLd(f), breadcrumb(facilityCrumbs(f))]
 
   return (
     <main className="wrap">
-      <script type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
+      <JsonLd data={ld} />
 
       <nav className="crumbs">
         <Link href="/">ホーム</Link>

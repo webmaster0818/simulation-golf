@@ -4,6 +4,7 @@ import {
   SITE, PREF_SLUG, SLUG_PREF, activePrefs, byPref, cityOf, asOf, GENERATED_AT,
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
+import { JsonLd, breadcrumb, itemListLd } from '../../../lib/seo'
 
 type Params = { pref: string }
 
@@ -45,8 +46,17 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
 
   const others = activePrefs().filter((p) => p !== pref)
 
+  const ld = [
+    breadcrumb([
+      { name: 'ホーム', url: '/' },
+      { name: 'エリアから探す', url: '/area/' },
+      { name: pref, url: `/area/${slug}/` },
+    ]),
+    itemListLd(`${pref}のシミュレーションゴルフ施設`, fs.map((f) => `/facility/${f.slug}/`)),
+  ]
   return (
     <main className="wrap">
+      <JsonLd data={ld} />
       <nav className="crumbs">
         <Link href="/">ホーム</Link> / <Link href="/area/">エリアから探す</Link> / {pref}
       </nav>

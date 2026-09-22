@@ -4,6 +4,7 @@ import {
   SITE, FEATURES, byFeature, PREF_SLUG, asOf, GENERATED_AT,
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
+import { JsonLd, breadcrumb, itemListLd } from '../../../lib/seo'
 
 type Params = { slug: string }
 
@@ -36,8 +37,16 @@ export default async function FeaturePage({ params }: { params: Promise<Params> 
   }
   const list = [...groups.entries()].sort((a, b) => b[1].length - a[1].length)
 
+  const ld = [
+    breadcrumb([
+      { name: 'ホーム', url: '/' },
+      { name: ft.label, url: `/feature/${slug}/` },
+    ]),
+    itemListLd(`${ft.label}シミュレーションゴルフ`, fs.map((f) => `/facility/${f.slug}/`)),
+  ]
   return (
     <main className="wrap">
+      <JsonLd data={ld} />
       <nav className="crumbs"><Link href="/">ホーム</Link> / {ft.label}</nav>
       <section className="hero">
         <div className="kicker">Filter</div>

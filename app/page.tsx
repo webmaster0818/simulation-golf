@@ -5,6 +5,7 @@ import {
   FEATURES, byFeature, GENERATED_AT, asOf,
 } from '../lib/data'
 import FacilityCard from '../components/FacilityCard'
+import { JsonLd, websiteLd } from '../lib/seo'
 
 export const metadata: Metadata = {
   title: `${SITE.name}｜全国のシミュレーションゴルフを公式情報で比較`,
@@ -21,8 +22,10 @@ export default function Home() {
     .map((p) => ({ pref: p, n: byPref(p).length }))
     .sort((a, b) => b.n - a.n)
 
+  const ld = [websiteLd()]
   return (
     <main className="wrap">
+      <JsonLd data={ld} />
       <section className="hero">
         <svg className="trace-arc" viewBox="0 0 460 220" aria-hidden="true">
           {/* 打ち出しから着地までの軌跡。このサイトが扱う「弾道計測」そのもの */}

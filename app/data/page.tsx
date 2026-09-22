@@ -3,6 +3,7 @@ import Link from 'next/link'
 import {
   SITE, FACILITIES, OPEN_FACILITIES, brands, activePrefs, asOf, GENERATED_AT,
 } from '../../lib/data'
+import { JsonLd, breadcrumb } from '../../lib/seo'
 
 export const metadata: Metadata = {
   title: '掲載データについて｜出典・集め方・載せないと決めていること',
@@ -16,8 +17,10 @@ export default function DataPage() {
   const filled = (k: (typeof fs)[number] extends never ? never : keyof (typeof fs)[number]) =>
     fs.filter((f) => f[k]).length
 
+  const ld = [breadcrumb([{ name: 'ホーム', url: '/' }, { name: '掲載データについて', url: '/data/' }])]
   return (
     <main className="wrap narrow">
+      <JsonLd data={ld} />
       <nav className="crumbs"><Link href="/">ホーム</Link> / 掲載データについて</nav>
 
       <section className="hero">

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { SITE, REGIONS, PREF_SLUG, activePrefs, byPref, OPEN_FACILITIES } from '../../lib/data'
+import { JsonLd, breadcrumb, itemListLd } from '../../lib/seo'
 
 export const metadata: Metadata = {
   title: '都道府県から探す｜シミュレーションゴルフの施設一覧',
@@ -11,8 +12,13 @@ export const metadata: Metadata = {
 
 export default function AreaIndex() {
   const prefs = activePrefs()
+  const ld = [
+    breadcrumb([{ name: 'ホーム', url: '/' }, { name: 'エリアから探す', url: '/area/' }]),
+    itemListLd('都道府県から探す', prefs.map((p) => `/area/${PREF_SLUG[p]}/`)),
+  ]
   return (
     <main className="wrap">
+      <JsonLd data={ld} />
       <nav className="crumbs"><Link href="/">ホーム</Link> / エリアから探す</nav>
       <section className="hero">
         <div className="kicker">Area</div>

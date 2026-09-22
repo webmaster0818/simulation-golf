@@ -21,6 +21,17 @@ export const metadata: Metadata = {
   description: SITE.description,
   // ⚠️ ここに canonical を置かない。置くと全ページがトップを正規URLとして宣言してしまう。
   //    （他サイトで実際に起きた事故。canonical は各ページで個別に付ける）
+  // OGPは1枚を全ページ共通で使う。施設ごとに画像を作ると、公式から借りた写真を
+  // 出典の文脈から切り離して配ることになるので、サイトの版面を出す。
+  openGraph: {
+    type: 'website',
+    siteName: SITE.name,
+    locale: 'ja_JP',
+    url: `${SITE.origin}/`,
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: SITE.name }],
+  },
+  twitter: { card: 'summary_large_image', images: ['/og-image.png'] },
+  alternates: { types: { 'application/xml': `${SITE.origin}/sitemap.xml` } },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

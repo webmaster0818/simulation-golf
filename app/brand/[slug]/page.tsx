@@ -4,6 +4,7 @@ import {
   SITE, PREF_SLUG, brands, byBrand, cityOf, asOf, GENERATED_AT,
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
+import { JsonLd, breadcrumb, itemListLd } from '../../../lib/seo'
 
 type Params = { slug: string }
 
@@ -39,8 +40,17 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
   }
   const groups = [...byPrefMap.entries()].sort((a, b2) => b2[1].length - a[1].length)
 
+  const ld = [
+    breadcrumb([
+      { name: 'ホーム', url: '/' },
+      { name: 'ブランドから探す', url: '/brand/' },
+      { name: b.name, url: `/brand/${slug}/` },
+    ]),
+    itemListLd(`${b.name}の店舗一覧`, fs.map((f) => `/facility/${f.slug}/`)),
+  ]
   return (
     <main className="wrap">
+      <JsonLd data={ld} />
       <nav className="crumbs">
         <Link href="/">ホーム</Link> / <Link href="/brand/">ブランドから探す</Link> / {b.name}
       </nav>

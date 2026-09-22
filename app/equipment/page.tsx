@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { SITE, OPEN_FACILITIES, brands, asOf, GENERATED_AT } from '../../lib/data'
+import { JsonLd, breadcrumb } from '../../lib/seo'
 
 export const metadata: Metadata = {
   title: '弾道計測の機材から探す｜シミュレーションゴルフの計測方式',
@@ -14,8 +15,10 @@ export default function EquipmentIndex() {
   const free = trace.filter((f) => f.usage_fee === '無料')
   const noEquip = OPEN_FACILITIES.filter((f) => f.segment === 'indoor' && !f.equipment)
 
+  const ld = [breadcrumb([{ name: 'ホーム', url: '/' }, { name: '機材から探す', url: '/equipment/' }])]
   return (
     <main className="wrap">
+      <JsonLd data={ld} />
       <nav className="crumbs"><Link href="/">ホーム</Link> / 機材から探す</nav>
 
       <section className="hero">
