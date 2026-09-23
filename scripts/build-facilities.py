@@ -9,6 +9,10 @@
 業態（segment）で分ける:
   indoor  … 屋内のシミュレーションゴルフ施設（本サイトの主対象）
   range   … 屋外の打ちっぱなし練習場にトップトレーサーが入っているもの
+  lesson  … コーチ付き・完全予約制・月会費制のインドアゴルフスクール（弾道測定機あり）
+            ⚠️ 2026-09-23追加。indoor と混ぜない。「好きな時間に打ちに行きたい」人と
+               「教わりたい」人では探しているものが違う。機材の軸では対象に入るが、
+               一覧で並べると「24時間で空いている施設」を探している人の邪魔になる。
 """
 import json
 import re
@@ -99,6 +103,46 @@ def main() -> None:
             "open": True, "official": s.get("official"),
             "source_url": s["source_url"], "fetched_at": s["fetched_at"],
         })
+
+    # --- ステップゴルフ（レッスンスクール）/ i8 GOLF（24時間インドア） ---
+    # slugは公式サイトのURLに使われているローマ字をそのまま使う。
+    # 日本語店名を音訳する方法は過去に失敗している（三宿→mishu 等）ので、
+    # 公式が付けているローマ字があるならそれが一番確かな読み。
+    for fname, seg in (("stepgolf.json", "lesson"), ("i8golf.json", "indoor")):
+        fp = DATA / fname
+        if not fp.exists():
+            continue
+        d = json.loads(fp.read_text(encoding="utf-8"))
+        for i, s in enumerate(d["stores"], 1):
+            own = s.get("slug")
+            if not own:
+                m = re.search(r"/(?:store/)?([A-Za-z0-9_-]+)/?$", s["source_url"])
+                if m:
+                    own = re.sub(r"(_top|_extra|-ex|_ex|-extra|_premium|-premium)$", "", m.group(1))
+            out.append({
+                "segment": seg,
+                "brand": s["brand"], "brand_slug": s["brand_slug"],
+                "slug": slugify(s["brand_slug"], s["brand"], s["name"], own, s.get("zip"), i),
+                "name": s["name"], "pref": s.get("pref"), "zip": s.get("zip"),
+                "address": s.get("address"), "access": s.get("access"),
+                "tel": s.get("tel"), "hours": s.get("hours"),
+                "open_24h": s.get("open_24h"), "closed": s.get("closed"),
+                "bays": s.get("bays"), "bays_num": s.get("bays_num"),
+                "private_room": s.get("private_room"),
+                "parking": s.get("parking"), "monthly_fee": s.get("monthly_fee"),
+                "equipment": s.get("equipment"), "open": s.get("open", True),
+                "official": s.get("official"),
+                "source_url": s["source_url"], "fetched_at": s["fetched_at"],
+            })
+
+    # slugがぶつかったら、後から来たほうに連番を足す（URLは1つに1つ）
+    seen = {}
+    for x in out:
+        if x["slug"] in seen:
+            seen[x["slug"]] += 1
+            x["slug"] = f'{x["slug"]}-{seen[x["slug"]]}'
+        else:
+            seen[x["slug"]] = 1
 
     dup = [k for k, v in __import__("collections").Counter(x["slug"] for x in out).items() if v > 1]
     # 読みの表に入れ忘れると郵便番号のままURLになる。必ず気づけるようにする。

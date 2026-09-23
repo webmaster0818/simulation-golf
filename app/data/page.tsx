@@ -67,6 +67,7 @@ export default function DataPage() {
           <tbody>
             <tr><td>掲載施設（営業中）</td><td className="num">{fs.length}</td></tr>
             <tr><td>屋内シミュレーションゴルフ</td><td className="num">{fs.filter((f) => f.segment === 'indoor').length}</td></tr>
+            <tr><td>インドアゴルフスクール（コーチ付き）</td><td className="num">{fs.filter((f) => f.segment === 'lesson').length}</td></tr>
             <tr><td>弾道計測つき練習場</td><td className="num">{fs.filter((f) => f.segment === 'range').length}</td></tr>
             <tr><td>オープン準備中（一覧には含めない）</td><td className="num">{FACILITIES.length - fs.length}</td></tr>
             <tr><td>掲載のある都道府県</td><td className="num">{activePrefs().length}</td></tr>

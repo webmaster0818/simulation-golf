@@ -7,8 +7,12 @@
 import raw from '../data/facilities.json'
 
 export type Facility = {
-  /** indoor = 屋内シミュレーションゴルフ / range = 屋外練習場＋弾道計測 */
-  segment: 'indoor' | 'range'
+  /**
+   * indoor = 屋内シミュレーションゴルフ / range = 屋外練習場＋弾道計測
+   * lesson = コーチ付き・完全予約制のインドアゴルフスクール（弾道測定機あり）
+   * ⚠️ lesson を indoor に混ぜない。自由に打ちに行きたい人と教わりたい人では目的が違う。
+   */
+  segment: 'indoor' | 'range' | 'lesson'
   brand: string | null
   brand_slug: string | null
   slug: string

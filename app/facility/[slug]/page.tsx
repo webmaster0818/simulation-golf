@@ -4,7 +4,7 @@ import {
   SITE, PREF_SLUG, FACILITIES, OPEN_FACILITIES, bySlug, byPref, cityOf, asOf,
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
-import { JsonLd, breadcrumb, facilityCrumbs, facilityLd, facilityDescription, clip } from '../../../lib/seo'
+import { JsonLd, breadcrumb, facilityCrumbs, facilityLd, facilityDescription, clip, titleName } from '../../../lib/seo'
 
 type Params = { slug: string }
 
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   if (!f) return {}
   const where = [f.pref, cityOf(f)].filter(Boolean).join('')
   return {
-    title: clip(`${f.name}｜${where}のシミュレーションゴルフ`),
+    title: clip(`${titleName(f.name)}｜${where}のシミュレーションゴルフ`),
     description: facilityDescription(f),
     alternates: { canonical: `${SITE.origin}/facility/${slug}/` },
   }
@@ -73,7 +73,11 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
         <p className="lead">
           {f.pref}
           {city && city !== f.pref ? city : ''}にある
-          {f.segment === 'indoor' ? '屋内のシミュレーションゴルフ施設' : '弾道計測つきの練習場'}です。
+          {f.segment === 'indoor'
+            ? '屋内のシミュレーションゴルフ施設'
+            : f.segment === 'lesson'
+              ? 'コーチに教わるインドアゴルフスクール'
+              : '弾道計測つきの練習場'}です。
           下の情報はすべて公式サイトに掲載されている内容で、{asOf(f.fetched_at)}のものです。
         </p>
       </section>

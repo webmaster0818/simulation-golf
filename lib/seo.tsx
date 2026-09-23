@@ -143,6 +143,16 @@ export function clip(s: string, max = 58): string {
   return s.length <= max ? s : `${s.slice(0, max - 1)}…`
 }
 
+/**
+ * タイトル用の施設名。
+ * 店名に入っている補足の括弧（「（TSUTAYA札幌菊水店内）」「（ステップゴルフエクストラ○○）」）は
+ * 検索結果では切られるだけなので落とす。本文と構造化データには正式名称をそのまま出す。
+ */
+export function titleName(name: string): string {
+  const s = name.replace(/[（(][^）)]*[）)]\s*$/, '').trim()
+  return s.length >= 4 ? s : name
+}
+
 export function JsonLd({ data }: { data: object | object[] }) {
   const arr = Array.isArray(data) ? data : [data]
   return (

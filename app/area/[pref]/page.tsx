@@ -33,6 +33,7 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
   const fs = byPref(pref)
   const indoor = fs.filter((f) => f.segment === 'indoor')
   const range = fs.filter((f) => f.segment === 'range')
+  const lesson = fs.filter((f) => f.segment === 'lesson')
   const n24 = fs.filter((f) => f.open_24h).length
   const nPrivate = fs.filter((f) => f.private_room === true || /個室/.test(f.bays ?? '')).length
 
@@ -66,7 +67,7 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
         <h1>{pref}のシミュレーションゴルフ{fs.length}施設</h1>
         <p className="lead">
           {pref}で公式サイトが情報を公開している施設を、すべて並べています。
-          口コミによる順位づけはしていません。並び順は屋内施設・練習場の順です。
+          口コミによる順位づけはしていません。並び順は屋内施設・スクール・練習場の順です。
         </p>
       </section>
 
@@ -115,6 +116,19 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
           <h2>屋内シミュレーションゴルフ（{indoor.length}件）</h2>
           <div className="cards">
             {indoor.map((f) => <FacilityCard key={f.slug} f={f} />)}
+          </div>
+        </>
+      )}
+
+      {lesson.length > 0 && (
+        <>
+          <h2>コーチに教わるインドアゴルフスクール（{lesson.length}件）</h2>
+          <p>
+            完全予約制でコーチが付き、月会費で通うスクールです。弾道測定機は置かれていますが、
+            好きな時間に自分で打ちに行く施設とは使い方が違うので、分けて掲載しています。
+          </p>
+          <div className="cards">
+            {lesson.map((f) => <FacilityCard key={f.slug} f={f} />)}
           </div>
         </>
       )}
