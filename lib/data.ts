@@ -172,6 +172,79 @@ export const cityOf = (f: Facility): string | null => {
   return m ? m[1] : null
 }
 
+/**
+ * 政令指定都市は「区」まで切り出す。
+ * 横浜市は78施設中23件あり、市でひとまとめにすると「横浜市のどこ」が分からない。
+ * 検索も「戸塚 ゴルフシミュレーター」のように区や駅の単位で来ている（GSC実測）。
+ */
+export const wardOf = (f: Facility): string | null => {
+  if (!f.address || !f.pref) return null
+  const rest = f.address.replace(f.pref, '')
+  const m = rest.match(/^(.+?市.+?区)/) || rest.match(/^(.+?[市区町村])/)
+  return m ? m[1] : null
+}
+
+/**
+ * 市区町村ページのURL。
+ *
+ * ⚠️ 読みは1件ずつ確認して表で持つ。機械音訳はこのサイトで失敗している
+ *    （郵便番号のカナから作ると 三宿→mishu / 新宿→shinju になった）。
+ * ⚠️ 政令指定都市の区は市名を頭に付ける。青葉区は横浜市にも仙台市にもあり、
+ *    区名だけだと将来ぶつかる。
+ */
+export const CITY_SLUG: Record<string, string> = {
+  '大田区': 'ota', '船橋市': 'funabashi', '横浜市都筑区': 'yokohama-tsuzuki',
+  '川崎市中原区': 'kawasaki-nakahara', '世田谷区': 'setagaya', '品川区': 'shinagawa',
+  '杉並区': 'suginami', '厚木市': 'atsugi', '足立区': 'adachi', '藤沢市': 'fujisawa',
+  '江戸川区': 'edogawa', '柏市': 'kashiwa', '町田市': 'machida', '調布市': 'chofu',
+  '横浜市旭区': 'yokohama-asahi', '所沢市': 'tokorozawa', 'いわき市': 'iwaki',
+  '墨田区': 'sumida', '中央区': 'chuo', '横浜市青葉区': 'yokohama-aoba',
+  '横浜市戸塚区': 'yokohama-totsuka', '板橋区': 'itabashi', '新宿区': 'shinjuku',
+  '港区': 'minato', '福岡市早良区': 'fukuoka-sawara', 'つくば市': 'tsukuba',
+  'さいたま市緑区': 'saitama-midori', '草加市': 'soka', '八王子市': 'hachioji',
+  '横浜市中区': 'yokohama-naka', '千葉市中央区': 'chiba-chuo',
+  '横浜市神奈川区': 'yokohama-kanagawa', '北区': 'kita', '文京区': 'bunkyo',
+  '練馬区': 'nerima', '多摩市': 'tama',
+}
+
+/**
+ * 市区町村ページを作る下限。
+ * ⚠️ 1施設しかない市区町村は282ある。全部作れば見かけの規模は8倍になるが、
+ *    中身は施設ページの焼き直しにしかならない。3施設以上＝比べられるページだけ作る。
+ */
+export const CITY_MIN = 3
+
+/** 掲載する市区町村。[都道府県, 市区町村, 施設一覧] */
+export function cities(): { pref: string; city: string; slug: string; items: Facility[] }[] {
+  const m = new Map<string, Facility[]>()
+  for (const f of OPEN_FACILITIES) {
+    const c = wardOf(f)
+    if (!f.pref || !c) continue
+    const k = `${f.pref}\u0000${c}`
+    m.set(k, [...(m.get(k) ?? []), f])
+  }
+  return [...m.entries()]
+    .map(([k, items]) => {
+      const [pref, city] = k.split('\u0000')
+      return { pref, city, slug: CITY_SLUG[city] ?? '', items }
+    })
+    .filter((x) => x.items.length >= CITY_MIN && x.slug)
+    .sort((a, b) => b.items.length - a.items.length)
+}
+
+/** 表に読みを入れ忘れた市区町村。ビルド時に気づけるようにする */
+export function citiesMissingSlug(): { pref: string; city: string; n: number }[] {
+  const m = new Map<string, number>()
+  for (const f of OPEN_FACILITIES) {
+    const c = wardOf(f)
+    if (!f.pref || !c) continue
+    m.set(`${f.pref}\u0000${c}`, (m.get(`${f.pref}\u0000${c}`) ?? 0) + 1)
+  }
+  return [...m.entries()]
+    .filter(([k, n]) => n >= CITY_MIN && !CITY_SLUG[k.split('\u0000')[1]])
+    .map(([k, n]) => ({ pref: k.split('\u0000')[0], city: k.split('\u0000')[1], n }))
+}
+
 /** 「2026年9月12日時点」のような表記を1か所で作る */
 export const asOf = (d: string): string => {
   const [y, m, day] = d.split('-')

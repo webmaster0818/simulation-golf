@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
-  SITE, PREF_SLUG, FACILITIES, OPEN_FACILITIES, bySlug, byPref, cityOf, asOf,
+  SITE, PREF_SLUG, FACILITIES, OPEN_FACILITIES, bySlug, byPref, cityOf, wardOf,
+  cities as cityPagesOf, asOf,
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
 import { JsonLd, breadcrumb, facilityCrumbs, facilityLd, facilityDescription, clip, titleName } from '../../../lib/seo'
@@ -40,6 +41,11 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
   if (!f) return null
 
   const city = cityOf(f)
+  // その施設がある市区町村のページ（3施設以上ある市区町村にだけ作っている）
+  const ward = wardOf(f)
+  const cityPage = f.pref && ward
+    ? cityPagesOf().find((x) => x.pref === f.pref && x.city === ward)
+    : undefined
   const near = f.pref
     ? byPref(f.pref).filter((x) => x.slug !== f.slug).slice(0, 6)
     : []
@@ -60,6 +66,12 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
           <>
             {' / '}
             <Link href={`/area/${PREF_SLUG[f.pref]}/`}>{f.pref}</Link>
+          </>
+        )}
+        {f.pref && cityPage && (
+          <>
+            {' / '}
+            <Link href={`/area/${PREF_SLUG[f.pref]}/${cityPage.slug}/`}>{cityPage.city}</Link>
           </>
         )}
         {' / '}{f.name}

@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
-  SITE, PREF_SLUG, SLUG_PREF, activePrefs, byPref, cityOf, asOf, GENERATED_AT,
+  SITE, PREF_SLUG, SLUG_PREF, activePrefs, byPref, wardOf, asOf, GENERATED_AT,
+  cities as cityPagesOf,
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
 import { JsonLd, breadcrumb, itemListLd } from '../../../lib/seo'
@@ -40,12 +41,13 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
   // 市区町村ごとの件数。エリア内のどこに集まっているかを、データのまま出す。
   const cities = new Map<string, number>()
   for (const f of fs) {
-    const c = cityOf(f)
+    const c = wardOf(f)
     if (c) cities.set(c, (cities.get(c) ?? 0) + 1)
   }
   const cityList = [...cities.entries()].sort((a, b) => b[1] - a[1])
 
   const others = activePrefs().filter((p) => p !== pref)
+  const cityPages = cityPagesOf().filter((x) => x.pref === pref)
 
   const ld = [
     breadcrumb([
@@ -89,10 +91,16 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
               </thead>
               <tbody>
                 {cityList.map(([c, n]) => {
-                  const inC = fs.filter((f) => cityOf(f) === c)
+                  const inC = fs.filter((f) => wardOf(f) === c)
+                  // その市区町村のページがあるならリンクする（3施設以上だけ作っている）
+                  const page = cityPages.find((x) => x.city === c)
                   return (
                     <tr key={c}>
-                      <td>{c}</td>
+                      <td>
+                        {page
+                          ? <Link href={`/area/${slug}/${page.slug}/`}>{c}</Link>
+                          : c}
+                      </td>
                       <td className="num">{n}</td>
                       <td>
                         {inC.map((f, i) => (

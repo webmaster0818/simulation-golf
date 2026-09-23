@@ -1,4 +1,4 @@
-import { SITE, PREF_SLUG, cityOf, type Facility } from './data'
+import { SITE, PREF_SLUG, cityOf, wardOf, cities, type Facility } from './data'
 
 /**
  * 構造化データの組み立て。
@@ -114,6 +114,10 @@ export function facilityCrumbs(f: Facility): Crumb[] {
   if (f.pref && PREF_SLUG[f.pref]) {
     c.push({ name: 'エリアから探す', url: '/area/' })
     c.push({ name: f.pref, url: `/area/${PREF_SLUG[f.pref]}/` })
+    // 市区町村ページがある場合だけ挟む。無いページを指すパンくずは404になる
+    const w = wardOf(f)
+    const cp = w ? cities().find((x) => x.pref === f.pref && x.city === w) : undefined
+    if (cp) c.push({ name: cp.city, url: `/area/${PREF_SLUG[f.pref]}/${cp.slug}/` })
   }
   c.push({ name: f.name, url: `/facility/${f.slug}/` })
   return c
