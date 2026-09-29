@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
   SITE, PREF_SLUG, SLUG_PREF, activePrefs, byPref, wardOf, asOf, GENERATED_AT,
+  FACILITIES,
   cities as cityPagesOf,
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
@@ -48,6 +49,10 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
 
   const others = activePrefs().filter((p) => p !== pref)
   const cityPages = cityPagesOf().filter((x) => x.pref === pref)
+  // ⚠️ open:false（オープン準備中）の施設もページは作られ sitemap にも載るのに、
+  //    一覧は営業中だけなので**どこからも辿れない**状態だった（3件）。
+  //    営業中と混ぜず、別枠で出して繋ぐ。
+  const soon = FACILITIES.filter((f) => !f.open && f.pref === pref)
 
   const ld = [
     breadcrumb([
@@ -158,6 +163,23 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
           <div className="cards">
             {range.map((f) => <FacilityCard key={f.slug} f={f} />)}
           </div>
+        </>
+      )}
+
+      {soon.length > 0 && (
+        <>
+          <h2>{pref}でオープン準備中（{soon.length}件）</h2>
+          <p>
+            公式サイトが開業を告知している施設です。まだ営業していないため、
+            上の掲載件数には含めていません。
+          </p>
+          <ul className="chips">
+            {soon.map((f) => (
+              <li key={f.slug}>
+                <Link href={`/facility/${f.slug}/`}>{f.name}</Link>
+              </li>
+            ))}
+          </ul>
         </>
       )}
 

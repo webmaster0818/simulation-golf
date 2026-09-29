@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
   SITE, PREF_SLUG, brands, byBrand, cityOf, asOf, GENERATED_AT,
+  FACILITIES,
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
 import { JsonLd, breadcrumb, itemListLd } from '../../../lib/seo'
@@ -30,6 +31,8 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
   const b = brands().find((x) => x.slug === slug)
   if (!b) return null
   const fs = byBrand(slug)
+  // 営業前の店舗もページは存在するので、ブランド側からも繋いでおく（営業中とは分ける）
+  const soon = FACILITIES.filter((f) => !f.open && f.brand_slug === slug)
   const n24 = fs.filter((f) => f.open_24h).length
   const nPrivate = fs.filter((f) => f.private_room === true || /個室/.test(f.bays ?? '')).length
 
@@ -142,6 +145,21 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
         ))}
       </div>
       <p className="source">{asOf(GENERATED_AT)}の公式サイト掲載内容にもとづきます。</p>
+      {soon.length > 0 && (
+        <>
+          <h2>オープン準備中（{soon.length}件）</h2>
+          <p>公式サイトが開業を告知している店舗です。上の掲載件数には含めていません。</p>
+          <ul className="chips">
+            {soon.map((f) => (
+              <li key={f.slug}>
+                <Link href={`/facility/${f.slug}/`}>{f.name}</Link>
+                {f.pref && <span className="sub">　{f.pref}</span>}
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+
     </main>
   )
 }

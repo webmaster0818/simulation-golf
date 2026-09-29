@@ -121,6 +121,18 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
           <>
             <Row k="飛距離" v={f.distance_yard ? `${f.distance_yard}ヤード` : null} />
             <Row k="計測の設備" v={f.equipment} />
+            {/* 機材ページへの導線。/equipment/toptracer/ が一覧からの1本しか
+                張られていなかったので、該当施設から繋ぐ */}
+            {f.equipment === 'トップトレーサー・レンジ' && (
+              <div>
+                <dt>同じ機材の施設</dt>
+                <dd>
+                  <Link href="/equipment/toptracer/">
+                    トップトレーサーを導入している練習場の一覧を見る
+                  </Link>
+                </dd>
+              </div>
+            )}
           </>
         )}
       </dl>
