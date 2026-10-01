@@ -52,7 +52,7 @@ if (missing.length) {
 const brands = [...new Set(facilities.filter((f) => f.open && f.brand_slug).map((f) => f.brand_slug))]
 
 const urls = [
-  '/', '/area/', '/brand/', '/equipment/', '/equipment/toptracer/', '/data/',
+  '/', '/area/', '/brand/', '/equipment/', '/equipment/toptracer/', '/equipment/trackman/', '/data/',
   ...prefs.map((p) => `/area/${PREF_SLUG[p]}/`),
   ...cityUrls,
   ...brands.map((b) => `/brand/${b}/`),

@@ -12,6 +12,8 @@ export const metadata: Metadata = {
 
 export default function EquipmentIndex() {
   const trace = OPEN_FACILITIES.filter((f) => f.equipment === 'トップトレーサー・レンジ')
+  // 表記ゆれ（トラックマン4 / TRACKMAN RANGE 等）があるので部分一致で数える
+  const tm = OPEN_FACILITIES.filter((f) => !!f.equipment && /トラックマン|TRACKMAN|TrackMan/i.test(f.equipment))
   const free = trace.filter((f) => f.usage_fee === '無料')
   const noEquip = OPEN_FACILITIES.filter((f) => f.segment === 'indoor' && !f.equipment)
 
@@ -85,6 +87,18 @@ export default function EquipmentIndex() {
       <p>
         <Link href="/equipment/toptracer/">
           トップトレーサー導入施設の一覧を見る（{trace.length}件）
+        </Link>
+      </p>
+
+      <h2>トラックマン（{tm.length}件）</h2>
+      <p>
+        レーダーで球そのものを追って計測する機器です。屋内の個室型と、屋外の練習場に付いている型があります。
+        <strong>トラックマンには公表された全国の導入施設リストがありません</strong>。
+        当サイトが各施設の公式サイトで導入を確認できたものだけを載せています。
+      </p>
+      <p>
+        <Link href="/equipment/trackman/">
+          トラックマン導入施設の一覧を見る（{tm.length}件）
         </Link>
       </p>
 

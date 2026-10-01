@@ -135,6 +135,30 @@ def main() -> None:
                 "source_url": s["source_url"], "fetched_at": s["fetched_at"],
             })
 
+    # --- チェーンに属さない単独施設 ---
+    # ⚠️ 0件の県はチェーンが出店していないだけで、施設が無いわけではない（2026-10-01に判明）。
+    #    チェーンの店舗一覧を回る方式では構造的に拾えないので、公式サイトを1件ずつ読んで入れる。
+    ip = DATA / "independents.json"
+    if ip.exists():
+        d = json.loads(ip.read_text(encoding="utf-8"))
+        for s_ in d["facilities"]:
+            out.append({
+                "segment": s_.get("segment", "indoor"),
+                "brand": None, "brand_slug": None,
+                "slug": s_["slug"],
+                "name": s_["name"], "pref": s_.get("pref"), "zip": s_.get("zip"),
+                "address": s_.get("address"), "access": s_.get("access"),
+                "tel": s_.get("tel"), "hours": s_.get("hours"),
+                "open_24h": s_.get("open_24h"), "closed": s_.get("closed"),
+                "bays": s_.get("bays"), "bays_num": s_.get("bays_num"),
+                "private_room": s_.get("private_room"), "parking": s_.get("parking"),
+                "monthly_fee": s_.get("monthly_fee"), "usage_fee": s_.get("usage_fee"),
+                "equipment": s_.get("equipment"),
+                "distance_yard": s_.get("distance_yard"),
+                "open": s_.get("open", True), "official": s_.get("official"),
+                "source_url": s_["source_url"], "fetched_at": s_["fetched_at"],
+            })
+
     # slugがぶつかったら、後から来たほうに連番を足す（URLは1つに1つ）
     seen = {}
     for x in out:

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
   SITE, PREF_SLUG, FACILITIES, OPEN_FACILITIES, bySlug, byPref, cityOf, wardOf,
-  cities as cityPagesOf, asOf,
+  cities as cityPagesOf, asOf, REGIONS,
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
 import { JsonLd, breadcrumb, facilityCrumbs, facilityLd, facilityDescription, clip, titleName } from '../../../lib/seo'
@@ -46,9 +46,16 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
   const cityPage = f.pref && ward
     ? cityPagesOf().find((x) => x.pref === f.pref && x.city === ward)
     : undefined
-  const near = f.pref
-    ? byPref(f.pref).filter((x) => x.slug !== f.slug).slice(0, 6)
-    : []
+  // ⚠️ 県内に自分しか無い施設は、県一覧からの1本だけになって実質孤立する（2026-10-01に判明）。
+  //    その場合は同じ地方の施設に広げて導線を作る。
+  const samePref = f.pref ? byPref(f.pref).filter((x) => x.slug !== f.slug) : []
+  const region = f.pref ? REGIONS.find((r) => r.prefs.includes(f.pref as string)) : undefined
+  const near = samePref.length
+    ? samePref.slice(0, 6)
+    : region
+      ? OPEN_FACILITIES.filter((x) => x.pref && region.prefs.includes(x.pref) && x.slug !== f.slug).slice(0, 6)
+      : []
+  const nearIsRegion = samePref.length === 0
   const sameBrand = f.brand_slug
     ? OPEN_FACILITIES.filter((x) => x.brand_slug === f.brand_slug && x.slug !== f.slug)
     : []
@@ -117,6 +124,20 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
         {f.segment === 'indoor'
           ? <Row k="月会費" v={f.monthly_fee} />
           : <Row k="弾道計測の利用料" v={f.usage_fee} />}
+        {f.segment !== 'range' && f.equipment && (
+          <Row k="計測の設備" v={f.equipment} />
+        )}
+        {/* 機材ページは一覧からの1本しか張られないので、該当施設から繋ぐ */}
+        {f.equipment && /トラックマン|TRACKMAN|TrackMan/i.test(f.equipment) && (
+          <div>
+            <dt>同じ機材の施設</dt>
+            <dd>
+              <Link href="/equipment/trackman/">
+                トラックマンを導入している施設の一覧を見る
+              </Link>
+            </dd>
+          </div>
+        )}
         {f.segment === 'range' && (
           <>
             <Row k="飛距離" v={f.distance_yard ? `${f.distance_yard}ヤード` : null} />
@@ -183,7 +204,7 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
 
       {near.length > 0 && f.pref && (
         <>
-          <h2>{f.pref}のほかの施設</h2>
+          <h2>{nearIsRegion && region ? `${region.name}のほかの施設` : `${f.pref}のほかの施設`}</h2>
           <div className="cards">
             {near.map((x) => <FacilityCard key={x.slug} f={x} />)}
           </div>
