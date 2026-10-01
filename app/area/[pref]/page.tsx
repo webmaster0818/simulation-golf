@@ -3,7 +3,7 @@ import Link from 'next/link'
 import {
   SITE, PREF_SLUG, SLUG_PREF, activePrefs, byPref, wardOf, asOf, GENERATED_AT,
   FACILITIES,
-  cities as cityPagesOf,
+  cities as cityPagesOf, REGIONS, OPEN_FACILITIES,
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
 import { JsonLd, breadcrumb, itemListLd } from '../../../lib/seo'
@@ -48,6 +48,26 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
   const cityList = [...cities.entries()].sort((a, b) => b[1] - a[1])
 
   const others = activePrefs().filter((p) => p !== pref)
+
+  // ⚠️ 県内に1〜2件しか無い県の施設は、県一覧からの1本だけになって孤立する（2026-10-01に判明）。
+
+  //    隣県の施設を出すことで、利用者の探し方にも合い、被リンクも付く。
+
+  const region = REGIONS.find((r) => r.prefs.includes(pref))
+
+  const regionNeighbors = region
+
+    ? OPEN_FACILITIES
+
+        .filter((f) => f.pref && f.pref !== pref && region.prefs.includes(f.pref))
+
+        // 件数の少ない県を先に出す（埋もれやすい施設を拾うため）
+
+        .sort((a, b) => byPref(a.pref as string).length - byPref(b.pref as string).length)
+
+        .slice(0, 8)
+
+    : []
   const cityPages = cityPagesOf().filter((x) => x.pref === pref)
   // ⚠️ open:false（オープン準備中）の施設もページは作られ sitemap にも載るのに、
   //    一覧は営業中だけなので**どこからも辿れない**状態だった（3件）。
@@ -180,6 +200,19 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
               </li>
             ))}
           </ul>
+        </>
+      )}
+
+      {region && regionNeighbors.length > 0 && (
+        <>
+          <h2>{region.name}のほかの県にある施設</h2>
+          <p>
+            県をまたいで探す人向けに、同じ{region.name}の施設を出しています。
+            {pref}に{fs.length}件しか無い場合でも、隣の県まで広げると選択肢が増えます。
+          </p>
+          <div className="cards">
+            {regionNeighbors.map((f) => <FacilityCard key={f.slug} f={f} />)}
+          </div>
         </>
       )}
 
