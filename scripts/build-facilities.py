@@ -109,7 +109,8 @@ def main() -> None:
     # 日本語店名を音訳する方法は過去に失敗している（三宿→mishu 等）ので、
     # 公式が付けているローマ字があるならそれが一番確かな読み。
     for fname, seg in (("stepgolf.json", "lesson"), ("i8golf.json", "indoor"),
-                       ("doortogolf.json", "indoor"), ("zengolf.json", "lesson")):
+                       ("doortogolf.json", "indoor"), ("zengolf.json", "lesson"),
+                       ("inthegolf.json", "lesson")):
         fp = DATA / fname
         if not fp.exists():
             continue
