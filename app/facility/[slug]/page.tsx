@@ -163,12 +163,23 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
         )}
       </dl>
 
+      {/* ⚠️ 「このブランドは料金を公開していません」と言えるのは、ブランドの全店で
+          料金が取れていないときだけ。ほかの店では公開されているブランド
+          （Lounge Range は店舗別の料金ページがある）で同じ文を出すと事実と違う。 */}
       {f.segment === 'indoor' && !f.monthly_fee && (
-        <div className="nodata">
-          このブランドは、店舗ごとの料金を公式サイトで公開していません。
-          料金は店舗によって違うことがあるため、当サイトでは推測した金額を載せていません。
-          公式サイトまたは店舗へ直接ご確認ください。
-        </div>
+        f.brand_slug && OPEN_FACILITIES.some((x) => x.brand_slug === f.brand_slug && x.monthly_fee) ? (
+          <div className="nodata">
+            この店舗の料金は、当サイトでは確認できていません。
+            同じブランドでも料金は店舗によって違うため、推測した金額を載せていません。
+            公式サイトまたは店舗へ直接ご確認ください。
+          </div>
+        ) : (
+          <div className="nodata">
+            このブランドは、店舗ごとの料金を公式サイトで公開していません。
+            料金は店舗によって違うことがあるため、当サイトでは推測した金額を載せていません。
+            公式サイトまたは店舗へ直接ご確認ください。
+          </div>
+        )
       )}
 
       <p>

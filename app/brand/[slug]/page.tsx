@@ -101,7 +101,7 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
           <h2>店舗ごとの月会費</h2>
           <div className="tablewrap">
             <table>
-              <thead><tr><th>店舗</th><th>所在地</th><th>月会費（公式表記のまま）</th></tr></thead>
+              <thead><tr><th>店舗</th><th>所在地</th><th>月会費（公式サイト掲載の金額）</th></tr></thead>
               <tbody>
                 {fs.filter((f) => f.monthly_fee).map((f) => (
                   <tr key={f.slug}>
