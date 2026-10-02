@@ -12,6 +12,11 @@ const jp = Zen_Kaku_Gothic_New({
   subsets: ['latin'], weight: ['400', '500', '700'], display: 'swap', variable: '--font-jp',
 })
 
+// ⚠️ OG画像を差し替えたら v= を必ず上げる。/og-image.png は _headers で7日キャッシュさせており、
+//    同じURLのままだと Cloudflare のエッジに古い画像が残る（2026-10-02、差し替え後も
+//    独自ドメインだけ旧画像が返った。pages.dev は新しくなるので気づきにくい）。
+const OG_IMAGE = '/og-image.png?v=20261002'
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.origin),
   title: {
@@ -28,9 +33,9 @@ export const metadata: Metadata = {
     siteName: SITE.name,
     locale: 'ja_JP',
     url: `${SITE.origin}/`,
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: SITE.name }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: SITE.name }],
   },
-  twitter: { card: 'summary_large_image', images: ['/og-image.png'] },
+  twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   alternates: { types: { 'application/xml': `${SITE.origin}/sitemap.xml` } },
 }
 
