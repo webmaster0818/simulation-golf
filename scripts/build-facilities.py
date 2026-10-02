@@ -110,7 +110,8 @@ def main() -> None:
     # 公式が付けているローマ字があるならそれが一番確かな読み。
     for fname, seg in (("stepgolf.json", "lesson"), ("i8golf.json", "indoor"),
                        ("doortogolf.json", "indoor"), ("zengolf.json", "lesson"),
-                       ("inthegolf.json", "lesson"), ("loungerange.json", "indoor")):
+                       ("inthegolf.json", "lesson"), ("loungerange.json", "indoor"),
+                       ("igc.json", "indoor")):
         fp = DATA / fname
         if not fp.exists():
             continue
