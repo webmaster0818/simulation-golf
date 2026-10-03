@@ -111,7 +111,8 @@ def main() -> None:
     for fname, seg in (("stepgolf.json", "lesson"), ("i8golf.json", "indoor"),
                        ("doortogolf.json", "indoor"), ("zengolf.json", "lesson"),
                        ("inthegolf.json", "lesson"), ("loungerange.json", "indoor"),
-                       ("igc.json", "indoor"), ("mygol.json", "indoor")):
+                       ("igc.json", "indoor"), ("mygol.json", "indoor"),
+                       ("mira.json", "indoor")):
         fp = DATA / fname
         if not fp.exists():
             continue
