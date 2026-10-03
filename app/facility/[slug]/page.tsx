@@ -126,8 +126,13 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
         <Row k="定休日" v={f.closed} />
         <Row k="打席・個室" v={f.bays} />
         <Row k="駐車場" v={f.parking} />
+        {/* 都度払いの屋内施設（盛岡のゴルフィン等）は月会費が無く利用料だけ。
+            月会費欄だけ見て「料金を公開していません」と出していた（2026-10-03）。両方の欄を出す */}
         {f.segment === 'indoor'
-          ? <Row k="月会費" v={f.monthly_fee} />
+          ? <>
+              <Row k="月会費" v={f.monthly_fee} />
+              {f.usage_fee && <Row k="都度利用の料金" v={f.usage_fee} />}
+            </>
           : <Row k="弾道計測の利用料" v={f.usage_fee} />}
         {f.segment !== 'range' && f.equipment && (
           <Row k="計測の設備" v={f.equipment} />
@@ -166,7 +171,7 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
       {/* ⚠️ 「このブランドは料金を公開していません」と言えるのは、ブランドの全店で
           料金が取れていないときだけ。ほかの店では公開されているブランド
           （Lounge Range は店舗別の料金ページがある）で同じ文を出すと事実と違う。 */}
-      {f.segment === 'indoor' && !f.monthly_fee && (
+      {f.segment === 'indoor' && !f.monthly_fee && !f.usage_fee && (
         f.brand_slug && OPEN_FACILITIES.some((x) => x.brand_slug === f.brand_slug && x.monthly_fee) ? (
           <div className="nodata">
             この店舗の料金は、当サイトでは確認できていません。
