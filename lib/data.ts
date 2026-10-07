@@ -149,7 +149,9 @@ export const FEATURES: { slug: string; label: string; note: string; match: (f: F
     slug: 'parking',
     label: '駐車場あり',
     note: '公式サイトに駐車場の記載がある施設（「近隣にコインパーキング」は含めない）',
-    match: (f) => !!f.parking && !/^無|なし/.test(f.parking) && !/近隣|近く/.test(f.parking),
+    // 「店舗周辺にコインパーキングあり」「付近に有料駐車場あり」「専用駐車場無し（周辺にコインパーキング有）」が
+    // 駐車場ありに数えられていた（2026-10-07、52件）。近隣・近く と同じ意味の語も除く
+    match: (f) => !!f.parking && !/^無|なし/.test(f.parking) && !/近隣|近く|付近|周辺/.test(f.parking),
   },
   {
     slug: 'free-trace',
