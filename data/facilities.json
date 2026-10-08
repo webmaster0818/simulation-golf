@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-07",
- "count": 826,
+ "generated_at": "2026-10-08",
+ "count": 827,
  "facilities": [
   {
    "segment": "indoor",
@@ -19464,6 +19464,31 @@
    "official": "https://www.mygol.jp/range/shop/fukuoka.php",
    "source_url": "https://www.mygol.jp/range/shop/fukuoka.php",
    "fetched_at": "2026-10-07"
+  },
+  {
+   "segment": "indoor",
+   "brand": "マイゴル",
+   "brand_slug": "mygol",
+   "slug": "mygol-koshigaya",
+   "name": "マイゴル越谷せんげん台駅東口店",
+   "pref": "埼玉県",
+   "zip": null,
+   "address": "埼玉県越谷市千間台東",
+   "access": "せんげん台駅から徒歩2分",
+   "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
+   "hours": "24時間営業",
+   "open_24h": true,
+   "closed": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "parking": "駐車場あり（120分100円）",
+   "monthly_fee": "練習し放題 9,900円（平日デイプラン）／24時間練習し放題 16,500円（リミテッドプラン（レッスン２回付））（税込）",
+   "equipment": null,
+   "open": false,
+   "official": "https://www.mygol.jp/shop/koshigaya/",
+   "source_url": "https://www.mygol.jp/shop/koshigaya/",
+   "fetched_at": "2026-10-08"
   },
   {
    "segment": "indoor",

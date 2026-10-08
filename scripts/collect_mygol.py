@@ -50,7 +50,15 @@ PREFS = ("北海道|青森県|岩手県|宮城県|秋田県|山形県|福島県|
 FIXES = {
     # 郵便番号 470-0206 は「みよし市莇生町」で、住所の「三好丘緑」と合わない。合わない番号は載せない。
     "miyoshi": {"zip": None},
+    # 越谷せんげん台駅東口店（2026-10-08・オープン前）: 店舗情報の欄に「住所」の行がまだ無い。
+    # 本文に「越谷市千間台東に位置する」とあるだけなので町域までを住所にし、県は越谷市から補う。
+    # 地図の埋め込みには 〒343-0042 越谷市千間台東1丁目10-1 が入っており、zipcloud でも 343-0042＝
+    # 越谷市千間台東で一致するが、ページの本文に書かれていない番地・郵便番号は載せない。
+    "koshigaya": {"pref": "埼玉県"},
 }
+
+# 住所の欄が無い店で、本文の「◯◯市◯◯に位置する」から町域までを取るための表現
+LOCATED_RE = re.compile(r"([^\s「」。、]+?(?:市|区|町|村)[^\s「」。、]*?)に位置する")
 
 
 def get(url: str) -> str:
@@ -113,6 +121,8 @@ def is_open(page_text: str, today: str) -> bool:
     ⚠️ 開業後も「2026年8月オープン予定の…」という紹介文が残っている店が多い。
        文言の有無ではなく日付で判定する。日が書かれていない当月（「10月オープン予定」）と
        「下旬」などは、開業したと確認できないので準備中にする。
+    ⚠️ 月も無い「2026年オープン予定」（越谷せんげん台駅東口店・2026-10-08）は、その年のうちは
+       開業したと確認できないので準備中にする。「無料体験受付準備中」もオープン前の店にしか出ない。
     """
     y0, m0, d0 = (int(x) for x in today.split("-"))
     dates = []
@@ -120,6 +130,11 @@ def is_open(page_text: str, today: str) -> bool:
         dates.append((int(m.group(1)), int(m.group(2)), int(m.group(3)) if m.group(3) else None))
     for m in re.finditer(r"(?<![\d年])(\d{1,2})[月/](\d{1,2})日?\s*(?:オープン|OPEN)予定", page_text):
         dates.append((y0, int(m.group(1)), int(m.group(2))))
+    for m in re.finditer(r"(\d{4})年\s*(?:に)?(?:グランド)?(?:オープン|OPEN)予定", page_text):
+        if int(m.group(1)) >= y0:
+            return False
+    if "体験受付準備中" in page_text:
+        return False
     for y, mo, d in dates:
         if (y, mo) > (y0, m0):
             return False
@@ -306,6 +321,13 @@ def main() -> None:
         h = strip_hidden(get(url))
         name, r = info(h)
         addr = r.get("住所")
+        if name and not addr:
+            # オープン前の店は店舗情報に「住所」の行がまだ無い（越谷せんげん台駅東口店・2026-10-08）。
+            # 本文の「越谷市千間台東に位置する」から町域までを取る。番地は書かれていないので無し
+            ml = LOCATED_RE.search(text(h[:60000]))
+            if ml:
+                addr = ml.group(1)
+                problems.append(f"{name}: 住所の欄が無い。本文の「{addr}に位置する」から町域までを載せた（{url}）")
         if not (name and addr):
             problems.append(f"{url}: 店舗情報が取れなかった")
             time.sleep(2)
@@ -349,6 +371,8 @@ def main() -> None:
         })
         s = stores[-1]
         s.update(FIXES.get(s["slug"], {}))
+        if s["pref"] and not s["address"].startswith(s["pref"]):
+            s["address"] = s["pref"] + s["address"]   # 県を補った店（越谷）は住所の先頭にもそろえる
         if not s["monthly_fee"]:
             problems.append(f"{name}: 月額が取れなかった（{url}）")
         print(f"  {i:2}/{len(paths)} {s['name']} … {s['pref'] or '県不明'} / {s['hours']} / {s['monthly_fee']}"
@@ -361,6 +385,8 @@ def main() -> None:
         if a.limit and i > a.limit:
             break
         url = link if link.startswith("http") else BASE + link
+        if only and url.rsplit("/", 1)[-1].replace(".php", "") not in only:
+            continue   # --only のときは /range/shop/ の店も取り直さない
         s, pr = range_store(url, strip_hidden(get(url)), today)
         problems.extend(pr)
         if s:
