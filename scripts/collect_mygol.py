@@ -122,7 +122,9 @@ def is_open(page_text: str, today: str) -> bool:
        文言の有無ではなく日付で判定する。日が書かれていない当月（「10月オープン予定」）と
        「下旬」などは、開業したと確認できないので準備中にする。
     ⚠️ 月も無い「2026年オープン予定」（越谷せんげん台駅東口店・2026-10-08）は、その年のうちは
-       開業したと確認できないので準備中にする。「無料体験受付準備中」もオープン前の店にしか出ない。
+       開業したと確認できないので準備中にする。
+    ⚠️ 「無料見学・体験受付準備中！」は開業済みの店（八戸・川口・佐世保 ほか14店）にも残っている
+       テンプレートの文。これで判定すると開業済みの店が準備中になる（2026-10-08 に全件取り直して判明）。
     """
     y0, m0, d0 = (int(x) for x in today.split("-"))
     dates = []
@@ -133,8 +135,6 @@ def is_open(page_text: str, today: str) -> bool:
     for m in re.finditer(r"(\d{4})年\s*(?:に)?(?:グランド)?(?:オープン|OPEN)予定", page_text):
         if int(m.group(1)) >= y0:
             return False
-    if "体験受付準備中" in page_text:
-        return False
     for y, mo, d in dates:
         if (y, mo) > (y0, m0):
             return False
