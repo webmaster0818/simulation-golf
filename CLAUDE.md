@@ -102,3 +102,24 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 1. ~~施設ページのURL~~ → **2026-09-12「Bで」＝ローマ字で確定・適用済み**
 2. **リポジトリ作成とCloudflare Pages連携**（🚨 新規リポは必ず public。privateはCFの一覧に出ない）
 3. **ドメイン**
+
+## 作業ログ
+
+### 2026-10-09
+
+- マイゴル2店を公式の現在の記載に合わせた（`collect_mygol.py --only ogikubo,shinjukuhyakunincho`）:
+  荻窪タウンセブンビル店 準備中→**営業中**（公式「10月3日（土）オープン決定」「2026年10月オープンの」＝予定の語が消えた）／
+  新宿百人町店 住所「東京都新宿区百人町4丁目9-5 **1階**」（zipcloud 169-0073=新宿区百人町 一致）。
+  新宿百人町店は「2026年10月オープン予定」「10月24日（土）OPEN」のままなので準備中据え置き。
+- 差分は2店の address/open/fetched_at と、ファイル先頭の brand 全体 `fetched_at`（`--only` でも今日に動く・ページには出ない）のみ。
+  他84店の `fetched_at` は 10-02/10-07/10-08 のまま。施設 827・ページ 938 据え置き（営業中への変更でページ数は変わらない設計）。
+- 公開前チェック ✅ → deploy（方式B: `npm run build` → `rsync -a --delete --exclude .git out/ ../simulation-golf-deploy/` → push）
+  → 本番 curl で荻窪=営業中・百人町=「1階」・sitemap 938 を確認 → GSC へ golf-simulate のプロパティだけ sitemap 送信
+  （`gsc-api/submit_sitemaps.py` は全プロパティに送るので、同スクリプトの `load_creds` を借りて1件だけ submit）。
+- ソース ab9d860 ／ deploy 9dad1a3f
+- ついでに全86店を `--only <全slug>` で /tmp のコピーに取り直して突合（`fetched_at` 以外の差分）: **open の変化なし**
+  （準備中は 新宿百人町・竹ノ塚・広島大手町・越谷せんげん台駅東口 の4店のまま。10/8 の判定規則修正は正しかった）。
+  差分は1件だけ: **竹の塚店→竹ノ塚店**（公式の title/h1/店舗情報が全部「竹ノ塚」。住所の町名は「竹の塚」のまま）。
+  公式ページを目視確認のうえ `--only takenozuka` で反映。slug は `mygol-takenozuka` で変わらずURL維持。
+  白楽駅前店は前回同様に月額が取れていない（公式に記載が無い＝そのまま）。
+- 2回目 deploy 4671f9c5（竹ノ塚の店名）
