@@ -1,6 +1,6 @@
 {
  "brand": "マイゴル",
- "fetched_at": "2026-10-08",
+ "fetched_at": "2026-10-09",
  "stores": [
   {
    "brand": "マイゴル",
@@ -369,7 +369,7 @@
    "name": "マイゴル新宿百人町店",
    "pref": "東京都",
    "zip": "1690073",
-   "address": "東京都新宿区百人町4丁目9-5",
+   "address": "東京都新宿区百人町4丁目9-5 1階",
    "access": "小滝橋から徒歩2分",
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
@@ -384,7 +384,7 @@
    "open": false,
    "official": "https://www.mygol.jp/shop/shinjukuhyakunincho/",
    "source_url": "https://www.mygol.jp/shop/shinjukuhyakunincho/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-09"
   },
   {
    "brand": "マイゴル",
@@ -573,10 +573,10 @@
    "parking": null,
    "monthly_fee": "お得に練習 13,200円（平日デイプラン）／24時間365日使い放題 18,700円（ベーシックプラン）（税込）",
    "equipment": null,
-   "open": false,
+   "open": true,
    "official": "https://www.mygol.jp/shop/ogikubo/",
    "source_url": "https://www.mygol.jp/shop/ogikubo/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-09"
   },
   {
    "brand": "マイゴル",
