@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-09",
- "count": 827,
+ "generated_at": "2026-10-10",
+ "count": 828,
  "facilities": [
   {
    "segment": "indoor",
@@ -2756,6 +2756,31 @@
    "segment": "indoor",
    "brand": "SWING24/7",
    "brand_slug": "swing247",
+   "slug": "swing247-nokendai",
+   "name": "SWING24/7 能見台店",
+   "pref": "神奈川県",
+   "zip": "236-0053",
+   "address": "神奈川県横浜市金沢区能見台通５－１０マイショップビル2階",
+   "access": "京浜急行線 能見台駅",
+   "tel": "045-543-3398",
+   "hours": "24時間365日（無人運営）",
+   "open_24h": true,
+   "closed": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "parking": "なし",
+   "monthly_fee": null,
+   "equipment": null,
+   "open": false,
+   "official": null,
+   "source_url": "https://swing24.co.jp/locations",
+   "fetched_at": "2026-10-10"
+  },
+  {
+   "segment": "indoor",
+   "brand": "SWING24/7",
+   "brand_slug": "swing247",
    "slug": "swing247-machida",
    "name": "SWING24/7 町田店",
    "pref": "東京都",
@@ -2775,7 +2800,7 @@
    "open": false,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -2800,7 +2825,7 @@
    "open": false,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -2825,7 +2850,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -2850,7 +2875,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -2875,7 +2900,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -2900,7 +2925,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -2925,7 +2950,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -2950,7 +2975,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -2975,7 +3000,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3000,7 +3025,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3025,7 +3050,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3050,7 +3075,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3075,7 +3100,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3100,7 +3125,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3125,7 +3150,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3150,7 +3175,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3175,7 +3200,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3200,7 +3225,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3225,7 +3250,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3250,7 +3275,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3275,7 +3300,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3300,7 +3325,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3325,7 +3350,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3350,7 +3375,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3375,7 +3400,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3400,7 +3425,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3410,7 +3435,7 @@
    "name": "SWING24/7 鮫洲店",
    "pref": "東京都",
    "zip": "140-0011",
-   "address": "東京都品川区東大井1-13-12 クレールメゾン品川110無し",
+   "address": "東京都品川区東大井1-13-12 クレールメゾン品川110",
    "access": "京急鮫洲駅 徒歩6分",
    "tel": "03-6260-0355",
    "hours": "24時間365日（無人運営）",
@@ -3419,13 +3444,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": null,
+   "parking": "無し",
    "monthly_fee": null,
    "equipment": null,
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3450,7 +3475,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3475,7 +3500,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3500,7 +3525,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3525,7 +3550,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3550,7 +3575,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3575,7 +3600,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3600,7 +3625,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3625,7 +3650,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3650,7 +3675,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3675,7 +3700,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3700,7 +3725,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3725,7 +3750,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3750,7 +3775,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3775,7 +3800,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3800,7 +3825,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3825,7 +3850,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3850,7 +3875,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3875,7 +3900,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3900,7 +3925,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3925,7 +3950,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3950,7 +3975,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -3975,7 +4000,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -4000,7 +4025,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -4025,7 +4050,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -4050,7 +4075,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -4075,7 +4100,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -4100,7 +4125,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -4125,7 +4150,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -4150,7 +4175,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -4175,7 +4200,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -4200,7 +4225,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -4225,7 +4250,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",
@@ -4250,7 +4275,7 @@
    "open": true,
    "official": null,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "range",
@@ -17473,7 +17498,7 @@
    "name": "マイゴル東川口店",
    "pref": "埼玉県",
    "zip": "3330801",
-   "address": "埼玉県川口市東川口1丁目13-1",
+   "address": "埼玉県川口市東川口1丁目13-1 恒石ビル3F",
    "access": "東川口駅から徒歩2分",
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
@@ -17488,7 +17513,7 @@
    "open": true,
    "official": "https://www.mygol.jp/shop/higashikawaguchi/",
    "source_url": "https://www.mygol.jp/shop/higashikawaguchi/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-10"
   },
   {
    "segment": "indoor",

@@ -1,6 +1,6 @@
 {
  "brand": "マイゴル",
- "fetched_at": "2026-10-09",
+ "fetched_at": "2026-10-10",
  "stores": [
   {
    "brand": "マイゴル",
@@ -129,7 +129,7 @@
    "name": "マイゴル東川口店",
    "pref": "埼玉県",
    "zip": "3330801",
-   "address": "埼玉県川口市東川口1丁目13-1",
+   "address": "埼玉県川口市東川口1丁目13-1 恒石ビル3F",
    "access": "東川口駅から徒歩2分",
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
@@ -144,7 +144,7 @@
    "open": true,
    "official": "https://www.mygol.jp/shop/higashikawaguchi/",
    "source_url": "https://www.mygol.jp/shop/higashikawaguchi/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-10"
   },
   {
    "brand": "マイゴル",

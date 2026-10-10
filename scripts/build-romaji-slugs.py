@@ -79,6 +79,7 @@ PLACE = {
     'swing247-1940013': 'machida',
     'swing247-1760004': 'ekoda',                     # 江古田（えこだ）
     'swing247-2410825': 'kibogaoka',                 # 希望ヶ丘
+    'swing247-2360053': 'nokendai',                  # 能見台（のうけんだい・京急線の駅名表記 Nokendai）
     'swing247-2420023': 'koza-shibuya',              # 高座渋谷駅前
     'swing247-2510016': 'fujisawa',                  # ミロクジーナ藤沢
     'swing247-2430031': 'atsugi',                    # アツギトレリス

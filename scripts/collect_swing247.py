@@ -54,7 +54,8 @@ def parse(block: list) -> dict:
             rec["zip"] = v.lstrip("〒")
         elif TEL.fullmatch(v):
             rec["tel"] = v
-        elif "駐車" in v or "パーキング" in v:
+        elif "駐車" in v or "パーキング" in v or v in ("なし", "無し"):
+            # 駐車場の欄が「なし」の1語だけの店がある（能見台店・2026-10-10）。拾わないと住所の末尾に付く
             rec["parking"] = v
         elif re.search(r"OPEN|オープン", v):
             # ⚠️ 住所判定より先に見る。「9月下旬町田店OPEN予定!!」は
