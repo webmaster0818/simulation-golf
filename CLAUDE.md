@@ -144,3 +144,5 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
   - SWING24/7 町田（「9月下旬…OPEN予定」）・江古田（「今夏…OPEN予定」）は公式が予定のままなので準備中据え置き。MIRA は差分なし。
   - 828施設・939ページ。ソース c913316 ／ deploy ec493314。
 - 範囲外で見つけたもの（未修正）: SWING24/7 ミロクジーナ藤沢店の住所末尾に「その他交通機関情報に関しましてはWEBサイトにて」が混入（1件）。
+- 本番 curl: 能見台=200・準備中表示／sitemap 939（nokendai 1件）／鮫洲の住所末尾「無し」消滅／東川口「恒石ビル3F」・postalCode 333-0801／
+  帝塚山・江古田・大垣で `〒[0-9]{7}` 0件。GSC は golf-simulate のプロパティだけ sitemap 送信（gsc-api/venv の python・lastSubmitted 2026-10-10T00:31Z）。
