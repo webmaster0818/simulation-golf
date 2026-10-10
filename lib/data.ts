@@ -83,6 +83,18 @@ export const REGIONS: { name: string; prefs: string[] }[] = [
   { name: '九州・沖縄', prefs: ['福岡県', '佐賀県', '長崎県', '熊本県', '大分県', '宮崎県', '鹿児島県', '沖縄県'] },
 ]
 
+/**
+ * 郵便番号の表示用整形。data/facilities.json は公式の表記のまま（ハイフン無し7桁・全角「ｰ」混在）。
+ * データは変えず、画面と構造化データでだけ「123-4567」にそろえる。7桁にならないものは手を加えない。
+ */
+export const formatZip = (zip: string | null): string | null => {
+  if (!zip) return null
+  const digits = zip
+    .replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0))
+    .replace(/[-‐－―ｰー−]/g, '')
+  return /^\d{7}$/.test(digits) ? `${digits.slice(0, 3)}-${digits.slice(3)}` : zip
+}
+
 export const OPEN_FACILITIES = FACILITIES.filter((f) => f.open)
 
 export const byPref = (pref: string): Facility[] =>

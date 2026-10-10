@@ -1,4 +1,4 @@
-import { SITE, PREF_SLUG, cityOf, wardOf, cities, type Facility } from './data'
+import { SITE, PREF_SLUG, cityOf, wardOf, cities, formatZip, type Facility } from './data'
 
 /**
  * 構造化データの組み立て。
@@ -86,7 +86,7 @@ export function facilityLd(f: Facility) {
             '@type': 'PostalAddress',
             streetAddress: f.address,
             addressRegion: f.pref,
-            postalCode: f.zip ?? undefined,
+            postalCode: formatZip(f.zip) ?? undefined,
             addressCountry: 'JP',
           },
         }

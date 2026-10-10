@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
   SITE, PREF_SLUG, FACILITIES, OPEN_FACILITIES, bySlug, byPref, cityOf, wardOf,
-  cities as cityPagesOf, asOf, REGIONS,
+  cities as cityPagesOf, asOf, REGIONS, formatZip,
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
 import { JsonLd, breadcrumb, facilityCrumbs, facilityLd, facilityDescription, clip, titleName } from '../../../lib/seo'
@@ -119,7 +119,7 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
 
       <h2>基本情報</h2>
       <dl className="spec">
-        <Row k="住所" v={f.zip ? `〒${f.zip} ${f.address}` : f.address} />
+        <Row k="住所" v={f.zip ? `〒${formatZip(f.zip)} ${f.address}` : f.address} />
         <Row k="アクセス" v={f.access} />
         <Row k="電話番号" v={f.tel} />
         <Row k="営業時間" v={f.hours} />
