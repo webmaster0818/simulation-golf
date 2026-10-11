@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 """SWING24/7 の店舗データを公式の店舗一覧から取る。
 
-一覧ページ1枚に全店舗が載っている。1店舗のかたまりは
-  店名 → (開店予告) → 〒 → 住所 → アクセス → 駐車場 → 電話 → Google Map
-の順で、住所が2行に割れている店舗がある。
+一覧ページ1枚に全店舗が載っている。1店舗は <li> 1つで、
+  <h3>店名 → (スケジュール span) → 住所 p.txt_l → 経路 p.icon.root → 駐車場 p.icon.parking → 電話 → リンク
+の順。住所・経路は <br> で2行に割れている店舗がある。
 
 ⚠️ 「近日オープン予定」の店舗は open=False で持ち、掲載時に既存店と混ぜない。
    オープン前を営業中として数えるのは、利用者にとって実害のある誤りになる。
@@ -34,79 +34,106 @@ CITY_PREF = {"名古屋市": "愛知県", "札幌市": "北海道", "仙台市":
              "堺市": "大阪府", "岡山市": "岡山県", "熊本市": "熊本県", "相模原市": "神奈川県"}
 
 
-def lines_of(html: str) -> list:
-    t = re.sub(r"<script[\s\S]*?</script>", " ", html)
-    t = re.sub(r"<style[\s\S]*?</style>", " ", t)
-    t = re.sub(r"<[^>]+>", "\n", t)
+def text(fragment: str) -> list:
+    """タグを外して <br> ごとの行に分ける。"""
+    t = re.sub(r"<br\s*/?>", "\n", fragment)
+    t = re.sub(r"<[^>]+>", "", t).replace("&nbsp;", " ")
     return [x for x in (re.sub(r"[ \t　]+", " ", v).strip() for v in t.split("\n")) if x]
 
 
-def parse(block: list) -> dict:
-    """1店舗ぶんの行から項目を拾う。行の意味は内容で判定する（位置に依存しない）。"""
-    # 県セクションの見出し行。住所ではないので落とす。
-    block = [v for v in block
-             if not re.fullmatch(f"({PREF})", v) and not re.fullmatch(r"[A-Za-z]{3,12}", v)]
-    rec = {"zip": None, "address": "", "access": [], "parking": None, "tel": None,
-           "open": True, "note": None}
-    addr_parts = []
-    for v in block:
-        if re.fullmatch(r"〒\d{3}-?\d{4}", v):
-            rec["zip"] = v.lstrip("〒")
-        elif TEL.fullmatch(v):
-            rec["tel"] = v
-        elif "駐車" in v or "パーキング" in v or v in ("なし", "無し"):
-            # 駐車場の欄が「なし」の1語だけの店がある（能見台店・2026-10-10）。拾わないと住所の末尾に付く
-            rec["parking"] = v
-        elif re.search(r"OPEN|オープン", v):
-            # ⚠️ 住所判定より先に見る。「9月下旬町田店OPEN予定!!」は
-            #    「町＋数字」で住所にも見えてしまうため。
-            rec["open"] = False
-            rec["note"] = v
-        elif re.search(r"(駅|徒歩|線)", v) and not re.search(f"^({PREF})", v):
-            rec["access"].append(v)
-        elif (re.search(f"^({PREF})", v) or (ADDR.search(v) and re.search(r"\d", v))
-              or addr_parts):
-            addr_parts.append(v)
-    rec["address"] = "".join(addr_parts)
-    m = re.search(f"({PREF})", rec["address"])
-    if m:
-        rec["pref"] = m.group(1)
-    else:
-        rec["pref"] = next((p for c, p in CITY_PREF.items() if c in rec["address"]), None)
-    return rec
+def field(block: str, cls: str) -> list:
+    m = re.search(rf'<(?:p|span|a)[^>]*class="{cls}"[^>]*>([\s\S]*?)</(?:p|span|a)>', block)
+    return text(m.group(1)) if m else []
+
+
+def curl(url: str) -> str:
+    return subprocess.run(["curl", "-sL", "--max-time", "30", "-A", UA, url],
+                          capture_output=True, text=True).stdout
+
+
+# 店舗サイトの開業告知。「10/3（土）グランドオープン！」のように日付＋オープンが言い切りで書かれたものだけ。
+# ⚠️ 「…OPENいたします！」（能見台店・開業前の告知）・「プレオープン」・「OPEN予定」は開業の確認にしない。
+OPENED = re.compile(r"(?<!\d)(\d{1,2})[/月](\d{1,2})日?\s*(?:[（(].[)）])?\s*グランド(?:オープン|OPEN)(?!予定)")
+
+
+def opened_on_store_site(site: str, today: date) -> str | None:
+    """一覧の「近日オープン予定」欄は開業後もしばらく残る（町田店・10/3開業→10/11も予定のまま）。
+    店舗ごとの公式サイトに開業済みの日付が言い切りで書かれていれば、その文を返す。"""
+    if not site:
+        return None
+    body = re.sub(r"<script[\s\S]*?</script>|<style[\s\S]*?</style>", " ", curl(site))
+    for line in text(re.sub(r"<(?!br)[^>]+>", "\n", body)):
+        m = OPENED.search(line)
+        if m and (today.month, today.day) >= (int(m.group(1)), int(m.group(2))):
+            return line
+    return None
+
+
+def parse(block: str) -> dict:
+    """1店舗の <li>。公式の HTML は 住所(txt_l)・経路(icon root)・駐車場(icon parking)・
+    電話(icon tel)・スケジュール(span) が欄ごとに分かれているので、欄で拾う。
+
+    ⚠️ 以前は行の中身（駅・徒歩・〒…）で欄を推測していて、経路欄の2行目
+       「その他交通機関情報に関しましてはWEBサイトにて」が住所の末尾に付いていた
+       （ミロクジーナ藤沢店・2026-10-11 修正）。駐車場欄の「無し」も同じ原因（鮫洲店・10-10）。
+    """
+    addr = field(block, "txt_l")
+    zipc = next((v.lstrip("〒") for v in addr if re.fullmatch(r"〒\d{3}-?\d{4}", v)), None)
+    address = "".join(v for v in addr if not v.startswith("〒"))
+    sched = re.search(r"<!--スケジュール-->\s*<span>([\s\S]*?)</span>", block)
+    note = " ".join(text(sched.group(1))) if sched else None
+    tel = " ".join(field(block, "icon tel")) or None
+    site = re.search(r'<a href="([^"]+)" class="site"', block)
+    m = re.search(f"({PREF})", address)
+    return {
+        "zip": zipc, "address": address,
+        "pref": m.group(1) if m else next((p for c, p in CITY_PREF.items() if c in address), None),
+        # 愛知・福岡の店は経路欄の1行目が見出しの「アクセス」だけ。
+        # 「その他交通機関情報に関しましてはWEBサイトにて」（藤沢）は公式サイト内の案内で、
+        # このサイトに載せると「どのWEBサイト？」になるので落とす。
+        "access": " / ".join(v for v in field(block, "icon root")
+                             if v != "アクセス" and not re.search(r"WEBサイトにて", v)) or None,
+        "parking": " ".join(field(block, "icon parking")) or None,
+        "tel": tel if tel and TEL.fullmatch(tel) else None,
+        # ⚠️ 「近日オープン予定」の欄（スケジュール）がある店は open=False。
+        "open": not note, "note": note,
+        "site": site.group(1) if site else None,
+    }
 
 
 def main() -> None:
-    html = subprocess.run(["curl", "-sL", "--max-time", "30", "-A", UA, URL],
-                          capture_output=True, text=True).stdout
-    ls = lines_of(html)
-    heads = [i for i, v in enumerate(ls) if re.fullmatch(r"SWING24/7 ?\S.*店", v)]
-    today, out = date.today().isoformat(), []
-    for n, i in enumerate(heads):
-        end = heads[n + 1] if n + 1 < len(heads) else min(i + 14, len(ls))
-        block = [v for v in ls[i + 1:end] if v not in ("Google Map", "WEBサイト")]
+    html = curl(URL)
+    today, out = date.today(), []
+    for name, block in re.findall(r"<h3>(SWING24/7[^<]*店)</h3>([\s\S]*?)</li>", html):
         r = parse(block)
-        out.append({
-            "brand": "SWING24/7", "brand_slug": "swing247", "name": ls[i].strip(),
+        rec = {
+            "brand": "SWING24/7", "brand_slug": "swing247", "name": name.strip(),
             **{k: r[k] for k in ("zip", "address", "pref", "parking", "tel", "open", "note")},
-            "access": " / ".join(r["access"]) or None,
+            "access": r["access"],
             # 公式が全店「24時間365日・無人」と明記しているブランド
             "hours": "24時間365日（無人運営）", "open_24h": True,
-            "source_url": URL, "fetched_at": today,
-        })
+            "source_url": URL, "fetched_at": today.isoformat(),
+        }
+        if not r["open"]:
+            said = opened_on_store_site(r["site"], today)
+            if said:
+                rec.update(open=True, open_source_url=r["site"],
+                           note=f"一覧は「{r['note']}」のまま。店舗公式サイトに「{said}」")
+        out.append(rec)
 
     res = list({x["name"]: x for x in out}.values())
     (ROOT / "data" / "brand-swing247.json").write_text(
-        json.dumps({"brand": "SWING24/7", "source_url": URL, "fetched_at": today,
+        json.dumps({"brand": "SWING24/7", "source_url": URL, "fetched_at": today.isoformat(),
                     "count": len(res), "stores": res}, ensure_ascii=False, indent=1),
         encoding="utf-8")
     opened = [x for x in res if x["open"]]
     print(f"SWING24/7: {len(res)}店舗（営業中 {len(opened)} / オープン予定 {len(res)-len(opened)}）")
+    for x in res:
+        if x.get("open_source_url") or not x["open"]:
+            print("   ", x["name"], "| open" if x["open"] else "| 準備中", "|", x["note"])
     miss = [x["name"] for x in res if not x["pref"]]
     if miss:
         print(f"  ⚠️ 都道府県が取れない: {miss}")
-    for x in res[:4]:
-        print("   ", x["name"], "|", x["pref"], "|", (x["address"] or "")[:32], "|", x["tel"])
 
 
 main()

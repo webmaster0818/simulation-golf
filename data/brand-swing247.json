@@ -1,7 +1,7 @@
 {
  "brand": "SWING24/7",
  "source_url": "https://swing24.co.jp/locations",
- "fetched_at": "2026-10-10",
+ "fetched_at": "2026-10-11",
  "count": 61,
  "stores": [
   {
@@ -19,7 +19,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -30,13 +30,14 @@
    "pref": "東京都",
    "parking": "近くにコインパーキング多数有",
    "tel": "042-860-6336",
-   "open": false,
-   "note": "9月下旬町田店OPEN予定!!",
+   "open": true,
+   "note": "一覧は「9月下旬町田店OPEN予定!!」のまま。店舗公式サイトに「SWING24/7町田店10/3（土）グランドオープン！ 24時間営業開始！入会キャンペーン実施中！」",
    "access": "JR町田駅南口より徒歩1分、小田急線町田駅西口より徒歩3分",
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11",
+   "open_source_url": "https://swing24-machida.com/"
   },
   {
    "brand": "SWING24/7",
@@ -53,7 +54,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -70,7 +71,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -87,14 +88,14 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
    "brand_slug": "swing247",
    "name": "SWING24/7 ミロクジーナ藤沢店",
    "zip": "251-0016",
-   "address": "神奈川県藤沢市弥勒寺3丁目12-16ミロクジーナA棟 2Fその他交通機関情報に関しましてはWEBサイトにて",
+   "address": "神奈川県藤沢市弥勒寺3丁目12-16ミロクジーナA棟 2F",
    "pref": "神奈川県",
    "parking": "ミロクジーナ駐車場90分無料",
    "tel": "0466-54-8020",
@@ -104,7 +105,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -121,7 +122,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -138,7 +139,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -155,7 +156,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -172,7 +173,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -189,7 +190,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -206,7 +207,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -223,7 +224,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -240,7 +241,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -257,16 +258,16 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
    "brand_slug": "swing247",
    "name": "SWING24/7 ウェイクロード横浜鶴見店",
    "zip": "230-0077",
-   "address": "神奈川県横浜市鶴見区東寺尾５丁目２−３１ ウェイクロード横浜鶴見 ２Fウェイクロード横浜鶴見 3-4階 2時間無料",
+   "address": "神奈川県横浜市鶴見区東寺尾５丁目２−３１ ウェイクロード横浜鶴見 ２F",
    "pref": "神奈川県",
-   "parking": null,
+   "parking": "ウェイクロード横浜鶴見 3-4階 2時間無料",
    "tel": "0120-137-789",
    "open": true,
    "note": null,
@@ -274,7 +275,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -291,7 +292,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -308,7 +309,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -325,7 +326,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -342,7 +343,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -359,7 +360,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -376,7 +377,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -393,7 +394,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -410,7 +411,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -427,7 +428,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -444,7 +445,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -461,7 +462,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -478,7 +479,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -495,7 +496,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -512,7 +513,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -529,7 +530,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -546,7 +547,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -563,7 +564,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -580,7 +581,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -597,7 +598,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -614,7 +615,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -631,7 +632,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -648,7 +649,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -665,7 +666,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -682,7 +683,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -699,24 +700,24 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
    "brand_slug": "swing247",
    "name": "SWING24/7 桶川店",
    "zip": "363-0012",
-   "address": "埼玉県桶川市末広1丁目1-1※真っ直ぐなのでわかりやすいです。",
+   "address": "埼玉県桶川市末広1丁目1-1",
    "pref": "埼玉県",
    "parking": "駐車場5台完備",
    "tel": "045-900-0312",
    "open": true,
    "note": null,
-   "access": "JR桶川駅東口より徒歩9分",
+   "access": "JR桶川駅東口より徒歩9分 / ※真っ直ぐなのでわかりやすいです。",
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -733,7 +734,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -750,16 +751,16 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
    "brand_slug": "swing247",
    "name": "SWING24/7 宇都宮店",
    "zip": "320-0033",
-   "address": "栃木県宇都宮市本町13-18 マロニエ宇都宮 101（詳しくは直接店舗にお問い合わせください）",
+   "address": "栃木県宇都宮市本町13-18 マロニエ宇都宮 101",
    "pref": "栃木県",
-   "parking": "駐車場は練習ブース利用者専用になりますので予約時間以外の駐車は固く禁じます。（罰金あり）",
+   "parking": "専用駐車場完備 （詳しくは直接店舗にお問い合わせください） 平面駐車場、地下駐車場（注）あり 駐車場は練習ブース利用者専用になりますので予約時間以外の駐車は固く禁じます。（罰金あり）",
    "tel": "028-666-7447",
    "open": true,
    "note": null,
@@ -767,7 +768,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -784,7 +785,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -801,75 +802,75 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
    "brand_slug": "swing247",
    "name": "SWING24/7 豊山店",
    "zip": "480-0201",
-   "address": "愛知県西春日井郡豊山町青山金剛11アクセス■お車でお越しの方",
+   "address": "愛知県西春日井郡豊山町青山金剛11",
    "pref": "愛知県",
    "parking": "AOKI共有駐車場有り",
    "tel": "0587-96-9710",
    "open": true,
    "note": null,
-   "access": "1.小牧市方面より国道41号線を「花塚橋南交差点」を南進し、豊山町「青山江川交差点」を通過後すぐ左側です。2.名古屋市方面より国道41号線を空港バッティングセンターさんを通過後、「青山江川交差点」信号をすぐ右折です。",
+   "access": "■お車でお越しの方 / 1.小牧市方面より国道41号線を「花塚橋南交差点」を南進し、豊山町「青山江川交差点」を通過後すぐ左側です。2.名古屋市方面より国道41号線を空港バッティングセンターさんを通過後、「青山江川交差点」信号をすぐ右折です。",
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
    "brand_slug": "swing247",
    "name": "SWING24/7 大口店",
    "zip": "480-0141",
-   "address": "愛知県丹羽郡大口町上小口2丁目115-10アクセス■お車でお越しの方",
+   "address": "愛知県丹羽郡大口町上小口2丁目115-10",
    "pref": "愛知県",
    "parking": "AOKI共有駐車場有り",
    "tel": "0587-96-9710",
    "open": true,
    "note": null,
-   "access": "【犬山方面より】国道41号線を名古屋方面に直進「スズキアリーナ犬山南店さん」角の上小口交差点を右折した左側です。",
+   "access": "■お車でお越しの方 / 【犬山方面より】国道41号線を名古屋方面に直進「スズキアリーナ犬山南店さん」角の上小口交差点を右折した左側です。",
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
    "brand_slug": "swing247",
    "name": "SWING24/7 千音寺アズタウン店",
    "zip": "454-0972",
-   "address": "愛知県名古屋市中川区新家1-1901アクセス■お車でお越しの方(蟹江方面より)西尾張中央道を北へ進み、神尾交差点を右折し、名古屋方面へ向いおよそ5分程の、アズパーク千音寺東隣です。■バスでお越しの方烏森方面からお越しの場合、市バス戸田荘行きに乗車し名古屋西インターバス停で下車。津島方面からお越しの場合、市バス中村公園前行きに乗車し名古屋西インター停で下車。",
+   "address": "愛知県名古屋市中川区新家1-1901",
    "pref": "愛知県",
    "parking": "AOKI共有駐車場有り",
    "tel": "0587-96-9710",
    "open": true,
    "note": null,
-   "access": null,
+   "access": "■お車でお越しの方 / (蟹江方面より)西尾張中央道を北へ進み、神尾交差点を右折し、名古屋方面へ向いおよそ5分程の、アズパーク千音寺東隣です。 / ■バスでお越しの方 / 烏森方面からお越しの場合、市バス戸田荘行きに乗車し名古屋西インターバス停で下車。津島方面からお越しの場合、市バス中村公園前行きに乗車し名古屋西インター停で下車。",
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
    "brand_slug": "swing247",
    "name": "SWING24/7 四軒家店",
    "zip": "463-0032",
-   "address": "愛知県名古屋市守山区白山3-902アクセス■お車でお越しの方■バスでお越しの方",
+   "address": "愛知県名古屋市守山区白山3-902",
    "pref": "愛知県",
    "parking": "AOKI共有駐車場有り",
    "tel": "0587-96-9710",
    "open": true,
    "note": null,
-   "access": "(名古屋方面より)瀬港線(国道363号線)を瀬戸方面に進み、東名高速道路の高架をさらに直進、スーパーヤマナカさんからおよそ1km先右側です。(100円ショップダイソーさん向かい) / 地下鉄藤が丘駅下車、市バス本地住宅行きで西本地ヶ原バス停で下車。本地ヶ丘交差点から東へおよそ300mです。",
+   "access": "■お車でお越しの方 / (名古屋方面より)瀬港線(国道363号線)を瀬戸方面に進み、東名高速道路の高架をさらに直進、スーパーヤマナカさんからおよそ1km先右側です。(100円ショップダイソーさん向かい) / ■バスでお越しの方 / 地下鉄藤が丘駅下車、市バス本地住宅行きで西本地ヶ原バス停で下車。本地ヶ丘交差点から東へおよそ300mです。",
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -886,7 +887,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -903,7 +904,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -920,7 +921,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -937,7 +938,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -954,7 +955,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -971,7 +972,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
@@ -988,58 +989,58 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
    "brand_slug": "swing247",
    "name": "SWING24/7 福岡原店",
    "zip": "814-0022",
-   "address": "福岡県福岡市早良区原6-21-26アクセス■お車でお越しの方1. 博多・天神方面より今宿方面へ向かい荒江交差点先の「ベスト電器さん」より約200m、原交差点の角、左側です。2. 今宿・拾六町方面より…博多・天神方面へ向かい小田部大橋より約1.5km、原交差点の角、右側です。【明治通りよりお越しの場合】■バスでお越しの方",
+   "address": "福岡県福岡市早良区原6-21-26",
    "pref": "福岡県",
    "parking": "AOKIさん共有駐車場",
    "tel": "092-400-3150",
    "open": true,
    "note": null,
-   "access": "【国道202号線でお越しの場合】 / 早良口交差点を曲がり、県道558号線を約1.5km直進、原交差点の角、左側です。 / 地下鉄空港線、藤崎駅バスセンター6番乗り場より西鉄バス2系統に乗車。原停留所より徒歩2分です。",
+   "access": "■お車でお越しの方 / 【国道202号線でお越しの場合】 / 1. 博多・天神方面より今宿方面へ向かい荒江交差点先の「ベスト電器さん」より約200m、原交差点の角、左側です。2. 今宿・拾六町方面より…博多・天神方面へ向かい小田部大橋より約1.5km、原交差点の角、右側です。 / 【明治通りよりお越しの場合】 / 早良口交差点を曲がり、県道558号線を約1.5km直進、原交差点の角、左側です。 / ■バスでお越しの方 / 地下鉄空港線、藤崎駅バスセンター6番乗り場より西鉄バス2系統に乗車。原停留所より徒歩2分です。",
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
    "brand_slug": "swing247",
    "name": "SWING24/7 福岡箱崎店",
    "zip": "812-0054",
-   "address": "福岡県福岡市東区馬出4-8-14アクセス■電車でお越しの方■お車でお越しの方■バスでお越しの方",
+   "address": "福岡県福岡市東区馬出4-8-14",
    "pref": "福岡県",
    "parking": "AOKIさん共有駐車場",
    "tel": "092-400-3150",
    "open": true,
    "note": null,
-   "access": "【市営地下鉄箱崎線筥崎宮前駅より】2番出入口より筥崎宮の鳥居を通り国道3号線へ、筥崎宮前交差点を左折し直進、徒歩5～6分程です。 / 【天神方面より】国道3号線を香椎方面へ向かい、ゆめタウン博多さんを過ぎて福岡中学校前の交差点の50m先右手です。 / 【香椎方面より】国道3号線を大野城・空港方面へ向かい、馬出4丁目の交差点を過ぎて50ｍ先です。 / 【JR箱崎駅西口より】天神行き、行先番号75番(東区役所経由)に乗り、「浜松町バス停」で降りてすぐ前。 / 【JR貝塚駅より】西新パレス前・西新方面行き、行先番号25番に乗り、「浜松町バス停」で降りてすぐ前。",
+   "access": "■電車でお越しの方 / 【市営地下鉄箱崎線筥崎宮前駅より】2番出入口より筥崎宮の鳥居を通り国道3号線へ、筥崎宮前交差点を左折し直進、徒歩5～6分程です。 / ■お車でお越しの方 / 【天神方面より】国道3号線を香椎方面へ向かい、ゆめタウン博多さんを過ぎて福岡中学校前の交差点の50m先右手です。 / 【香椎方面より】国道3号線を大野城・空港方面へ向かい、馬出4丁目の交差点を過ぎて50ｍ先です。 / ■バスでお越しの方 / 【JR箱崎駅西口より】天神行き、行先番号75番(東区役所経由)に乗り、「浜松町バス停」で降りてすぐ前。 / 【JR貝塚駅より】西新パレス前・西新方面行き、行先番号25番に乗り、「浜松町バス停」で降りてすぐ前。",
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "SWING24/7",
    "brand_slug": "swing247",
    "name": "SWING24/7 福岡春日店",
    "zip": "816-0814",
-   "address": "福岡県春日市春日6-3アクセス■電車でお越しの方■お車でお越しの方公式インスタグラム",
+   "address": "福岡県春日市春日6-3",
    "pref": "福岡県",
    "parking": "AOKIさん共有駐車場",
    "tel": "092-400-3150",
    "open": true,
    "note": null,
-   "access": "西鉄春日原駅下車。西鉄バス「西鉄春日原」バス停より、「【6番】月の浦営業所行き」に約13分乗車し、「春日6丁目」バス停で下車。「マクドナルド」さん方向へ徒歩3分です。 / 県道31号線(旧5号線)を春日方面へ直進。「ザ・モール春日」さん手前150ｍ・「春日神社入口」交差点を右折します。",
+   "access": "■電車でお越しの方 / 西鉄春日原駅下車。西鉄バス「西鉄春日原」バス停より、「【6番】月の浦営業所行き」に約13分乗車し、「春日6丁目」バス停で下車。「マクドナルド」さん方向へ徒歩3分です。 / ■お車でお越しの方 / 県道31号線(旧5号線)を春日方面へ直進。「ザ・モール春日」さん手前150ｍ・「春日神社入口」交差点を右折します。",
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-11"
   }
  ]
 }

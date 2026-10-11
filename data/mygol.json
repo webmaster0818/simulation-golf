@@ -1,6 +1,6 @@
 {
  "brand": "マイゴル",
- "fetched_at": "2026-10-10",
+ "fetched_at": "2026-10-11",
  "stores": [
   {
    "brand": "マイゴル",
@@ -1570,7 +1570,7 @@
    "pref": "広島県",
    "zip": "7300051",
    "address": "広島県広島市中区大手町3丁目13−29 メディオコート大手町 1F",
-   "access": "市役所前駅（広島電鉄宇品線）：徒歩約2〜3分",
+   "access": "市役所前駅（広島電鉄宇品線）：徒歩約３分／中電前駅（広島電鉄宇品線）：徒歩４分／広島駅から車で15分",
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
@@ -1578,13 +1578,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "無料駐車場あり",
+   "parking": "店舗前に無料駐車場あり",
    "monthly_fee": "練習し放題 9,900円（デイプラン）／24時間練習し放題 14,300円（ベーシックプラン）（税込）",
    "equipment": null,
-   "open": false,
+   "open": true,
    "official": "https://www.mygol.jp/shop/hiroshimaotemachi/",
    "source_url": "https://www.mygol.jp/shop/hiroshimaotemachi/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-11"
   },
   {
    "brand": "マイゴル",
