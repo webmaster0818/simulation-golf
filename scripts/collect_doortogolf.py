@@ -42,6 +42,14 @@ CITY_PREF = {"横浜市": "神奈川県", "川崎市": "神奈川県", "相模�
              "堺市": "大阪府"}
 
 
+# 店舗ページはあるが、公式のどこにも開業（済・予定）の告知が無い店。営業中とも準備中とも書けないので載せない。
+# 次回、トップページのお知らせに名前が出たら外す。
+HOLD = {
+    "青葉台店": "2026-10-12 店舗ページ初出。トップ・お知らせに開業の記載なし",
+    "上小田井店": "2026-10-12 店舗ページ初出。トップ・お知らせに開業の記載なし",
+}
+
+
 def pref_of(addr: str):
     m = re.match(rf"({PREFS})", addr)
     if m:
@@ -97,6 +105,12 @@ def main() -> None:
     print(f"店舗投稿 {len(posts)}件")
 
     today = date.today().isoformat()
+    # ⚠️ 店舗ページは開業前から普通の店舗ページとして公開される（土浦駅東店・2026-10-12）。
+    #    開業予定はトップページの「【店名】10月16日 OPEN予定」にしか書かれていないので、ここを読む。
+    #    「予定」の付いた店は準備中にする（日付が過ぎても「予定」のままなら準備中のまま＝判断待ちの扱いに合わせる）。
+    top = re.sub(r"<[^>]+>", "\n", get(BASE + "/"))
+    planned = {m.group(1): m.group(0).strip() for m in re.finditer(
+        r"【([^】]+)】\s*(\d{1,2})月(\d{1,2})日\s*(?:OPEN|オープン)予定", top)}
     stores, skipped = [], []
     for i, p in enumerate(posts, 1):
         if a.limit and i > a.limit:
@@ -104,6 +118,9 @@ def main() -> None:
         name = text(p.get("title", {}).get("rendered", ""))
         url = p.get("link")
         if not name or not url:
+            continue
+        if name in HOLD:
+            skipped.append(f"{name}（保留: {HOLD[name]}）")
             continue
         h = get(url)
         r = rows(h)
@@ -129,7 +146,8 @@ def main() -> None:
             "bays": r.get("打席数"), "bays_num": None,
             "private_room": None, "parking": r.get("駐車場"),
             "monthly_fee": None,
-            "open": True,
+            "open": name not in planned,
+            **({"note": planned[name]} if name in planned else {}),
             "official": url,
             "source_url": url, "fetched_at": today,
         })

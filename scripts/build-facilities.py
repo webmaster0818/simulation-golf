@@ -112,7 +112,7 @@ def main() -> None:
                        ("doortogolf.json", "indoor"), ("zengolf.json", "lesson"),
                        ("inthegolf.json", "lesson"), ("loungerange.json", "indoor"),
                        ("igc.json", "indoor"), ("mygol.json", "indoor"), ("club19.json", "indoor"),
-                       ("mira.json", "indoor")):
+                       ("mira.json", "indoor"), ("smartgolf.json", "indoor")):
         fp = DATA / fname
         if not fp.exists():
             continue

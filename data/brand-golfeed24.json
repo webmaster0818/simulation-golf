@@ -1,7 +1,7 @@
 {
  "brand": "GOLFEED24",
  "source_url": "https://golfeed24.com/store",
- "fetched_at": "2026-09-12",
+ "fetched_at": "2026-10-12",
  "count": 20,
  "stores": [
   {
@@ -21,7 +21,7 @@
    "open_24h": true,
    "private_room": true,
    "source_url": "https://golfeed24.com/store/akou//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -40,7 +40,7 @@
    "open_24h": true,
    "private_room": true,
    "source_url": "https://golfeed24.com/store/asagiri//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -59,7 +59,7 @@
    "open_24h": true,
    "private_room": false,
    "source_url": "https://golfeed24.com/store/chibadera//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -69,7 +69,7 @@
    "zip": "658-0081",
    "address": "兵庫県神戸市東灘区田中町２丁目１２−１４ 山田ビル 2階",
    "pref": "兵庫県",
-   "access": "東海道本線「摂津本山駅」より徒歩8分 （阪急神戸線「岡本駅」より徒歩11分）",
+   "access": "東海道本線「摂津本山駅」より徒歩6分 （阪急神戸線「岡本駅」より徒歩11分）",
    "hours": "24時間営業",
    "closed": "無休（メンテナンス等休業あり）",
    "bays": "2打席（個室1左右打席、個室2右打席のみ）",
@@ -78,7 +78,7 @@
    "open_24h": true,
    "private_room": true,
    "source_url": "https://golfeed24.com/store/higashinada//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -97,7 +97,7 @@
    "open_24h": true,
    "private_room": false,
    "source_url": "https://golfeed24.com/store/hkt//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -116,7 +116,7 @@
    "open_24h": true,
    "private_room": true,
    "source_url": "https://golfeed24.com/store/honmachi//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -135,7 +135,7 @@
    "open_24h": true,
    "private_room": false,
    "source_url": "https://golfeed24.com/store/iwaki//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -154,7 +154,7 @@
    "open_24h": true,
    "private_room": true,
    "source_url": "https://golfeed24.com/store/iwakionahama//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -173,7 +173,7 @@
    "open_24h": true,
    "private_room": false,
    "source_url": "https://golfeed24.com/store/kosaka//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -192,7 +192,7 @@
    "open_24h": true,
    "private_room": false,
    "source_url": "https://golfeed24.com/store/morinomiya//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -211,7 +211,7 @@
    "open_24h": true,
    "private_room": true,
    "source_url": "https://golfeed24.com/store/nishikoube//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -230,7 +230,7 @@
    "open_24h": true,
    "private_room": true,
    "source_url": "https://golfeed24.com/store/nishinomiya//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -249,7 +249,7 @@
    "open_24h": true,
    "private_room": false,
    "source_url": "https://golfeed24.com/store/oitakanaike//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -268,7 +268,7 @@
    "open_24h": true,
    "private_room": false,
    "source_url": "https://golfeed24.com/store/oitaomichi//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -287,7 +287,7 @@
    "open_24h": true,
    "private_room": true,
    "source_url": "https://golfeed24.com/store/sannomiya//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -306,7 +306,7 @@
    "open_24h": true,
    "private_room": false,
    "source_url": "https://golfeed24.com/store/suita//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -325,7 +325,7 @@
    "open_24h": true,
    "private_room": true,
    "source_url": "https://golfeed24.com/store/takasago//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -344,7 +344,7 @@
    "open_24h": true,
    "private_room": true,
    "source_url": "https://golfeed24.com/store/toaroad//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -363,7 +363,7 @@
    "open_24h": true,
    "private_room": true,
    "source_url": "https://golfeed24.com/store/toyonaka//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   },
   {
    "brand": "GOLFEED24",
@@ -382,7 +382,7 @@
    "open_24h": true,
    "private_room": true,
    "source_url": "https://golfeed24.com/store/tsurumi//",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-12"
   }
  ],
  "failed": [

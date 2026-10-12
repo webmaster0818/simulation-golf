@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-23",
+ "generated_at": "2026-10-12",
  "count": 7,
  "stores": [
   {
@@ -21,7 +21,7 @@
    "open": true,
    "official": "https://i8golf.jp/i8-golf-fitness/",
    "source_url": "https://i8golf.jp/i8-golf-fitness/",
-   "fetched_at": "2026-09-23"
+   "fetched_at": "2026-10-12"
   },
   {
    "segment": "indoor",
@@ -42,7 +42,7 @@
    "open": true,
    "official": "https://i8golf.jp/i8golf-matsumoto/",
    "source_url": "https://i8golf.jp/i8golf-matsumoto/",
-   "fetched_at": "2026-09-23"
+   "fetched_at": "2026-10-12"
   },
   {
    "segment": "indoor",
@@ -63,7 +63,7 @@
    "open": true,
    "official": "https://i8golf-yokohama.com/",
    "source_url": "https://i8golf-yokohama.com/",
-   "fetched_at": "2026-09-23"
+   "fetched_at": "2026-10-12"
   },
   {
    "segment": "indoor",
@@ -84,7 +84,7 @@
    "open": true,
    "official": "https://niceshot-i8golf.com/",
    "source_url": "https://niceshot-i8golf.com/",
-   "fetched_at": "2026-09-23"
+   "fetched_at": "2026-10-12"
   },
   {
    "segment": "indoor",
@@ -98,14 +98,14 @@
    "tel": "0532-75-4158",
    "hours": "24時間",
    "open_24h": true,
-   "bays": "5部屋（左右打席あり）",
+   "bays": "5打席（左右打席あり）",
    "parking": "無料駐車場あり（10台）",
    "private_room": null,
    "equipment": null,
    "open": true,
    "official": "https://i8golf.jp/toyohashi/",
    "source_url": "https://i8golf.jp/toyohashi/",
-   "fetched_at": "2026-09-23"
+   "fetched_at": "2026-10-12"
   },
   {
    "segment": "indoor",
@@ -126,7 +126,7 @@
    "open": true,
    "official": "https://i8golf.jp/toyama/",
    "source_url": "https://i8golf.jp/toyama/",
-   "fetched_at": "2026-09-23"
+   "fetched_at": "2026-10-12"
   },
   {
    "segment": "indoor",
@@ -147,7 +147,7 @@
    "open": true,
    "official": "https://i8golf.jp/takasaki/",
    "source_url": "https://i8golf.jp/takasaki/",
-   "fetched_at": "2026-09-23"
+   "fetched_at": "2026-10-12"
   }
  ]
 }
