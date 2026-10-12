@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '../../../lib/meta'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   description:
     `打った球の軌跡が画面に出るトップトレーサー・レンジを導入している練習場の一覧です。` +
     `利用料・打席数・飛距離を都道府県別にまとめています。`,
-  alternates: { canonical: `${SITE.origin}/equipment/toptracer/` },
+  ...pageUrlMeta(`/equipment/toptracer/`),
 }
 
 export default function Toptracer() {

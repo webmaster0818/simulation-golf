@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '../../lib/meta'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { SITE, OPEN_FACILITIES, brands, asOf, GENERATED_AT } from '../../lib/data'
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   title: '弾道計測の機材から探す｜シミュレーションゴルフの計測方式',
   description:
     'シミュレーションゴルフで使われる弾道計測の方式と、どの施設がどの機材を使っているかを整理しました。施設ごとに機材名が公開されているのは、現状トップトレーサー導入施設に限られます。',
-  alternates: { canonical: `${SITE.origin}/equipment/` },
+  ...pageUrlMeta(`/equipment/`),
 }
 
 export default function EquipmentIndex() {

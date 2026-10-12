@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '../lib/meta'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
@@ -10,7 +11,7 @@ import { JsonLd, websiteLd } from '../lib/seo'
 export const metadata: Metadata = {
   title: `${SITE.name}｜全国のシミュレーションゴルフを公式情報で比較`,
   description: SITE.description,
-  alternates: { canonical: `${SITE.origin}/` },
+  ...pageUrlMeta(`/`),
 }
 
 export default function Home() {

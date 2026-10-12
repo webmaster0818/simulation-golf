@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '../../lib/meta'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
   title: '掲載データについて｜出典・集め方・載せないと決めていること',
   description:
     '当サイトが施設情報をどこから集め、何を載せ、何を載せないかを公開しています。口コミ・評価は掲載していません。',
-  alternates: { canonical: `${SITE.origin}/data/` },
+  ...pageUrlMeta(`/data/`),
 }
 
 export default function DataPage() {

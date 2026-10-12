@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '../../../lib/meta'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   return {
     title: clip(`${label}｜${where}のシミュレーションゴルフ`),
     description: facilityDescription(f),
-    alternates: { canonical: `${SITE.origin}/facility/${slug}/` },
+    ...pageUrlMeta(`/facility/${slug}/`),
   }
 }
 

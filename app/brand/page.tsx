@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '../../lib/meta'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { SITE, brands, PREF_SLUG } from '../../lib/data'
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   title: 'ブランドから探す｜シミュレーションゴルフのチェーン一覧',
   description:
     'シミュレーションゴルフのチェーン別に、店舗数・展開エリア・公式サイトで公開されている項目を比較できます。',
-  alternates: { canonical: `${SITE.origin}/brand/` },
+  ...pageUrlMeta(`/brand/`),
 }
 
 export default function BrandIndex() {

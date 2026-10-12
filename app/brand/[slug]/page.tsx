@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '../../../lib/meta'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
@@ -22,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     description:
       `${b.name}の店舗${b.count}件を、公式サイトの情報で一覧にしました。` +
       `${b.prefs.length}都道府県に展開。${b.has.monthlyFee ? '店舗ごとの月会費も掲載しています。' : '店舗ごとの料金は公式サイトに記載がないため掲載していません。'}`,
-    alternates: { canonical: `${SITE.origin}/brand/${slug}/` },
+    ...pageUrlMeta(`/brand/${slug}/`),
   }
 }
 

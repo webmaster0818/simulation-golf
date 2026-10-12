@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '../../../lib/meta'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   description:
     'レーダーで実際の球筋を計測するトラックマンを導入している施設の一覧です。' +
     '所在地・打席数・料金を、各施設の公式サイトを出典として都道府県別にまとめています。',
-  alternates: { canonical: `${SITE.origin}/equipment/trackman/` },
+  ...pageUrlMeta(`/equipment/trackman/`),
 }
 
 export default function Trackman() {

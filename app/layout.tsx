@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Chakra_Petch, Zen_Kaku_Gothic_New } from 'next/font/google'
 import Link from 'next/link'
 import './globals.css'
+import { OG_BASE, OG_IMAGE } from '../lib/meta'
 import { SITE, REGIONS, PREF_SLUG, activePrefs, brands, FEATURES } from '../lib/data'
 
 // 計測器の表示に寄せた角のある書体を英数字に、本文は読みやすい日本語ゴシックに分ける。
@@ -12,10 +13,7 @@ const jp = Zen_Kaku_Gothic_New({
   subsets: ['latin'], weight: ['400', '500', '700'], display: 'swap', variable: '--font-jp',
 })
 
-// ⚠️ OG画像を差し替えたら v= を必ず上げる。/og-image.png は _headers で7日キャッシュさせており、
-//    同じURLのままだと Cloudflare のエッジに古い画像が残る（2026-10-02、差し替え後も
-//    独自ドメインだけ旧画像が返った。pages.dev は新しくなるので気づきにくい）。
-const OG_IMAGE = '/og-image.png?v=20261002'
+// OG画像・共通OGPは lib/meta.ts（各ページの pageUrlMeta と同じ値を使う）
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.origin),
@@ -26,15 +24,9 @@ export const metadata: Metadata = {
   description: SITE.description,
   // ⚠️ ここに canonical を置かない。置くと全ページがトップを正規URLとして宣言してしまう。
   //    （他サイトで実際に起きた事故。canonical は各ページで個別に付ける）
-  // OGPは1枚を全ページ共通で使う。施設ごとに画像を作ると、公式から借りた写真を
-  // 出典の文脈から切り離して配ることになるので、サイトの版面を出す。
-  openGraph: {
-    type: 'website',
-    siteName: SITE.name,
-    locale: 'ja_JP',
-    url: `${SITE.origin}/`,
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: SITE.name }],
-  },
+  // ⚠️ ここに og:url を置かない。各ページに引き継がれ、全ページの og:url が TOP になる（2026-10-12 に1152ページで発生）。
+  //    og:url は canonical と一緒に各ページの pageUrlMeta() で出す。
+  openGraph: OG_BASE,
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   alternates: { types: { 'application/xml': `${SITE.origin}/sitemap.xml` } },
 }

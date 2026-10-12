@@ -178,13 +178,41 @@ export const byFeature = (slug: string): Facility[] => {
   return ft ? OPEN_FACILITIES.filter(ft.match) : []
 }
 
-/** 住所から市区町村を切り出す。エリアページの見出しに使う */
-export const cityOf = (f: Facility): string | null => {
-  if (!f.address || !f.pref) return null
-  const rest = f.address.replace(f.pref, '')
-  const m = rest.match(/^(.+?[市区町村])/)
-  return m ? m[1] : null
+/** 政令指定都市。区まで切り出すのはこの20市だけ（「蕨市塚越…115区」のような部屋番号を区と読まない） */
+const DESIGNATED = new Set([
+  '札幌市', '仙台市', 'さいたま市', '千葉市', '横浜市', '川崎市', '相模原市', '新潟市', '静岡市',
+  '浜松市', '名古屋市', '京都市', '大阪市', '堺市', '神戸市', '岡山市', '広島市', '北九州市',
+  '福岡市', '熊本市',
+])
+
+/**
+ * 住所（都道府県を除いた部分）から [市区町村, 政令市の区] を切り出す。
+ *
+ * ⚠️ 以前は /^(.+?[市区町村])/ の最短一致で、名前の途中の「村」「市」で切れていた
+ *    （武蔵村山市→「武蔵村」・東村山市→「東村」・廿日市市→「廿日市」・野々市市→「野々市」、2026-10-12 修正）。
+ *    市区町村名は「市」「区」をまたがない、として切る。名前に「市」を含む市だけ表で持つ。
+ */
+function municipality(f: Facility): [string | null, string | null] {
+  if (!f.address || !f.pref) return [null, null]
+  const rest = f.address.replace(f.pref, '').trim()
+  for (const ex of ['四日市市', '廿日市市', '野々市市']) {
+    if (rest.startsWith(ex)) return [ex, null]
+  }
+  const gun = rest.match(/^([^市区]*?郡[^市区]+?[町村])/)
+  if (gun) return [gun[1], null]
+  const city = rest.match(/^(市?[^市区]+?市)/)
+  if (city) {
+    const c = city[1]
+    if (!DESIGNATED.has(c)) return [c, null]
+    const w = rest.slice(c.length).match(/^([^市区町村]+?区)/)
+    return [c, w ? c + w[1] : null]
+  }
+  const m = rest.match(/^([^市区]+?区)/) || rest.match(/^([^市区]+?[町村])/)
+  return [m ? m[1] : null, null]
 }
+
+/** 住所から市区町村を切り出す。エリアページの見出しに使う */
+export const cityOf = (f: Facility): string | null => municipality(f)[0]
 
 /**
  * 政令指定都市は「区」まで切り出す。
@@ -192,10 +220,8 @@ export const cityOf = (f: Facility): string | null => {
  * 検索も「戸塚 ゴルフシミュレーター」のように区や駅の単位で来ている（GSC実測）。
  */
 export const wardOf = (f: Facility): string | null => {
-  if (!f.address || !f.pref) return null
-  const rest = f.address.replace(f.pref, '')
-  const m = rest.match(/^(.+?市.+?区)/) || rest.match(/^(.+?[市区町村])/)
-  return m ? m[1] : null
+  const [c, w] = municipality(f)
+  return w ?? c
 }
 
 /**

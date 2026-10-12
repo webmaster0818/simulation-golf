@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '../../../lib/meta'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   return {
     title: `${ft.label}シミュレーションゴルフ${n}施設｜全国一覧`,
     description: `${ft.note}を全国から集めた一覧です（${n}件）。公式サイトの掲載内容で判定しています。`,
-    alternates: { canonical: `${SITE.origin}/feature/${slug}/` },
+    ...pageUrlMeta(`/feature/${slug}/`),
   }
 }
 

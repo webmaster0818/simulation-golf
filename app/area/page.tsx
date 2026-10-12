@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '../../lib/meta'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { SITE, REGIONS, PREF_SLUG, activePrefs, byPref, OPEN_FACILITIES } from '../../lib/data'
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   title: '都道府県から探す｜シミュレーションゴルフの施設一覧',
   description:
     '全国のシミュレーションゴルフ施設を都道府県から探せます。掲載のある都道府県と施設数の一覧です。',
-  alternates: { canonical: `${SITE.origin}/area/` },
+  ...pageUrlMeta(`/area/`),
 }
 
 export default function AreaIndex() {

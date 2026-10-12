@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '../../../../lib/meta'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
       `${c.pref}${c.city}にあるシミュレーションゴルフ・インドアゴルフ${c.items.length}施設を、` +
       `公式サイトの情報だけで比較できます。${n24 > 0 ? `24時間営業は${n24}施設。` : ''}` +
       `打席数・個室の有無・駐車場・料金を出典つきで掲載しています。`,
-    alternates: { canonical: `${SITE.origin}/area/${pref}/${city}/` },
+    ...pageUrlMeta(`/area/${pref}/${city}/`),
   }
 }
 
