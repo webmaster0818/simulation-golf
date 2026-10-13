@@ -215,3 +215,9 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
   SMART GOLF 千葉中央・吹田フラワーロードは「10/13~10/26 プレオープン期間限定！」「2026年10月27日 GRAND OPEN!」＝今日からプレオープン。GRAND OPEN 前なので準備中のまま
   （尾頭橋 11/11〜・巣鴨1丁目 11/5〜 のプレオープン）。
 - 1043施設・1155ページ。
+- **（続き）全チェーン差分**（/tmp コピーで MIRA・Lounge Range・IGC・CLUB19・ZEN・GOLFEED24・GOLF NEXT 24・ラハ・FiT24・GOLFERS24・インザゴルフ・i8・マイゴル・SMART GOLF を取り直し。SWING24/7・DOOR TO GOLF は本体で取り直し済み）:
+  - **SMART GOLF 五橋荒町店 営業中→準備中**: 10/12 取得時は「2026年10月3日 GRAND OPEN!」だったが、公式が「2026年10月17日 GRAND OPEN!」「10/3~10/16 プレオープン期間限定！」に書き換えた。
+    ⚠️ SMART GOLF は GRAND OPEN の日付が後ろにずれることがある。過ぎた日付で営業中にした店も、取り直しで準備中に戻ることがある。
+  - **SMART GOLF 文京東大前店を追加（準備中・2026年12月7日 GRAND OPEN）**: sitemap の /shop/ 215→216。
+  - GOLFEED24 は神戸東灘の店名（title「東灘店」／h1「神戸東灘店」）の既知の揺れだけ・実質差分なし。他は差分なし。ステップゴルフ・トップトレーサーは今回取り直していない。
+- 1044施設・1156ページ。
