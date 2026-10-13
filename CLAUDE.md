@@ -221,3 +221,5 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
   - **SMART GOLF 文京東大前店を追加（準備中・2026年12月7日 GRAND OPEN）**: sitemap の /shop/ 215→216。
   - GOLFEED24 は神戸東灘の店名（title「東灘店」／h1「神戸東灘店」）の既知の揺れだけ・実質差分なし。他は差分なし。ステップゴルフ・トップトレーサーは今回取り直していない。
 - 1044施設・1156ページ。
+- 公開前チェック ✅（2回とも）。ソース c9079e5・6b0a82b ／ deploy 0fd04ee4・f7d55447。本番 curl: sitemap 1156・能見台=営業中・青葉台/上小田井/五橋荒町/文京東大前=準備中・
+  浜松の3施設=中央区＋「住所の表記」行・/area/shizuoka/ で「浜松市中央区 6」、中区/西区 0。GSC は golf-simulate のプロパティだけ sitemap 送信（lastSubmitted 2026-10-13T00:51Z）。
