@@ -20,6 +20,8 @@ export type Facility = {
   pref: string | null
   zip: string | null
   address: string | null
+  /** 出典の住所が区再編前の区名だったときの原文（address は現在の区名に直したもの） */
+  address_as_published?: string
   access: string | null
   tel: string | null
   hours: string | null

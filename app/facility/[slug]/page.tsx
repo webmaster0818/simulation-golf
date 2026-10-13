@@ -121,6 +121,12 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
       <h2>基本情報</h2>
       <dl className="spec">
         <Row k="住所" v={f.zip ? `〒${formatZip(f.zip)} ${f.address}` : f.address} />
+        {f.address_as_published && (
+          <Row
+            k="住所の表記"
+            v={`出典の表記は「${f.address_as_published}」。浜松市は2024年1月に区を再編しており、市の町字名対応表に従って現在の区名で載せています（郵便番号・町名・番地は変わりません）。`}
+          />
+        )}
         <Row k="アクセス" v={f.access} />
         <Row k="電話番号" v={f.tel} />
         <Row k="営業時間" v={f.hours} />

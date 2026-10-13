@@ -12,7 +12,7 @@
 import json
 import re
 import subprocess
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -69,6 +69,32 @@ def opened_on_store_site(site: str, today: date) -> str | None:
     return None
 
 
+def opened_on_feed(page: str, name: str, note: str | None) -> str | None:
+    """一覧ページに埋め込まれた公式インスタの投稿（Smash Balloon の sbi_item）で開業を確かめる。
+    町田店（10/3投稿）・能見台店（10/10投稿）とも「⛳️swing24/7◯◯店⛳️ オープン⛳️」の言い切り。
+    ⚠️ 予定日の書かれていない店（江古田「今夏」）は使わない。投稿日が一覧の予定日より前なら使わない
+       （開業前の予告と区別できないため）。予定・プレの付いた文も使わない。"""
+    plan = re.search(r"(\d{1,2})月(\d{1,2})日", note or "")
+    if not plan:
+        return None
+    short = name.replace("SWING24/7", "").strip()
+    jst = timezone(timedelta(hours=9))
+    for item in re.split(r'<div class="sbi_item ', page)[1:]:
+        d = re.search(r'data-date="(\d+)"', item)
+        s = re.search(r'class="sbi-screenreader">([^<]*)', item)
+        if not d or not s:
+            continue
+        cap = re.sub(r"\s+", " ", s.group(1))
+        if not re.match(rf"⛳️\s*swing24/7\s*{re.escape(short)}⛳️\s*オープン⛳️", cap, re.I):
+            continue
+        if re.search(r"予定|プレ", cap):
+            continue
+        posted = datetime.fromtimestamp(int(d.group(1)), jst).date()
+        if (posted.month, posted.day) >= (int(plan.group(1)), int(plan.group(2))) and posted.year >= 2026:
+            return f"{posted.isoformat()} 投稿「{cap.strip()}」"
+    return None
+
+
 def parse(block: str) -> dict:
     """1店舗の <li>。公式の HTML は 住所(txt_l)・経路(icon root)・駐車場(icon parking)・
     電話(icon tel)・スケジュール(span) が欄ごとに分かれているので、欄で拾う。
@@ -119,6 +145,11 @@ def main() -> None:
             if said:
                 rec.update(open=True, open_source_url=r["site"],
                            note=f"一覧は「{r['note']}」のまま。店舗公式サイトに「{said}」")
+            else:
+                feed = opened_on_feed(html, rec["name"], r["note"])
+                if feed:
+                    rec.update(open=True, open_source_url=URL,
+                               note=f"一覧の予定欄は「{r['note']}」のまま。同じ一覧ページの公式インスタ欄に {feed}")
         out.append(rec)
 
     res = list({x["name"]: x for x in out}.values())

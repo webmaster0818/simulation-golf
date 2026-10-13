@@ -44,10 +44,9 @@ CITY_PREF = {"横浜市": "神奈川県", "川崎市": "神奈川県", "相模�
 
 # 店舗ページはあるが、公式のどこにも開業（済・予定）の告知が無い店。営業中とも準備中とも書けないので載せない。
 # 次回、トップページのお知らせに名前が出たら外す。
-HOLD = {
-    "青葉台店": "2026-10-12 店舗ページ初出。トップ・お知らせに開業の記載なし",
-    "上小田井店": "2026-10-12 店舗ページ初出。トップ・お知らせに開業の記載なし",
-}
+#   青葉台店・上小田井店（2026-10-12 保留）は 10/13 にお知らせ「続々新店舗オープン!」（10/07付）の
+#   「オープン予定日」を読めるようにして準備中で載せた。HOLD から外した。
+HOLD: dict[str, str] = {}
 
 
 def pref_of(addr: str):
@@ -111,6 +110,19 @@ def main() -> None:
     top = re.sub(r"<[^>]+>", "\n", get(BASE + "/"))
     planned = {m.group(1): m.group(0).strip() for m in re.finditer(
         r"【([^】]+)】\s*(\d{1,2})月(\d{1,2})日\s*(?:OPEN|オープン)予定", top)}
+    # ⚠️ 複数店をまとめた告知は「店名 場所：… オープン予定日：11月25日」の形でお知らせ本文にだけ出る
+    #    （「続々新店舗オープン!」2026-10-07 の青葉台・上小田井・弁天町・十日市場）。トップには載らない。
+    try:
+        news = json.loads(get(f"{BASE}/wp-json/wp/v2/posts?per_page=20&_fields=title,content,link,date"))
+    except Exception:
+        news = []
+    for n in news if isinstance(news, list) else []:
+        body = text(n.get("content", {}).get("rendered", ""))
+        title = text(n.get("title", {}).get("rendered", ""))
+        for m in re.finditer(r"(\S+店)\s*場所：\s*\S+\s*オープン予定日：\s*(\d{1,2})月(\d{1,2})日", body):
+            planned.setdefault(m.group(1), f"お知らせ「{title}」（{n.get('date', '')[:10]}）: "
+                                            f"{m.group(1)} オープン予定日：{m.group(2)}月{m.group(3)}日")
+    print("開業予定:", planned)
     stores, skipped = [], []
     for i, p in enumerate(posts, 1):
         if a.limit and i > a.limit:

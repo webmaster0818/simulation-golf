@@ -1,7 +1,55 @@
 {
  "brand": "DOOR TO GOLF",
- "fetched_at": "2026-10-12",
+ "fetched_at": "2026-10-13",
  "stores": [
+  {
+   "brand": "DOOR TO GOLF",
+   "brand_slug": "doortogolf",
+   "slug": "aobadai",
+   "name": "青葉台店",
+   "pref": "神奈川県",
+   "zip": null,
+   "address": "神奈川県横浜市青葉区若草台1-1",
+   "access": "青葉台駅から車で5分",
+   "tel": null,
+   "hours": "24時間",
+   "open_24h": true,
+   "closed": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "parking": null,
+   "monthly_fee": null,
+   "open": false,
+   "note": "お知らせ「続々新店舗オープン!」（2026-10-07）: 青葉台店 オープン予定日：11月25日",
+   "official": "https://doortogolf.com/shop-post-newplan/aobadai/",
+   "source_url": "https://doortogolf.com/shop-post-newplan/aobadai/",
+   "fetched_at": "2026-10-13"
+  },
+  {
+   "brand": "DOOR TO GOLF",
+   "brand_slug": "doortogolf",
+   "slug": "kamiotai",
+   "name": "上小田井店",
+   "pref": "愛知県",
+   "zip": null,
+   "address": "愛知県名古屋市西区南川町230",
+   "access": "上小田井駅から徒歩8分、車で4分",
+   "tel": null,
+   "hours": "24時間",
+   "open_24h": true,
+   "closed": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "parking": null,
+   "monthly_fee": null,
+   "open": false,
+   "note": "お知らせ「続々新店舗オープン!」（2026-10-07）: 上小田井店 オープン予定日：11月22日",
+   "official": "https://doortogolf.com/shop-post-newplan/kamiotai/",
+   "source_url": "https://doortogolf.com/shop-post-newplan/kamiotai/",
+   "fetched_at": "2026-10-13"
+  },
   {
    "brand": "DOOR TO GOLF",
    "brand_slug": "doortogolf",
@@ -23,7 +71,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/fuseishi/",
    "source_url": "https://doortogolf.com/shop-post-newplan/fuseishi/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -46,7 +94,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/tukuba/",
    "source_url": "https://doortogolf.com/shop-post-newplan/tukuba/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -70,7 +118,7 @@
    "note": "【ENEOSセルフ土浦駅東店】10月16日 OPEN予定",
    "official": "https://doortogolf.com/shop-post-newplan/tuchiura/",
    "source_url": "https://doortogolf.com/shop-post-newplan/tuchiura/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -93,7 +141,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/kumanodai/",
    "source_url": "https://doortogolf.com/shop-post-newplan/kumanodai/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -116,7 +164,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/toyotaobayashi/",
    "source_url": "https://doortogolf.com/shop-post-newplan/toyotaobayashi/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -139,7 +187,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/kawanoe/",
    "source_url": "https://doortogolf.com/shop-post-newplan/kawanoe/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -162,7 +210,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/tenri/",
    "source_url": "https://doortogolf.com/shop-post-newplan/tenri/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -185,7 +233,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/ryokuentoshi/",
    "source_url": "https://doortogolf.com/shop-post-newplan/ryokuentoshi/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -208,7 +256,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/gifunishinomachi/",
    "source_url": "https://doortogolf.com/shop-post-newplan/gifunishinomachi/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -231,7 +279,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/joshin/",
    "source_url": "https://doortogolf.com/shop-post-newplan/joshin/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -254,7 +302,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/tenroku/",
    "source_url": "https://doortogolf.com/shop-post-newplan/tenroku/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -277,7 +325,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/teraoshiroi/",
    "source_url": "https://doortogolf.com/shop-post-newplan/teraoshiroi/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -300,7 +348,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/otsuka/",
    "source_url": "https://doortogolf.com/shop-post-newplan/otsuka/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -323,7 +371,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/meihookazaki/",
    "source_url": "https://doortogolf.com/shop-post-newplan/meihookazaki/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -346,7 +394,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/eneosminamino/",
    "source_url": "https://doortogolf.com/shop-post-newplan/eneosminamino/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -369,7 +417,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/gokiso/",
    "source_url": "https://doortogolf.com/shop-post-newplan/gokiso/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -392,7 +440,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/atsutahibino/",
    "source_url": "https://doortogolf.com/shop-post-newplan/atsutahibino/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -415,7 +463,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/hishino/",
    "source_url": "https://doortogolf.com/shop-post-newplan/hishino/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -438,7 +486,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/tokushige/",
    "source_url": "https://doortogolf.com/shop-post-newplan/tokushige/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -461,7 +509,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/sanyodoyomogi/",
    "source_url": "https://doortogolf.com/shop-post-newplan/sanyodoyomogi/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -484,7 +532,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/hamamatsu-aoi/",
    "source_url": "https://doortogolf.com/shop-post-newplan/hamamatsu-aoi/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -507,7 +555,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/hitachinoushiku/",
    "source_url": "https://doortogolf.com/shop-post-newplan/hitachinoushiku/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -530,7 +578,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/nigou/",
    "source_url": "https://doortogolf.com/shop-post-newplan/nigou/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -553,7 +601,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/kariyaonda/",
    "source_url": "https://doortogolf.com/shop-post-newplan/kariyaonda/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -576,7 +624,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/kannai/",
    "source_url": "https://doortogolf.com/shop-post-newplan/kannai/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -599,7 +647,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/higashibetsuin/",
    "source_url": "https://doortogolf.com/shop-post-newplan/higashibetsuin/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -622,7 +670,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/inage/",
    "source_url": "https://doortogolf.com/shop-post-newplan/inage/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -645,7 +693,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/oguchi/",
    "source_url": "https://doortogolf.com/shop-post-newplan/oguchi/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -668,7 +716,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/toneri/",
    "source_url": "https://doortogolf.com/shop-post-newplan/toneri/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -691,7 +739,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/kasugai/",
    "source_url": "https://doortogolf.com/shop-post-newplan/kasugai/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -714,7 +762,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/motoyama/",
    "source_url": "https://doortogolf.com/shop-post-newplan/motoyama/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -737,7 +785,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/komaki/",
    "source_url": "https://doortogolf.com/shop-post-newplan/komaki/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -760,7 +808,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/nishhin/",
    "source_url": "https://doortogolf.com/shop-post-newplan/nishhin/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -783,7 +831,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/ueda/",
    "source_url": "https://doortogolf.com/shop-post-newplan/ueda/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -806,7 +854,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/takinomizu/",
    "source_url": "https://doortogolf.com/shop-post-newplan/takinomizu/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -829,7 +877,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/fujigaoka/",
    "source_url": "https://doortogolf.com/shop-post-newplan/fujigaoka/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -852,7 +900,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/komakifumitsu/",
    "source_url": "https://doortogolf.com/shop-post-newplan/komakifumitsu/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   },
   {
    "brand": "DOOR TO GOLF",
@@ -875,7 +923,7 @@
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/minowa/",
    "source_url": "https://doortogolf.com/shop-post-newplan/minowa/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-13"
   }
  ]
 }

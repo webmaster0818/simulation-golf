@@ -23,6 +23,32 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 
+# --- 廃止された区名を現在の区名に直す（2026-10-13） ---
+# 出典（チェーン・GDO）の住所が区再編前のまま残っていると、同じ区が2つに分かれて集計される
+# （浜松市「中区」2件・「西区」1件が「中央区」と別の市区町村になっていた）。
+# 根拠は市の公式「区再編前と再編後の町字名対応表」
+#   https://www.city.hamamatsu.shizuoka.jp/kikaku/kuseido/index.html （2024-01-01施行）
+#   中区・東区・西区・南区 → 中央区／浜北区 → 浜名区／北区は三方原地区7町だけ中央区・残りは浜名区
+#   郵便番号・町字名・番地は変わらない（市FAQ /ksh/faq/jgh.html）。
+# 出典の原文は address_as_published に残し、ページに「出典の表記は旧区名」と出す。
+HAMAMATSU_OLD = {"中区": "中央区", "東区": "中央区", "西区": "中央区", "南区": "中央区", "浜北区": "浜名区"}
+MIKATAHARA = ("初生町", "三方原町", "東三方町", "豊岡町", "三幸町", "大原町", "根洗町")
+
+
+def current_ward(address: str | None) -> str | None:
+    """区再編前の区名なら現在の住所を返す。直す必要がなければ None。"""
+    if not address:
+        return None
+    m = re.search(r"浜松市(中区|東区|西区|南区|浜北区|北区)", address)
+    if not m:
+        return None
+    old = m.group(1)
+    if old == "北区":
+        new = "中央区" if address[m.end():].startswith(MIKATAHARA) else "浜名区"
+    else:
+        new = HAMAMATSU_OLD[old]
+    return address[:m.start()] + "浜松市" + new + address[m.end():]
+
 
 def slugify(brand_slug: str, brand: str, name: str, own: str | None, zipc: str | None,
             i: int) -> str:
@@ -163,6 +189,14 @@ def main() -> None:
                 "source_url": s_["source_url"], "fetched_at": s_["fetched_at"],
             })
 
+    renamed = []
+    for x in out:
+        new = current_ward(x.get("address"))
+        if new:
+            x["address_as_published"] = x["address"]
+            x["address"] = new
+            renamed.append((x["name"], x["address_as_published"], new))
+
     # slugがぶつかったら、後から来たほうに連番を足す（URLは1つに1つ）
     seen = {}
     for x in out:
@@ -185,6 +219,10 @@ def main() -> None:
         print(f"  🚨 郵便番号のままのURL {len(zipslug)}件 → scripts/build-romaji-slugs.py の表に追加する")
         for sl, nm in zipslug:
             print("     ", sl, "|", nm)
+    if renamed:
+        print(f"  旧区名→現在の区名 {len(renamed)}件（浜松市の町字名対応表）")
+        for nm, a, b in renamed:
+            print("     ", nm, "|", a, "→", b)
     print("  業態:", Counter(x["segment"] for x in out).most_common())
     print("  ブランド:", Counter(x["brand"] for x in out if x["brand"]).most_common())
     print("  都道府県:", len({x["pref"] for x in out if x["pref"]}), "種 /",
