@@ -73,9 +73,13 @@ def main() -> None:
             "name": name,
             "address": field(t, "住所", "電話番号"),
             "tel": field(t, "電話番号", "距離"),
-            "distance": field(t, "距離", "トップトレーサー"),
-            "ttr_fee": field(t, "トップトレーサー・レンジ 利用料金", "トップトレーサー"),
-            "ttr_bays": field(t, "トップトレーサー・レンジ 打席数", "練習場ガイド"),
+            # ⚠️ 紹介文に「飛距離」等があると最初の「距離」から拾って文章ごと入る（芙蓉ゴルフガーデン・2026-10-14）。
+            #    電話番号の後ろの「距離 NNNヤード」を見る。
+            "distance": (re.search(r"電話番号\s*\S+\s*距離\s*(\S+?ヤード|\S+?m)\b", t) or [None, field(t, "距離", "トップトレーサー")])[1],
+            # 打席数の行が無い施設は 利用料金 の次が「公式サイト」になる（芙蓉ゴルフガーデン）
+            "ttr_fee": (re.search(r"トップトレーサー・レンジ 利用料金\s*(.+?)\s*(?:トップトレーサー|公式サイト|一覧へ戻る)", t) or [None, None])[1],
+            # 練習場ガイドの行が無い施設は 打席数 の次が「公式サイト」になる（Golf studio CUBE・リンクス・2026-10-15）
+            "ttr_bays": (re.search(r"トップトレーサー・レンジ 打席数\s*(.+?)\s*(?:練習場ガイド|公式サイト|一覧へ戻る)", t) or [None, None])[1],
             "official": (re.search(r"公式サイト\s+(https?://\S+)", t) or [None, None])[1],
             "source_url": url,
             "fetched_at": today,

@@ -13,6 +13,9 @@
 ⚠️ 打席数は店舗ページに無い → bays は None。機種はブランドトップに
    「OK ON GOLF / JOY GOLF SMART+（店舗により機種が異なる）」とあるだけで店舗ごとの確認が取れない → equipment は None。
 ⚠️ 一覧に「オープン準備室」の電話が書かれた店（甲府荒川・大井松田）は open=False（準備中）。
+   ただし一覧の「オープン準備室」は開業後も残る（大井松田店は 2026-08-28 グランドオープン後も残っていた・2026-10-15 確認）。
+   準備中の店だけ店舗ページの新着情報（/detail/<slug>/news/）を読み、
+   「本日M月D日（曜）…グランドオープン」の言い切り（予定を含まない）で日付が過ぎていれば営業中にする（opened_on_news）。
 ⚠️ 打席料は「店舗ごとに異なります」と公式が書いている。店舗ページの金額をそのまま入れ、無い店は入れない。
 
   python3 scripts/collect_mira.py            # 取得して data/mira.json に書く
@@ -94,6 +97,25 @@ def listing() -> list[dict]:
         out.append({"url": url, "pref": pref, "name": name, "list_address": ps[0] if ps else "",
                     "list_tel": tel, "prep": "オープン準備室" in tel})
     return out
+
+
+def opened_on_news(slug: str) -> tuple[str, str] | None:
+    """店舗の新着情報から「本日M月D日…グランドオープン」の投稿を探す。(投稿URL, 文) を返す"""
+    base = f"https://shop.mirafitness.jp/detail/{slug}/news/"
+    ids = sorted(set(re.findall(rf"/detail/{slug}/news/(\d+)/", get(base))))
+    today = date.today()
+    for nid in ids:
+        url = f"{base}{nid}/"
+        t = text(strip_hidden(get(url)))
+        pd = re.search(r"(20\d\d)\.(\d\d)\.(\d\d)", t)
+        m = re.search(r"本日\s*(\d{1,2})月(\d{1,2})日[^。]{0,40}?グランドオープン(?!予定)[！!]", t)
+        if not (pd and m) or "予定" in m.group(0):
+            continue
+        d = date(int(pd.group(1)), int(m.group(1)), int(m.group(2)))
+        if d <= today:
+            return url, m.group(0)
+        time.sleep(1)
+    return None
 
 
 def parse_store(h: str) -> dict:
@@ -224,9 +246,14 @@ def main() -> None:
             "equipment": None, "open": not it["prep"],
             "official": src, "source_url": src, "fetched_at": today,
         })
+        if it["prep"] and slug:
+            hit = opened_on_news(slug)
+            if hit:
+                stores[-1].update(open=True, open_source_url=hit[0], note=hit[1])
+                print(f"  → 営業中（店舗の新着情報）: {hit[1]} {hit[0]}")
         apply_fixes(stores[-1])
         print(f"  {i:2d} {pref} {it['name']}  zip={d.get('zip')} tel={stores[-1]['tel']} "
-              f"fee={'あり' if fee else '無し'} parking={d.get('parking')} open={not it['prep']}")
+              f"fee={'あり' if fee else '無し'} parking={d.get('parking')} open={stores[-1]['open']}")
         time.sleep(1)
 
     out = DATA / "mira.json"
