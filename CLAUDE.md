@@ -262,3 +262,11 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
   ② 駐車場の判定がカード（近隣・近く のみ除外）と条件ページ（付近・周辺も除外）で違い、「駐車場はございません」（HYPERION）も「あり」になっていた
   → `lib/data.ts` の `hasOwnParking` に統一（カード・条件ページ・市区町村の表）。⚠️ 文中の「無人時間帯の配布はございません」（ZEN の提携駐車場）や
   「建物内に有料パーキング…および周辺に…」（GOLFTEC）は「あり」のまま。「非提携」は提携に数えない。カードの駐車場表示 62件が外れた（Lounge Range 46・マイゴル 7 など、すべて専用/提携駐車場なし）。
+
+### 2026-10-16 デザイン全面刷新（MediaXAI「世界一洗練されたデザインに・色合いはもっと明るい印象に」）
+- 提案（scripts/gen-design-proposals.py・Nano Banana Pro）→ 選択: FV 案1（全面写真型）・ロゴ A（スイング軌道の円）を鮮やかに → A-3（緑の丸に白抜き＋ライムの弾道）・スクロール演出は「弾道ライン」
+- **本番 src 2e395b7 / deploy a1c92aca4**: globals.css の :root を白基調に反転（変数名は旧のまま＝全ページが追従。trace=#16a34a）。TOP= TopHero（数字は facilities.json から計算・料金は表記がばらばらで「最安」を出さない）・FeatureGrid・AreaAccordion（東京都別枠＝23区＋多摩・関東に東京都を入れない・<details> で全部閉じる）・BrandGrid・BallTrace（.g-trace-host 内の [data-landing] を測って左余白に弧・スクロールで描画・余白<70px と reduced-motion では出さない）・Reveal
+- ブランド25社の公式トップのキャプチャ（scripts/capture-brands/run.sh・data/brand-captures.json・public/images/brands/）→ BrandShot（出典つき）を TOP・/brand/・/brand/[slug]/・/facility/[slug]/ に。⚠️ MIRA GOLF の公式は golf.mirafitness.jp（shop.mirafitness.jp はジムの店舗検索）。サンクチュアリは range.sanctuarygolf.jp（キャプチャにポップアップが写っている＝次回撮り直し）
+- CITY_SLUG に東京の残り9区（chiyoda/taito/koto/meguro/shibuya/nakano/toshima/arakawa/katsushika）＝23区すべてにページ。1,246 URL
+- ロゴ public/images/logo-mark.png・favicon-20261016.png・OG を scripts/make-og.py で作り直し（?v=20261016）
+- 残: 中のページ（施設・エリア・ブランド・機材・条件）の見出し/表を TOP のテイストに寄せる仕上げ
