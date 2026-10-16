@@ -365,3 +365,20 @@ header.site nav a:hover { color: var(--trace); }
   header.site nav::-webkit-scrollbar { display: none; }
   header.site nav a { white-space: nowrap; }
 }
+
+/* TOP 掲載ポリシー（2026-10-16） */
+.g-policy { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--line); margin-top: 1.6rem; }
+.g-policy > div { padding: 1.4rem 1.4rem 1.4rem 0; border-bottom: 1px solid var(--line); }
+.g-policy > div:nth-child(2n) { padding-left: 1.4rem; padding-right: 0; border-left: 1px solid var(--line); }
+.g-policy h3 { margin: 0 0 .55rem; font-size: 1.02rem; color: var(--ink); line-height: 1.5; }
+.g-policy p { margin: 0; font-size: .92rem; line-height: 1.85; color: var(--muted); }
+.g-policy-link { margin: 1.2rem 0 0; }
+@media (max-width: 720px) {
+  .g-policy { grid-template-columns: 1fr; }
+  .g-policy > div, .g-policy > div:nth-child(2n) { padding: 1.2rem 0; border-left: 0; }
+}
+/* /data/ 情報の集め方（2026-10-16） */
+.flow { list-style: none; counter-reset: flow; padding: 0; margin: 1.2rem 0 1.4rem; border-top: 1px solid var(--line); }
+.flow li { counter-increment: flow; position: relative; padding: 1.1rem 0 1.1rem 3.2rem; border-bottom: 1px solid var(--line); line-height: 1.85; color: var(--muted); }
+.flow li::before { content: counter(flow, decimal-leading-zero); position: absolute; left: 0; top: 1.05rem; font-family: var(--font-display, inherit); font-weight: 700; color: var(--trace); font-size: 1.1rem; }
+.flow li strong { display: block; color: var(--ink); margin-bottom: .25rem; }
