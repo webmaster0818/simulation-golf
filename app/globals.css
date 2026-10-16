@@ -350,3 +350,18 @@ header.site nav a:hover { color: var(--trace); }
   .hero:has(.g-brand-hero-shot) > :not(.g-brand-hero-shot) { grid-column: 1; }
   .hero .g-brand-hero-shot { grid-column: 2; grid-row: 1 / span 4; margin-top: 0; }
 }
+/* スマホ版の弾道ライン（左の余白の中で小さく弾む） */
+.g-trace-narrow .g-trace-line { stroke-width: 2; }
+.g-trace-narrow .g-trace-ball { r: 4.5; }
+.g-trace-narrow .g-trace-mark { transform-box: fill-box; }
+.g-trace-narrow .g-trace-mark ellipse { rx: 7; ry: 2.5; }
+.g-trace-narrow .g-trace-mark line { display: none; }
+.g-trace-narrow .g-trace-mark path { display: none; }
+/* スマホのヘッダー：メニューが2段に折り返して画面の1/5を覆っていた → 1行の横スクロールに */
+@media (max-width: 760px) {
+  header.site .inner { gap: 6px 14px; padding: 10px 16px; flex-wrap: wrap; }
+  header.site .logo img { width: 32px; height: 32px; }
+  header.site nav { margin-left: 0; width: 100%; flex-wrap: nowrap; overflow-x: auto; gap: 16px; font-size: 12.5px; padding-bottom: 2px; scrollbar-width: none; }
+  header.site nav::-webkit-scrollbar { display: none; }
+  header.site nav a { white-space: nowrap; }
+}

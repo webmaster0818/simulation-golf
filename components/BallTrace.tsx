@@ -5,9 +5,9 @@ import { useEffect, useRef, useState } from 'react'
  * 弾道ライン（2026-10-16 MediaXAI「スクロールすると、ボールの軌跡（弧）がページの上から下へ描かれていき、各ブロックに着地する演出」）。
  * ・.g-trace-host の中の [data-landing] の位置を測って、左の余白に弧をつなぐ
  * ・スクロール量に合わせて線を描き、ボールが線の先端を進む。着地点を通ると印が点く
- * ・余白が無い幅（スマホ・狭い画面）と「動きを減らす」設定では出さない。装飾なので aria-hidden
+ * ・スマホなど余白の狭い幅では、左の余白の中で小さく弾む形にする。「動きを減らす」設定では出さない。装飾なので aria-hidden
  */
-type Geo = { d: string; w: number; h: number; marks: { x: number; y: number }[] }
+type Geo = { d: string; w: number; h: number; marks: { x: number; y: number }[]; narrow?: boolean }
 
 export default function BallTrace() {
   const [geo, setGeo] = useState<Geo | null>(null)
@@ -22,8 +22,11 @@ export default function BallTrace() {
     const measure = () => {
       const r = host.getBoundingClientRect()
       const gutter = (r.width - 1040) / 2
-      if (gutter < 70) { setGeo(null); return }
-      const x = gutter / 2
+      // 2026-10-16 MediaXAI「SPだと表示されない」→ 余白が狭い幅では、本文の左の余白（.wrap の padding 22px）の中で
+      // 小さく弾むボールにする。ふくらみは内側に12pxだけ＝文字にはかからない
+      const narrow = gutter < 70
+      const x = narrow ? 9 : gutter / 2
+      const bulge = narrow ? 12 : -gutter * 0.38
       const ys = [...host.querySelectorAll<HTMLElement>('[data-landing]')].map(
         (el) => el.getBoundingClientRect().top - r.top + 70,
       )
@@ -32,9 +35,9 @@ export default function BallTrace() {
       for (let i = 1; i < ys.length; i++) {
         const y0 = ys[i - 1], y1 = ys[i]
         // 打ち上げて落ちる弧。外側（左）にふくらませて、本文にかぶらないようにする
-        d += ` C ${x - gutter * 0.38} ${y0 + (y1 - y0) * 0.15}, ${x - gutter * 0.38} ${y0 + (y1 - y0) * 0.7}, ${x} ${y1}`
+        d += ` C ${x + bulge} ${y0 + (y1 - y0) * 0.15}, ${x + bulge} ${y0 + (y1 - y0) * 0.7}, ${x} ${y1}`
       }
-      setGeo({ d, w: r.width, h: host.offsetHeight, marks: ys.map((y) => ({ x, y })) })
+      setGeo({ d, w: r.width, h: host.offsetHeight, marks: ys.map((y) => ({ x, y })), narrow })
     }
     measure()
     const ro = new ResizeObserver(measure)
@@ -70,7 +73,7 @@ export default function BallTrace() {
 
   if (!geo) return null
   return (
-    <svg ref={svg} className="g-trace" width={geo.w} height={geo.h} viewBox={`0 0 ${geo.w} ${geo.h}`} aria-hidden="true">
+    <svg ref={svg} className={geo.narrow ? "g-trace g-trace-narrow" : "g-trace"} width={geo.w} height={geo.h} viewBox={`0 0 ${geo.w} ${geo.h}`} aria-hidden="true">
       <path d={geo.d} className="g-trace-guide" />
       <path ref={path} d={geo.d} className="g-trace-line" />
       {geo.marks.map((m, i) => (
