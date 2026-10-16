@@ -125,7 +125,7 @@ export default function DataPage() {
             {([
               ['住所', 'address'], ['電話番号', 'tel'], ['営業時間', 'hours'],
               ['定休日', 'closed'], ['打席・個室', 'bays'], ['駐車場', 'parking'], ['アクセス', 'access'],
-              ['料金（月会費）', 'monthly_fee'], ['計測の設備（機材）', 'equipment'],
+              ['料金（月会費）', 'monthly_fee'], ['計測機器', 'equipment'],
             ] as const).map(([label, key]) => (
               <tr key={key}>
                 <td>{label}</td>

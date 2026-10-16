@@ -37,8 +37,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     title: `${c.city}のシミュレーションゴルフ${c.items.length}施設｜インドアゴルフ・ゴルフシミュレーター`,
     description:
       `${c.pref}${c.city}にあるシミュレーションゴルフ・インドアゴルフ${c.items.length}施設を、` +
-      `公式サイトの情報だけで比較できます。${n24 > 0 ? `24時間営業は${n24}施設。` : ''}` +
-      `打席数・個室の有無・駐車場・料金を出典つきで掲載しています。`,
+      `公式サイトの情報で比較できます。${n24 > 0 ? `24時間営業は${n24}施設。` : ''}` +
+      `打席数・個室の有無・駐車場・料金を、出典を明記して掲載しています。`,
     ...pageUrlMeta(`/area/${pref}/${city}/`),
   }
 }
@@ -84,10 +84,9 @@ export default async function CityPage({ params }: { params: Promise<Params> }) 
         <div className="kicker">{citySlug}</div>
         <h1>{c.city}のシミュレーションゴルフ{fs.length}施設</h1>
         <p className="lead">
-          {c.pref}{c.city}で公式サイトが情報を公開している施設を、すべて並べています。
-          「シミュレーションゴルフ」「インドアゴルフ」「ゴルフシミュレーター」は
-          いずれも同じ設備を指す呼び方で、このページではまとめて扱っています。
-          口コミによる順位づけはしていません。
+          {c.pref}{c.city}で、公式サイトに施設情報が公開されているシミュレーションゴルフ施設をすべて掲載しています。
+          「シミュレーションゴルフ」「インドアゴルフ」「ゴルフシミュレーター」は同様の施設を指す名称のため、本ページではまとめて掲載しています。
+          口コミ等による順位付けは行っていません。
         </p>
       </section>
 
@@ -97,7 +96,7 @@ export default async function CityPage({ params }: { params: Promise<Params> }) 
         <div><div className="v">{nPrivate}</div><div className="k">個室で打てる</div></div>
         <div><div className="v">{nPark}</div><div className="k">駐車場あり</div></div>
       </div>
-      <p className="source">{asOf(GENERATED_AT)}の公式サイト掲載内容にもとづきます。</p>
+      <p className="source">{asOf(GENERATED_AT)}の公式サイトの掲載内容にもとづいています。</p>
 
       <h2>{c.city}の施設一覧</h2>
       <div className="tablewrap">
@@ -122,8 +121,8 @@ export default async function CityPage({ params }: { params: Promise<Params> }) 
         </table>
       </div>
       <p className="source">
-        ○＝公式サイトに記載あり／—＝記載のうえで「なし」／?＝公式サイトに記載なし。
-        ?は設備が無いという意味ではありません。
+        ○：公式サイトに記載あり　—：公式サイトに「なし」と記載　?：公式サイトに記載なし
+        （「?」は設備がないことを示すものではありません）。
       </p>
 
       {indoor.length > 0 && (
@@ -137,10 +136,10 @@ export default async function CityPage({ params }: { params: Promise<Params> }) 
 
       {lesson.length > 0 && (
         <>
-          <h2>コーチに教わるインドアゴルフスクール（{lesson.length}件）</h2>
+          <h2>インドアゴルフスクール（{lesson.length}件）</h2>
           <p>
-            完全予約制でコーチが付き、月会費で通うスクールです。弾道測定機は置かれていますが、
-            好きな時間に自分で打ちに行く施設とは使い方が違うので、分けて掲載しています。
+            コーチによるレッスンを受けられる、完全予約制・月会費制のスクールです。弾道測定器を備えていますが、
+            予約なしで自由に練習できる施設とは利用方法が異なるため、分けて掲載しています。
           </p>
           <div className="cards">
             {lesson.map((f) => <FacilityCard key={f.slug} f={f} />)}
@@ -150,17 +149,17 @@ export default async function CityPage({ params }: { params: Promise<Params> }) 
 
       {range.length > 0 && (
         <>
-          <h2>弾道計測つきの練習場（{range.length}件）</h2>
+          <h2>弾道計測を導入した練習場（{range.length}件）</h2>
           <div className="cards">
             {range.map((f) => <FacilityCard key={f.slug} f={f} />)}
           </div>
         </>
       )}
 
-      <h2>もう少し広く探す</h2>
+      <h2>周辺エリアから探す</h2>
       <p>
         <Link href={`/area/${prefSlug}/`}>{c.pref}全体（{prefTotal}施設）</Link>
-        から探すこともできます。
+        からも施設を探すことができます。
       </p>
       {siblings.length > 0 && (
         <>

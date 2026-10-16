@@ -8,7 +8,7 @@ import { hasOwnParking, type Facility } from '../lib/data'
 const SEGMENT_LABEL: Record<string, string> = {
   indoor: '屋内シミュレーションゴルフ（単独店）',
   lesson: 'インドアゴルフスクール（単独店）',
-  range: '弾道計測つき練習場',
+  range: '弾道計測を導入した練習場',
 }
 
 export default function FacilityCard({ f }: { f: Facility }) {
@@ -21,7 +21,7 @@ export default function FacilityCard({ f }: { f: Facility }) {
           「弾道計測つき練習場」と出ていた（2026-10-03）。業態で出し分ける */}
       <span className="brand">{f.brand ?? SEGMENT_LABEL[f.segment] ?? '単独施設'}</span>
       <div className="nm">{f.name}</div>
-      <div className="ad">{f.address ?? '住所の記載なし'}</div>
+      <div className="ad">{f.address ?? '住所は公式サイトに記載なし'}</div>
       <div className="tags">
         {f.open_24h && <span className="tag-chip on">24時間</span>}
         {isPrivate && <span className="tag-chip on">個室</span>}

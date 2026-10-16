@@ -54,7 +54,7 @@ export default function Home() {
                   <Link href={`/area/${PREF_SLUG[r.pref]}/`}>{r.pref}（{r.n}件）</Link>
                 </span>
               ))}{' '}
-              のページで確認できます。{asOf(GENERATED_AT)}の公式サイト掲載内容にもとづきます。
+              のページでご確認いただけます。{asOf(GENERATED_AT)}の公式サイトの掲載内容にもとづいています。
             </p>
           </div>
         </section>

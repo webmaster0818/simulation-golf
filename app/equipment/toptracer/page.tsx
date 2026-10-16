@@ -10,10 +10,10 @@ import { JsonLd, breadcrumb, itemListLd } from '../../../lib/seo'
 const trace = () => OPEN_FACILITIES.filter((f) => f.equipment === 'トップトレーサー・レンジ')
 
 export const metadata: Metadata = {
-  title: `トップトレーサー導入の練習場${trace().length}施設｜無料で使える施設も一覧`,
+  title: `トップトレーサー導入の練習場${trace().length}施設｜計測無料の施設も掲載`,
   description:
-    `打った球の軌跡が画面に出るトップトレーサー・レンジを導入している練習場の一覧です。` +
-    `利用料・打席数・飛距離を都道府県別にまとめています。`,
+    `打球の軌跡を画面に表示するトップトレーサー・レンジを導入している練習場の一覧です。` +
+    `利用料・打席数・飛距離を都道府県別に掲載しています。`,
   ...pageUrlMeta(`/equipment/toptracer/`),
 }
 
@@ -33,7 +33,7 @@ export default function Toptracer() {
   const ld = [
     breadcrumb([
       { name: 'ホーム', url: '/' },
-      { name: '機材から探す', url: '/equipment/' },
+      { name: '計測機器から探す', url: '/equipment/' },
       { name: 'トップトレーサー', url: '/equipment/toptracer/' },
     ]),
     itemListLd('トップトレーサー導入施設', trace().map((f) => `/facility/${f.slug}/`)),
@@ -42,15 +42,15 @@ export default function Toptracer() {
     <main className="wrap">
       <JsonLd data={ld} />
       <nav className="crumbs">
-        <Link href="/">ホーム</Link> / <Link href="/equipment/">機材から探す</Link> / トップトレーサー
+        <Link href="/">ホーム</Link> / <Link href="/equipment/">計測機器から探す</Link> / トップトレーサー
       </nav>
 
       <section className="hero">
         <div className="kicker">Toptracer Range</div>
         <h1>トップトレーサー導入の練習場（{fs.length}施設）</h1>
         <p className="lead">
-          打った球の軌跡が、そのまま画面に線で表示される設備です。
-          屋内のシミュレーションゴルフと違い、<strong>実際に飛んだ球を追いかけて表示している</strong>点が特徴です。
+          トップトレーサー・レンジは、打球の軌跡を画面上に表示する設備です。
+          屋内のシミュレーションゴルフとは異なり、<strong>実際に飛んだ打球を追跡して表示する</strong>点が特長です。
         </p>
       </section>
 
@@ -62,15 +62,15 @@ export default function Toptracer() {
       </div>
 
       <div className="verdict">
-        <span className="tag">知っておきたいこと</span>
+        <span className="tag">利用料について</span>
         <p>
-          <strong>{free.length}／{fs.length}施設は、計測の利用料が「無料」と公表されています。</strong>
-          ただしこれは<strong>計測機能の追加料金がかからない</strong>という意味で、
-          練習場の打席料・ボール代は通常どおりかかります。
+          <strong>{fs.length}施設のうち{free.length}施設は、計測の利用料を「無料」と公表しています。</strong>
+          これは<strong>計測機能の追加料金が不要</strong>という意味であり、
+          練習場の打席料・ボール代は通常どおり必要です。
         </p>
         <p style={{ marginBottom: 0 }}>
-          計測に料金がかかると公表しているのは{paid.length}件です。金額は下の表のとおりで、
-          いずれも数百円以内でした。
+          計測の利用料を有料と公表している施設は{paid.length}件です。金額は下表のとおりで、
+          いずれも数百円以内となっています。
         </p>
       </div>
 
@@ -90,11 +90,11 @@ export default function Toptracer() {
         </table>
       </div>
       <p className="source">
-        表記は出典のままです。
+        金額は出典の表記のまま掲載しています。
         {fs.filter((f) => !f.usage_fee).length > 0 && (
           <>
-            {' '}なお{fs.filter((f) => !f.usage_fee).length}件は出典側に金額の記載が無いため、
-            無料・有料のどちらにも数えていません。
+            {' '}なお、{fs.filter((f) => !f.usage_fee).length}件は出典に金額の記載がないため、
+            無料・有料のいずれにも含めていません。
           </>
         )}
       </p>
@@ -125,8 +125,8 @@ export default function Toptracer() {
       ))}
 
       <p className="source">
-        出典：GDO トップトレーサー・レンジ 練習場一覧（{asOf(GENERATED_AT)}に取得）。
-        施設ごとの取得元URLは各施設ページに記載しています。
+        出典：GDO トップトレーサー・レンジ 練習場一覧（{asOf(GENERATED_AT)}の情報）。
+        施設ごとの出典URLは各施設ページに記載しています。
       </p>
     </main>
   )

@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   return {
     title,
     description:
-      `${pref}のシミュレーションゴルフ施設${fs.length}件を、公式サイトの情報で比較。` +
-      `24時間営業${n24}件。個室の有無・打席数・駐車場・弾道計測の機材まで、出典つきで掲載しています。`,
+      `${pref}のシミュレーションゴルフ施設${fs.length}件を、公式サイトの情報で比較できます。` +
+      `24時間営業は${n24}件。個室の有無・打席数・駐車場・計測機器を、出典を明記して掲載しています。`,
     ...pageUrlMeta(`/area/${slug}/`),
   }
 }
@@ -94,8 +94,8 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
         <div className="kicker">{slug}</div>
         <h1>{pref}のシミュレーションゴルフ{fs.length}施設</h1>
         <p className="lead">
-          {pref}で公式サイトが情報を公開している施設を、すべて並べています。
-          口コミによる順位づけはしていません。並び順は屋内施設・スクール・練習場の順です。
+          {pref}内で、公式サイトに施設情報が公開されているシミュレーションゴルフ施設をすべて掲載しています。
+          口コミ等による順位付けは行っておらず、屋内施設・インドアゴルフスクール・練習場の順に掲載しています。
         </p>
       </section>
 
@@ -105,11 +105,11 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
         <div><div className="v">{n24}</div><div className="k">24時間営業</div></div>
         <div><div className="v">{nPrivate}</div><div className="k">個室で打てる</div></div>
       </div>
-      <p className="source">{asOf(GENERATED_AT)}の公式サイト掲載内容にもとづきます。</p>
+      <p className="source">{asOf(GENERATED_AT)}の公式サイトの掲載内容にもとづいています。</p>
 
       {cityList.length > 1 && (
         <>
-          <h2>{pref}のどこに多いか</h2>
+          <h2>{pref}の市区町村別の施設数</h2>
           <div className="tablewrap">
             <table>
               <thead>
@@ -156,10 +156,10 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
 
       {lesson.length > 0 && (
         <>
-          <h2>コーチに教わるインドアゴルフスクール（{lesson.length}件）</h2>
+          <h2>インドアゴルフスクール（{lesson.length}件）</h2>
           <p>
-            完全予約制でコーチが付き、月会費で通うスクールです。弾道測定機は置かれていますが、
-            好きな時間に自分で打ちに行く施設とは使い方が違うので、分けて掲載しています。
+            コーチによるレッスンを受けられる、完全予約制・月会費制のスクールです。弾道測定器を備えていますが、
+            予約なしで自由に練習できる施設とは利用方法が異なるため、分けて掲載しています。
           </p>
           <div className="cards">
             {lesson.map((f) => <FacilityCard key={f.slug} f={f} />)}
@@ -169,15 +169,15 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
 
       {range.length > 0 && (
         <>
-          <h2>弾道計測つきの練習場（{range.length}件）</h2>
+          <h2>弾道計測を導入した練習場（{range.length}件）</h2>
           <p>
-            屋外の打ちっぱなし練習場に、打球を計測して画面に軌跡を出す設備（トップトレーサー・レンジ）が
-            入っている施設です。屋内の個室とは体験が違うので、分けて掲載しています。
+            屋外の打ちっぱなし練習場のうち、打球を計測して軌跡を画面に表示する設備（トップトレーサー・レンジ）を導入している施設です。
+            屋内施設とは利用環境が異なるため、分けて掲載しています。
             {range.filter((f) => f.usage_fee === '無料').length > 0 && (
               <>
                 {' '}このうち
-                <strong>{range.filter((f) => f.usage_fee === '無料').length}件は計測の利用料が無料</strong>
-                と公表されています（通常の打席料は別途かかります）。
+                <strong>{range.filter((f) => f.usage_fee === '無料').length}件は、計測の利用料を無料</strong>
+                と公表しています（打席料は別途必要です）。
               </>
             )}
           </p>
@@ -189,10 +189,9 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
 
       {soon.length > 0 && (
         <>
-          <h2>{pref}でオープン準備中（{soon.length}件）</h2>
+          <h2>{pref}で開業準備中の施設（{soon.length}件）</h2>
           <p>
-            公式サイトが開業を告知している施設です。まだ営業していないため、
-            上の掲載件数には含めていません。
+            公式サイトで開業が告知されている施設です。営業開始前のため、上記の掲載件数には含めていません。
           </p>
           <ul className="chips">
             {soon.map((f) => (
@@ -208,8 +207,7 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
         <>
           <h2>{region.name}のほかの県にある施設</h2>
           <p>
-            県をまたいで探す人向けに、同じ{region.name}の施設を出しています。
-            {pref}に{fs.length}件しか無い場合でも、隣の県まで広げると選択肢が増えます。
+            近隣の県もあわせて検討される方に向けて、{region.name}の他県の施設を掲載しています。
           </p>
           <div className="cards">
             {regionNeighbors.map((f) => <FacilityCard key={f.slug} f={f} />)}

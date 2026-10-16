@@ -10,7 +10,7 @@ export default function BrandGrid() {
         <div className="g-head" data-reveal>
           <p className="g-eyebrow">BRANDS</p>
           <h2 id="brand-title" className="g-h2">ブランドから探す</h2>
-          <p className="g-lead">掲載している{list.length}ブランドの店舗を、公式サイトの情報で比べられます</p>
+          <p className="g-lead">掲載している{list.length}ブランドの店舗を、公式サイトの情報で比較できます</p>
         </div>
         <ul className="g-brand-grid">
           {list.map((b, i) => (

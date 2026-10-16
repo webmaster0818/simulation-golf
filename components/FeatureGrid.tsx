@@ -6,8 +6,8 @@ const ITEMS = [
   { href: '/feature/open-24h/', icon: 'icon-24h', label: '24時間営業', feature: 'open-24h' },
   { href: '/feature/parking/', icon: 'icon-parking', label: '駐車場あり', feature: 'parking' },
   { href: '/feature/free-trace/', icon: 'icon-trace', label: '弾道計測が無料', feature: 'free-trace' },
-  { href: '/equipment/', icon: 'icon-equipment', label: '機材から探す', note: 'トラックマン・トップトレーサー' },
-  { href: '/brand/', icon: 'icon-brand', label: 'ブランドから探す', note: '公式サイトの画像つき' },
+  { href: '/equipment/', icon: 'icon-equipment', label: '計測機器から探す', note: 'トラックマン・トップトレーサー' },
+  { href: '/brand/', icon: 'icon-brand', label: 'ブランドから探す', note: '公式サイトの画像を掲載' },
 ]
 export default function FeatureGrid() {
   return (
@@ -16,7 +16,7 @@ export default function FeatureGrid() {
         <div className="g-head" data-reveal>
           <p className="g-eyebrow">FILTER</p>
           <h2 id="feature-title" className="g-h2">条件から探す</h2>
-          <p className="g-lead">打ちたい環境を選んでください。公式サイトに記載のある施設だけを集めています。</p>
+          <p className="g-lead">ご希望の条件をお選びください。公式サイトに該当する記載がある施設を掲載しています。</p>
         </div>
         <ul className="g-grid3">
           {ITEMS.map((it, i) => (

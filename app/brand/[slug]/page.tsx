@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   return {
     title: `${b.name}の店舗一覧${b.count}件｜料金・営業時間・個室の有無`,
     description:
-      `${b.name}の店舗${b.count}件を、公式サイトの情報で一覧にしました。` +
+      `${b.name}の店舗${b.count}件を、公式サイトの情報をもとに掲載しています。` +
       `${b.prefs.length}都道府県に展開。${b.has.monthlyFee ? '店舗ごとの月会費も掲載しています。' : '店舗ごとの料金は公式サイトに記載がないため掲載していません。'}`,
     ...pageUrlMeta(`/brand/${slug}/`),
   }
@@ -76,9 +76,8 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
         <div className="kicker">{slug}</div>
         <h1>{b.name}の店舗一覧（{b.count}件）</h1>
         <p className="lead">
-          公式サイトに掲載されている{b.name}の店舗を、都道府県別に並べています。
-          このブランドが公式で公開している項目だけを載せているため、
-          他ブランドと比べて項目が少ない場合があります。
+          公式サイトに掲載されている{b.name}の店舗を、都道府県別に掲載しています。
+          公式サイトで公開されている項目のみを掲載しているため、他のブランドと比べて掲載項目が少ない場合があります。
         </p>
         <div className="g-brand-hero-shot"><BrandShot slug={slug} name={b.name} /></div>
       </section>
@@ -90,7 +89,7 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
         <div><div className="v">{nPrivate}</div><div className="k">個室で打てる</div></div>
       </div>
 
-      <h2>このブランドで比較できること</h2>
+      <h2>公式サイトでの情報公開状況</h2>
       <div className="tablewrap">
         <table>
           <thead><tr><th>項目</th><th>公式サイトでの公開状況</th></tr></thead>
@@ -105,9 +104,9 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
       </div>
       {!b.has.monthlyFee && (
         <div className="nodata">
-          {b.name}は、店舗ごとの料金を公式サイトの店舗ページに載せていません。
-          当サイトでは金額を推測して載せることはしないため、料金欄は空欄になります。
-          料金は公式サイトの料金ページ、または各店舗へ直接ご確認ください。
+          {b.name}は、公式サイトの店舗ページに店舗ごとの料金を掲載していません。
+          当サイトでは推測による金額の掲載は行っていないため、料金欄は「公式サイトに記載なし」と表示しています。
+          料金は、公式サイトの料金ページまたは各店舗にてご確認ください。
         </div>
       )}
 
@@ -130,8 +129,8 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
           </div>
           {taxMixed(fs) && (
             <p className="source">
-              ⚠️ 税込・税抜の表記が店舗によって異なります。公式サイトの表記をそのまま載せているため、
-              金額だけを並べて比べないでください。
+              ※税込・税抜の表記は店舗により異なります。公式サイトの表記のまま掲載していますので、
+              金額を比較される際はご注意ください。
             </p>
           )}
         </>
@@ -147,7 +146,7 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
           </div>
           <p className="source">
             <Link href={`/area/${PREF_SLUG[pref]}/`}>
-              {pref}のシミュレーションゴルフをブランド横断で見る
+              {pref}のシミュレーションゴルフ施設をすべて見る
             </Link>
           </p>
         </div>
@@ -161,11 +160,11 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
           </Link>
         ))}
       </div>
-      <p className="source">{asOf(GENERATED_AT)}の公式サイト掲載内容にもとづきます。</p>
+      <p className="source">{asOf(GENERATED_AT)}の公式サイトの掲載内容にもとづいています。</p>
       {soon.length > 0 && (
         <>
-          <h2>オープン準備中（{soon.length}件）</h2>
-          <p>公式サイトが開業を告知している店舗です。上の掲載件数には含めていません。</p>
+          <h2>開業準備中の店舗（{soon.length}件）</h2>
+          <p>公式サイトで開業が告知されている店舗です。上記の掲載件数には含めていません。</p>
           <ul className="chips">
             {soon.map((f) => (
               <li key={f.slug}>

@@ -7,14 +7,14 @@ export default function NotFound() {
         <div className="kicker">404</div>
         <h1>ページが見つかりません</h1>
         <p className="lead">
-          URLが変わったか、掲載を取りやめた施設のページかもしれません。
+          URLが変更されたか、掲載を終了した施設のページである可能性があります。
         </p>
       </section>
       <div className="chips">
         <Link href="/">ホーム</Link>
         <Link href="/area/">エリアから探す</Link>
         <Link href="/brand/">ブランドから探す</Link>
-        <Link href="/equipment/">機材から探す</Link>
+        <Link href="/equipment/">計測機器から探す</Link>
       </div>
     </main>
   )

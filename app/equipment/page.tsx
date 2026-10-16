@@ -5,9 +5,9 @@ import { SITE, OPEN_FACILITIES, brands, asOf, GENERATED_AT } from '../../lib/dat
 import { JsonLd, breadcrumb } from '../../lib/seo'
 
 export const metadata: Metadata = {
-  title: '弾道計測の機材から探す｜シミュレーションゴルフの計測方式',
+  title: '計測機器から探す｜シミュレーションゴルフの弾道計測方式',
   description:
-    'シミュレーションゴルフで使われる弾道計測の方式と、どの施設がどの機材を使っているかを整理しました。施設ごとに機材名が公開されているのは、現状トップトレーサー導入施設に限られます。',
+    'シミュレーションゴルフで使われる弾道計測の方式と、公式サイトで計測機器を確認できた施設をご紹介します。トラックマン・トップトレーサーの導入施設一覧も掲載しています。',
   ...pageUrlMeta(`/equipment/`),
 }
 
@@ -16,74 +16,76 @@ export default function EquipmentIndex() {
   // 表記ゆれ（トラックマン4 / TRACKMAN RANGE 等）があるので部分一致で数える
   const tm = OPEN_FACILITIES.filter((f) => !!f.equipment && /トラックマン|TRACKMAN|TrackMan/i.test(f.equipment))
   const free = trace.filter((f) => f.usage_fee === '無料')
-  const noEquip = OPEN_FACILITIES.filter((f) => f.segment === 'indoor' && !f.equipment)
+  // 2026-10-16 店舗ページの取り直しで機種名が分かる施設が増えた（以前は「トップトレーサーだけ」と書いていた）
+  const indoorAll = OPEN_FACILITIES.filter((f) => f.segment !== 'range')
+  const withEquip = indoorAll.filter((f) => !!f.equipment)
+  const noEquipBrands = brands().filter((b) => !OPEN_FACILITIES.some((f) => f.brand_slug === b.slug && !!f.equipment))
 
-  const ld = [breadcrumb([{ name: 'ホーム', url: '/' }, { name: '機材から探す', url: '/equipment/' }])]
+  const ld = [breadcrumb([{ name: 'ホーム', url: '/' }, { name: '計測機器から探す', url: '/equipment/' }])]
   return (
     <main className="wrap">
       <JsonLd data={ld} />
-      <nav className="crumbs"><Link href="/">ホーム</Link> / 機材から探す</nav>
+      <nav className="crumbs"><Link href="/">ホーム</Link> / 計測機器から探す</nav>
 
       <section className="hero">
         <div className="kicker">Equipment</div>
-        <h1>弾道計測の機材から探す</h1>
+        <h1>計測機器から探す</h1>
         <p className="lead">
-          シミュレーションゴルフは「画面にコースが映る」ことより、
-          <strong>打った球の何を測っているか</strong>で体験が変わります。
-          ここでは計測方式の違いと、施設ごとに機材が分かるものを整理しています。
+          シミュレーションゴルフの使い心地は、画面の映像よりも、<strong>打球のどの数値を計測しているか</strong>によって異なります。
+          このページでは、弾道計測の方式の違いと、公式サイトで計測機器を確認できた施設についてご紹介します。
         </p>
       </section>
 
       <div className="verdict">
-        <span className="tag">先に結論</span>
+        <span className="tag">計測機器の掲載状況</span>
         <p>
-          施設ごとにどの機材が入っているかを公式サイトで公開しているのは、
-          今のところ<strong>トップトレーサー導入施設の{trace.length}件だけ</strong>です。
+          屋内施設・インドアゴルフスクール{indoorAll.length.toLocaleString()}件のうち、
+          <strong>{withEquip.length}件</strong>は公式サイトで計測機器の機種名を確認できたため、施設ページに掲載しています。
+          屋外の練習場は、トップトレーサー・レンジの導入施設{trace.length}件を掲載しています。
         </p>
         <p style={{ marginBottom: 0 }}>
-          屋内チェーン{noEquip.length}件は、公式サイトに「最新シミュレーター」とだけ書かれており、
-          機種名が出ていません。当サイトでは<strong>機種を推測して載せていません</strong>。
-          機材を重視する場合は、施設ページの公式サイトリンクから直接ご確認ください。
+          残りの{indoorAll.length - withEquip.length}件は、公式サイトに機種名の記載がない、または「店舗により異なります」とのみ記載されているため、
+          機種を掲載していません。当サイトでは<strong>機種の推測による掲載は行っていません</strong>。
+          計測機器を重視される場合は、施設ページに記載の公式サイトにてご確認ください。
         </p>
       </div>
 
       <h2>計測方式の違い</h2>
       <p>
-        弾道計測には大きく2つの考え方があります。どちらが優れているかではなく、測れるものが違います。
+        弾道計測の方式は、大きく2種類に分けられます。方式により計測できる項目が異なり、優劣を示すものではありません。
       </p>
       <div className="tablewrap">
         <table>
           <thead>
-            <tr><th>方式</th><th>測り方</th><th>得意なこと</th><th>置かれている場所</th></tr>
+            <tr><th>方式</th><th>計測の仕組み</th><th>主な特長</th><th>主な設置場所</th></tr>
           </thead>
           <tbody>
             <tr>
               <td>カメラ式</td>
-              <td>複数のカメラで、ボールとクラブヘッドの動きを撮って計算する</td>
-              <td>実際に飛んだ球の軌跡をそのまま追える</td>
-              <td>屋外の打席上部（練習場に多い）</td>
+              <td>複数のカメラでボールとクラブヘッドの動きを撮影し、弾道を算出する</td>
+              <td>実際に飛んだ打球の軌跡を追跡できる</td>
+              <td>屋外練習場の打席上部</td>
             </tr>
             <tr>
               <td>レーダー式</td>
-              <td>電波を当てて、ボールの速度・回転を測る</td>
-              <td>ヘッドスピードやスピン量など、目で見えない数値</td>
-              <td>打席の後方・屋内の限られた距離でも使える</td>
+              <td>電波（レーダー）でボールの速度・回転を計測する</td>
+              <td>ヘッドスピードやスピン量など、目視できない数値の計測</td>
+              <td>打席の後方（屋内の限られた空間でも使用可能）</td>
             </tr>
           </tbody>
         </table>
       </div>
       <p className="source">
-        屋内施設は打った球がすぐネットに当たるため、飛距離は測った初速・打ち出し角・回転から
-        計算して表示しています。「実際に何ヤード飛んだか」を見ているわけではない点は、
-        屋外の計測つき練習場との大きな違いです。
+        屋内施設では打球がすぐにネットやスクリーンに当たるため、飛距離は計測した初速・打ち出し角・回転数から算出した値を表示しています。
+        実際の飛距離を計測しているわけではない点が、弾道計測を導入した屋外練習場との大きな違いです。
       </p>
 
       <h2>トップトレーサー・レンジ（{trace.length}施設）</h2>
       <p>
-        屋外の練習場の打席に取り付けられ、打った球の軌跡を画面に線で出す設備です。
-        テレビのゴルフ中継で弾道に線が引かれるのと同じ仕組みが、練習場の打席で使えます。
-        <strong>{free.length}施設は、この計測を無料で使える</strong>と公表しています
-        （通常の打席料・ボール代は別途かかります）。
+        屋外練習場の打席に設置され、打球の軌跡を画面上に表示する設備です。
+        ゴルフ中継で弾道に線が表示される技術と同様の仕組みを、練習場の打席で利用できます。
+        このうち<strong>{free.length}施設は、計測機能を無料で利用できる</strong>と公表しています
+        （打席料・ボール代は別途必要です）。
       </p>
       <p>
         <Link href="/equipment/toptracer/">
@@ -93,9 +95,9 @@ export default function EquipmentIndex() {
 
       <h2>トラックマン（{tm.length}件）</h2>
       <p>
-        レーダーで球そのものを追って計測する機器です。屋内の個室型と、屋外の練習場に付いている型があります。
-        <strong>トラックマンには公表された全国の導入施設リストがありません</strong>。
-        当サイトが各施設の公式サイトで導入を確認できたものだけを載せています。
+        レーダーで打球を追跡して計測する機器です。屋内の個室型施設と、屋外練習場の両方に導入されています。
+        <strong>トラックマンは全国の導入施設一覧が公表されていない</strong>ため、
+        当サイトが各施設の公式サイトで導入を確認できた施設のみを掲載しています。
       </p>
       <p>
         <Link href="/equipment/trackman/">
@@ -103,19 +105,21 @@ export default function EquipmentIndex() {
         </Link>
       </p>
 
+      {noEquipBrands.length > 0 && (<>
       <h2>機種が公開されていないブランド</h2>
       <p>
-        以下のブランドは、店舗ページに機種名の記載がありません。
-        「最新のシミュレーターを完備」といった表現はありますが、機種は特定できませんでした。
+        以下のブランドは、公式サイトに機種名の記載がないため、機種を掲載していません
+        （「最新シミュレーター完備」などの記載のみ、または「店舗により異なります」との記載）。
       </p>
       <div className="chips">
-        {brands().map((b) => (
+        {noEquipBrands.map((b) => (
           <Link key={b.slug} href={`/brand/${b.slug}/`}>{b.name}</Link>
         ))}
       </div>
+      </>)}
       <p className="source">
-        {asOf(GENERATED_AT)}に各公式サイトを確認した時点の状況です。
-        今後、公式サイトで機種が公開された場合は、出典つきで追加します。
+        {asOf(GENERATED_AT)}で各公式サイトを確認した内容です。
+        公式サイトで機種が公開された場合は、出典を明記のうえ追加します。
       </p>
     </main>
   )

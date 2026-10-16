@@ -16,8 +16,8 @@ const trackman = () => OPEN_FACILITIES.filter((f) => isTrackman(f.equipment))
 export const metadata: Metadata = {
   title: `トラックマン導入の施設${trackman().length}件｜都道府県別に一覧`,
   description:
-    'レーダーで実際の球筋を計測するトラックマンを導入している施設の一覧です。' +
-    '所在地・打席数・料金を、各施設の公式サイトを出典として都道府県別にまとめています。',
+    'レーダーで打球を計測するトラックマンを導入している施設の一覧です。' +
+    '所在地・打席数・料金を、各施設の公式サイトを出典として都道府県別に掲載しています。',
   ...pageUrlMeta(`/equipment/trackman/`),
 }
 
@@ -36,7 +36,7 @@ export default function Trackman() {
   const ld = [
     breadcrumb([
       { name: 'ホーム', url: '/' },
-      { name: '機材から探す', url: '/equipment/' },
+      { name: '計測機器から探す', url: '/equipment/' },
       { name: 'トラックマン', url: '/equipment/trackman/' },
     ]),
     itemListLd('トラックマン導入施設', fs.map((f) => `/facility/${f.slug}/`)),
@@ -46,16 +46,16 @@ export default function Trackman() {
     <main className="wrap">
       <JsonLd data={ld} />
       <nav className="crumbs">
-        <Link href="/">ホーム</Link> / <Link href="/equipment/">機材から探す</Link> / トラックマン
+        <Link href="/">ホーム</Link> / <Link href="/equipment/">計測機器から探す</Link> / トラックマン
       </nav>
 
       <section className="hero">
         <div className="kicker">TrackMan</div>
         <h1>トラックマン導入の施設（{fs.length}件）</h1>
         <p className="lead">
-          トラックマンは、<strong>打った球そのものをレーダーで追って計測する</strong>機器です。
-          カメラでボールの出だしだけを撮って弾道を計算する方式とは測り方が違います。
-          屋内の個室型と、屋外の打ちっぱなしに付いている型の両方があります。
+          トラックマンは、<strong>打球をレーダーで追跡して計測する</strong>機器です。
+          カメラで打ち出し直後のボールを撮影し、弾道を算出する方式とは計測の仕組みが異なります。
+          屋内の個室型施設と、屋外練習場の両方に導入されています。
         </p>
       </section>
 
@@ -67,11 +67,11 @@ export default function Trackman() {
       </div>
 
       <div className="verdict">
-        <span className="tag">このページの限界</span>
+        <span className="tag">掲載範囲について</span>
         <p style={{ marginBottom: 0 }}>
-          トラックマンには公表された全国の導入施設リストがありません。
-          ここに載せているのは<strong>当サイトが各施設の公式サイトで導入を確認できた{fs.length}件だけ</strong>で、
-          これが国内のすべてではありません。網羅した一覧ではない点にご注意ください。
+          トラックマンは、全国の導入施設一覧が公表されていません。
+          本ページに掲載しているのは、<strong>当サイトが各施設の公式サイトで導入を確認できた{fs.length}件</strong>です。
+          国内のすべての導入施設を網羅したものではありませんので、あらかじめご了承ください。
         </p>
       </div>
 
@@ -101,8 +101,8 @@ export default function Trackman() {
       ))}
 
       <p className="source">
-        出典：各施設の公式サイト。取得日とURLは施設ページにそれぞれ記載しています。
-        料金・営業時間・設備は変更されることがあるため、利用前に公式サイトでご確認ください。
+        出典：各施設の公式サイト（取得日と出典URLは各施設ページに記載しています）。
+        料金・営業時間・設備は変更される場合がありますので、ご利用前に公式サイトにてご確認ください。
       </p>
     </main>
   )

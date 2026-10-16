@@ -23,7 +23,7 @@ export default function AreaAccordion() {
           <img className="g-head-icon" src="/images/top/icon-area.webp" alt="" width={384} height={384} loading="lazy" />
           <p className="g-eyebrow">AREA SEARCH</p>
           <h2 id="area-title" className="g-h2">エリアから探す</h2>
-          <p className="g-lead">{prefs.length}都道府県の施設を、市区町村ごとに選べます</p>
+          <p className="g-lead">{prefs.length}都道府県の施設を、市区町村ごとに検索できます</p>
         </div>
         <div className="g-accordion">
           {prefs.includes('東京都') && (

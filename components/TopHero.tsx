@@ -23,7 +23,7 @@ export default function TopHero() {
         <img src="/images/top/hero-studio.webp" alt="最新の設備がそろった明るいシミュレーションゴルフの打席" width={2400} height={1339} fetchPriority="high" />
       </picture>
       <div className="g-hero-copy">
-        <p className="g-hero-label">公式サイトの情報だけで比べる、シミュレーションゴルフの検索サイト</p>
+        <p className="g-hero-label">公式サイトの情報で比較できる、シミュレーションゴルフの検索サイト</p>
         <h1 id="hero-title" className="g-hero-title">
           <span><b>全国1,000以上の</b><b>シミュレーションゴルフから、</b></span>
           <span>ベストを最短で見つける。</span>
@@ -41,7 +41,7 @@ export default function TopHero() {
           <div key={s.k} className="g-stat"><dt>{s.k}</dt><dd><span className="g-count" data-to={s.v.replace(/,/g, '')}>{s.v}</span><span className="u">{s.u}</span></dd></div>
         ))}
       </dl>
-      <p className="g-note">※ 数字は各施設の公式サイトの掲載内容から当サイトが集計したものです。写真はイメージで、特定の施設ではありません。</p>
+      <p className="g-note">※数値は、各施設の公式サイトの掲載内容をもとに当サイトが集計したものです。写真はイメージであり、特定の施設を示すものではありません。</p>
     </section>
   )
 }

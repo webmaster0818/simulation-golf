@@ -48,7 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <nav>
               <Link href="/area/">エリアから探す</Link>
               <Link href="/brand/">ブランドから探す</Link>
-              <Link href="/equipment/">機材から探す</Link>
+              <Link href="/equipment/">計測機器から探す</Link>
               <Link href="/data/">掲載ポリシー</Link>
             </nav>
           </div>
@@ -101,7 +101,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <h4>About</h4>
               <ul>
                 <li><Link href="/data/">掲載ポリシー</Link></li>
-                <li><Link href="/equipment/">弾道計測の機材とは</Link></li>
+                <li><Link href="/equipment/">弾道計測の機器について</Link></li>
               </ul>
             </div>
           </div>

@@ -132,7 +132,7 @@ export function facilityDescription(f: Facility): string {
     f.bays && `打席 ${f.bays}`,
     f.parking && `駐車場 ${f.parking}`,
   ].filter(Boolean) as string[]
-  const tail = '公式サイトの掲載内容をそのまま記載しています。'
+  const tail = '公式サイトの掲載内容をもとに掲載しています。'
   // 検索結果で切られる前に意味が閉じるよう、入るところまで足して残りは落とす
   let s = head
   for (const p of parts) {

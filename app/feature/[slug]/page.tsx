@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const n = byFeature(slug).length
   return {
     title: `${ft.label}シミュレーションゴルフ${n}施設｜全国一覧`,
-    description: `${ft.note}を全国から集めた一覧です（${n}件）。公式サイトの掲載内容で判定しています。`,
+    description: `${ft.note}の全国一覧です（${n}件）。各施設の公式サイトの掲載内容をもとに判定しています。`,
     ...pageUrlMeta(`/feature/${slug}/`),
   }
 }
@@ -52,14 +52,14 @@ export default async function FeaturePage({ params }: { params: Promise<Params> 
       <section className="hero">
         <div className="kicker">Filter</div>
         <h1>{ft.label}シミュレーションゴルフ（{fs.length}件）</h1>
-        <p className="lead">{ft.note}を集めた一覧です。</p>
+        <p className="lead">{ft.note}の一覧です。</p>
       </section>
 
       <div className="verdict">
         <span className="tag">判定の基準</span>
         <p style={{ marginBottom: 0 }}>
-          {ft.note}だけを載せています。公式サイトにその記載が無い施設は、
-          設備が無いとは限りませんが、確認できないためこの一覧には含めていません。
+          本ページには、{ft.note}のみを掲載しています。
+          公式サイトに該当する記載がない施設は、設備がないとは限りませんが、確認ができないため本一覧には含めていません。
         </p>
       </div>
 
@@ -75,7 +75,7 @@ export default async function FeaturePage({ params }: { params: Promise<Params> 
         </div>
       ))}
 
-      <h2>ほかの条件で絞る</h2>
+      <h2>ほかの条件から探す</h2>
       <div className="chips">
         {FEATURES.filter((x) => x.slug !== slug).map((x) => (
           <Link key={x.slug} href={`/feature/${x.slug}/`}>
@@ -83,7 +83,7 @@ export default async function FeaturePage({ params }: { params: Promise<Params> 
           </Link>
         ))}
       </div>
-      <p className="source">{asOf(GENERATED_AT)}の公式サイト掲載内容にもとづきます。</p>
+      <p className="source">{asOf(GENERATED_AT)}の公式サイトの掲載内容にもとづいています。</p>
     </main>
   )
 }

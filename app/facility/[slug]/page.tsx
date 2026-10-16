@@ -100,9 +100,9 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
           {f.segment === 'indoor'
             ? '屋内のシミュレーションゴルフ施設'
             : f.segment === 'lesson'
-              ? 'コーチに教わるインドアゴルフスクール'
-              : '弾道計測つきの練習場'}です。
-          下の情報はすべて公式サイトに掲載されている内容で、{asOf(f.fetched_at)}のものです。
+              ? 'インドアゴルフスクール'
+              : '弾道計測を導入した練習場'}です。
+          以下の情報は、すべて公式サイトに掲載されている内容です（{asOf(f.fetched_at)}）。
         </p>
         {f.brand_slug && f.brand && <div className="g-brand-hero-shot"><BrandShot slug={f.brand_slug} name={f.brand} /></div>}
       </section>
@@ -111,9 +111,9 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
         <div className="verdict">
           <span className="tag">Notice</span>
           <p style={{ marginBottom: 0 }}>
-            この店舗は公式サイトで<strong>オープン準備中</strong>と案内されています。
-            {f.hours ? '' : '営業条件は開業後に変わる可能性があります。'}
-            利用前に公式サイトでご確認ください。
+            この店舗は、公式サイトで<strong>開業準備中</strong>と案内されています。
+            {f.hours ? '' : '営業条件は開業後に変更される場合があります。'}
+            ご利用前に公式サイトにてご確認ください。
           </p>
         </div>
       )}
@@ -124,7 +124,7 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
         {f.address_as_published && (
           <Row
             k="住所の表記"
-            v={`出典の表記は「${f.address_as_published}」。浜松市は2024年1月に区を再編しており、市の町字名対応表に従って現在の区名で載せています（郵便番号・町名・番地は変わりません）。`}
+            v={`出典の表記は「${f.address_as_published}」です。浜松市は2024年1月に行政区を再編したため、市の町字名対応表にもとづき現在の区名で掲載しています（郵便番号・町名・番地に変更はありません）。`}
           />
         )}
         <Row k="アクセス" v={f.access} />
@@ -142,12 +142,12 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
             </>
           : <Row k="弾道計測の利用料" v={f.usage_fee} />}
         {f.segment !== 'range' && f.equipment && (
-          <Row k="計測の設備" v={f.equipment} />
+          <Row k="計測機器" v={f.equipment} />
         )}
         {/* 機材ページは一覧からの1本しか張られないので、該当施設から繋ぐ */}
         {f.equipment && /トラックマン|TRACKMAN|TrackMan/i.test(f.equipment) && (
           <div>
-            <dt>同じ機材の施設</dt>
+            <dt>同じ計測機器の施設</dt>
             <dd>
               <Link href="/equipment/trackman/">
                 トラックマンを導入している施設の一覧を見る
@@ -158,12 +158,12 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
         {f.segment === 'range' && (
           <>
             <Row k="飛距離" v={f.distance_yard ? `${f.distance_yard}ヤード` : null} />
-            <Row k="計測の設備" v={f.equipment} />
+            <Row k="計測機器" v={f.equipment} />
             {/* 機材ページへの導線。/equipment/toptracer/ が一覧からの1本しか
                 張られていなかったので、該当施設から繋ぐ */}
             {f.equipment === 'トップトレーサー・レンジ' && (
               <div>
-                <dt>同じ機材の施設</dt>
+                <dt>同じ計測機器の施設</dt>
                 <dd>
                   <Link href="/equipment/toptracer/">
                     トップトレーサーを導入している練習場の一覧を見る
@@ -181,22 +181,22 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
       {f.segment === 'indoor' && !f.monthly_fee && !f.usage_fee && (
         f.brand_slug && OPEN_FACILITIES.some((x) => x.brand_slug === f.brand_slug && x.monthly_fee) ? (
           <div className="nodata">
-            この店舗の料金は、当サイトでは確認できていません。
-            同じブランドでも料金は店舗によって違うため、推測した金額を載せていません。
-            公式サイトまたは店舗へ直接ご確認ください。
+            この店舗の料金は、公式サイトで確認できませんでした。
+            同じブランドでも料金は店舗により異なるため、推測による金額は掲載していません。
+            料金は、公式サイトまたは店舗にてご確認ください。
           </div>
         ) : !f.brand_slug ? (
           // ブランド無しの単独施設に「このブランドは…公開していません」と出ていた（2026-10-04）。
           // 料金表が画像だけの施設もあり、「公開していない」とは言えない
           <div className="nodata">
-            この施設の料金は、当サイトでは確認できていません。
-            推測した金額は載せていません。公式サイトまたは施設へ直接ご確認ください。
+            この施設の料金は、公式サイトで確認できませんでした。
+            推測による金額は掲載していません。料金は、公式サイトまたは施設にてご確認ください。
           </div>
         ) : (
           <div className="nodata">
-            このブランドは、店舗ごとの料金を公式サイトで公開していません。
-            料金は店舗によって違うことがあるため、当サイトでは推測した金額を載せていません。
-            公式サイトまたは店舗へ直接ご確認ください。
+            このブランドは、公式サイトで店舗ごとの料金を公開していません。
+            料金は店舗により異なる場合があるため、推測による金額は掲載していません。
+            料金は、公式サイトまたは店舗にてご確認ください。
           </div>
         )
       )}
@@ -219,8 +219,8 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
       <p className="source">
         出典：
         <a href={f.source_url} target="_blank" rel="noopener noreferrer">{f.source_url}</a>
-        （{asOf(f.fetched_at)}に取得）。
-        料金・営業時間・設備は変更されることがあります。利用前に公式サイトで最新の内容をご確認ください。
+        （{asOf(f.fetched_at)}の情報）。
+        料金・営業時間・設備は変更される場合がありますので、ご利用前に公式サイトにて最新情報をご確認ください。
       </p>
 
       {sameBrand.length > 0 && f.brand_slug && (

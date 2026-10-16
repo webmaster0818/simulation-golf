@@ -25,8 +25,8 @@ export default function AreaIndex() {
         <div className="kicker">Area</div>
         <h1>都道府県から探す</h1>
         <p className="lead">
-          掲載しているのは、公式サイトで施設情報を公開している{OPEN_FACILITIES.length}件です。
-          掲載が0件の都道府県はページを作っていません（中身の無いページを置かないため）。
+          公式サイトで施設情報が公開されている{OPEN_FACILITIES.length}件を掲載しています。
+          掲載施設のない都道府県のページは設けていません。
         </p>
       </section>
 
@@ -46,7 +46,7 @@ export default function AreaIndex() {
             </div>
             {none.length > 0 && (
               <p className="source">
-                掲載なし：{none.join('・')}（公式サイトで情報を公開している施設が見つかっていません）
+                掲載施設なし：{none.join('・')}（公式サイトで施設情報を確認できた施設がありません）
               </p>
             )}
           </div>
