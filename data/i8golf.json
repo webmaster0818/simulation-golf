@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-12",
+ "generated_at": "2026-10-16",
  "count": 7,
  "stores": [
   {
@@ -14,14 +14,19 @@
    "tel": "0266-78-1129",
    "hours": "24時間",
    "open_24h": true,
+   "access": "下諏訪駅から徒歩１０分",
+   "closed": null,
    "bays": "6打席（左右打席あり）",
+   "bays_num": 6,
    "parking": "無料駐車場あり（25台）",
    "private_room": null,
-   "equipment": null,
+   "monthly_fee": "トキドキ 月額6,600円／ドンナトキモ 月額11,800円／ＭＡＸ 月額25,000円／イヌマニ 月額8,800円／ナイト 月額5,500円（税込）",
+   "equipment": "OKONGOLF",
+   "note": "機材は全店共通の記載（https://i8golf.jp/simg/「i8GOLFでは、すべての店舗にプロも信頼する高性能シミュレーションゴルフ「OKONGOLF（オーケーオンゴルフ）」を導入しています。」）",
    "open": true,
    "official": "https://i8golf.jp/i8-golf-fitness/",
    "source_url": "https://i8golf.jp/i8-golf-fitness/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "segment": "indoor",
@@ -35,14 +40,19 @@
    "tel": "0263-88-3618",
    "hours": "24時間",
    "open_24h": true,
-   "bays": "がありますので、ご予約も取りやすくな",
+   "access": "南松本駅から徒歩５分",
+   "closed": null,
+   "bays": "6打席（左右打席あり）",
+   "bays_num": 6,
    "parking": "無料駐車場あり（40台）",
    "private_room": null,
-   "equipment": null,
+   "monthly_fee": "トキドキ 月額6,600円／ドンナトキモ 月額11,800円／ＭＡＸ 月額25,000円／イヌマニ 月額8,800円／ナイト 月額5,500円（税込）",
+   "equipment": "OKONGOLF",
+   "note": "機材は全店共通の記載（https://i8golf.jp/simg/「i8GOLFでは、すべての店舗にプロも信頼する高性能シミュレーションゴルフ「OKONGOLF（オーケーオンゴルフ）」を導入しています。」）",
    "open": true,
    "official": "https://i8golf.jp/i8golf-matsumoto/",
    "source_url": "https://i8golf.jp/i8golf-matsumoto/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "segment": "indoor",
@@ -56,14 +66,18 @@
    "tel": "045-443-7090",
    "hours": "24時間",
    "open_24h": true,
-   "bays": null,
-   "parking": null,
+   "access": "国道1号線沿いを戸塚駅方面から藤沢方面に向かい戸塚の原宿交差点を超えて左側に店舗がございます。",
+   "closed": null,
+   "bays": "8打席",
+   "bays_num": 8,
+   "parking": "無料駐車場22台あり",
    "private_room": null,
-   "equipment": null,
+   "monthly_fee": "トキドキ 月額8,000円／ドンナトキモ 月額13,000円／イヌマニ 月額10,000円／土日ROUND 月額10,000円／ドンナトキモROUND 月額14,300円／イヌマニROUND 月額11,300円（税込）",
+   "equipment": "OKONGOLF",
    "open": true,
    "official": "https://i8golf-yokohama.com/",
    "source_url": "https://i8golf-yokohama.com/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "segment": "indoor",
@@ -77,14 +91,18 @@
    "tel": "045-443-7090",
    "hours": "24時間",
    "open_24h": true,
-   "bays": null,
+   "access": "環状3号線沿いにあるライズモール戸塚1階の個室インドアゴルフ練習場です。",
+   "closed": null,
+   "bays": "完全個室 A・Bルーム2部屋",
+   "bays_num": 2,
    "parking": "無料駐車場あり",
    "private_room": true,
-   "equipment": null,
+   "monthly_fee": "スペシャル 月額33,000円／フルタイム 月額25,300円／デイタイム 月額17,600円／ミッドナイト 月額14,300円／ナイト 月額19,800円／ホリデイ 月額19,800円（税込）",
+   "equipment": "SDR",
    "open": true,
    "official": "https://niceshot-i8golf.com/",
    "source_url": "https://niceshot-i8golf.com/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "segment": "indoor",
@@ -98,14 +116,19 @@
    "tel": "0532-75-4158",
    "hours": "24時間",
    "open_24h": true,
+   "access": "JR豊橋駅から車で5分",
+   "closed": null,
    "bays": "5打席（左右打席あり）",
+   "bays_num": 5,
    "parking": "無料駐車場あり（10台）",
    "private_room": null,
-   "equipment": null,
+   "monthly_fee": "GOLF 1年継続/月額6,500円・通常7,300円／DAY 1年継続/月額9,600円・通常10,600円／GOLF+ 1年継続/月額12,000円・通常13,000円／ROUND 1年継続/月額15,800円・通常16,800円／JUNIOR 月額6,000円（税込）",
+   "equipment": "OKONGOLF",
+   "note": "機材は全店共通の記載（https://i8golf.jp/simg/「i8GOLFでは、すべての店舗にプロも信頼する高性能シミュレーションゴルフ「OKONGOLF（オーケーオンゴルフ）」を導入しています。」）",
    "open": true,
    "official": "https://i8golf.jp/toyohashi/",
    "source_url": "https://i8golf.jp/toyohashi/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "segment": "indoor",
@@ -119,14 +142,19 @@
    "tel": "0764-64-3550",
    "hours": "24時間",
    "open_24h": true,
+   "access": "JR富山駅から車で10分",
+   "closed": null,
    "bays": "6打席（左右打席あり）",
+   "bays_num": 6,
    "parking": "無料駐車場あり（40台）",
    "private_room": null,
-   "equipment": null,
+   "monthly_fee": "NIGHT 月額4,950円(税込)／GOLF 1年継続/月額6,600円・通常7,700円(税込)／DAY 1年継続/月額8,800円・通常9,900円(税込)／GOLF通い放題 1年継続/月額12,100円・通常13,200円(税込)／ROUND 1年継続/月額14,300円・通常15,400円(税込)／JUNIOR 月額0円(税込0円)",
+   "equipment": "OKONGOLF",
+   "note": "機材は全店共通の記載（https://i8golf.jp/simg/「i8GOLFでは、すべての店舗にプロも信頼する高性能シミュレーションゴルフ「OKONGOLF（オーケーオンゴルフ）」を導入しています。」）",
    "open": true,
    "official": "https://i8golf.jp/toyama/",
    "source_url": "https://i8golf.jp/toyama/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "segment": "indoor",
@@ -140,14 +168,19 @@
    "tel": "050-3645-7294",
    "hours": "24時間",
    "open_24h": true,
+   "access": "JR高崎駅から車で10分",
+   "closed": null,
    "bays": "2部屋（右打席のみ）",
+   "bays_num": 2,
    "parking": "無料駐車場あり（4台）",
    "private_room": true,
-   "equipment": null,
+   "monthly_fee": "NIGHT 月額5,000円(税込5,500円)／DAY 月額8,000円(税込8,800円)／GOLF 月額10,000円(税込11,000円)／GOLF+ 月額15,000円(税込16,500円)",
+   "equipment": "OKONGOLF",
+   "note": "機材は全店共通の記載（https://i8golf.jp/simg/「i8GOLFでは、すべての店舗にプロも信頼する高性能シミュレーションゴルフ「OKONGOLF（オーケーオンゴルフ）」を導入しています。」）",
    "open": true,
    "official": "https://i8golf.jp/takasaki/",
    "source_url": "https://i8golf.jp/takasaki/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   }
  ]
 }

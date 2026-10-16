@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15",
+ "generated_at": "2026-10-16",
  "count": 150,
  "stores": [
   {
@@ -15,11 +15,25 @@
    "hours": "店舗営業 10:15～21:45 レッスンタイム ［コーチ定休日］ 水・日曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 9,980円〜(税込10,978円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：水・日曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": "GOLFZON GDR",
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/akasakamitsuke_extra",
    "source_url": "https://www.stepgolf.co.jp/store/akasakamitsuke_extra",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "equipment": "https://www.stepgolf.co.jp/store/akasakamitsuke_extra 「★全打席シミュレーション機器（GDR）設置」",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -34,11 +48,26 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 9,980円〜(税込10,978円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": "GOLFZON GDR",
+   "features": [
+    "駐車場(提携含む）",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/aobadai-ex",
    "source_url": "https://www.stepgolf.co.jp/store/aobadai-ex",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "equipment": "https://www.stepgolf.co.jp/store/aobadai-ex 「★全打席「GOLFZON社製GDR」シミュレーター完備‼」",
+    "parking": "https://www.stepgolf.co.jp/store/aobadai-ex 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -53,11 +82,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/asaka_top",
    "source_url": "https://www.stepgolf.co.jp/store/asaka_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -72,11 +114,23 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/ayase_top",
    "source_url": "https://www.stepgolf.co.jp/store/ayase_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -91,11 +145,26 @@
    "hours": "店舗営業 7:15～21:45 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む） ／ ※駐車券サービスあり",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/c-kita_top",
    "source_url": "https://www.stepgolf.co.jp/store/c-kita_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/c-kita_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -110,11 +179,22 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 毎週火曜日・第2第4水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 4,980円〜(税込5,478円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火曜日・第2第4水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/c-minami_top",
    "source_url": "https://www.stepgolf.co.jp/store/c-minami_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -129,11 +209,20 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 毎週火曜日・祝日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 4,980円〜(税込5,478円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火曜日・祝日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": null,
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/chiba_top",
    "source_url": "https://www.stepgolf.co.jp/store/chiba_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -148,11 +237,25 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/chofu_top",
    "source_url": "https://www.stepgolf.co.jp/store/chofu_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -167,11 +270,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 月・火曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：月・火曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "24時間営業",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/ekoda_top",
    "source_url": "https://www.stepgolf.co.jp/store/ekoda_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -186,11 +302,26 @@
    "hours": "店舗営業 10:00～21:00 レッスンタイム ［コーチ定休日］ 水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・レッスンプラン 12,980円〜(税込14,278円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": "GTRAK",
+   "features": [
+    "駐車場(提携含む）",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/family-okinawa_top",
    "source_url": "https://www.stepgolf.co.jp/store/family-okinawa_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "equipment": "https://www.stepgolf.co.jp/store/family-okinawa_top 「★ゴルフシミュレーターGTRAK全打席完備!!」",
+    "parking": "https://www.stepgolf.co.jp/store/family-okinawa_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -205,11 +336,25 @@
    "hours": "店舗営業 10:00～20:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 12:00～20:00 ［休憩］ 15:00～15:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/fuchu_top",
    "source_url": "https://www.stepgolf.co.jp/store/fuchu_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/fuchu_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -224,11 +369,25 @@
    "hours": "店舗営業 8:00～22:45 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む） ／ 駐車券サービスあり",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/fujimino_top",
    "source_url": "https://www.stepgolf.co.jp/store/fujimino_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/fujimino_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -243,11 +402,26 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 12:00～20:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/fukuyama-miyuki_top",
    "source_url": "https://www.stepgolf.co.jp/store/fukuyama-miyuki_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/fukuyama-miyuki_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -262,11 +436,27 @@
    "hours": "店舗営業 5:00～24:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 9,980円〜(税込10,978円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": "GOLFZON GDR",
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/fushimi_extra",
    "source_url": "https://www.stepgolf.co.jp/store/fushimi_extra",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "equipment": "https://www.stepgolf.co.jp/store/fushimi_extra 「★全打席「GOLFZON社製GDR」シミュレーター完備‼」",
+    "parking": "https://www.stepgolf.co.jp/store/fushimi_extra 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -281,11 +471,23 @@
    "hours": "店舗営業 7:30～22:30 レッスンタイム ［コーチ定休日］ 日曜日 ［平日］ 月・木・金 9:30～21:20 火・水 13:30～21:20 ［休憩］",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 13,000円〜(税込14,300円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：日曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": "GOLFZON GDR",
+   "features": [
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/ginza_yurakucho_pre",
    "source_url": "https://www.stepgolf.co.jp/store/ginza_yurakucho_pre",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "equipment": "https://www.stepgolf.co.jp/store/ginza_yurakucho_pre 「月々13,000円（税込14,300円）～通い放題、シミュレーションゴルフで打ち放題だから、自分のペースで上達できる！！                                                                                                               ★ゴルフシミュレーターGDR全打席完備!!」",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -299,12 +501,25 @@
    "tel": "045-982-5205",
    "hours": "店舗営業 10:00～20:00 レッスンタイム ［コーチ定休日］ 水・木曜日 ［平日］ 10:00～20:00 ［休憩］ 16:00～17:00 ［土日祝］ 10:00～20:00 ［休憩］ 16:00～17:00",
    "open_24h": false,
-   "monthly_fee": null,
-   "equipment": "スカイトラック（弾道測定機）",
+   "monthly_fee": "・カジュアル会員 19,800円〜(税込21,780円〜)",
+   "closed": "コーチ定休日：水・木曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/gj_aobadai",
    "source_url": "https://www.stepgolf.co.jp/store/gj_aobadai",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -319,11 +534,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/gotanda_top",
    "source_url": "https://www.stepgolf.co.jp/store/gotanda_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -338,11 +566,24 @@
    "hours": "店舗営業 10:00～20:45 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/h-matsuyama_top",
    "source_url": "https://www.stepgolf.co.jp/store/h-matsuyama_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/h-matsuyama_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -357,11 +598,20 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 毎週火曜日・第2・第4水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 4,980円〜(税込5,478円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火曜日・第2・第4水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": null,
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/hachioji_top",
    "source_url": "https://www.stepgolf.co.jp/store/hachioji_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -376,11 +626,20 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 毎週火曜日・第2第4水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 4,980円〜(税込5,478円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火曜日・第2第4水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": null,
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/haijima_top",
    "source_url": "https://www.stepgolf.co.jp/store/haijima_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -395,11 +654,25 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/hakataekimae_top",
    "source_url": "https://www.stepgolf.co.jp/store/hakataekimae_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -414,11 +687,23 @@
    "hours": "店舗営業 6:00～23:45 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 9,980円〜(税込10,978円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": "GOLFZON GDR",
+   "features": [
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/hamadayama_extra",
    "source_url": "https://www.stepgolf.co.jp/store/hamadayama_extra",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "equipment": "https://www.stepgolf.co.jp/store/hamadayama_extra 「★全打席シミュレーション機器（GDR）設置」",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -433,11 +718,25 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "※駐車場2時間無料",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/heiwajima_top",
    "source_url": "https://www.stepgolf.co.jp/store/heiwajima_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/heiwajima_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -452,11 +751,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/higashiazabu_top",
    "source_url": "https://www.stepgolf.co.jp/store/higashiazabu_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -471,11 +783,28 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・Plus平日プラン 8,980円〜(税込9,878円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": "11打席",
+   "bays_num": 11,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/higashiomiya_top",
    "source_url": "https://www.stepgolf.co.jp/store/higashiomiya_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "bays": "https://www.stepgolf.co.jp/store/higashiomiya_top 「よるレッスン ★2ブランド合併店舗（11打席）」",
+    "parking": "https://www.stepgolf.co.jp/store/higashiomiya_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -490,11 +819,26 @@
    "hours": "店舗営業 6:00～23:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/hiroshima-saijo_top",
    "source_url": "https://www.stepgolf.co.jp/store/hiroshima-saijo_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/hiroshima-saijo_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -509,11 +853,25 @@
    "hours": "店舗営業 6:00～23:00 レッスンタイム ［コーチ定休日］ 水曜日 ［平日］ 12:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・Plus平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：水曜日",
+   "parking": null,
+   "bays": "9打席",
+   "bays_num": 9,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/hiroshima_kamiya_top",
    "source_url": "https://www.stepgolf.co.jp/store/hiroshima_kamiya_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "bays": "https://www.stepgolf.co.jp/store/hiroshima_kamiya_top 「ステップゴルフ初の2ブランド合併店舗（9打席）」",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -528,11 +886,23 @@
    "hours": "店舗営業 6:00～23:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/hiroshima_shinonome",
    "source_url": "https://www.stepgolf.co.jp/store/hiroshima_shinonome",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -547,11 +917,27 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/honatsugi_top",
    "source_url": "https://www.stepgolf.co.jp/store/honatsugi_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/honatsugi_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -566,11 +952,24 @@
    "hours": "店舗営業 10:00～20:45 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/honjyo_top",
    "source_url": "https://www.stepgolf.co.jp/store/honjyo_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/honjyo_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -585,11 +984,20 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 毎週火曜日・第2・第4水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 4,980円〜(税込5,478円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火曜日・第2・第4水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": null,
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/i-fudodori_top",
    "source_url": "https://www.stepgolf.co.jp/store/i-fudodori_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -604,11 +1012,25 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む） ／ 無料駐車場あり",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/ichiharagoi_top",
    "source_url": "https://www.stepgolf.co.jp/store/ichiharagoi_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/ichiharagoi_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -623,11 +1045,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/ichinoe_top",
    "source_url": "https://www.stepgolf.co.jp/store/ichinoe_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -642,11 +1077,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "24時間営業",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/iidabashi_top",
    "source_url": "https://www.stepgolf.co.jp/store/iidabashi_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -661,11 +1109,26 @@
    "hours": "店舗営業 5:00～24:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/ijiri_top",
    "source_url": "https://www.stepgolf.co.jp/store/ijiri_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/ijiri_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -680,11 +1143,20 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 毎週火曜日・第2第4水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 4,980円〜(税込5,478円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火曜日・第2第4水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": null,
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/iruma_top",
    "source_url": "https://www.stepgolf.co.jp/store/iruma_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -699,11 +1171,26 @@
    "hours": "店舗営業 5:00～22:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 11:00～20:00 ［休憩］ 15:00～15:50 ［土日祝］ 9:00～18:00 ［休憩］ 13:00～13:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/jyoetsu_top",
    "source_url": "https://www.stepgolf.co.jp/store/jyoetsu_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/jyoetsu_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -718,11 +1205,24 @@
    "hours": "店舗営業 5:00～24:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 10:00～20:00 ［休憩］ 15:00～15:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kamata-west_top",
    "source_url": "https://www.stepgolf.co.jp/store/kamata-west_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -737,11 +1237,23 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 毎週火曜日・第2第4月曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 4,980円〜(税込5,478円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火曜日・第2第4月曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "弾道解析",
+    "スイング解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kameido_top",
    "source_url": "https://www.stepgolf.co.jp/store/kameido_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -756,11 +1268,25 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kanazawahakkei_top",
    "source_url": "https://www.stepgolf.co.jp/store/kanazawahakkei_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -775,11 +1301,26 @@
    "hours": "店舗営業 6:00～23:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kanonshinmachi_top",
    "source_url": "https://www.stepgolf.co.jp/store/kanonshinmachi_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/kanonshinmachi_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -794,11 +1335,23 @@
    "hours": "店舗営業 8:00～22:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/karasuyama_top",
    "source_url": "https://www.stepgolf.co.jp/store/karasuyama_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -813,11 +1366,23 @@
    "hours": "店舗営業 6:00～22:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kashii_top",
    "source_url": "https://www.stepgolf.co.jp/store/kashii_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -832,11 +1397,25 @@
    "hours": "店舗営業 10:00～21:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "駐車場(提携含む）"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kashiwa_top",
    "source_url": "https://www.stepgolf.co.jp/store/kashiwa_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/kashiwa_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -851,11 +1430,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kashiwaekimae_top",
    "source_url": "https://www.stepgolf.co.jp/store/kashiwaekimae_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -870,11 +1462,25 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 8,980円〜(税込9,878円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kawagoe-ekimae_top",
    "source_url": "https://www.stepgolf.co.jp/store/kawagoe-ekimae_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -889,11 +1495,23 @@
    "hours": "店舗営業 8:00～22:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kawasaki_top",
    "source_url": "https://www.stepgolf.co.jp/store/kawasaki_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -908,11 +1526,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/keiseiokubo_top",
    "source_url": "https://www.stepgolf.co.jp/store/keiseiokubo_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -927,11 +1558,26 @@
    "hours": "店舗営業 9:00～22:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kenkyugakuen_top",
    "source_url": "https://www.stepgolf.co.jp/store/kenkyugakuen_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/kenkyugakuen_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -946,11 +1592,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 10:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 9,980円〜(税込10,978円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": "GOLFZON GDR",
+   "features": [
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kinshicho_extra",
    "source_url": "https://www.stepgolf.co.jp/store/kinshicho_extra",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "equipment": "https://www.stepgolf.co.jp/store/kinshicho_extra 「★全打席「GOLFZON社製GDR」シミュレーター完備‼」",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -965,11 +1624,25 @@
    "hours": "店舗営業 8:00～22:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kisarazujozai_top",
    "source_url": "https://www.stepgolf.co.jp/store/kisarazujozai_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/kisarazujozai_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -984,11 +1657,20 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 毎週火曜日・第2・第4水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 4,980円〜(税込5,478円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火曜日・第2・第4水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": null,
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kitaakabane_top",
    "source_url": "https://www.stepgolf.co.jp/store/kitaakabane_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1003,11 +1685,27 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kitakurihama-ekimae_top",
    "source_url": "https://www.stepgolf.co.jp/store/kitakurihama-ekimae_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/kitakurihama-ekimae_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1022,11 +1720,25 @@
    "hours": "店舗営業 9:00～23:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "駐車場(提携含む）"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kitanarashino_top",
    "source_url": "https://www.stepgolf.co.jp/store/kitanarashino_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/kitanarashino_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1041,11 +1753,25 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "【お車でお越しの方】 ３台 無料駐車場がございます。 （東京都清瀬市元町1-5-16）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kiyose_top",
    "source_url": "https://www.stepgolf.co.jp/store/kiyose_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/kiyose_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1060,11 +1786,25 @@
    "hours": "店舗営業 6:00～22:45 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "駐車場(提携含む）"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kodaira-jyosui_top",
    "source_url": "https://www.stepgolf.co.jp/store/kodaira-jyosui_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/kodaira-jyosui_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1079,11 +1819,24 @@
    "hours": "店舗営業 10:00～20:45 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/koga_top",
    "source_url": "https://www.stepgolf.co.jp/store/koga_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/koga_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1098,11 +1851,20 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 毎週火曜日・第2第4水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 4,980円〜(税込5,478円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火曜日・第2第4水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": null,
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kokubunji_top",
    "source_url": "https://www.stepgolf.co.jp/store/kokubunji_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1117,11 +1879,23 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 毎週火曜日・第2第4水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 4,980円〜(税込5,478円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火曜日・第2第4水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/komagome_top",
    "source_url": "https://www.stepgolf.co.jp/store/komagome_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/komagome_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1136,11 +1910,25 @@
    "hours": "店舗営業 10:00～20:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 12:00～20:00 ［休憩］ 15:00～15:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む） ／ 無料駐車場・1,500台",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "駐車場(提携含む）"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kouzunomori_top",
    "source_url": "https://www.stepgolf.co.jp/store/kouzunomori_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/kouzunomori_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1155,11 +1943,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kunitachi_top",
    "source_url": "https://www.stepgolf.co.jp/store/kunitachi_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1174,11 +1975,26 @@
    "hours": "店舗営業 6:00～23:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/kurechuo_top",
    "source_url": "https://www.stepgolf.co.jp/store/kurechuo_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/kurechuo_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1193,11 +2009,23 @@
    "hours": "店舗営業 8:00～22:00 レッスンタイム ［コーチ定休日］ 火曜日、第2・４水曜日 ［平日］ 14:00-22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00-19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火曜日、第2・４水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/machida_top",
    "source_url": "https://www.stepgolf.co.jp/store/machida_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1212,11 +2040,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/machiyaekimae_top",
    "source_url": "https://www.stepgolf.co.jp/store/machiyaekimae_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1231,11 +2072,25 @@
    "hours": "店舗営業 10:00～21:00 レッスンタイム ［コーチ定休日］ 月・木曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 11:00～20:00 ［休憩］ 15:00～15:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：月・木曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/makuharishintoshin_top",
    "source_url": "https://www.stepgolf.co.jp/store/makuharishintoshin_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/makuharishintoshin_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1250,11 +2105,28 @@
    "hours": "店舗営業 6:00～23:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": "5打席",
+   "bays_num": 5,
+   "private_room": null,
+   "equipment": "GTRAK",
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/matsuyama-chuo_top",
    "source_url": "https://www.stepgolf.co.jp/store/matsuyama-chuo_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "bays": "https://www.stepgolf.co.jp/news/2602241700 「-948-9562 打席数：5打席（スイング解析機・弾道測定器「GTRAK」完備／スクリーン投」",
+    "equipment": "https://www.stepgolf.co.jp/news/2602241700 「-948-9562 打席数：5打席（スイング解析機・弾道測定器「GTRAK」完備／スクリーン投」",
+    "parking": "https://www.stepgolf.co.jp/store/matsuyama-chuo_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1269,11 +2141,29 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": "5打席",
+   "bays_num": 5,
+   "private_room": null,
+   "equipment": "GTRAK",
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/meinohama_top",
    "source_url": "https://www.stepgolf.co.jp/store/meinohama_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "bays": "https://www.stepgolf.co.jp/news/2606150900 「ち放題はそのままに、全5打席に弾道測定器（GTRAKスクリーン投影式）を完備しています。ス」",
+    "equipment": "https://www.stepgolf.co.jp/news/2606150900 「ち放題はそのままに、全5打席に弾道測定器（GTRAKスクリーン投影式）を完備しています。ス」",
+    "parking": "https://www.stepgolf.co.jp/store/meinohama_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1288,11 +2178,24 @@
    "hours": "店舗営業 8:00～21:30 レッスンタイム ［コーチ定休日］ 水曜日 ［平日］ 13:30～21:25 ［休憩］ 16:30〜17:30 ［土日］ 10:30～18:30 ［休憩］ 13:30〜14:30",
    "open_24h": false,
    "monthly_fee": "・デイタイムプラン 14,000円〜(税込15,400円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/minamiaoyama_pre",
    "source_url": "https://www.stepgolf.co.jp/store/minamiaoyama_pre",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1307,11 +2210,24 @@
    "hours": "店舗営業 5:00～24:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/minamifunabashi-ekimae_top",
    "source_url": "https://www.stepgolf.co.jp/store/minamifunabashi-ekimae_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1326,11 +2242,25 @@
    "hours": "店舗営業 10:00～20:00 レッスンタイム ［コーチ定休日］ 毎週火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 4,980円〜(税込5,478円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "弾道解析",
+    "駐車場(提携含む）",
+    "スイング解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/minamifunabashi_top",
    "source_url": "https://www.stepgolf.co.jp/store/minamifunabashi_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/minamifunabashi_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1345,11 +2275,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 9,980円〜(税込10,978円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": "GOLFZON GDR",
+   "features": [
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/mitaka_extra",
    "source_url": "https://www.stepgolf.co.jp/store/mitaka_extra",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "equipment": "https://www.stepgolf.co.jp/store/mitaka_extra 「★全打席シミュレーション機器（GDR）設置」",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1364,11 +2307,23 @@
    "hours": "店舗営業 6:00～23:45 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 9,980円〜(税込10,978円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": "GOLFZON GDR",
+   "features": [
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/miyamaedaira_extra",
    "source_url": "https://www.stepgolf.co.jp/store/miyamaedaira_extra",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "equipment": "https://www.stepgolf.co.jp/store/miyamaedaira_extra 「★全打席シミュレーション機器（GDR）設置」",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1383,11 +2338,25 @@
    "hours": "店舗営業 6:00～23:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む） ／ ★駐車場8台完備★ 必ず地下駐車場をご利用ください ※建物前の駐車場(1階テナント用)やザ・ビッグ駐車場への無断駐車はご遠慮ください",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "駐車場(提携含む）"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/miyauchi_top",
    "source_url": "https://www.stepgolf.co.jp/store/miyauchi_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/miyauchi_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1402,11 +2371,27 @@
    "hours": "レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 9,980円〜(税込10,978円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": "5打席",
+   "bays_num": 5,
+   "private_room": null,
+   "equipment": "GTRAK",
+   "features": [
+    "駐車場(提携含む）",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/moriguchi_dainichi_top",
    "source_url": "https://www.stepgolf.co.jp/store/moriguchi_dainichi_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "bays": "https://www.stepgolf.co.jp/news/2609080900 「1 ニトリ敷地内 ■打席数：５打席 弾道測定器（GTRAKスクリーン投影を完備） ■先行入会＆」",
+    "equipment": "https://www.stepgolf.co.jp/news/2609080900 「1 ニトリ敷地内 ■打席数：５打席 弾道測定器（GTRAKスクリーン投影を完備） ■先行入会＆」",
+    "parking": "https://www.stepgolf.co.jp/store/moriguchi_dainichi_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1421,11 +2406,27 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・木曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・木曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/moriya_top",
    "source_url": "https://www.stepgolf.co.jp/store/moriya_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/moriya_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1440,11 +2441,20 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 毎週火曜日・第2、第4水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 4,980円〜(税込5,478円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火曜日・第2、第4水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": null,
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/motosumiyoshi_top",
    "source_url": "https://www.stepgolf.co.jp/store/motosumiyoshi_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1459,11 +2469,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/motoyawata_top",
    "source_url": "https://www.stepgolf.co.jp/store/motoyawata_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1478,11 +2501,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/motoyoyogi_top",
    "source_url": "https://www.stepgolf.co.jp/store/motoyoyogi_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1497,11 +2533,25 @@
    "hours": "店舗営業 7:00～23:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/myoden_top",
    "source_url": "https://www.stepgolf.co.jp/store/myoden_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/myoden_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1516,11 +2566,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/n-hamacho_top",
    "source_url": "https://www.stepgolf.co.jp/store/n-hamacho_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1535,11 +2598,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/n-kakigaracho_top",
    "source_url": "https://www.stepgolf.co.jp/store/n-kakigaracho_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1554,11 +2630,22 @@
    "hours": "店舗営業 6:00～24:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/nagahara_top",
    "source_url": "https://www.stepgolf.co.jp/store/nagahara_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1573,11 +2660,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/nakamurabashi_top",
    "source_url": "https://www.stepgolf.co.jp/store/nakamurabashi_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1592,11 +2692,25 @@
    "hours": "店舗営業 7:30～23:00 レッスンタイム ［コーチ定休日］ 水曜日",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 12,000円〜(税込13,200円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": "GOLFZON GDR",
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/nakano_pre",
    "source_url": "https://www.stepgolf.co.jp/store/nakano_pre",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "equipment": "https://www.stepgolf.co.jp/store/nakano_pre 「月々12,000円（税込13,200円）～通い放題、シミュレーションゴルフで打ち放題だから、自分のペースで上達できる！！                                                                                ★ゴルフシミュレーターGDR全打席完備!!」",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1611,11 +2725,24 @@
    "hours": "店舗営業 7:30～22:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/nakano_top",
    "source_url": "https://www.stepgolf.co.jp/store/nakano_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1630,11 +2757,23 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/niiza_top",
    "source_url": "https://www.stepgolf.co.jp/store/niiza_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1649,11 +2788,25 @@
    "hours": "店舗営業 9:00～22:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/nippa_top",
    "source_url": "https://www.stepgolf.co.jp/store/nippa_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/nippa_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1668,11 +2821,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/nippori_top",
    "source_url": "https://www.stepgolf.co.jp/store/nippori_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1687,11 +2853,25 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/nishiarai_top",
    "source_url": "https://www.stepgolf.co.jp/store/nishiarai_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1706,11 +2886,24 @@
    "hours": "店舗営業 5:00～23:45 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/nishifunabashi-ekimae_top",
    "source_url": "https://www.stepgolf.co.jp/store/nishifunabashi-ekimae_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1725,11 +2918,25 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/nishijin-nakanishishotengai_top",
    "source_url": "https://www.stepgolf.co.jp/store/nishijin-nakanishishotengai_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1744,11 +2951,25 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/nishijin_top",
    "source_url": "https://www.stepgolf.co.jp/store/nishijin_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1763,11 +2984,24 @@
    "hours": "店舗営業 6:30～1:30 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/nishikasai_top",
    "source_url": "https://www.stepgolf.co.jp/store/nishikasai_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1782,11 +3016,20 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 毎週火曜日・第2第4水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 4,980円〜(税込5,478円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火曜日・第2第4水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": null,
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/nishikoyama_top",
    "source_url": "https://www.stepgolf.co.jp/store/nishikoyama_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1801,11 +3044,23 @@
    "hours": "店舗営業 8:00～22:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/nishiogikubo_top",
    "source_url": "https://www.stepgolf.co.jp/store/nishiogikubo_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1820,11 +3075,22 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 毎週火曜日・第2・第4水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 4,980円〜(税込5,478円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火曜日・第2・第4水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/nishitokorozawa_top",
    "source_url": "https://www.stepgolf.co.jp/store/nishitokorozawa_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1839,11 +3105,26 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 月・火曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：月・火曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/o-sagamihara_top",
    "source_url": "https://www.stepgolf.co.jp/store/o-sagamihara_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/o-sagamihara_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1858,11 +3139,24 @@
    "hours": "店舗営業 7:00～22:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/ochiai_top",
    "source_url": "https://www.stepgolf.co.jp/store/ochiai_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1877,11 +3171,26 @@
    "hours": "店舗営業 10:00～20:45 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 12:00～20:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む） ／ ※21:00 駐車場閉鎖",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/odasakae_top",
    "source_url": "https://www.stepgolf.co.jp/store/odasakae_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/odasakae_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1896,11 +3205,23 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/ogikubo_top",
    "source_url": "https://www.stepgolf.co.jp/store/ogikubo_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1915,11 +3236,26 @@
    "hours": "店舗営業 7:00～22:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/ok-minatomirai_top",
    "source_url": "https://www.stepgolf.co.jp/store/ok-minatomirai_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/ok-minatomirai_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1934,11 +3270,23 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 毎週火曜日・第2第4水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火曜日・第2第4水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/okachimachi_top",
    "source_url": "https://www.stepgolf.co.jp/store/okachimachi_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1953,11 +3301,22 @@
    "hours": "店舗営業 8:30～22:45 レッスンタイム ［コーチ定休日］ 火・第2第4水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・第2第4水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/omori_top",
    "source_url": "https://www.stepgolf.co.jp/store/omori_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1972,11 +3331,23 @@
    "hours": "店舗営業 6:00～24:30 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/ontakesan_top",
    "source_url": "https://www.stepgolf.co.jp/store/ontakesan_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -1991,11 +3362,25 @@
    "hours": "店舗営業 9:00～21:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "駐車場(提携含む）"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/ootakanomori_top",
    "source_url": "https://www.stepgolf.co.jp/store/ootakanomori_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/ootakanomori_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2010,11 +3395,25 @@
    "hours": "店舗営業 6:00～23:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "駐車場(提携含む）"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/otake_top",
    "source_url": "https://www.stepgolf.co.jp/store/otake_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/otake_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2029,11 +3428,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/oyama_top",
    "source_url": "https://www.stepgolf.co.jp/store/oyama_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2048,11 +3460,25 @@
    "hours": "店舗営業 10:00～23:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 10:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/oyumino_top",
    "source_url": "https://www.stepgolf.co.jp/store/oyumino_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/oyumino_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2067,11 +3493,25 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/ropponmatsu_top",
    "source_url": "https://www.stepgolf.co.jp/store/ropponmatsu_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2086,11 +3526,27 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/sagamiono_top",
    "source_url": "https://www.stepgolf.co.jp/store/sagamiono_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/sagamiono_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2105,11 +3561,25 @@
    "hours": "店舗営業 8:00～22:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む） ／ ※駐車場 共用400台完備",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/saitama-chuo_top",
    "source_url": "https://www.stepgolf.co.jp/store/saitama-chuo_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/saitama-chuo_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2124,11 +3594,26 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・木曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・木曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/sakuranomori_top",
    "source_url": "https://www.stepgolf.co.jp/store/sakuranomori_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/sakuranomori_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2143,11 +3628,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/sanjokarasuma_top",
    "source_url": "https://www.stepgolf.co.jp/store/sanjokarasuma_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2162,11 +3660,28 @@
    "hours": "店舗営業 10:00～22:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": "5打席",
+   "bays_num": 5,
+   "private_room": null,
+   "equipment": "GTRAK",
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/sapporo_kikusui_top",
    "source_url": "https://www.stepgolf.co.jp/store/sapporo_kikusui_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "bays": "https://www.stepgolf.co.jp/news/2605090900 「ち放題はそのままに、全5打席に弾道測定器（GTRAKスクリーン投影式）を完備しています。地」",
+    "equipment": "https://www.stepgolf.co.jp/news/2605090900 「ち放題はそのままに、全5打席に弾道測定器（GTRAKスクリーン投影式）を完備しています。地」",
+    "parking": "https://www.stepgolf.co.jp/store/sapporo_kikusui_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2181,11 +3696,25 @@
    "hours": "店舗営業 6:30～22:45 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 9,980円〜(税込10,978円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": "GOLFZON GDR",
+   "features": [
+    "駐車場(提携含む）",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/sapporo_kotoni_extra",
    "source_url": "https://www.stepgolf.co.jp/store/sapporo_kotoni_extra",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "equipment": "https://www.stepgolf.co.jp/store/sapporo_kotoni_extra 「★全打席シミュレーション機器（GDR）設置」",
+    "parking": "https://www.stepgolf.co.jp/store/sapporo_kotoni_extra 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2200,11 +3729,23 @@
    "hours": "店舗営業 10:00～20:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 11:00～21:00 ［休憩］ 16:00～16:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 9,980円〜(税込10,978円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": "GOLFZON GDR",
+   "features": [
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/sapporo_odori_extra",
    "source_url": "https://www.stepgolf.co.jp/store/sapporo_odori_extra",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "equipment": "https://www.stepgolf.co.jp/store/sapporo_odori_extra 「★全打席シミュレーション機器（GDR）設置」",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2219,11 +3760,26 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 9,980円〜(税込10,978円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": "GOLFZON GDR",
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/seisekisakuragaoka_extra",
    "source_url": "https://www.stepgolf.co.jp/store/seisekisakuragaoka_extra",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "equipment": "https://www.stepgolf.co.jp/store/seisekisakuragaoka_extra 「★全打席「GOLFZON社製GDR」シミュレーター完備‼」",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2238,11 +3794,24 @@
    "hours": "店舗営業 10:00～20:45 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む） ／ 駐車券サービスあり",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/sendai-nagamachi_top",
    "source_url": "https://www.stepgolf.co.jp/store/sendai-nagamachi_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/sendai-nagamachi_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2257,11 +3826,23 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/shiinamachi_top",
    "source_url": "https://www.stepgolf.co.jp/store/shiinamachi_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2276,11 +3857,26 @@
    "hours": "店舗営業 6:00～23:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/shimonoseki_top",
    "source_url": "https://www.stepgolf.co.jp/store/shimonoseki_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/shimonoseki_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2295,11 +3891,25 @@
    "hours": "店舗営業 10:00～22:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 10:00～22:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "駐車場(提携含む）"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/shin_urayasu_top",
    "source_url": "https://www.stepgolf.co.jp/store/shin_urayasu_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/shin_urayasu_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2314,11 +3924,20 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 毎週火曜日・祝日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 4,980円〜(税込5,478円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火曜日・祝日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": null,
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/shinagawa_top",
    "source_url": "https://www.stepgolf.co.jp/store/shinagawa_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2333,11 +3952,25 @@
    "hours": "店舗営業 10:00～21:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/shinfunabashi_top",
    "source_url": "https://www.stepgolf.co.jp/store/shinfunabashi_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/shinfunabashi_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2352,11 +3985,25 @@
    "hours": "店舗営業 10:00～21:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む） ／ ※共有駐車場700台完備－3時間迄無料",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "駐車場(提携含む）"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/shinkamagaya_top",
    "source_url": "https://www.stepgolf.co.jp/store/shinkamagaya_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/shinkamagaya_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2371,11 +4018,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/shinozaki_top",
    "source_url": "https://www.stepgolf.co.jp/store/shinozaki_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2390,11 +4050,25 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・第2・第4水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・第2・第4水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/shinshibamata_top",
    "source_url": "https://www.stepgolf.co.jp/store/shinshibamata_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/shinshibamata_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2409,11 +4083,20 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 毎週火曜日・第2第4水曜日・祝日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 4,980円〜(税込5,478円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火曜日・第2第4水曜日・祝日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": null,
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/shintokorozawa_top",
    "source_url": "https://www.stepgolf.co.jp/store/shintokorozawa_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2428,11 +4111,24 @@
    "hours": "店舗営業 10:00～20:45 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/shobu_top",
    "source_url": "https://www.stepgolf.co.jp/store/shobu_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/shobu_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2447,11 +4143,23 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/soshigayaokura_top",
    "source_url": "https://www.stepgolf.co.jp/store/soshigayaokura_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2466,11 +4174,25 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/souka-ekimae_top",
    "source_url": "https://www.stepgolf.co.jp/store/souka-ekimae_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2485,11 +4207,26 @@
    "hours": "店舗営業 9:00～22:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日プラン 12,000円〜(税込13,200円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/store-133183",
    "source_url": "https://www.stepgolf.co.jp/store/store-133183",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/store-133183 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2504,11 +4241,23 @@
    "hours": "店舗営業 6:00～24:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/sugita_top",
    "source_url": "https://www.stepgolf.co.jp/store/sugita_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2523,11 +4272,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/takadanobaba_top",
    "source_url": "https://www.stepgolf.co.jp/store/takadanobaba_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2542,11 +4304,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/takatsuki_top",
    "source_url": "https://www.stepgolf.co.jp/store/takatsuki_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2561,11 +4336,27 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/takenotsuka-nikkokaido_top",
    "source_url": "https://www.stepgolf.co.jp/store/takenotsuka-nikkokaido_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/takenotsuka-nikkokaido_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2580,11 +4371,25 @@
    "hours": "店舗営業 10:00～20:45 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む） ／ 無料駐車場840台あり",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/tamasakai_top",
    "source_url": "https://www.stepgolf.co.jp/store/tamasakai_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/tamasakai_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2599,11 +4404,23 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/tamasen_top",
    "source_url": "https://www.stepgolf.co.jp/store/tamasen_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2618,11 +4435,20 @@
    "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 毎週火曜日・第2第4水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイタイムプラン 4,980円〜(税込5,478円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：毎週火曜日・第2第4水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": null,
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/toyoharu_top",
    "source_url": "https://www.stepgolf.co.jp/store/toyoharu_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2637,11 +4463,25 @@
    "hours": "店舗営業 10:00～21:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 11:00～20:00 ［休憩］ 15:00～15:50 ［土日祝］ 10:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む） ／ 共有駐車場1700台完備－終日無料",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/tsujido-shinmachi_top",
    "source_url": "https://www.stepgolf.co.jp/store/tsujido-shinmachi_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/tsujido-shinmachi_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2656,11 +4496,28 @@
    "hours": "店舗営業 7:30～22:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 12:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 11:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": "5打席",
+   "bays_num": 5,
+   "private_room": null,
+   "equipment": "GTRAK",
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/usuki_top",
    "source_url": "https://www.stepgolf.co.jp/store/usuki_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "bays": "https://www.stepgolf.co.jp/news/2604231630 「ち放題はそのままに、全5打席に弾道測定器（GTRAKスクリーン投影式）を完備しています。店」",
+    "equipment": "https://www.stepgolf.co.jp/news/2604231630 「ち放題はそのままに、全5打席に弾道測定器（GTRAKスクリーン投影式）を完備しています。店」",
+    "parking": "https://www.stepgolf.co.jp/store/usuki_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2675,11 +4532,25 @@
    "hours": "店舗営業 6:00～24:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/utazu_top",
    "source_url": "https://www.stepgolf.co.jp/store/utazu_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/utazu_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2694,11 +4565,29 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 8,980円〜(税込9,878円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": "5打席",
+   "bays_num": 5,
+   "private_room": null,
+   "equipment": "GTRAK",
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/utsunomiya_nagaokakaido_top",
    "source_url": "https://www.stepgolf.co.jp/store/utsunomiya_nagaokakaido_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "bays": "https://www.stepgolf.co.jp/news/2608240900 「戸祭町448-1 ■打席数：５打席 弾道測定器（GTRAKスクリーン投影を完備） ■先行入会＆」",
+    "equipment": "https://www.stepgolf.co.jp/news/2608240900 「戸祭町448-1 ■打席数：５打席 弾道測定器（GTRAKスクリーン投影を完備） ■先行入会＆」",
+    "parking": "https://www.stepgolf.co.jp/store/utsunomiya_nagaokakaido_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2713,11 +4602,27 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 9,980円〜(税込10,978円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
-   "open": true,
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": null,
+   "equipment": "GOLFZON GDR+",
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
+   "open": false,
    "official": "https://www.stepgolf.co.jp/store/y-motomachi_extra",
    "source_url": "https://www.stepgolf.co.jp/store/y-motomachi_extra",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "bays": "https://www.stepgolf.co.jp/news/2610030900 「地 宝田ビル2階 ■打席数：4打席（全打席に「GDR+」を完備） ■先行入会＆プレオープン：9」",
+    "equipment": "https://www.stepgolf.co.jp/store/y-motomachi_extra 「★全打席「GOLFZON社製GDR」シミュレーター完備‼」",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   },
+   "note": "公式ニュース「11月グランドオープン予定」「先行入会＆プレオープン：9月3日（木）～ 11月16日（月）」「打席数：4打席（全打席に「GDR+」を完備）」"
   },
   {
    "segment": "lesson",
@@ -2732,11 +4637,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/y-tanmachi_top",
    "source_url": "https://www.stepgolf.co.jp/store/y-tanmachi_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2751,11 +4669,25 @@
    "hours": "店舗営業 10:00～22:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 13:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む） ／ ※共有駐車場739台完備－2時間迄無料",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "駐車場(提携含む）"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/yashio_top",
    "source_url": "https://www.stepgolf.co.jp/store/yashio_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/yashio_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2770,11 +4702,25 @@
    "hours": "店舗営業 8:30～22:45 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 9,980円〜(税込10,978円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": "GOLFZON GDR",
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "シミュレーター"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/yoga_extra",
    "source_url": "https://www.stepgolf.co.jp/store/yoga_extra",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "equipment": "https://www.stepgolf.co.jp/store/yoga_extra 「★全打席シミュレーション機器（GDR）設置」",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2789,11 +4735,23 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/yoga_top",
    "source_url": "https://www.stepgolf.co.jp/store/yoga_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2808,11 +4766,25 @@
    "hours": "店舗営業 10:00～23:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 10:00～20:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 5,980円〜(税込6,578円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む） ／ 駐車券サービスあり",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/yokosuka_top",
    "source_url": "https://www.stepgolf.co.jp/store/yokosuka_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/yokosuka_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2827,11 +4799,24 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 7,980円〜(税込8,778円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "スイング解析",
+    "弾道解析",
+    "24時間営業"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/yono_top",
    "source_url": "https://www.stepgolf.co.jp/store/yono_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   },
   {
    "segment": "lesson",
@@ -2846,11 +4831,25 @@
    "hours": "店舗営業 10:00～21:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 12:00～21:00 ［休憩］ 16:00～16:50 ［土日祝］ 11:00～20:00 ［休憩］ 15:00～15:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
-   "equipment": "スカイトラック（弾道測定機）",
+   "closed": "コーチ定休日：火・水曜日",
+   "parking": "駐車場(提携含む）",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": null,
+   "features": [
+    "駐車場(提携含む）",
+    "スイング解析",
+    "弾道解析"
+   ],
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/yukarigaoka_top",
    "source_url": "https://www.stepgolf.co.jp/store/yukarigaoka_top",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "parking": "https://www.stepgolf.co.jp/store/yukarigaoka_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+   }
   }
  ]
 }

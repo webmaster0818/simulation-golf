@@ -82,6 +82,46 @@ def slugify(brand_slug: str, brand: str, name: str, own: str | None, zipc: str |
     return f"{brand_slug}-{place}"
 
 
+# --- 店名にブランド名を付ける（2026-10-16 MediaXAI「「藤沢善行店」しか書いてない。正しくは「ブランド名 藤沢善行店」」） ---
+# 公式の店舗一覧は自社サイトの中なので店名だけ（「青葉台店」）のことが多い。サイトに並べると
+# どのブランドか分からない。店名にブランド名（公式の別表記も含む）が無ければ前に付ける。
+BRAND_ALIASES = {
+    "ステップゴルフ": ("STEPGOLF", "ステップゴルフ", "Green Jacket"),
+    "インドアゴルフクラブ": ("IGC", "インドアゴルフクラブ"),
+    "GOLFEED24": ("GOLFEED24", "ゴルフィード24"),
+    "GOLFTEC": ("GOLFTEC", "ゴルフテック"),
+    "i8 GOLF": ("i8GOLF", "i8 GOLF", "NICESHOT"),
+    "GANTT GOLF": ("GANTT", "ガントゴルフ"),
+    "SMART GOLF": ("SMART GOLF", "スマートゴルフ"),
+    "マイゴル": ("マイゴル", "MYGOL"),
+    "チキンゴルフ": ("チキンゴルフ",),
+    "サンクチュアリゴルフ": ("サンクチュアリ",),
+}
+PREFIX = {"GOLFEED24": "ゴルフィード24"}
+# 公式の店名の頭に業態名だけが付いている（「インドアゴルフ札幌北42条店」）ものは、それを外してブランド名に置き換える
+LEADING_GENERIC = ("インドアゴルフ", "ゴルフスタジオ")
+
+
+def display_name(brand: str | None, name: str) -> str:
+    # ページの<title>をそのまま拾ったもの（「…店｜24時間営業・無料体験【ゴルフィード24】」）は後ろを落とす
+    name = re.split(r"[｜|]", name)[0].strip()
+    name = re.sub(r"【[^】]*】", "", name).strip()
+    if not brand:
+        return name
+    aliases = BRAND_ALIASES.get(brand, (brand,))
+    if any(a.lower() in name.lower() for a in aliases + (brand,)):
+        return name
+    for g in LEADING_GENERIC:
+        if name.startswith(g) and len(name) > len(g) + 1 and g in brand:
+            name = name[len(g):].strip()
+            break
+        if name.startswith(g) and len(name) > len(g) + 1 and brand == "GOLFEED24":
+            name = name[len(g):].strip()
+            break
+    # 公式が店名でカナ表記を使っているブランドは、ほかの店とそろえる（「ゴルフィード24 赤穂店」）
+    return f"{PREFIX.get(brand, brand)} {name}"
+
+
 def main() -> None:
     romaji_path = DATA / "slug-romaji.json"
     ROMAJI = json.loads(romaji_path.read_text(encoding="utf-8")) if romaji_path.exists() else {}
@@ -89,6 +129,8 @@ def main() -> None:
 
     for f in sorted(DATA.glob("brand-*.json")):
         d = json.loads(f.read_text(encoding="utf-8"))
+        if not isinstance(d, dict) or "stores" not in d:
+            continue  # brand-captures.json（キャプチャの対応表）は店舗データではない
         for i, s in enumerate(d["stores"], 1):
             out.append({
                 "segment": "indoor",
@@ -102,8 +144,8 @@ def main() -> None:
                 "bays_num": s.get("bays_num") or s.get("rooms_num"),
                 "private_room": s.get("private_room"),
                 "parking": s.get("parking"), "monthly_fee": s.get("monthly_fee"),
-                "equipment": None, "open": s.get("open", True),
-                "official": None,
+                "equipment": s.get("equipment"), "open": s.get("open", True),
+                "official": s.get("official"),
                 "source_url": s["source_url"], "fetched_at": s["fetched_at"],
             })
 
@@ -192,6 +234,14 @@ def main() -> None:
                 "open": s_.get("open", True), "official": s_.get("official"),
                 "source_url": s_["source_url"], "fetched_at": s_["fetched_at"],
             })
+
+    # 店名にブランド名を付ける（display_name）。公式の表記は store_name に残す
+    for x in out:
+        if x.get("brand"):
+            dn = display_name(x["brand"], x["name"])
+            if dn != x["name"]:
+                x["store_name"] = x["name"]
+                x["name"] = dn
 
     renamed = []
     for x in out:

@@ -8,7 +8,10 @@
 ⚠️ 同じ <dt> ラベルが1ページに何度も出る（料金プランごとに「利用」「内容」が繰り返される）。
    店舗情報は**最後に出てくる「店舗名」ブロック**にあるので、先勝ちで拾うと
    料金表の値を住所欄に入れてしまう。ラベルごとに「最後の値」を採る。
-⚠️ 公式に書いていない項目（打席数・機種名・月額）は None のままにする。推測で埋めない。
+⚠️ 公式に書いていない項目は None のままにする。推測で埋めない。
+   2026-10-16: 打席数・月額（料金表）・休業（「年末年始・夏季休暇あり」）は店舗ページ上部と料金表にある → page_facts。
+   機種は FAQ が「GOLFZONを導入している店舗と、JoyGolf smart+を導入している店舗があります」で店ごとに分からない
+   → 店舗ページに書いてある佐賀卸本町だけ。
 
   python3 scripts/collect_inthegolf.py            # 取得して data/inthegolf.json に書く
   python3 scripts/collect_inthegolf.py --limit 3  # 動作確認
@@ -58,6 +61,64 @@ def rows_last(page_html: str) -> dict:
     return out
 
 
+def page_lines(page_html: str) -> list[str]:
+    h = re.sub(r"<(script|style)[\s\S]*?</\1>", " ", page_html)
+    t = html.unescape(re.sub(r"<[^>]+>", "\n", h))
+    return [x.strip() for x in t.split("\n") if x.strip()]
+
+
+def page_facts(page_html: str) -> dict:
+    """2026-10 のリニューアル後の店舗ページから 打席・個室・機種・月額・休業 を読む。
+    ⚠️ 以前の collector は <dt>/<dd> の店舗情報欄しか見ておらず、ページ上部の「6打席・シミュレーター完備」
+       や料金表を読んでいなかった（全23店で 打席・月額 が null になっていた）。"""
+    L = page_lines(page_html)
+    d: dict = {}
+    # 打席: 「6打席・シミュレーター完備」「現在5打席・シミュレーター完備」「5打席＋個室2室・シミュレーター完備」
+    for x in L:
+        m = re.match(r"^(現在)?(\d+)打席(＋個室(\d+)室)?・シミュレーター完備$", x)
+        if m:
+            d["bays"] = x.replace("・シミュレーター完備", "")
+            d["bays_num"] = int(m.group(2))
+            if m.group(4):
+                d["private_room"] = f"個室{m.group(4)}室"
+            d["bays_quote"] = x
+            break
+    # LITE: 「2ルーム・2台設置」＋「周囲を気にしにくいプライベート空間で…」
+    if "bays" not in d:
+        for i, x in enumerate(L):
+            m = re.match(r"^(\d+)ルーム・(\d+)台設置$", x)
+            if m:
+                d["bays"] = f"{m.group(1)}ルーム（シミュレーター{m.group(2)}台）"
+                d["bays_num"] = int(m.group(1))
+                d["bays_quote"] = x
+                if i + 1 < len(L) and "プライベート空間" in L[i + 1]:
+                    d["private_room"] = f"{m.group(1)}ルーム（プライベート空間）"
+                    d["private_quote"] = f"{x} {L[i + 1]}"
+                break
+    # 機種: 店舗ページに書いている店だけ（佐賀卸本町「JoyGolf 5打席・GOLFZON 3打席」）。
+    # FAQ は「GOLFZONを導入している店舗と、JoyGolf smart+を導入している店舗があります」＝店ごとには分からない。
+    for x in L:
+        m = re.search(r"JoyGolf\s*(\d+)打席・GOLFZON\s*(\d+)打席", x)
+        if m:
+            d["equipment"] = f"JoyGolf（{m.group(1)}打席）／GOLFZON（{m.group(2)}打席）"
+            d["equipment_quote"] = m.group(0)
+            break
+    # 月額: 料金表の「プラン名／月額／金額／円／（税込…円）」の並び（レッスン店は◯◯会員、LITEは◯◯プラン）
+    plans, seen = [], set()
+    for i in range(len(L) - 4):
+        if re.search(r"(会員|プラン)$", L[i]) and L[i + 1] == "月額" and re.match(r"^[\d,]+$", L[i + 2]) \
+                and L[i + 3] == "円" and re.match(r"^（税込[\d,]+円）$", L[i + 4]):
+            if L[i] not in seen:
+                seen.add(L[i])
+                plans.append(f"{L[i]} {L[i + 2]}円{L[i + 4]}")
+    if plans:
+        d["monthly_fee"] = "／".join(plans)
+    # 休業: 料金表の利用時間に「年末年始・夏季休暇あり」と書く店がある
+    if "年末年始・夏季休暇あり" in L:
+        d["closed"] = "年末年始・夏季休暇あり"
+    return d
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=0)
@@ -86,6 +147,17 @@ def main() -> None:
             addr = addr[mz.end():].strip()
         mp = re.match(rf"({PREFS})", addr)
         hours = r.get("利用時間")
+        pf = page_facts(h)
+        fn = {}
+        for k, q in (("bays", "bays_quote"), ("equipment", "equipment_quote"), ("private_room", "private_quote")):
+            if pf.get(q):
+                fn[k] = f"{url} 「{pf[q]}」"
+        if pf.get("private_room") and "private_room" not in fn:
+            fn["private_room"] = f"{url} 「{pf['bays_quote']}」"
+        if pf.get("closed"):
+            fn["closed"] = f"{url} 料金表の利用時間「年末年始・夏季休暇あり」"
+        if pf.get("monthly_fee"):
+            fn["monthly_fee"] = f"{url} 料金表（月額＋税込）"
         stores.append({
             "brand": BRAND, "brand_slug": BRAND_SLUG,
             "slug": path.strip("/").replace("list/", ""),
@@ -97,15 +169,16 @@ def main() -> None:
             "tel": r.get("電話"),
             "hours": hours,
             "open_24h": bool(hours and "24時間" in hours),
-            "closed": r.get("定休日"),
-            "bays": None, "bays_num": None,
-            "private_room": None,
+            "closed": r.get("定休日") or pf.get("closed"),
+            "bays": pf.get("bays"), "bays_num": pf.get("bays_num"),
+            "private_room": pf.get("private_room"),
             "parking": r.get("駐車場"),
-            "monthly_fee": None,
-            "equipment": None,
+            "monthly_fee": pf.get("monthly_fee"),
+            "equipment": pf.get("equipment"),
             "open": True,
             "official": url,
             "source_url": url, "fetched_at": today,
+            "field_notes": fn,
         })
         print(f"  {i:3}/{len(paths)} {stores[-1]['name'][:28]} … {stores[-1]['pref'] or '県不明'}")
         time.sleep(2)   # 公式サイトに負荷をかけない

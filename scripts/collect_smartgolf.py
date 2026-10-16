@@ -10,8 +10,20 @@
 
 ⚠️ 同じサイトの /smagol/<slug>/ は別ブランド「スマゴル」（6店）。SMART GOLF には混ぜない。
    /shop/ の下でも店舗詳細欄が「スマゴル」の店（鎌ヶ谷・清瀬）は「アクセス・営業時間」欄が無く、取れずに落ちる＝除外のままでよい。
-⚠️ よくある質問の「提携駐車場のご用意はございません」は全店共通の文で、専用駐車場がある店にも出る。
-   駐車場は店舗ごとの記載が本文に無いので載せない（null）。
+⚠️ 駐車場（2026-10-16 追加）。公式FAQページ（/faq/）は「店舗により提携駐車場をご案内しています。各店舗ページのアクセスをご確認ください。」。
+   店舗ページの次の順で読む:
+     1.「アクセス・営業時間」欄の「駐車場」行（専用駐車場あり(店舗前2台) 等・35店）
+     2.「店舗詳細」欄の「※提携駐車場（有料）を割引でご利用いただけるプランをご用意しています。…」（20店）
+     3. 店舗ページの「よくあるご質問」の「駐車場はありますか？」の答え
+   ⚠️ 以前は 3 を「全店共通の文」として捨てていたが、実際は店舗ごとに書き分けられている
+      （専用駐車場のある店は「店舗前に専用駐車場がございます(2台分)。」、イオンタウン新船橋は「…駐車場を2時間無料で…」）。
+      ただしトップページ（sma-gol.com/）の FAQ はブランド全体の文なので使わない。
+      1・2 と 3 が食い違う店（「店舗詳細」に提携駐車場プラン・FAQ は「提携駐車場のご用意はございません」）は 1・2 を採る。
+⚠️ 定休日: 公式FAQ「年中無休の店舗が中心です。※店舗によって異なります」＝全店ではない。
+   営業時間の欄に「365日」と書かれた店（「24時間365日」「6:00-24:00 365日」）だけ「年中無休（365日営業）」。
+   「24時間」「6:00-24:00」だけの店は None（24時間から定休日を推測しない）。
+⚠️ 機種: 公式FAQ「取り扱いシミュレーターの種類は？ … 機種は店舗により異なります。」で、店舗ページにも機種名が無い
+   （GOLFZON WAVE の記載は別ブランド「スマゴル」の鎌ヶ谷・清瀬だけ）。equipment は None。
 ⚠️ 右打席のみ・レンタルクラブ等も FAQ の共通文なので施設データには入れない。
 ⚠️ 開業日（「YYYY年M月D日 GRAND OPEN!」）が今日より後の店は open=False（準備中）。
 
@@ -68,6 +80,14 @@ def parse(slug: str, html: str, today: str) -> dict | None:
     address = after(L, "住所", a, near)
     access = after(L, "最寄り駅", a, near)
     hours = after(L, "営業時間", a, near)
+    parking = after(L, "駐車場", a, near)
+    src = {}
+    if parking:
+        src["parking"] = "店舗ページ「アクセス・営業時間」欄の駐車場"
+    closed = None
+    if hours and "365日" in hours:
+        closed = "年中無休（365日営業）"
+        src["closed"] = f"店舗ページの営業時間「{hours}」"
     # 「店舗詳細」欄
     d = next((i for i in range(len(L)) if L[i] == "店舗詳細"), None)
     tel = after(L, "TEL", d, min(d + 20, len(L))) if d is not None else None
@@ -85,6 +105,16 @@ def parse(slug: str, html: str, today: str) -> dict | None:
             if re.fullmatch(r"\d*シミュレーター\d+台設置", x):
                 sims = x
     sims_n = int(re.search(r"(\d+)台", sims).group(1)) if sims else None
+    if not parking and d is not None:
+        pk = next((x for x in L[d:d + 20] if x.startswith("※提携駐車場")), None)
+        if pk:
+            parking = pk.lstrip("※")
+            src["parking"] = "店舗ページ「店舗詳細」欄"
+    if not parking:
+        q = next((i for i in range(len(L) - 1) if L[i] == "駐車場はありますか？"), None)
+        if q is not None and not L[q + 1].endswith("？"):
+            parking = L[q + 1]
+            src["parking"] = "店舗ページの よくあるご質問「駐車場はありますか？」"
     # 「<店名>のプラン・料金」欄
     fees = []
     p = next((i for i in range(len(L)) if L[i].endswith("のプラン・料金") and L[i] != "プラン・料金"), None)
@@ -115,15 +145,16 @@ def parse(slug: str, html: str, today: str) -> dict | None:
         "name": name, "pref": pref.group(1) if pref else None, "zip": None,
         "address": address, "access": access, "tel": tel, "hours": hours,
         "open_24h": bool(hours and hours.startswith("24時間")),
-        "closed": None,
+        "closed": closed,
         "bays": "／".join(x for x in (rooms, sims) if x) or None,
-        "bays_num": sims_n, "private_room": None, "parking": None,
+        "bays_num": sims_n, "private_room": None, "parking": parking,
         "monthly_fee": ("／".join(fees) + "（税込）") if fees else None,
         "equipment": None, "open": pre is None,
         "note": pre.group(0) if pre else None,
         "official": f"https://sma-gol.com/shop/{slug}/",
         "source_url": f"https://sma-gol.com/shop/{slug}/",
         "fetched_at": today,
+        **({"field_sources": src} if src else {}),
     }
 
 

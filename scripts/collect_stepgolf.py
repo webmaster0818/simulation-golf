@@ -14,8 +14,9 @@
 
 ⚠️ 業態がこのサイトの他の施設と違う。ステップゴルフは**完全予約制・コーチ付き・月会費制の
    レッスンスクール**で、自分の好きな時間に打ちに行く場所ではない。
-   ただし全店に**弾道測定機（スカイトラック）とスイング解析機**があると公式が明記しており、
-   「弾道を計測できる屋内施設」という軸では対象に入る。
+   旧サイトは全店に**弾道測定機（スカイトラック）とスイング解析機**があると明記していた。
+   2026-10 のリニューアル後はスカイトラックの記載が消え、店ごとのタグ（弾道解析・シミュレーター）と
+   紹介文の機種名（GDR・GTRAK）だけになった。「弾道を計測できる屋内施設」という軸では対象に入る。
    そこで segment を 'lesson' として、屋内シミュレーションゴルフ（indoor）や
    弾道計測つき練習場（range）と**混ぜずに区別する**。探している人の目的が違う。
 """
@@ -24,6 +25,7 @@ import re
 import subprocess
 import sys
 import time
+import unicodedata
 from html import unescape
 from datetime import date
 from pathlib import Path
@@ -108,6 +110,56 @@ def spans(html):
         if x:
             out.append(x)
     return out
+
+
+def page_text(html):
+    """RSCペイロードの手前の本文（紹介文の Richtext は <span style=…> なので spans() では拾えない）"""
+    t = html.split("self.__next_f")[0]
+    t = re.sub(r"<(script|style)[\s\S]*?</\1>", " ", t)
+    t = re.sub(r"<br\s*/?>", "\n", t)
+    t = re.sub(r"<[^>]+>", " ", t)
+    return unescape(t)
+
+
+NEWS_LISTS = ["/news", "/news/open"]
+
+
+def news_facts():
+    """公式ニュース（出店のプレスリリース）の「■打席数：5打席」「全5打席に弾道測定器（GTRAK…）」。
+    記事1本＝1店のときだけ、その店の 打席数・機材 として使う（根拠URLは field_notes に残す）。
+    「5打席の店舗をベースに全国713打席」のような全社の数字は店ごとの値にしない。"""
+    paths = set()
+    for lp in NEWS_LISTS:
+        h = fetch(BASE + lp)
+        paths |= set(re.findall(r'href="(/news/\d{10})"', h))
+        time.sleep(1.2)
+    out = {}
+    for p in sorted(paths):
+        h = fetch(BASE + p)
+        time.sleep(1.2)
+        t = re.sub(r"\s+", " ", page_text(h))
+        # 記事の下に他の記事の見出し（『…店』）が並ぶので、店名は 店舗概要の「店舗名：」か記事タイトルから取る
+        names = set(re.findall(r"■?店舗名[：:]\s*([^■]+?)\s*(?:■|所在地)", t))
+        if not names:
+            ttl = unescape((re.search(r"<title>([^<]*)", h) or [None, ""])[1])
+            names = {x for x in re.findall(r"『([^』]+)』", ttl) if re.search(r"(店|EXtra .+)$", x)}
+        names = {re.sub(r"\s+", "", unicodedata.normalize("NFKC", x)) for x in names}
+        if len(names) != 1:
+            continue
+        m = (re.search(r"打席数[：:]\s*([0-9０-９]+)打席", t) or re.search(r"全([0-9０-９]+)打席に", t)
+             or re.search(r"([0-9０-９]+)打席すべてに", t))
+        if not m:
+            continue
+        n = int(unicodedata.normalize("NFKC", m.group(1)))
+        eq = "GTRAK" if "GTRAK" in t else ("GOLFZON GDR" if "GDR" in t else None)
+        out[names.pop()] = {"bays_num": n, "equipment": eq, "url": BASE + p,
+                            "quote": t[max(0, m.start() - 10): m.end() + 30].strip()}
+    return out
+
+
+def _norm_name(x):
+    x = re.sub(r"（[^）]*）$", "", x or "")
+    return re.sub(r"\s+", "", unicodedata.normalize("NFKC", x))
 
 
 def parse_index(html):
@@ -199,6 +251,10 @@ def parse_store(html, path):
                 parts.append(x)
             elif x in ("平日", "土日祝", "土日・祝", "休憩", "土曜", "日曜", "祝日", "日祝", "土日"):
                 parts.append("［" + x + "］")
+            elif x.startswith("レッスンタイム以外は"):
+                # 2026-10-16 に時刻の並びの後ろへ「レッスンタイム以外はセルフ営業となります」が入った。
+                # 住所と取り違えないよう読み飛ばす（49店の住所の頭に混ざった）。
+                pass
             else:
                 break
             j += 1
@@ -225,7 +281,7 @@ def parse_store(html, path):
         k = 0
         while k < len(seg):
             x = seg[k]
-            if x.endswith("プラン") or x.endswith("オプション"):
+            if x.endswith(("プラン", "オプション", "会員")):   # Green Jacket 青葉台は「カジュアル会員」
                 name = x
             elif x == "￥" and name and k + 1 < len(seg):
                 price = seg[k + 1]
@@ -244,6 +300,52 @@ def parse_store(html, path):
             k += 1
         if plans:
             d["monthly_fee"] = min(plans)[1]
+    # 定休日: 店舗情報に「※コーチ定休日：」＋曜日（全150店）。店舗そのものの定休日の行は無い
+    # （24時間営業の店もある＝その曜日もセルフ営業）。公式の語のまま「コーチ定休日」と書く。
+    for n in range(len(sp) - 1):
+        if sp[n].startswith("※コーチ定休日"):
+            d["closed"] = "コーチ定休日：" + sp[n + 1]
+            break
+    # 駐車場: 店名の下のタグ「駐車場(提携含む）」と、店舗情報の住所・アクセス欄の駐車場の文。
+    # タグも文も無い店は null（「無い」とは書かれていない。FAQ は「店舗によって異なります」）。
+    if "店舗情報" in sp:
+        i0 = sp.index("店舗情報")
+        badges = [x for x in sp[:i0] if x in BADGES]
+        d["features"] = badges or None
+        i1 = sp.index("店舗の最新情報はこちら", i0) if "店舗の最新情報はこちら" in sp[i0:] else len(sp)
+        lines = []
+        for x in sp[i0:i1]:
+            if "駐車" not in x or len(x) > 150:
+                continue
+            if re.search(r"駐車場[^ ]*ビル", x):      # 建物名（下関「シーモール駐車場新館ビル1階」）
+                continue
+            if "【お車" in x:
+                x = x[x.index("【お車"):]
+            elif not x.startswith(("★", "※")):
+                toks = re.split(r"(?<=[ 、])", x)
+                k = next(n for n, tk in enumerate(toks) if "駐車" in tk)
+                x = "".join(toks[k:]).strip()
+            lines.append(x)
+        parts = (["駐車場(提携含む）"] if "駐車場(提携含む）" in badges else []) + lines
+        if parts:
+            d["parking"] = " ／ ".join(parts)
+    # 機材: 店舗ページの紹介文に機種名を書いている店だけ（「全打席シミュレーション機器（GDR）設置」
+    # 「全打席「GOLFZON社製GDR」シミュレーター完備」「ゴルフシミュレーターGTRAK全打席完備」）。
+    # ⚠️ 以前は全店「スカイトラック」としていたが、2026-10 のリニューアル後の公式サイトにはどこにも
+    #    スカイトラックの記載が無い（トップ・/system・全店舗ページ・ニュースを確認）。機種名の無い店は null。
+    full = page_text(html)
+    if "GTRAK" in full:
+        d["equipment"] = "GTRAK"
+    elif re.search(r"GDR", full):
+        d["equipment"] = "GOLFZON GDR"
+    if d.get("equipment"):
+        d["equipment_quote"] = next((ln.strip() for ln in full.split("\n") if re.search(r"GTRAK|GDR", ln)), None)
+    # 打席数: 店舗ページに「（9打席）」と書く店がある（2ブランド合併店舗）
+    m = re.search(r"([0-9０-９]+)打席）", full)
+    if m:
+        n = int(unicodedata.normalize("NFKC", m.group(1)))
+        d["bays"], d["bays_num"] = f"{n}打席", n
+        d["bays_quote"] = re.sub(r"\s+", " ", full[max(0, m.start() - 20): m.end()]).strip()
     t = " ".join(sp)
     # 旧サイトでは「グランドオープン予定 YYYY年M月D日」を本文に書いていた。新サイトでも同じ語を見る。
     # ⚠️ ヘッダ/フッタの「オープン準備中」は全店共通なので使わない（旧サイトで全店が準備中になった）。
@@ -270,6 +372,10 @@ def main():
                 prev_rec[re.sub(r"_top$", "", m.group(1))] = x
     paths = sorted((set(listing) | mp | prev) - {"/store/map"})
     print(f"一覧 {len(listing)}店 ／ マイマップ {len(mp)}店 ／ 前回 {len(prev)}店 ／ 和集合 {len(paths)}店")
+
+    news = news_facts()
+    print(f"ニュースの店舗概要（打席数）: {len(news)}本")
+    used_news = set()
 
     out, gone = [], []
     for i, path in enumerate(paths, 1):
@@ -307,17 +413,42 @@ def main():
             "hours": x.get("hours"),
             "open_24h": False,          # 完全予約制のスクール。24時間営業ではない
             "monthly_fee": x.get("monthly_fee"),
-            # 公式が全店「弾道測定機（スカイトラック）・スイング解析機 完備」と明記
-            "equipment": "スカイトラック（弾道測定機）",
+            "closed": x.get("closed"),
+            "parking": x.get("parking"),
+            "bays": x.get("bays"),
+            "bays_num": x.get("bays_num"),
+            "private_room": None,       # 個室の記載なし
+            "equipment": x.get("equipment"),
+            "features": x.get("features"),   # 店名の下のタグ（スイング解析・弾道解析・シミュレーター 等）
             "open": x.get("open", True),
             "official": url,
             "source_url": url,
             "fetched_at": date.today().isoformat(),
         }
+        notes = {}
+        nf = news.get(_norm_name(rec["name"]))
+        if nf:
+            used_news.add(_norm_name(rec["name"]))
+            if not rec["bays_num"]:
+                rec["bays"], rec["bays_num"] = f"{nf['bays_num']}打席", nf["bays_num"]
+                notes["bays"] = f"{nf['url']} 「{nf['quote']}」"
+            if not rec["equipment"] and nf["equipment"]:
+                rec["equipment"] = nf["equipment"]
+                notes["equipment"] = f"{nf['url']} 「{nf['quote']}」"
+        if x.get("equipment_quote"):
+            notes["equipment"] = f"{url} 「{x['equipment_quote']}」"
+        if x.get("bays_quote"):
+            notes["bays"] = f"{url} 「{x['bays_quote']}」"
+        if rec["parking"]:
+            notes["parking"] = f"{url} 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄"
+        if rec["closed"]:
+            notes["closed"] = "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+        if notes:
+            rec["field_notes"] = notes
         out.append(rec)
         if i % 25 == 0 or i == len(paths):
             print(f"  {i}/{len(paths)}")
-        time.sleep(0.4)
+        time.sleep(1.0)
     if gone:
         print("店舗ページが無いURL:", gone)
 
@@ -328,7 +459,12 @@ def main():
     ok = sum(1 for x in out if x["pref"])
     print(f"\n保存: {p} ({len(out)}店 / 都道府県を取れた {ok}店 / "
           f"営業時間 {sum(1 for x in out if x['hours'])} / 電話 {sum(1 for x in out if x['tel'])} / "
-          f"月会費 {sum(1 for x in out if x['monthly_fee'])})")
+          f"月会費 {sum(1 for x in out if x['monthly_fee'])} / 定休日 {sum(1 for x in out if x['closed'])} / "
+          f"駐車場 {sum(1 for x in out if x['parking'])} / 打席 {sum(1 for x in out if x['bays_num'])} / "
+          f"機材 {sum(1 for x in out if x['equipment'])})")
+    unused = set(news) - used_news
+    if unused:
+        print("  ニュースの店名が店舗データと一致しなかった:", sorted(unused))
     miss = [x["name"] for x in out if not x["pref"]]
     if miss:
         print("  都道府県を取れなかった店（住所の書式が違う）:", miss[:5])

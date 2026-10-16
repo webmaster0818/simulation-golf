@@ -7,7 +7,20 @@
 
 ⚠️ ACF は空を返すので REST だけでは住所が取れない。店舗ページのHTMLを見る必要がある。
 ⚠️ 403になるので実ブラウザのUAを付ける。
-⚠️ 公式に書いていない項目（打席数・料金・機種名）は None のままにする。推測で埋めない。
+⚠️ 公式に書いていない項目は None のままにする。推測で埋めない。
+
+2026-10-16 追加（「公式サイトに記載なし」と出ていたが、店舗ページに書いてあった）:
+  - 機種: 店名の下の「GOLF SIMULATOR」の <ul><li>（「Trackman iO（トラックマンiO）」「SDR」「WAVE」…）。
+  - 駐車場: 「設備情報 その他」のアイコン <h5>駐車場<br>2台</h5>。アイコンが無い店は書かない
+    （FAQ「駐車場の有無は店舗HPよりご確認いただけます」＝無い＝「なし」とは言い切れない）。
+    台数の無い「駐車場」だけのアイコン（天理）は「駐車場あり（台数の記載なし）」。
+  - 月会費: 「料金プラン PRICE」の各プラン。<div class="original">（通常）→<div class="sale">（キャンペーン）の
+    2段の店と sale だけの店がある。公式の表記どおり（税抜・税込）並べる。
+    ⚠️ 豊田大林は original 10,000円→sale 12,000円のプランがある（公式どおり）。「→はキャンペーン」と書かない。
+  - 電話: 店舗ページに店ごとの番号は無い。全ページ共通の「お問い合わせ」欄の Tel ボタン（tel:05031745136・
+    受付 平日9:00～20:00／土日祝9:00～18:00）だけ。ブランドの問い合わせ窓口として載せる。
+  - 個室: 公式トップの title「24時間完全個室｜インドアゴルフ…」・「自分のペースで個室ゴルフ」。ブランド全体の表記として true。
+  - 定休日・打席数（部屋数）はどこにも書いていない → None のまま（24時間営業から年中無休を作らない）。
 
   python3 scripts/collect_doortogolf.py          # 取得して data/doortogolf.json に書く
   python3 scripts/collect_doortogolf.py --limit 3  # 動作確認
@@ -83,6 +96,47 @@ def rows(page_html: str) -> dict:
     return out
 
 
+def simulators(h: str):
+    m = re.search(r"<p>GOLF SIMULATOR</p>\s*<ul>(.*?)</ul>", h, re.S)
+    names = [text(x) for x in re.findall(r"<li[^>]*>(.*?)</li>", m.group(1), re.S)] if m else []
+    return "／".join(n for n in names if n) or None
+
+
+def parking(h: str):
+    for x in re.findall(r"<h5[^>]*>(.*?)</h5>", h, re.S):
+        v = text(x)
+        if v.startswith("駐車場"):
+            rest = v[len("駐車場"):].strip()
+            return f"駐車場 {rest}" if rest else "駐車場あり（台数の記載なし）"
+    return None
+
+
+def plans(h: str):
+    """料金プランを「プラン名 月額…(税抜)→…(税抜)・税込…」で並べる。"""
+    out = []
+    for m in re.finditer(r"<li>\s*<h4>(.*?)</h4>\s*<div class=\"main\">(.*?)</div>\s*<div class=\"foot\">", h, re.S):
+        name = re.sub(r"\s+", "", text(m.group(1)))
+        body = m.group(2)
+        def price(cls):
+            pm = re.search(rf'<div class="{cls}">(.*?)</div>', body, re.S)
+            if not pm:
+                return None, None
+            ps = [text(x) for x in re.findall(r"<p[^>]*>(.*?)</p>", pm.group(1), re.S)]
+            main_ = re.sub(r"\s+", "", ps[0]).replace("月額", "") if ps else None
+            tax = next((p.replace(" ", "") for p in ps[1:] if "税込" in p), None)
+            return main_, tax
+        orig, _ = price("original")
+        sale, tax = price("sale")
+        if not sale:
+            continue
+        v = f"{name} 月額{orig}→{sale}" if orig else f"{name} 月額{sale}"
+        out.append(v + (f"・{tax}" if tax else ""))
+    if not out:
+        return None
+    note = "（「A→B」は公式の料金欄の2段表記どおり。Bが現在の表示価格）" if "→" in "".join(out) else ""
+    return "／".join(out) + note
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=0)
@@ -123,6 +177,12 @@ def main() -> None:
             planned.setdefault(m.group(1), f"お知らせ「{title}」（{n.get('date', '')[:10]}）: "
                                             f"{m.group(1)} オープン予定日：{m.group(2)}月{m.group(3)}日")
     print("開業予定:", planned)
+    # 店舗ページ共通の「お問い合わせ」欄（店ごとの電話番号は無い）
+    tm = re.search(r'href="tel:(\d+)"', get(BASE + "/"))
+    tel = None
+    if tm:
+        d = tm.group(1)
+        tel = f"{d[:3]}-{d[3:7]}-{d[7:]}（DOOR TO GOLF お問い合わせ窓口・受付 平日9:00～20:00／土日祝9:00～18:00）"
     stores, skipped = [], []
     for i, p in enumerate(posts, 1):
         if a.limit and i > a.limit:
@@ -149,15 +209,18 @@ def main() -> None:
             "zip": None,
             "address": addr,
             "access": r.get("アクセス"),
-            "tel": r.get("電話番号") or r.get("TEL"),
+            "tel": r.get("電話番号") or r.get("TEL") or (tel if tm and f'tel:{tm.group(1)}' in h else None),
             "hours": hours,
             # 「24時間」とだけ書いてある店が多い。文言どおりに判定する
             "open_24h": bool(hours and "24時間" in hours),
             "closed": r.get("定休日"),
-            # 打席数・料金・機種名は店舗ページに出ていない。推測で埋めない
+            # 打席数（部屋数）は店舗ページに出ていない。推測で埋めない
             "bays": r.get("打席数"), "bays_num": None,
-            "private_room": None, "parking": r.get("駐車場"),
-            "monthly_fee": None,
+            "private_room": True,
+            "private_room_note": "公式トップ title「24時間完全個室｜インドアゴルフ」（https://doortogolf.com/）",
+            "parking": r.get("駐車場") or parking(h),
+            "monthly_fee": plans(h),
+            "equipment": simulators(h),
             "open": name not in planned,
             **({"note": planned[name]} if name in planned else {}),
             "official": url,

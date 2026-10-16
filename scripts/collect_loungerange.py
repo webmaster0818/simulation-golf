@@ -74,6 +74,48 @@ def rows(page_html: str) -> dict:
     return out
 
 
+def law_tel(law_html: str) -> str | None:
+    """店舗の「特定商取引法に基づく表記」（<店舗>/law/）の事業者TELを、事業者名・受付時間つきで返す。
+
+    ⚠️ 店舗ページに「電話番号」の行がある店は14店だけ。残りの店は店舗ページに電話番号が無いが、
+       各店の /law/ に事業者名・TEL・お問合せ受付時間がある（店ごとに運営会社が違う＝フランチャイズ）。
+       店の直通ではないので、事業者の番号であることと受付時間を必ず添える。
+    """
+    r = rows(law_html)
+    tel = r.get("TEL")
+    if not tel or not re.search(r"\d{2,}", tel):
+        return None
+    who = r.get("事業者名")
+    hrs = r.get("お問合せ受付時間")
+    extra = "・".join(x for x in (f"事業者 {who}" if who else None,
+                                   f"お問合せ受付 {hrs}" if hrs else None) if x)
+    return f"{tel}（特定商取引法に基づく表記の事業者TEL{'・' + extra if extra else ''}）"
+
+
+ZEN2HAN = str.maketrans("０１２３４５６７８９", "0123456789")
+
+
+def booths(bays_row: str | None, body: str) -> tuple[str | None, int | None]:
+    """打席数（ブース数）。返り値は（打席の表記, 数）。
+
+    1) 店舗情報の「打席」行に「1ブース:右打席」「2打席（右用）」のように数があればそれを足し合わせる
+       （松江 Training は「Training1 / 1ブース:右打席 Training2 / 1ブース:両打席」＝2）。
+    2) 行が「右打席のみ」だけの店は、本文の「1つのブースのみの完全プライベートなゴルフラウンジ」
+       「完全個室の1ブース」「２つの個室空間」「2打席の個室のブース」から数を取り、表記は原文の語を前に足す。
+    ⚠️ 数の書かれていない店（「完全個室のブース」だけ・新横浜の「別ブースとして」等）は数を作らない。
+    """
+    if bays_row:
+        ns = [int(n) for n in re.findall(r"(\d+)\s*(?:ブース|打席)", bays_row.translate(ZEN2HAN))]
+        if ns:
+            return bays_row, sum(ns)
+    m = re.search(r"([0-9０-９]+)つのブースのみ|完全個室の([0-9０-９]+)ブース|"
+                  r"([0-9０-９]+)つの個室空間|([0-9０-９]+)打席の個室のブース", body)
+    if not m:
+        return bays_row, None
+    n = int(next(g for g in m.groups() if g).translate(ZEN2HAN))
+    return (f"{m.group(0)}／{bays_row}" if bays_row else m.group(0)), n
+
+
 # 専用ページを lounge-range.com に持たず、店舗自身のサイトに飛ぶ店。
 # 一覧からは店名と住所しか取れないので、その店のサイトを読んで確認した値を入れる。
 # ⚠️ 値を足すときは source_url（その店自身のページ）と確認日を必ず書く。
@@ -91,6 +133,12 @@ OVERRIDES = {
                         "ライト（月3回）11,000円（税込・入会金11,000円が別途）"),
         "fee_source_url": "https://ts-golfpark.com/price/",
         "equipment": "GOLFZON GDR／DITECT Prizm Pro",
+        # 2026-10-16 確認。よくある質問「定休日はありますか？」の回答をそのまま（「無休」とは書いていない）
+        "closed": "急なメンテナンスや悪天候時はやむを得ず休業する場合がございます（よくある質問の回答）",
+        "closed_source_url": "https://ts-golfpark.com/faq/",
+        # 2026-10-16 確認。店舗の電話番号の掲載は無く、特定商取引法に基づく表記の事業者TELのみ
+        "tel": "03-5275-6411（特定商取引法に基づく表記の事業者TEL・事業者 株式会社アーネストプレイス・お問合せ受付 平日12:00〜18:00）",
+        "tel_source_url": "https://ts-golfpark.com/law/",
         "official": "https://ts-golfpark.com/",
         "source_url": "https://ts-golfpark.com/",
     },
@@ -102,6 +150,8 @@ OVERRIDES = {
         "open_24h": True,
         "closed": "毎週月曜日 早朝3:00〜昼12:00は休止・メンテナンス",
         "private_room": True,
+        # 2026-10-16 確認。「1ブースのみの完全プライベートなインドアゴルフ」（電話番号・駐車場・機種の記載は無い）
+        "bays": "1ブースのみ", "bays_num": 1,
         "monthly_fee": "11,000円〜41,800円（税込・全7プラン・レギュラー 41,800円）",
         "fee_source_url": "https://www.lr-shinagawashimazuyama.com/",
         "official": "https://www.lr-shinagawashimazuyama.com/",
@@ -243,6 +293,7 @@ def main() -> None:
 
         own_page = bool(link and link.startswith(BASE))
         r, equip, private, page, fee, fee_url = {}, None, None, "", None, None
+        tel_law, law_url, body = None, None, ""
         if own_page:
             page = strip_hidden(get(link))
             title = text((re.search(r"<title>(.*?)</title>", page, re.S) or ["", ""])[1])
@@ -261,8 +312,15 @@ def main() -> None:
             equip, unknown = equipment(body)
             if unknown:
                 problems.append(f"{name}: 機種か判断できない名前 {unknown}（{link}）")
-            private = True if "完全個室" in body else None
+            # 「完全個室」のほか、六本木Annexは「2打席の個室のブース…個室の空間です」
+            private = True if re.search(r"完全個室|個室のブース|個室空間", body) else None
             time.sleep(2)   # 公式サイトに負荷をかけない
+            if not r.get("電話番号"):
+                law_url = link.rstrip("/") + "/law/"
+                tel_law = law_tel(strip_hidden(get(law_url)))
+                if not tel_law:
+                    law_url = None
+                time.sleep(2)
 
         addr = r.get("住所") or list_addr
         if not addr:
@@ -280,7 +338,8 @@ def main() -> None:
             if ml:
                 addr, mp = ml.group(1) + addr, ml
         hours = r.get("営業時間")
-        tel = r.get("電話番号")
+        tel = r.get("電話番号") or tel_law
+        bays_txt, bays_num = booths(r.get("打席"), body)
         slug = link.rstrip("/").rsplit("/", 1)[-1] if own_page else anchor
         # Since が未来、または一覧に「予定」とあれば準備中
         is_open = True
@@ -296,12 +355,14 @@ def main() -> None:
             "pref": mp.group(1) if mp else None,
             "zip": zipc,
             "address": addr,
+            # 店舗ページの Access 欄は 住所・営業時間・駐車場・定休日・打席（＋一部 電話番号）だけで、
+            # 最寄り駅・徒歩分の記載が無い（2026-10-16 全73ページ確認）。地図から作らない
             "access": None,
-            "tel": tel,
+            "tel": tel, "tel_source_url": law_url,
             "hours": hours,
             "open_24h": True if (hours and "24時間" in hours) else None,
             "closed": r.get("定休日"),
-            "bays": r.get("打席"), "bays_num": None,
+            "bays": bays_txt, "bays_num": bays_num,
             "private_room": private,
             "parking": r.get("駐車場"),
             "monthly_fee": fee, "fee_source_url": fee_url,

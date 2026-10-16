@@ -165,6 +165,18 @@ def main() -> None:
         parts += self_
         monthly_fee = ("／".join(parts) + "（税込）") if parts else None
 
+        # 駐車場がアクセスページに無い店（江坂）は、店舗の FAQ（/<店>/faq-<店>/）の答えを読む。
+        #   江坂 FAQ「駐車場／駐輪場はありますか？ お近くのコインパーキングをご利用ください。」
+        parking_url = None
+        if not parking:
+            fm = re.search(rf'href="({re.escape(BASE)}/{slug}/faq-[a-z0-9-]*/)"', h)
+            if fm:
+                time.sleep(1.5)
+                fq = text(re.sub(r"(?s)<!--.*?-->|<script.*?</script>|<style.*?</style>", "", get(fm.group(1))))
+                pm = re.search(r"駐車場[／/]?駐輪場はありますか？\s*(.+?。)", fq)
+                if pm:
+                    parking, parking_url = pm.group(1).strip(), fm.group(1)
+
         pref = re.match(rf"({PREFS})", addr)
         stores.append({
             "brand": BRAND, "brand_slug": BRAND_SLUG,
@@ -181,6 +193,7 @@ def main() -> None:
             "bays": bay_tag, "bays_num": bays_num,
             "private_room": private_room,
             "parking": parking,
+            **({"parking_source_url": parking_url} if parking_url else {}),
             "monthly_fee": monthly_fee,
             "equipment": equipment,
             "open": True,

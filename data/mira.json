@@ -1,6 +1,6 @@
 {
  "brand": "MIRA GOLF",
- "fetched_at": "2026-10-15",
+ "fetched_at": "2026-10-16",
  "stores": [
   {
    "brand": "MIRA GOLF",
@@ -14,7 +14,7 @@
    "tel": "054-625-7802",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -24,7 +24,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/fujiedashida/",
    "source_url": "https://shop.mirafitness.jp/detail/fujiedashida/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -38,7 +41,7 @@
    "tel": "054-266-6033",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -48,7 +51,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/yanagicho/",
    "source_url": "https://shop.mirafitness.jp/detail/yanagicho/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -62,7 +68,7 @@
    "tel": "054-340-4877",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -72,7 +78,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/shimizukitawaki/",
    "source_url": "https://shop.mirafitness.jp/detail/shimizukitawaki/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -86,7 +95,7 @@
    "tel": "053-401-8988",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -96,7 +105,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/hamakita/",
    "source_url": "https://shop.mirafitness.jp/detail/hamakita/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -110,7 +122,7 @@
    "tel": "054-295-6320",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -120,7 +132,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/kuniyoshida/",
    "source_url": "https://shop.mirafitness.jp/detail/kuniyoshida/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -134,7 +149,7 @@
    "tel": "054-639-7010",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -144,7 +159,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/yosoji/",
    "source_url": "https://shop.mirafitness.jp/detail/yosoji/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -158,7 +176,7 @@
    "tel": "054-260-4487",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -168,7 +186,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/toumei/",
    "source_url": "https://shop.mirafitness.jp/detail/toumei/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -182,7 +203,7 @@
    "tel": "054-295-4188",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -192,7 +213,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/ryutu/",
    "source_url": "https://shop.mirafitness.jp/detail/ryutu/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -206,7 +230,7 @@
    "tel": "0564-83-9335",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -216,7 +240,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/okazaki/",
    "source_url": "https://shop.mirafitness.jp/detail/okazaki/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -230,7 +257,7 @@
    "tel": "0569-47-7780",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -240,7 +267,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/handa/",
    "source_url": "https://shop.mirafitness.jp/detail/handa/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -254,7 +284,7 @@
    "tel": "0467-38-8371",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -264,7 +294,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/chigasaki/",
    "source_url": "https://shop.mirafitness.jp/detail/chigasaki/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -278,7 +311,7 @@
    "tel": "053-543-7607",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -288,7 +321,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/hatsuoi/",
    "source_url": "https://shop.mirafitness.jp/detail/hatsuoi/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -302,7 +338,7 @@
    "tel": "055-242-8158",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -312,7 +348,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/f-kokubo/",
    "source_url": "https://shop.mirafitness.jp/detail/f-kokubo/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -326,7 +365,7 @@
    "tel": "0463-26-8260",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -336,7 +375,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/ninomiya/",
    "source_url": "https://shop.mirafitness.jp/detail/ninomiya/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -350,7 +392,7 @@
    "tel": "055-269-6360",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -360,7 +402,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/tatomi/",
    "source_url": "https://shop.mirafitness.jp/detail/tatomi/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -374,7 +419,7 @@
    "tel": "0533-95-1826",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -384,7 +429,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/toyokawa/",
    "source_url": "https://shop.mirafitness.jp/detail/toyokawa/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -398,7 +446,7 @@
    "tel": "055-957-5450",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -408,7 +456,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/hanazono/",
    "source_url": "https://shop.mirafitness.jp/detail/hanazono/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -416,13 +467,13 @@
    "slug": "fujinomiya",
    "name": "MIRA GOLF 富士宮弓沢SC店別館（アプレシオ富士宮店店内）",
    "pref": "静岡県",
-   "zip": "4180073",
-   "address": "静岡県富士宮市弓沢町703 アクロスプラザ2F",
-   "access": null,
+   "zip": "418-0014",
+   "address": "静岡県富士宮市富士見ヶ丘1241",
+   "access": "【MIRAGOLF別館 アプレシオ富士宮店】 〒418-0014 静岡県富士宮市富士見ヶ丘1241 ※MIRAfitness富士宮弓沢店から車で約7分※約2.1km 国道139号経由",
    "tel": "0544-29-6788",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -432,7 +483,12 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/fujinomiya/",
    "source_url": "https://shop.mirafitness.jp/detail/fujinomiya/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」",
+    "access": "https://shop.mirafitness.jp/detail/fujinomiya/ 住所欄"
+   },
+   "address_gym": "静岡県富士宮市弓沢町703 アクロスプラザ2F"
   },
   {
    "brand": "MIRA GOLF",
@@ -446,7 +502,7 @@
    "tel": "0568-54-3255",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -456,7 +512,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/inuyama/",
    "source_url": "https://shop.mirafitness.jp/detail/inuyama/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -470,7 +529,7 @@
    "tel": "0586-82-3371",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -480,7 +539,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/ryogo/",
    "source_url": "https://shop.mirafitness.jp/detail/ryogo/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -494,7 +556,7 @@
    "tel": "055-960-6628",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -504,7 +566,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/numazuseiyu/",
    "source_url": "https://shop.mirafitness.jp/detail/numazuseiyu/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -518,7 +583,7 @@
    "tel": "053-582-6277",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
+   "closed": "※毎週金曜日：休館日",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -528,7 +593,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/hamakitanuma/",
    "source_url": "https://shop.mirafitness.jp/detail/hamakitanuma/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://shop.mirafitness.jp/detail/hamakitanuma/ 営業時間欄「※毎週金曜日：休館日」（ブランドFAQの「24時間年中無休」より店舗の記載を優先）"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -542,7 +610,7 @@
    "tel": "0537-29-8775",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -552,7 +620,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/saigo/",
    "source_url": "https://shop.mirafitness.jp/detail/saigo/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -564,9 +635,9 @@
    "address": "静岡県裾野市佐野1039 2階",
    "access": null,
    "tel": "055-928-5563",
-   "hours": "24時間営業（スタッフアワー 11:00）",
+   "hours": "24時間営業（スタッフアワー 11:00～15:00／16:00～20:00、スタッフ不在：毎週金曜）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -576,7 +647,10 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/msusono/",
    "source_url": "https://shop.mirafitness.jp/detail/msusono/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -590,7 +664,7 @@
    "tel": "055-231-5760",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -600,7 +674,10 @@
    "open": false,
    "official": "https://shop.mirafitness.jp/detail/arakawa/",
    "source_url": "https://shop.mirafitness.jp/detail/arakawa/",
-   "fetched_at": "2026-10-15"
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
+   }
   },
   {
    "brand": "MIRA GOLF",
@@ -614,9 +691,9 @@
    "tel": "0465-46-7110",
    "hours": "24時間営業（スタッフアワー 11:00〜15:00／16:00〜20:00、金曜日・年末年始除く）",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
+   "closed": "年中無休",
+   "bays": "3打席",
+   "bays_num": 3,
    "private_room": null,
    "parking": "無料駐車場",
    "monthly_fee": "ゴルフ会員 7,678円／ジム・ゴルフ会員 10,978円／デイゴルフ会員 5,478円（税込・打席料1回200円・入会金2,200円＋登録事務手数料3,300円が別途）",
@@ -624,7 +701,11 @@
    "open": true,
    "official": "https://shop.mirafitness.jp/detail/matsuda/",
    "source_url": "https://shop.mirafitness.jp/detail/matsuda/",
-   "fetched_at": "2026-10-15",
+   "fetched_at": "2026-10-16",
+   "field_notes": {
+    "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」",
+    "bays": "https://shop.mirafitness.jp/detail/matsuda/ 「大井松田店では３打席完備しております。」"
+   },
    "open_source_url": "https://shop.mirafitness.jp/detail/matsuda/news/1907798/",
    "note": "本日8月28日（金）AM11:00、「ミラフィットネス 大井松田店」がグランドオープン！"
   }

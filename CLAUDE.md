@@ -270,3 +270,11 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 - CITY_SLUG に東京の残り9区（chiyoda/taito/koto/meguro/shibuya/nakano/toshima/arakawa/katsushika）＝23区すべてにページ。1,246 URL
 - ロゴ public/images/logo-mark.png・favicon-20261016.png・OG を scripts/make-og.py で作り直し（?v=20261016）
 - 残: 中のページ（施設・エリア・ブランド・機材・条件）の見出し/表を TOP のテイストに寄せる仕上げ
+
+### 2026-10-16 店名のブランド表記・「記載なし」の総点検（MediaXAI「「藤沢善行店」しか書いてない」「記載なしが多いが実際は記載している。ちゃんとやって」）
+- 店名: `build-facilities.py` の `display_name` で、店名にブランド名（BRAND_ALIASES の公式の別表記も含む）が無ければ前に付ける（170店）。公式の表記は `store_name` に残す。
+  頭の業態名だけ（FiT24「インドアゴルフ札幌北42条店」）は外して「FiT24インドアゴルフ 札幌北42条店」。title を拾った店名（ゴルフィード24「…｜24時間営業・無料体験【ゴルフィード24】」）の後ろを落とす。
+  施設ページ title の「ブランド名が無ければ付ける」処理は不要になったので外した。
+- ⚠️ 原因: 多くの collector が店舗一覧（や shop.js）だけ読み、各店舗ページを読んでいなかった。brand-*.json 経由では equipment/official を build が None で上書きしていた（修正）。
+  `data/brand-captures.json` が `brand-*.json` の glob に掛かって build が落ちていた（店舗データでないファイルを飛ばす）。
+- 24ブランドを4並列で店舗ページから取り直し中。

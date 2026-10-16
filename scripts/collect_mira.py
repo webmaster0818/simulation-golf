@@ -10,8 +10,12 @@
 ⚠️ ジム併設のゴルフエリア。「ゴルフ会員」でゴルフエリアだけの利用ができ、ゲスト同伴も可なので
    indoor に入れる（誰でも使える）。ジム会員だけの店は入れない（店舗ページの設備に
    「シミュレーションゴルフ」が無ければ外す）。
-⚠️ 打席数は店舗ページに無い → bays は None。機種はブランドトップに
-   「OK ON GOLF / JOY GOLF SMART+（店舗により機種が異なる）」とあるだけで店舗ごとの確認が取れない → equipment は None。
+⚠️ 打席数はほとんどの店舗ページに無い（大井松田「３打席完備」だけ・甲府国母は「1打席増設」で総数なし）→ 書いてある店だけ。
+   機種はブランドトップに「OK ON GOLF / JOY GOLF SMART+ ※店舗により機種が異なる場合がございます」と
+   あるだけで店舗ごとの確認が取れない（店舗ページ・新着情報・注目サービスにも機種名なし）→ equipment は None。
+⚠️ 定休日: ゴルフ公式 FAQ「営業時間について 24時間年中無休になります。」を全店に（出典は field_notes）。
+   店舗ページの営業時間欄に「休館日」がある店はそちら（浜松浜北沼「※毎週金曜日：休館日」）。
+⚠️ アクセス（駅・徒歩）は店舗ページに無い。ゴルフ別館の店だけ別館の住所と本館からの道のりを access に入れる（富士宮）。
 ⚠️ 一覧に「オープン準備室」の電話が書かれた店（甲府荒川・大井松田）は open=False（準備中）。
    ただし一覧の「オープン準備室」は開業後も残る（大井松田店は 2026-08-28 グランドオープン後も残っていた・2026-10-15 確認）。
    準備中の店だけ店舗ページの新着情報（/detail/<slug>/news/）を読み、
@@ -99,6 +103,19 @@ def listing() -> list[dict]:
     return out
 
 
+BRAND_CLOSED = "年中無休"
+
+
+def brand_faq_closed() -> str | None:
+    """ゴルフ公式トップの FAQ「営業時間について」の答え。「年中無休」と言い切っているときだけ返す"""
+    L = lines(get(LIST_URL))
+    if "営業時間について" in L:
+        ans = L[L.index("営業時間について") + 1]
+        if "年中無休" in ans:
+            return ans
+    return None
+
+
 def opened_on_news(slug: str) -> tuple[str, str] | None:
     """店舗の新着情報から「本日M月D日…グランドオープン」の投稿を探す。(投稿URL, 文) を返す"""
     base = f"https://shop.mirafitness.jp/detail/{slug}/news/"
@@ -184,6 +201,23 @@ def parse_store(h: str) -> dict:
                 plans.append(cur)
                 cur = None
     d["plans"] = plans
+    # 定休日: 店舗ページの営業時間欄に「休館日」を書く店がある（浜松浜北沼「※毎週金曜日：休館日」）。店舗の記載を優先
+    if hs:
+        cl = next((x for x in L[L.index("営業時間"):L.index("営業時間") + 8] if "休館日" in x or "定休日" in x), None)
+        if cl:
+            d["closed"] = cl.lstrip("※")
+    # 打席数: 店舗ページの紹介文（大井松田「大井松田店では３打席完備しております。」）
+    m = re.search(r"([0-9０-９]+)打席完備", " ".join(L))
+    if m:
+        d["bays_num"] = int(unicodedata.normalize("NFKC", m.group(1)))
+        d["bays_quote"] = next(x for x in L if m.group(0) in x)
+    # アクセス: ゴルフが別館の店は、住所欄の下に別館の住所と本館からの道のりを書いている（富士宮弓沢）
+    if "住所" in L:
+        i = L.index("住所")
+        seg = L[i:L.index("営業時間")] if "営業時間" in L[i:] else []
+        k = next((n for n, x in enumerate(seg) if re.match(r"^【MIRAGOLF別館", x)), None)
+        if k is not None:
+            d["access"] = " ".join(seg[k:])
     m = re.search(r"ゴルフ打席料（1回毎）\s*([\d,]+)円\s*\[税込([\d,]+)円\]", " ".join(L))
     d["bay_fee"] = int(m.group(2).replace(",", "")) if m else None
     if not m and re.search(r"打席料[^。]{0,10}無料", " ".join(L)):
@@ -200,6 +234,8 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=0)
     a = ap.parse_args()
 
+    brand_closed = brand_faq_closed()
+    print(f"ゴルフ公式FAQの営業時間: {brand_closed}")
     items = listing()
     print(f"一覧 {len(items)}件（準備中 {sum(1 for x in items if x['prep'])}件）")
     today = date.today().isoformat()
@@ -237,15 +273,29 @@ def main() -> None:
         stores.append({
             "brand": BRAND, "brand_slug": BRAND_SLUG, "slug": slug,
             "name": f"MIRA GOLF {it['name']}",
-            "pref": pref, "zip": d.get("zip"), "address": addr, "access": None,
+            "pref": pref, "zip": d.get("zip"), "address": addr, "access": d.get("access"),
             "tel": (d.get("tel") or (None if it["prep"] else it["list_tel"]) or None),
             "hours": d.get("hours") or ("24時間営業" if "24時間" in it.get("list_hours", "24時間営業") else None),
-            "open_24h": d.get("open_24h", True), "closed": None,
-            "bays": None, "bays_num": None, "private_room": None,
+            "open_24h": d.get("open_24h", True),
+            # ゴルフ公式（golf.mirafitness.jp）の FAQ「営業時間について 24時間年中無休になります。」は全店の話。
+            # 店舗ページに休館日を書いている店はそちらを優先する。
+            "closed": d.get("closed") or (BRAND_CLOSED if brand_closed else None),
+            "bays": f"{d['bays_num']}打席" if d.get("bays_num") else None,
+            "bays_num": d.get("bays_num"), "private_room": None,
             "parking": d.get("parking"), "monthly_fee": fee,
             "equipment": None, "open": not it["prep"],
             "official": src, "source_url": src, "fetched_at": today,
         })
+        fn = {}
+        if d.get("closed"):
+            fn["closed"] = f"{src} 営業時間欄「{d['closed']}」（ブランドFAQの「24時間年中無休」より店舗の記載を優先）"
+        elif brand_closed:
+            fn["closed"] = f"{LIST_URL} FAQ「{brand_closed}」"
+        if d.get("bays_num"):
+            fn["bays"] = f"{src} 「{d['bays_quote']}」"
+        if d.get("access"):
+            fn["access"] = f"{src} 住所欄"
+        stores[-1]["field_notes"] = fn
         if it["prep"] and slug:
             hit = opened_on_news(slug)
             if hit:

@@ -11,6 +11,14 @@
 ⚠️ 機種（OK ON GOLF）はトップページにブランド全体の説明として書かれているだけで、
    店舗ページには無い。店舗ごとの確認が取れないので equipment は None のままにする。
    例外は三国店で、打席の欄に「トラックマンルーム」とあるのでトラックマンと入れる。
+⚠️ 定休日と駐車場は、サービス紹介ページ（/service）にブランド全体の記載がある（2026-10-16確認）:
+   「IGCは24時間年中無休です。」「各店舖駐車場を完備しております。」（"各店舗"＝全店を指す書き方）。
+   closed は全店に「年中無休」、parking は店舗ページに駐車場の行が無い店だけ「駐車場あり（台数の記載なし）」を入れ、
+   出典を closed_note / parking_note に残す。店舗ページに駐車場の行がある店はそちらを優先する。
+   ⚠️ 同じページの「IGCでは…「OK ON GOLF」を導入しています」は「全店」とは書いていない
+   （三国店はトラックマンルームあり）ので、機種は全店に広げない。
+⚠️ アクセス（最寄り駅・ICからの道順）は店舗ページ・店舗一覧・FAQ・サービス紹介のどこにも無い。access は None。
+⚠️ private_room は打席の欄に「個室」「完全個室」（半個室ではない）があるときだけ True。半個室だけの店は None（無いとは書いていない）。
 ⚠️ 法人会員は月会費の一覧に入れない（個人で入会する人が比べる金額ではないため）。
    あることだけ末尾に添える。
 
@@ -29,6 +37,9 @@ from pathlib import Path
 DATA = Path(__file__).resolve().parent.parent / "data"
 BASE = "https://indoorgolfclub.jp"
 LIST_URL = f"{BASE}/studio/"
+SERVICE_URL = f"{BASE}/service"
+BRAND_CLOSED = "IGCは24時間年中無休です。"
+BRAND_PARKING = "各店舖駐車場を完備しております。"
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
 BRAND, BRAND_SLUG = "インドアゴルフクラブ", "igc"
@@ -168,6 +179,13 @@ def main() -> None:
     paths = list(dict.fromkeys(re.findall(r'href="\./(stores/[^"]+\.html)"', listing)))
     print(f"店舗ページ {len(paths)}件")
 
+    service = text(strip_hidden(get(SERVICE_URL)))
+    brand_closed = BRAND_CLOSED in service
+    brand_parking = BRAND_PARKING in service
+    if not (brand_closed and brand_parking):
+        print(f"  ⚠️ /service の全店共通の文が見つからない（年中無休 {brand_closed}／駐車場 {brand_parking}）")
+    time.sleep(2)
+
     today = date.today().isoformat()
     stores, problems = [], []
     for i, path in enumerate(paths, 1):
@@ -224,10 +242,10 @@ def main() -> None:
             "tel": r.get("電話番号"),
             "hours": hours,
             "open_24h": True if any24 else None,
-            "closed": None,
+            "closed": "年中無休" if brand_closed else None,
             "bays": bays, "bays_num": bays_num,
-            "private_room": None,
-            "parking": r.get("駐車場"),
+            "private_room": True if bays and re.search(r"(?<!半)個室", bays) else None,
+            "parking": r.get("駐車場") or ("駐車場あり（台数の記載なし）" if brand_parking else None),
             "monthly_fee": fee,
             "equipment": equip,
             "open": True,
@@ -235,6 +253,10 @@ def main() -> None:
             "source_url": url, "fetched_at": today,
         })
         s = stores[-1]
+        if s["closed"]:
+            s["closed_note"] = f"ブランド全体の記載「{BRAND_CLOSED}」（{SERVICE_URL}）"
+        if not r.get("駐車場") and s["parking"]:
+            s["parking_note"] = f"店舗ページに駐車場の行なし。ブランド全体の記載「{BRAND_PARKING}」（{SERVICE_URL}）"
         apply_fixes(s)
         if not pl:
             problems.append(f"{name}: 会員プランが取れなかった（{url}）")

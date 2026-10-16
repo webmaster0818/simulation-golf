@@ -1,6 +1,6 @@
 {
  "brand": "マイゴル",
- "fetched_at": "2026-10-11",
+ "fetched_at": "2026-10-16",
  "stores": [
   {
    "brand": "マイゴル",
@@ -14,17 +14,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
    "parking": "無料駐車場あり",
    "monthly_fee": "練習し放題 8,800円（平日デイプラン）／24時間練習し放題 13,200円（リミテッドプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/hachinohe/",
    "source_url": "https://www.mygol.jp/shop/hachinohe/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/hachinohe/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/hachinohe/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/hachinohe/「24時間365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -38,17 +43,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
    "private_room": null,
    "parking": "無料駐車場あり",
    "monthly_fee": "24時間練習し放題 13,200円（リミテッドプラン）／練習し放題_他店利用可 16,500円（ベーシックプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/koriyama/",
    "source_url": "https://www.mygol.jp/shop/koriyama/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/koriyama/equipments「打席数 4打席／個別打席 半個室あり」",
+    "equipment": "https://www.mygol.jp/shop/koriyama/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/koriyama/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -62,17 +72,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "4打席（個室あり）",
+   "bays_num": 4,
+   "private_room": true,
    "parking": "無料駐車場あり(5台)",
    "monthly_fee": "練習し放題 12,100円（リミテッドプラン）／レッスン受け放題 17,600円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/hitachiomika/",
    "source_url": "https://www.mygol.jp/shop/hitachiomika/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/hitachiomika/equipments「打席数 4打席／個別打席 個室あり」",
+    "equipment": "https://www.mygol.jp/shop/hitachiomika/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/hitachiomika/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -86,17 +101,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（365日営業）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
    "parking": "100台以上あり",
    "monthly_fee": "練習し放題 12,980円（リミテッドプラン）／レッスン受け放題 19,980円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/moriya/",
    "source_url": "https://www.mygol.jp/shop/moriya/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/moriya/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/moriya/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/moriya/「24時間365日営業」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -110,17 +130,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
    "parking": "無料駐車場あり",
    "monthly_fee": "平日昼間練習し放題 8,800円（平日デイプラン）／24時間練習し放題 13,200円（リミテッドプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/oyama/",
    "source_url": "https://www.mygol.jp/shop/oyama/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/oyama/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/oyama/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/oyama/「24時間365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -134,17 +159,51 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "bays": "3打席",
+   "bays_num": 3,
+   "private_room": false,
    "parking": "無料駐車場あり",
    "monthly_fee": "練習し放題 8,800円（平日デイプラン）／24時間練習し放題 14,300円（ベーシックプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/higashikawaguchi/",
    "source_url": "https://www.mygol.jp/shop/higashikawaguchi/",
-   "fetched_at": "2026-10-10"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/higashikawaguchi/equipments「打席数 3打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/higashikawaguchi/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/higashikawaguchi/「24時間365日使い放題」"
+   }
+  },
+  {
+   "brand": "マイゴル",
+   "brand_slug": "mygol",
+   "slug": "koshigaya",
+   "name": "マイゴル越谷せんげん台駅東口店",
+   "pref": "埼玉県",
+   "zip": null,
+   "address": "埼玉県越谷市千間台東",
+   "access": "せんげん台駅から徒歩2分",
+   "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
+   "hours": "24時間営業",
+   "open_24h": true,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "bays": "7打席",
+   "bays_num": 7,
+   "private_room": false,
+   "parking": "駐車場あり（120分100円）",
+   "monthly_fee": "練習し放題 9,900円（平日デイプラン）／24時間練習し放題 16,500円（リミテッドプラン（レッスン２回付））（税込）",
+   "equipment": "GOLFZON GDR PLUS",
+   "open": false,
+   "official": "https://www.mygol.jp/shop/koshigaya/",
+   "source_url": "https://www.mygol.jp/shop/koshigaya/",
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/koshigaya/equipments「打席数 7打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/koshigaya/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/koshigaya/「24時間365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -159,16 +218,20 @@
    "hours": "7時～24時",
    "open_24h": false,
    "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "bays": "3打席（個室あり）",
+   "bays_num": 3,
+   "private_room": true,
    "parking": "2台無料駐車場あり(F,G)、空きがない場合は近隣駐車場へお願いします。",
    "monthly_fee": "練習し放題 14,300円（平日デイ会員）／練習し放題・個室利用可能 19,800円（レギュラー会員）（税込）",
-   "equipment": null,
+   "equipment": "Joy Golf smart+",
    "open": true,
    "official": "https://www.mygol.jp/shop/kawaguchi/",
    "source_url": "https://www.mygol.jp/shop/kawaguchi/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/kawaguchi/equipments「打席数 3打席／個別打席 個室あり」",
+    "equipment": "https://www.mygol.jp/shop/kawaguchi/equipments「シミュレーター Joy Golf smart+」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -183,16 +246,21 @@
    "hours": "24時間営業",
    "open_24h": true,
    "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "bays": "4打席（個室あり）",
+   "bays_num": 4,
+   "private_room": true,
+   "parking": "なし",
    "monthly_fee": "練習し放題 8,800円（平日デイプラン）／24時間練習し放題 13,200円（リミテッドプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/kitaurawaekimae/",
    "source_url": "https://www.mygol.jp/shop/kitaurawaekimae/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/kitaurawaekimae/facility",
+    "bays": "https://www.mygol.jp/shop/kitaurawaekimae/equipments「打席数 4打席／個別打席 個室あり」",
+    "equipment": "https://www.mygol.jp/shop/kitaurawaekimae/equipments「シミュレーター GDR Plus」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -206,17 +274,23 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
+   "parking": "なし",
    "monthly_fee": "練習し放題 8,800円（平日デイプラン）／24時間練習し放題 13,200円（リミテッドプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/soka/",
    "source_url": "https://www.mygol.jp/shop/soka/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/soka/facility",
+    "bays": "https://www.mygol.jp/shop/soka/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/soka/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/soka/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -230,17 +304,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日いつでも」）",
+   "bays": "5打席",
+   "bays_num": 5,
+   "private_room": false,
    "parking": "提携駐車場あり（小手指店会員様、無料体験専用）／提携駐車場をご利用の場合は駐車券を１時間分お渡ししますので店舗スタッフまでお申し出ください。",
    "monthly_fee": "24時間練習し放題 10,980円（基本プラン）／週１回のグループレッスン 16,280円（グループレッスン週一回プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/kotesashi/",
    "source_url": "https://www.mygol.jp/shop/kotesashi/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/kotesashi/equipments「打席数 5打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/kotesashi/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/kotesashi/「24時間365日いつでも」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -254,17 +333,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "2打席",
+   "bays_num": 2,
+   "private_room": false,
    "parking": "専用駐車場完備",
    "monthly_fee": "お得に練習し放題 9,900円（平日デイプラン）／スキルアップはこちら 19,800円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/satte/",
    "source_url": "https://www.mygol.jp/shop/satte/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/satte/equipments「打席数 2打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/satte/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/satte/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -278,17 +362,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "5打席",
+   "bays_num": 5,
+   "private_room": false,
    "parking": "あり（無料）",
    "monthly_fee": "24時間練習し放題 14,300円（ベーシックプラン）／365日レッスン受け放題 18,480円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/warabi/",
    "source_url": "https://www.mygol.jp/shop/warabi/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/warabi/equipments「打席数 5打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/warabi/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/warabi/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -302,17 +391,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "bays": "1打席（個室あり）",
+   "bays_num": 1,
+   "private_room": true,
    "parking": "無料駐車場あり",
    "monthly_fee": "月4回利用 13,200円（月4回プラン）／24時間練習し放題 24,200円（ベーシックプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON TWOVISION",
    "open": true,
    "official": "https://www.mygol.jp/shop/inzai/",
    "source_url": "https://www.mygol.jp/shop/inzai/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/inzai/equipments「打席数 1打席／個別打席 個室あり」",
+    "equipment": "https://www.mygol.jp/shop/inzai/equipments「シミュレーター TWOVISION」",
+    "closed": "https://www.mygol.jp/shop/inzai/「24時間365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -327,16 +421,21 @@
    "hours": "5時〜25時",
    "open_24h": false,
    "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
+   "parking": "なし",
    "monthly_fee": "お得に練習 4,980円（Wave専用/早朝プラン）／練習し放題 11,550円（全日プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/yachiyodaiekimae/",
    "source_url": "https://www.mygol.jp/shop/yachiyodaiekimae/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/yachiyodaiekimae/facility",
+    "bays": "https://www.mygol.jp/shop/yachiyodaiekimae/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/yachiyodaiekimae/equipments「シミュレーター GDR Plus」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -351,16 +450,20 @@
    "hours": "24時間営業",
    "open_24h": true,
    "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
    "parking": "平面駐車場／24時間利用可能（ワンズモール駐車場）",
    "monthly_fee": "お得に練習し放題 9,900円（平日デイプラン）／スキルアップならこちら 17,600円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/inage/",
    "source_url": "https://www.mygol.jp/shop/inage/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/inage/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/inage/equipments「シミュレーター GDR Plus」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -374,17 +477,23 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
+   "parking": "なし",
    "monthly_fee": "平日練習し放題 13,200円（リミテッド平日デイプラン）／24時間練習し放題 19,800円（ベーシックプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": false,
    "official": "https://www.mygol.jp/shop/shinjukuhyakunincho/",
    "source_url": "https://www.mygol.jp/shop/shinjukuhyakunincho/",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/shinjukuhyakunincho/facility",
+    "bays": "https://www.mygol.jp/shop/shinjukuhyakunincho/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/shinjukuhyakunincho/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/shinjukuhyakunincho/「24時間365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -398,17 +507,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
    "parking": "無料駐車場あり",
    "monthly_fee": "練習し放題 11,800円（デイプラン）／24時間練習し放題 14,300円（ベーシックプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/musashimurayama/",
    "source_url": "https://www.mygol.jp/shop/musashimurayama/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/musashimurayama/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/musashimurayama/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/musashimurayama/「24時間365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -422,17 +536,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「365日使い放題」）",
+   "bays": "2打席（個室あり）",
+   "bays_num": 2,
+   "private_room": true,
    "parking": "無料駐車場（2台）あり",
    "monthly_fee": "練習し放題 19,800円（シングルプラン）／24時間練習し放題 22,000円（ペアプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/minamisunamachi/",
    "source_url": "https://www.mygol.jp/shop/minamisunamachi/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/minamisunamachi/equipments「打席数 2打席／個別打席 個室あり」",
+    "equipment": "https://www.mygol.jp/shop/minamisunamachi/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/minamisunamachi/「365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -446,17 +565,21 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
    "bays": null,
    "bays_num": null,
    "private_room": null,
    "parking": "あり",
    "monthly_fee": "練習し放題 9,900円（平日デイプラン）／24時間練習し放題 18,700円（ベーシックプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/higashioojima/",
    "source_url": "https://www.mygol.jp/shop/higashioojima/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "equipment": "https://www.mygol.jp/shop/higashioojima/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/higashioojima/「24時間365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -470,17 +593,23 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "bays": "4打席（個室あり）",
+   "bays_num": 4,
+   "private_room": true,
+   "parking": "なし",
    "monthly_fee": "練習し放題 15,400円（平日デイプラン）／24時間練習し放題 18,700円（ベーシックプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/higashimatsubara/",
    "source_url": "https://www.mygol.jp/shop/higashimatsubara/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/higashimatsubara/facility",
+    "bays": "https://www.mygol.jp/shop/higashimatsubara/equipments「打席数 4打席／個別打席 個室あり」",
+    "equipment": "https://www.mygol.jp/shop/higashimatsubara/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/higashimatsubara/「24時間365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -494,17 +623,23 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
+   "parking": "なし",
    "monthly_fee": "練習し放題 9,900円（平日デイプラン）／上達するなら 17,600円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/itabashioyamaekimae/",
    "source_url": "https://www.mygol.jp/shop/itabashioyamaekimae/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/itabashioyamaekimae/facility",
+    "bays": "https://www.mygol.jp/shop/itabashioyamaekimae/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/itabashioyamaekimae/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/itabashioyamaekimae/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -518,17 +653,23 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
+   "parking": "なし",
    "monthly_fee": "練習し放題 9,900円（平日デイプラン）／24時間練習し放題 13,200円（リミテッドプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/higashimurayamaekimae/",
    "source_url": "https://www.mygol.jp/shop/higashimurayamaekimae/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/higashimurayamaekimae/facility",
+    "bays": "https://www.mygol.jp/shop/higashimurayamaekimae/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/higashimurayamaekimae/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/higashimurayamaekimae/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -542,17 +683,23 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "closed": "年中無休（公式「365日使い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
+   "parking": "なし",
    "monthly_fee": "お得に練習 12,100円（平日デイプラン）／レッスン、練習し放題 20,900円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": false,
    "official": "https://www.mygol.jp/shop/takenozuka/",
    "source_url": "https://www.mygol.jp/shop/takenozuka/",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/takenozuka/facility",
+    "bays": "https://www.mygol.jp/shop/takenozuka/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/takenozuka/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/takenozuka/「365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -566,17 +713,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
    "bays": null,
    "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "private_room": true,
+   "parking": "なし",
    "monthly_fee": "お得に練習 13,200円（平日デイプラン）／24時間365日使い放題 18,700円（ベーシックプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/ogikubo/",
    "source_url": "https://www.mygol.jp/shop/ogikubo/",
-   "fetched_at": "2026-10-09"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/ogikubo/facility",
+    "equipment": "https://www.mygol.jp/shop/ogikubo/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/ogikubo/「24時間365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -591,16 +743,21 @@
    "hours": "24時間営業",
    "open_24h": true,
    "closed": null,
-   "bays": null,
-   "bays_num": null,
+   "bays": "3打席",
+   "bays_num": 3,
    "private_room": null,
-   "parking": null,
+   "parking": "なし",
    "monthly_fee": "お得に練習し放題 13,200円（平日デイプラン）／365日レッスン受け放題 39,600円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/denenchofu/",
    "source_url": "https://www.mygol.jp/shop/denenchofu/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/denenchofu/facility",
+    "bays": "https://www.mygol.jp/shop/denenchofu/equipments「打席数 3打席／個別打席 半個室あり」",
+    "equipment": "https://www.mygol.jp/shop/denenchofu/equipments「シミュレーター GDR Plus」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -614,17 +771,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "3打席",
+   "bays_num": 3,
    "private_room": null,
    "parking": "無料(3台)",
    "monthly_fee": "24時間練習し放題 14,300円（基本プラン）／365日レッスン受け放題 26,800円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/suginamimiyamae/",
    "source_url": "https://www.mygol.jp/shop/suginamimiyamae/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/suginamimiyamae/equipments「打席数 3打席／個別打席 半個室あり」",
+    "equipment": "https://www.mygol.jp/shop/suginamimiyamae/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/suginamimiyamae/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -638,17 +800,23 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "1打席",
+   "bays_num": 1,
    "private_room": null,
-   "parking": null,
+   "parking": "なし",
    "monthly_fee": "お得に練習 9,900円（ライトプラン）／24時間練習し放題 19,800円（基本プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/sasazuka/",
    "source_url": "https://www.mygol.jp/shop/sasazuka/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/sasazuka/facility",
+    "bays": "https://www.mygol.jp/shop/sasazuka/equipments「打席数 1打席／個別打席 半個室あり」",
+    "equipment": "https://www.mygol.jp/shop/sasazuka/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/sasazuka/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -662,17 +830,23 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "5打席（個室あり）",
+   "bays_num": 5,
+   "private_room": true,
+   "parking": "なし",
    "monthly_fee": "24時間練習し放題 12,100円（リミテッドプラン）／365日レッスン受け放題 17,050円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/mikawashimaekimae/",
    "source_url": "https://www.mygol.jp/shop/mikawashimaekimae/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/mikawashimaekimae/facility",
+    "bays": "https://www.mygol.jp/shop/mikawashimaekimae/equipments「打席数 5打席／個別打席 個室あり」",
+    "equipment": "https://www.mygol.jp/shop/mikawashimaekimae/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/mikawashimaekimae/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -686,17 +860,23 @@
    "tel": "0120-150-562（受付時間：電話：24時間365日受付可、スタッフアワー：月火金12時〜21時土日10時〜19時）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "5打席（個室あり）",
+   "bays_num": 5,
+   "private_room": true,
+   "parking": "なし",
    "monthly_fee": "24時間練習し放題 13,750円（リミテッドプラン）／グループレッスン受け放題 21,450円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/asakusa/",
    "source_url": "https://www.mygol.jp/shop/asakusa/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/asakusa/facility",
+    "bays": "https://www.mygol.jp/shop/asakusa/equipments「打席数 5打席／個別打席 個室あり」",
+    "equipment": "https://www.mygol.jp/shop/asakusa/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/asakusa/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -710,17 +890,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
    "parking": "無料駐車場あり",
    "monthly_fee": "練習し放題 9,900円（平日デイプラン）／24時間練習し放題 14,850円（ベーシックプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/atsugihayashi/",
    "source_url": "https://www.mygol.jp/shop/atsugihayashi/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/atsugihayashi/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/atsugihayashi/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/atsugihayashi/「24時間365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -734,17 +919,23 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "5時〜25時",
    "open_24h": false,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "closed": "年中無休（公式「365日使い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
+   "parking": "なし",
    "monthly_fee": "お得に練習し放題 9,900円（平日デイプラン）／練習し放題 15,400円（スタンダードプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/kakioekimae/",
    "source_url": "https://www.mygol.jp/shop/kakioekimae/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/kakioekimae/facility",
+    "bays": "https://www.mygol.jp/shop/kakioekimae/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/kakioekimae/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/kakioekimae/「365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -759,16 +950,20 @@
    "hours": "24時間営業",
    "open_24h": true,
    "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "bays": "5打席",
+   "bays_num": 5,
+   "private_room": false,
    "parking": "近隣に契約駐車場あり／詳しくは店舗Topページ、『マイゴル武蔵中原駅前店の特徴』をご覧ください",
    "monthly_fee": "練習し放題 12,100円（リミテッドプラン）／24時間練習し放題 14,300円（ベーシックプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/musashinakaharaekimae/",
    "source_url": "https://www.mygol.jp/shop/musashinakaharaekimae/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/musashinakaharaekimae/equipments「打席数 5打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/musashinakaharaekimae/equipments「シミュレーター GDR Plus」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -782,17 +977,23 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "当面の間 6:00〜23:00（通常は24時間営業）",
    "open_24h": false,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "2打席",
+   "bays_num": 2,
    "private_room": null,
-   "parking": null,
+   "parking": "なし",
    "monthly_fee": "練習し放題 13,200円（平日デイプラン）／24時間練習し放題 17,600円（ベーシックプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/miyazakidai/",
    "source_url": "https://www.mygol.jp/shop/miyazakidai/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/miyazakidai/facility",
+    "bays": "https://www.mygol.jp/shop/miyazakidai/equipments「打席数 2打席／個別打席 半個室あり」",
+    "equipment": "https://www.mygol.jp/shop/miyazakidai/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/miyazakidai/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -806,17 +1007,23 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "7時〜23時",
    "open_24h": false,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "closed": "年中無休（公式「365日使い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
+   "parking": "なし",
    "monthly_fee": "お得に練習するなら 9,900円（平日デイプラン）／上達するなら 20,900円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/nishiyokohama/",
    "source_url": "https://www.mygol.jp/shop/nishiyokohama/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/nishiyokohama/facility",
+    "bays": "https://www.mygol.jp/shop/nishiyokohama/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/nishiyokohama/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/nishiyokohama/「365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -830,17 +1037,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "5打席",
+   "bays_num": 5,
+   "private_room": false,
    "parking": "無料駐車場あり(6台)",
    "monthly_fee": "お得に練習し放題 9,900円（平日デイプラン）／上達を目指すなら 19,800円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/kawasakinogawa/",
    "source_url": "https://www.mygol.jp/shop/kawasakinogawa/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/kawasakinogawa/equipments「打席数 5打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/kawasakinogawa/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/kawasakinogawa/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -855,16 +1067,20 @@
    "hours": "7時〜22時",
    "open_24h": false,
    "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "bays": "5打席",
+   "bays_num": 5,
+   "private_room": false,
    "parking": "駐車場あり(3時間無料)",
    "monthly_fee": "お得に打ち放題 9,350円（平日デイプラン）／スキルアップならこちら 19,800円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/chigasaki/",
    "source_url": "https://www.mygol.jp/shop/chigasaki/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/chigasaki/equipments「打席数 5打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/chigasaki/equipments「シミュレーター GDR Plus」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -878,17 +1094,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "8打席",
+   "bays_num": 8,
    "private_room": null,
    "parking": "無料駐車場あり(76台)",
    "monthly_fee": "練習し放題 15,400円（打席プラン）／レッスン最大10分受放題 19,800円（マイゴルアカデミー）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/tsunashima/",
    "source_url": "https://www.mygol.jp/shop/tsunashima/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/tsunashima/equipments「打席数 8打席／個別打席 半個室あり」",
+    "equipment": "https://www.mygol.jp/shop/tsunashima/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/tsunashima/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -902,17 +1123,23 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
+   "parking": "なし",
    "monthly_fee": null,
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/hakurakuekimae/",
    "source_url": "https://www.mygol.jp/shop/hakurakuekimae/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/hakurakuekimae/facility",
+    "bays": "https://www.mygol.jp/shop/hakurakuekimae/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/hakurakuekimae/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/hakurakuekimae/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -926,17 +1153,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "5打席",
+   "bays_num": 5,
    "private_room": null,
    "parking": "あり(無料)",
    "monthly_fee": "24時間練習し放題 13,750円（リミテッドプラン）／365日レッスン受け放題 22,000円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/honmoku/",
    "source_url": "https://www.mygol.jp/shop/honmoku/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/honmoku/equipments「打席数 5打席／個別打席 半個室あり」",
+    "equipment": "https://www.mygol.jp/shop/honmoku/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/honmoku/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -950,17 +1182,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
    "parking": "お車でお越しの際は、近隣の有料コインパーキングをご利用ください。",
    "monthly_fee": "24時間練習し放題 12,100円（リミテッドプラン）／365日レッスン受け放題 19,800円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/higashimonzen/",
    "source_url": "https://www.mygol.jp/shop/higashimonzen/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/higashimonzen/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/higashimonzen/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/higashimonzen/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -974,17 +1211,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日利用できる」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
    "parking": "レッスン利用時に近隣コインパーキングの駐車券サービスあり",
    "monthly_fee": "24時間練習し放題 12,100円（リミテッドプラン）／365日レッスン受け放題 19,800円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/kawasaki/",
    "source_url": "https://www.mygol.jp/shop/kawasaki/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/kawasaki/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/kawasaki/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/kawasaki/「24時間365日利用できる」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -999,16 +1241,20 @@
    "hours": "24時間営業",
    "open_24h": true,
    "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
    "parking": "有料（割引券あり）あり",
    "monthly_fee": "練習し放題 11,000円（平日デイプラン）／24時間練習し放題 14,300円（ベーシックプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/kanazawatatemachi/",
    "source_url": "https://www.mygol.jp/shop/kanazawatatemachi/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/kanazawatatemachi/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/kanazawatatemachi/equipments「シミュレーター GDR Plus」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1022,17 +1268,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「365日使い放題」）",
+   "bays": "2打席",
+   "bays_num": 2,
+   "private_room": false,
    "parking": "無料駐車場（3台）あり",
    "monthly_fee": "練習し放題 14,300円（リミテッドプラン）／24時間練習し放題 19,800円（リミテッドプラン プラス）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/sakudaira/",
    "source_url": "https://www.mygol.jp/shop/sakudaira/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/sakudaira/equipments「打席数 2打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/sakudaira/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/sakudaira/「365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1047,16 +1298,20 @@
    "hours": "24時間営業",
    "open_24h": true,
    "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
    "parking": "無料駐車場あり",
    "monthly_fee": "練習し放題 12,100円（平日デイプラン）／24時間練習し放題 15,400円（リミテッドプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/megadonquijotetoyohashi/",
    "source_url": "https://www.mygol.jp/shop/megadonquijotetoyohashi/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/megadonquijotetoyohashi/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/megadonquijotetoyohashi/equipments「シミュレーター GDR Plus」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1070,17 +1325,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "bays": "2打席（個室あり）",
+   "bays_num": 2,
+   "private_room": true,
    "parking": "【第一駐車場3台（店前）】【第二駐車場5台（道路挟んだ向かい側）】",
    "monthly_fee": "練習し放題 9,900円（平日デイプラン）／24時間練習し放題 18,700円（ベーシックプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/fujigaoka/",
    "source_url": "https://www.mygol.jp/shop/fujigaoka/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/fujigaoka/equipments「打席数 2打席／個別打席 個室あり」",
+    "equipment": "https://www.mygol.jp/shop/fujigaoka/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/fujigaoka/「24時間365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1094,17 +1354,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "3打席（個室あり）",
+   "bays_num": 3,
+   "private_room": true,
    "parking": "無料駐車場あり(3台)",
    "monthly_fee": "練習し放題 9,900円（平日デイプラン）／24時間練習し放題 13,200円（リミテッドプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/kariya/",
    "source_url": "https://www.mygol.jp/shop/kariya/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/kariya/equipments「打席数 3打席／個別打席 個室あり」",
+    "equipment": "https://www.mygol.jp/shop/kariya/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/kariya/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1118,17 +1383,21 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
    "bays": null,
    "bays_num": null,
-   "private_room": null,
+   "private_room": false,
    "parking": "あり10台以上（無料）",
    "monthly_fee": "24時間練習し放題 12,100円（リミテッドプラン）／365日レッスン受け放題 19,800円（レッスン受け放題）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/miyoshi/",
    "source_url": "https://www.mygol.jp/shop/miyoshi/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "equipment": "https://www.mygol.jp/shop/miyoshi/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/miyoshi/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1142,17 +1411,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "4打席（個室あり）",
+   "bays_num": 4,
+   "private_room": true,
    "parking": "無料駐車あり",
    "monthly_fee": "練習し放題 9,900円（平日デイプラン）／24時間練習し放題 14,300円（オールデイプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/atsuta/",
    "source_url": "https://www.mygol.jp/shop/atsuta/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/atsuta/equipments「打席数 4打席／個別打席 個室あり」",
+    "equipment": "https://www.mygol.jp/shop/atsuta/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/atsuta/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1166,17 +1440,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
    "parking": "あり",
    "monthly_fee": "24時間練習し放題 15,400円（ベーシックプラン）／365日レッスン受け放題 19,800円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/kizugawa/",
    "source_url": "https://www.mygol.jp/shop/kizugawa/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/kizugawa/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/kizugawa/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/kizugawa/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1190,17 +1469,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "bays": "3打席",
+   "bays_num": 3,
+   "private_room": false,
    "parking": "無料駐車場あり",
    "monthly_fee": "練習し放題 8,800円（平日デイプラン）／24時間練習し放題 13,200円（リミテッドプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/kishiwada/",
    "source_url": "https://www.mygol.jp/shop/kishiwada/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/kishiwada/equipments「打席数 3打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/kishiwada/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/kishiwada/「24時間365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1214,17 +1498,23 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "bays": "3打席",
+   "bays_num": 3,
+   "private_room": false,
+   "parking": "なし",
    "monthly_fee": "練習し放題 11,000円（平日デイプラン）／24時間練習し放題 15,400円（リミテッドプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/minamimorimachi/",
    "source_url": "https://www.mygol.jp/shop/minamimorimachi/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/minamimorimachi/facility",
+    "bays": "https://www.mygol.jp/shop/minamimorimachi/equipments「打席数 3打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/minamimorimachi/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/minamimorimachi/「24時間365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1238,17 +1528,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "bays": "3打席",
+   "bays_num": 3,
+   "private_room": false,
    "parking": "店舗前駐車OK（最大4台程度）",
    "monthly_fee": "練習し放題 12,100円（リミテッドプラン）／24時間練習し放題 14,300円（ベーシックプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/hiranouriwari/",
    "source_url": "https://www.mygol.jp/shop/hiranouriwari/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/hiranouriwari/equipments「打席数 3打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/hiranouriwari/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/hiranouriwari/「24時間365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1262,17 +1557,22 @@
    "tel": "0120-150-562 店舗直通電話番号：070-3187-8429（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "bays": "3打席",
+   "bays_num": 3,
+   "private_room": false,
    "parking": "30台以上",
    "monthly_fee": "24時間練習し放題 12,100円（リミテッドプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/fukai/",
    "source_url": "https://www.mygol.jp/shop/fukai/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/fukai/equipments「打席数 3打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/fukai/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/fukai/「24時間365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1286,17 +1586,23 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
+   "parking": "なし",
    "monthly_fee": "24時間練習し放題 13,200円（リミテッドプラン）／365日レッスン受け放題 20,900円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/miyakojima/",
    "source_url": "https://www.mygol.jp/shop/miyakojima/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/miyakojima/facility",
+    "bays": "https://www.mygol.jp/shop/miyakojima/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/miyakojima/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/miyakojima/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1310,17 +1616,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "5打席",
+   "bays_num": 5,
    "private_room": null,
    "parking": "ホテル内駐車場有／通常30分600円／↓／30分150円",
    "monthly_fee": "24時間練習し放題 22,000円（ベーシックプラン）／365日レッスン受け放題 27,500円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/hotelnewotaniosaka/",
    "source_url": "https://www.mygol.jp/shop/hotelnewotaniosaka/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/hotelnewotaniosaka/equipments「打席数 5打席／個別打席 半個室あり」",
+    "equipment": "https://www.mygol.jp/shop/hotelnewotaniosaka/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/hotelnewotaniosaka/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1334,17 +1645,23 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "7打席（個室あり）",
+   "bays_num": 7,
+   "private_room": true,
+   "parking": "なし",
    "monthly_fee": "24時間練習し放題 14,300円（ベーシックプラン）／最適なコーチングを 19,800円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/shinsaibashi/",
    "source_url": "https://www.mygol.jp/shop/shinsaibashi/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/shinsaibashi/facility",
+    "bays": "https://www.mygol.jp/shop/shinsaibashi/equipments「打席数 7打席／個別打席 個室あり」",
+    "equipment": "https://www.mygol.jp/shop/shinsaibashi/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/shinsaibashi/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1358,17 +1675,23 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "2打席（個室あり）",
+   "bays_num": 2,
+   "private_room": true,
+   "parking": "なし",
    "monthly_fee": "24時間練習し放題 12,100円（リミテッドプラン）／最適なコーチングを 22,000円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/ibarakishiekimae/",
    "source_url": "https://www.mygol.jp/shop/ibarakishiekimae/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/ibarakishiekimae/facility",
+    "bays": "https://www.mygol.jp/shop/ibarakishiekimae/equipments「打席数 2打席／個別打席 個室あり」",
+    "equipment": "https://www.mygol.jp/shop/ibarakishiekimae/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/ibarakishiekimae/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1382,17 +1705,23 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
+   "parking": "なし",
    "monthly_fee": "レッスン受け放題 19,800円（レッスン受け放題プラン）／平日日中 お得に利用 9,900円（平日デイプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/sakaishiekimae/",
    "source_url": "https://www.mygol.jp/shop/sakaishiekimae/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/sakaishiekimae/facility",
+    "bays": "https://www.mygol.jp/shop/sakaishiekimae/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/sakaishiekimae/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/sakaishiekimae/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1406,17 +1735,23 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
    "private_room": null,
-   "parking": null,
+   "parking": "なし",
    "monthly_fee": "ベーシックプランプラン 16,500円（24時間練習し放題）／レッスン受け放題プラン 22,000円（365日レッスン受け放題）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/tennouji/",
    "source_url": "https://www.mygol.jp/shop/tennouji/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "parking": "https://www.mygol.jp/shop/tennouji/facility",
+    "bays": "https://www.mygol.jp/shop/tennouji/equipments「打席数 4打席／個別打席 半個室あり」",
+    "equipment": "https://www.mygol.jp/shop/tennouji/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/tennouji/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1430,17 +1765,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
    "parking": "近隣に有料コインパーキングあり（レッスン会員のみ駐車券サービスあり）",
    "monthly_fee": "練習し放題 8,800円（平日デイプラン）／24時間練習し放題 12,100円（リミテッドプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/kobeokamoto/",
    "source_url": "https://www.mygol.jp/shop/kobeokamoto/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/kobeokamoto/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/kobeokamoto/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/kobeokamoto/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1454,17 +1794,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "3打席",
+   "bays_num": 3,
+   "private_room": false,
    "parking": "駐車場あり(3時間無料)",
    "monthly_fee": "24時間練習し放題 14,300円（ベーシックプラン）／レッスン受け放題 22,000円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/kawanishi/",
    "source_url": "https://www.mygol.jp/shop/kawanishi/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/kawanishi/equipments「打席数 3打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/kawanishi/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/kawanishi/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1478,17 +1823,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "bays": "3打席",
+   "bays_num": 3,
+   "private_room": false,
    "parking": "あり",
    "monthly_fee": "24時間練習し放題 12,100円（リミテッドプラン）／レッスン受け放題 19,800円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/ikoma/",
    "source_url": "https://www.mygol.jp/shop/ikoma/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/ikoma/equipments「打席数 3打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/ikoma/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/ikoma/「24時間365日使い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1502,17 +1852,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "7打席（個室あり）",
+   "bays_num": 7,
+   "private_room": true,
    "parking": "無料駐車場あり（9台）",
    "monthly_fee": "練習し放題 7,700円（平日デイプラン（オープン打席））／グループレッスン受け放題 16,500円（レッスン受け放題プラン（365日24時間））（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/matueyahata/",
    "source_url": "https://www.mygol.jp/shop/matueyahata/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/matueyahata/equipments「打席数 7打席／個別打席 個室あり」",
+    "equipment": "https://www.mygol.jp/shop/matueyahata/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/matueyahata/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1526,17 +1881,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "3打席",
+   "bays_num": 3,
    "private_room": null,
    "parking": "6台（無料）",
    "monthly_fee": "24時間練習し放題 13,200円（リミテッドプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/okayamatomimachi/",
    "source_url": "https://www.mygol.jp/shop/okayamatomimachi/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/okayamatomimachi/equipments「打席数 3打席／個別打席 半個室あり」",
+    "equipment": "https://www.mygol.jp/shop/okayamatomimachi/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/okayamatomimachi/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1550,17 +1910,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "3打席",
+   "bays_num": 3,
    "private_room": null,
    "parking": "5台以上あり",
    "monthly_fee": "24時間練習し放題 11,980円（基本プラン）／完全個室 同伴2名可 16,980円（VIP打席プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/kurashikiekimae/",
    "source_url": "https://www.mygol.jp/shop/kurashikiekimae/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/kurashikiekimae/equipments「打席数 3打席／個別打席 半個室あり」",
+    "equipment": "https://www.mygol.jp/shop/kurashikiekimae/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/kurashikiekimae/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1574,17 +1939,22 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "4打席（個室あり）",
+   "bays_num": 4,
+   "private_room": true,
    "parking": "店舗前に無料駐車場あり",
    "monthly_fee": "練習し放題 9,900円（デイプラン）／24時間練習し放題 14,300円（ベーシックプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/hiroshimaotemachi/",
    "source_url": "https://www.mygol.jp/shop/hiroshimaotemachi/",
-   "fetched_at": "2026-10-11"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/hiroshimaotemachi/equipments「打席数 4打席／個別打席 個室あり」",
+    "equipment": "https://www.mygol.jp/shop/hiroshimaotemachi/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/hiroshimaotemachi/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1598,17 +1968,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "3打席（個室あり）",
+   "bays_num": 3,
+   "private_room": true,
    "parking": "無料駐車場（50台以上）",
    "monthly_fee": "24時間練習し放題 13,200円（リミテッドプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/hiroshimainokuchidai/",
    "source_url": "https://www.mygol.jp/shop/hiroshimainokuchidai/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/hiroshimainokuchidai/equipments「打席数 3打席／個別打席 個室あり」",
+    "equipment": "https://www.mygol.jp/shop/hiroshimainokuchidai/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/hiroshimainokuchidai/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1622,17 +1997,22 @@
    "tel": "0120-150-562（受付時間：24時間）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
    "parking": "Family Martと共有駐車場で14台駐車可能。店舗前だと７台駐車可能。",
    "monthly_fee": "練習し放題1日最大2コマ 11,000円（平日デイプラン）／24時間練習し放題 12,100円（リミテッドプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/syoudai/",
    "source_url": "https://www.mygol.jp/shop/syoudai/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/syoudai/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/syoudai/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/syoudai/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1646,17 +2026,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "3打席（個室あり）",
+   "bays_num": 3,
+   "private_room": true,
    "parking": "2台あり（無料 ※10時－15時を除く）",
    "monthly_fee": "24時間練習し放題 11,980円（リミテッドプラン）／365日レッスン受け放題 16,980円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/haruyoshi/",
    "source_url": "https://www.mygol.jp/shop/haruyoshi/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/haruyoshi/equipments「打席数 3打席／個別打席 個室あり」",
+    "equipment": "https://www.mygol.jp/shop/haruyoshi/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/haruyoshi/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1670,17 +2055,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "3打席",
+   "bays_num": 3,
    "private_room": null,
    "parking": "8台（無料）",
    "monthly_fee": "24時間練習し放題 12,100円（基本プラン (自主練習のみ)）／365日レッスン受け放題 18,700円（グループレッスンプラン (レッスンあり)）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/yahatanishi/",
    "source_url": "https://www.mygol.jp/shop/yahatanishi/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/yahatanishi/equipments「打席数 3打席／個別打席 半個室あり」",
+    "equipment": "https://www.mygol.jp/shop/yahatanishi/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/yahatanishi/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1694,17 +2084,22 @@
    "tel": "0120-150-562（受付時間：24時間受付可能）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": false,
    "parking": "無料駐車場あり",
    "monthly_fee": "24時間練習し放題 14,300円（リミテッドプラン）／365日レッスン受け放題 22,000円（レッスン受け放題プラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/yoshidukaekimae/",
    "source_url": "https://www.mygol.jp/shop/yoshidukaekimae/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/yoshidukaekimae/equipments「打席数 4打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/yoshidukaekimae/equipments「シミュレーター GDR Plus」",
+    "closed": "https://www.mygol.jp/shop/yoshidukaekimae/「24時間365日通い放題」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1719,16 +2114,20 @@
    "hours": "24時間営業",
    "open_24h": true,
    "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
+   "bays": "3打席",
+   "bays_num": 3,
+   "private_room": false,
    "parking": "無料駐車場あり（60台ほど）",
    "monthly_fee": "平日のみ練習し放題 9,900円（平日デイプラン）／24時間練習し放題 14,300円（ベーシックプラン）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/sasebo/",
    "source_url": "https://www.mygol.jp/shop/sasebo/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/sasebo/equipments「打席数 3打席／個別打席 なし」",
+    "equipment": "https://www.mygol.jp/shop/sasebo/equipments「シミュレーター GDR Plus」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1743,16 +2142,20 @@
    "hours": "4時30分〜20時",
    "open_24h": false,
    "closed": null,
-   "bays": null,
-   "bays_num": null,
+   "bays": "4打席",
+   "bays_num": 4,
    "private_room": null,
    "parking": "無料駐車場あり",
    "monthly_fee": "定額練習し放題 10,000円（基本プラン）／回数制 6,000円（チケット6枚）（税込）",
-   "equipment": null,
+   "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/naha/",
    "source_url": "https://www.mygol.jp/shop/naha/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "field_sources": {
+    "bays": "https://www.mygol.jp/shop/naha/equipments「打席数 4打席／個別打席 半個室あり」",
+    "equipment": "https://www.mygol.jp/shop/naha/equipments「シミュレーター GDR Plus」"
+   }
   },
   {
    "brand": "マイゴル",
@@ -1776,7 +2179,7 @@
    "open": true,
    "official": "https://www.mygol.jp/range/shop/randltakanawagateway.php",
    "source_url": "https://www.mygol.jp/range/shop/randltakanawagateway.php",
-   "fetched_at": "2026-10-07"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "マイゴル",
@@ -1800,7 +2203,7 @@
    "open": true,
    "official": "https://www.mygol.jp/range/shop/shiroganetakanawa.php",
    "source_url": "https://www.mygol.jp/range/shop/shiroganetakanawa.php",
-   "fetched_at": "2026-10-07"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "マイゴル",
@@ -1824,7 +2227,7 @@
    "open": true,
    "official": "https://www.mygol.jp/range/shop/akasaka1.php",
    "source_url": "https://www.mygol.jp/range/shop/akasaka1.php",
-   "fetched_at": "2026-10-07"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "マイゴル",
@@ -1848,7 +2251,7 @@
    "open": true,
    "official": "https://www.mygol.jp/range/shop/akasaka2.php",
    "source_url": "https://www.mygol.jp/range/shop/akasaka2.php",
-   "fetched_at": "2026-10-07"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "マイゴル",
@@ -1872,7 +2275,7 @@
    "open": true,
    "official": "https://www.mygol.jp/range/shop/daikanyama.php",
    "source_url": "https://www.mygol.jp/range/shop/daikanyama.php",
-   "fetched_at": "2026-10-07"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "マイゴル",
@@ -1896,7 +2299,7 @@
    "open": true,
    "official": "https://www.mygol.jp/range/shop/roppongi.php",
    "source_url": "https://www.mygol.jp/range/shop/roppongi.php",
-   "fetched_at": "2026-10-07"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "マイゴル",
@@ -1920,7 +2323,7 @@
    "open": true,
    "official": "https://www.mygol.jp/range/shop/ebisu.php",
    "source_url": "https://www.mygol.jp/range/shop/ebisu.php",
-   "fetched_at": "2026-10-07"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "マイゴル",
@@ -1944,7 +2347,7 @@
    "open": true,
    "official": "https://www.mygol.jp/range/shop/ebisunishi.php",
    "source_url": "https://www.mygol.jp/range/shop/ebisunishi.php",
-   "fetched_at": "2026-10-07"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "マイゴル",
@@ -1968,7 +2371,7 @@
    "open": true,
    "official": "https://www.mygol.jp/range/shop/omotesando.php",
    "source_url": "https://www.mygol.jp/range/shop/omotesando.php",
-   "fetched_at": "2026-10-07"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "マイゴル",
@@ -1992,7 +2395,7 @@
    "open": true,
    "official": "https://www.mygol.jp/range/shop/takanawadai.php",
    "source_url": "https://www.mygol.jp/range/shop/takanawadai.php",
-   "fetched_at": "2026-10-07"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "マイゴル",
@@ -2016,7 +2419,7 @@
    "open": true,
    "official": "https://www.mygol.jp/range/shop/executiveshibuya.php",
    "source_url": "https://www.mygol.jp/range/shop/executiveshibuya.php",
-   "fetched_at": "2026-10-07"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "マイゴル",
@@ -2040,31 +2443,7 @@
    "open": true,
    "official": "https://www.mygol.jp/range/shop/fukuoka.php",
    "source_url": "https://www.mygol.jp/range/shop/fukuoka.php",
-   "fetched_at": "2026-10-07"
-  },
-  {
-   "brand": "マイゴル",
-   "brand_slug": "mygol",
-   "slug": "koshigaya",
-   "name": "マイゴル越谷せんげん台駅東口店",
-   "pref": "埼玉県",
-   "zip": null,
-   "address": "埼玉県越谷市千間台東",
-   "access": "せんげん台駅から徒歩2分",
-   "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
-   "hours": "24時間営業",
-   "open_24h": true,
-   "closed": null,
-   "bays": null,
-   "bays_num": null,
-   "private_room": null,
-   "parking": "駐車場あり（120分100円）",
-   "monthly_fee": "練習し放題 9,900円（平日デイプラン）／24時間練習し放題 16,500円（リミテッドプラン（レッスン２回付））（税込）",
-   "equipment": null,
-   "open": false,
-   "official": "https://www.mygol.jp/shop/koshigaya/",
-   "source_url": "https://www.mygol.jp/shop/koshigaya/",
-   "fetched_at": "2026-10-08"
+   "fetched_at": "2026-10-16"
   }
  ]
 }

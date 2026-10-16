@@ -21,10 +21,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   if (!f) return {}
   const where = [f.pref, cityOf(f)].filter(Boolean).join('')
   // ⚠️ 店名だけだとブランドをまたいで衝突する（「春日井店」が2ブランドにある）。
-  //    店名にブランド名が含まれていないときだけ前に付ける。
-  const label = f.brand && !f.name.includes(f.brand)
-    ? `${f.brand} ${titleName(f.name)}`
-    : titleName(f.name)
+  // 2026-10-16 店名にはビルド時にブランド名を付けている（build-facilities.py の display_name）
+  const label = titleName(f.name)
   return {
     title: clip(`${label}｜${where}のシミュレーションゴルフ`),
     description: facilityDescription(f),

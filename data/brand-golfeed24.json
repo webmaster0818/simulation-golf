@@ -1,7 +1,7 @@
 {
  "brand": "GOLFEED24",
  "source_url": "https://golfeed24.com/store",
- "fetched_at": "2026-10-12",
+ "fetched_at": "2026-10-16",
  "count": 20,
  "stores": [
   {
@@ -20,8 +20,11 @@
    "bays_num": 3,
    "open_24h": true,
    "private_room": true,
+   "monthly_fee": "プレミアム 32,600円／スタンダード 16,500円／デイタイム 13,200円／ベーシック 11,780円／ライト 7,600円／レフティスタンダード 18,500円／レフティベーシック 15,400円（月額・税込）／入会金 11,000円（税込）・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/akou//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -39,8 +42,11 @@
    "bays_num": 5,
    "open_24h": true,
    "private_room": true,
+   "monthly_fee": "プレミアム 32,600円／スタンダード 16,500円／デイタイム 13,200円／ベーシック 11,780円／ライト 7,600円／レフティスタンダード 18,500円／レフティベーシック 15,400円（月額・税込）／入会金 11,000円（税込）・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/asagiri//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -58,8 +64,11 @@
    "bays_num": 1,
    "open_24h": true,
    "private_room": false,
+   "monthly_fee": "アドバンス 22,500円／スタンダード 16,500円／デイタイム 13,200円／ベーシック 11,780円／ライト 7,600円（月額・税込）／入会金 11,000円（税込）・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/chibadera//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -77,8 +86,11 @@
    "bays_num": 2,
    "open_24h": true,
    "private_room": true,
+   "monthly_fee": "アドバンス 22,500円／スタンダード 16,500円／デイタイム 13,200円／ベーシック 11,780円／ライト 7,600円（月額・税込）／入会金 11,000円（税込）・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/higashinada//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -96,8 +108,11 @@
    "bays_num": 1,
    "open_24h": true,
    "private_room": false,
+   "monthly_fee": "プレミアム 27,500円／スタンダード 22,000円／デイ 18,700円／平日 月8コマ 13,200円／平日 月4コマ 8,800円／土日 月8コマ 17,200円／土日 月4コマ 10,800円（月額・税込）／入会金 11,000円（税込）・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/hkt//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -115,8 +130,11 @@
    "bays_num": 3,
    "open_24h": true,
    "private_room": true,
+   "monthly_fee": "プレミアム 32,600円／スタンダード 16,500円／デイタイム 13,200円／ナイト 9,900円／ベーシック 11,780円／ライト 7,600円／レフティスタンダード 18,500円／レフティベーシック 15,400円（月額・税込）／入会金 11,000円（税込）・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/honmachi//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -134,8 +152,11 @@
    "bays_num": 2,
    "open_24h": true,
    "private_room": false,
+   "monthly_fee": "プレミアム 19,000円／プレミアムナイト 9,500円／スタンダード 14,800円／デイ 13,380円／ナイト 6,500円／ベーシック 10,800円／ライト 7,000円／入会金 11,000円・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/iwaki//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -153,8 +174,11 @@
    "bays_num": 4,
    "open_24h": true,
    "private_room": true,
+   "monthly_fee": "プレミアム 19,000円／プレミアムナイト 9,500円／スタンダード 14,800円／デイ 13,380円／ナイト 6,500円／ベーシック 10,800円／ライト 7,000円／入会金 11,000円・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/iwakionahama//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -172,8 +196,11 @@
    "bays_num": 1,
    "open_24h": true,
    "private_room": false,
+   "monthly_fee": "BASIC 14,300円／STANDARD 19,800円／PREMIUM 24,200円／DAY 16,500円（月額・税込）・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/kosaka//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -191,8 +218,11 @@
    "bays_num": 1,
    "open_24h": true,
    "private_room": false,
+   "monthly_fee": "プレミアム 21,780円／スタンダード 16,280円／ナイト 10,780円／ベーシック 10,780円・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/morinomiya//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -210,8 +240,11 @@
    "bays_num": 4,
    "open_24h": true,
    "private_room": true,
+   "monthly_fee": "プレミアム 32,600円／スタンダード 16,500円／デイタイム 13,200円／ベーシック 11,780円／ライト 7,600円／レフティスタンダード 18,500円／レフティベーシック 15,400円（月額・税込）／入会金 11,000円（税込）・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/nishikoube//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -229,8 +262,11 @@
    "bays_num": 5,
    "open_24h": true,
    "private_room": true,
+   "monthly_fee": "プレミアム 32,600円／スタンダード 16,500円／デイタイム 13,200円／ナイト 9,900円／ベーシック 11,780円／ライト 7,600円／レフティスタンダード 18,500円／レフティベーシック 15,400円（月額・税込）／入会金 11,000円（税込）・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/nishinomiya//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -248,8 +284,11 @@
    "bays_num": 1,
    "open_24h": true,
    "private_room": false,
+   "monthly_fee": "スタンダード 20,000円／プレミアム 36,000円（月額・税込）／入会金 100,000円・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/oitakanaike//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -267,8 +306,11 @@
    "bays_num": 1,
    "open_24h": true,
    "private_room": false,
+   "monthly_fee": "スタンダード 20,000円／プレミアム 36,000円（月額・税込）／入会金 100,000円・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/oitaomichi//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -286,8 +328,11 @@
    "bays_num": 2,
    "open_24h": true,
    "private_room": true,
+   "monthly_fee": "プレミアム 32,600円／スタンダード 16,500円／デイタイム 13,200円／ベーシック 11,780円／ライト 7,600円／入会金 11,000円（税込）・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/sannomiya//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -305,8 +350,11 @@
    "bays_num": 3,
    "open_24h": true,
    "private_room": false,
+   "monthly_fee": "STANDARD 13,000円／PREMIUM 16,000円／DAY 9,900円／WEEKDAY 7,700円／LADIES 9,900円（月額・税込）・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/suita//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -324,8 +372,11 @@
    "bays_num": 4,
    "open_24h": true,
    "private_room": true,
+   "monthly_fee": "DAY 9,500円／BASIC 10,200円／STANDARD 11,700円／PREMIUM 17,000円／NIGHT 7,000円（月額・税込）・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/takasago//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -343,8 +394,11 @@
    "bays_num": 4,
    "open_24h": true,
    "private_room": true,
+   "monthly_fee": "プレミアム 32,600円／スタンダード 16,500円／デイタイム 13,200円／ナイト 9,900円／ベーシック 11,780円／ライト 7,600円／レフティスタンダード 18,500円／レフティベーシック 15,400円（月額・税込）／入会金 11,000円（税込）・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/toaroad//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -362,8 +416,10 @@
    "bays_num": 1,
    "open_24h": true,
    "private_room": true,
+   "monthly_fee": "プレミアム 32,600円／スタンダード 16,500円／デイタイム 13,200円／ミッドナイト 9,900円／ベーシック 11,780円／ライト 7,600円／レフティスタンダード 18,500円／レフティベーシック 15,400円（月額・税込）／入会金 11,000円（税込）・ほかに法人プランあり",
+   "equipment": "OK ON GOLF Type-D",
    "source_url": "https://golfeed24.com/store/toyonaka//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "GOLFEED24",
@@ -381,8 +437,11 @@
    "bays_num": 5,
    "open_24h": true,
    "private_room": true,
+   "monthly_fee": "プレミアム 32,600円／スタンダード 16,500円／デイタイム 13,200円／ナイト 5,900円〜／ベーシック 11,780円／ライト 7,600円（月額・税込）／入会金 11,000円（税込）・ほかに法人プランあり",
+   "equipment": "OK ON GOLF",
+   "note": "機種は公式FAQ（https://golfeed24.com/faq）の「他のインドアゴルフ練習場との違いは何ですか？」への回答「高性能シミュレーター【OKON GOLF】を導入し、個室または半個室で集中して練習できます。」から（ブランド全体の記載。店舗ページには機種名の記載なし）",
    "source_url": "https://golfeed24.com/store/tsurumi//",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   }
  ],
  "failed": [

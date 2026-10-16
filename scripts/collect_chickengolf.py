@@ -9,7 +9,13 @@
 ⚠️ クラス名の末尾はビルドごとのハッシュ（_detailLabel_vb1kd_177 など）。前方一致で読む。
 ⚠️ 駐車場は「アクセス」欄の中に、駅の行（_routeChip_）とは別の値として書かれている店がある
    （豊橋「駐車場あり」・松戸・天美・和泉・那覇・奈良）。parking に入れ、access には駅の行だけを残す。
-⚠️ シミュレーターの機種は「GOLFZON社製」としか書かれていない（五反田・心斎橋）。機種名ではないので載せない。
+⚠️ シミュレーターは「GOLFZON社製のシミュレーター」と書いた店だけ（五反田・心斎橋）。機種名は無いので
+   「GOLFZON社製シミュレーター」とメーカーまでを載せる。FAQ・トップは「全打席高性能シミュレーター付き」
+   「シミュレーションゴルフの機械が、全ての打席に」でメーカーの記載が無い＝他店には入れない。
+   仙台の「GDRを活用しながら…」はお客様の声なので使わない。
+⚠️ 駐車場が「アクセス」欄に無くても、店舗ページの「◯◯店の魅力」欄に書いた店がある
+   （千葉「駐車場も近隣にあり」・西川口「近隣にコインパーキング多数」）。その文をそのまま parking に入れる。
+   「お客様の声」（西川口「駐車場があって車でサッと行ける」）は使わない。
 ⚠️ 打席数は本文の「打席数5打席」「2打席の小規模店舗」がある店だけ（千葉・西川口・京橋）。
 ⚠️ 個室は「全ブース個室」「完全個室」と書いた店だけ true（刈谷・梅田）。「半個室」は true にしない。
    トップページの「完全個室＆高性能シミュレーター付き」はブランド全体の宣伝文なので店舗には使わない。
@@ -161,6 +167,20 @@ def main() -> None:
         name = text(name_m.group(1)) if name_m else off
 
         bt = body_text(h)
+        # 「◯◯店の魅力」欄（お客様の声・お約束より前）
+        appeal = ""
+        am = re.search(r"店の魅力</h2>(.*?)(3つのお約束|お客様の声)", h, re.S)
+        if am:
+            appeal = body_text(am.group(1))
+        # 見出し（h3）と説明（p）を別々の文として扱う（つなぐと見出しと本文が1文に混ざる）
+        appeal_sents = []
+        for el in re.findall(r"<(?:h3|p)(?:\s[^>]*)?>(.*?)</(?:h3|p)>", am.group(1) if am else "", re.S):
+            appeal_sents += [x.strip() for x in re.split(r"(?<=[。！])", text(el)) if x.strip()]
+        if not parking:
+            pk = [x for x in appeal_sents if re.search(r"駐車|パーキング", x)]
+            if pk:
+                parking = " ".join(dict.fromkeys(pk))
+        equipment = "GOLFZON社製シミュレーター" if re.search(r"GOLFZON社製の(最新)?シミュレーター", appeal) else None
         bays_num = bays = None
         m = re.search(r"打席数\s*(\d+)\s*打席", bt) or re.search(r"(\d+)\s*打席の小規模店舗", bt)
         if m:
@@ -195,7 +215,7 @@ def main() -> None:
             "private_room": private_room,
             "parking": parking,
             "monthly_fee": fee,
-            "equipment": None,
+            "equipment": equipment,
             "open": open_,
             "official": url,
             "source_url": url, "fetched_at": today,

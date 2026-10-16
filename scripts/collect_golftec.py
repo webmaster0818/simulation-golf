@@ -3,8 +3,12 @@
 """GOLFTEC（ゴルフテック・GDO運営）の店舗を公式サイトから取る。
 
 公式 https://golftec.golfdigest.co.jp/ 。屋内の完全個室マンツーマンレッスン。
-公式の「テクノロジー」ページに 3Dモーション解析・ハイスピード映像・弾道測定機 を全店共通で使うとある
-（機種名は書かれていないので equipment は None）。
+公式の「テクノロジー」ページ（/concept/technology.html）に「ゴルフテックでは、3Dモーション解析、ハイスピード映像、
+弾道測定データを組み合わせてスイングを分析します。」とあり、設備として OPTIMOTION（独自の3D動画解析）・弾道測定機・
+「正面と飛球線後方に設置された2台のハイスピードカメラ」を挙げている＝ブランド全体の記述。
+→ 全店の equipment にこの設備名を入れ、出典を equipment_source_url に残す。弾道測定機の機種名は書かれていないので
+  「機種名は公式サイトに記載なし」を添える（トラックマン等の名前は付けない）。テクノロジーページから
+  「弾道測定機」「OPTIMOTION」が消えたら None に戻す（取り直しのたびに確かめる）。
 店舗一覧 /studio/ に /studio/<地域>/<店>/ が並ぶ（2026-10-16 時点 11店）。
 
 店舗ページ:
@@ -13,7 +17,9 @@
   紹介文      「すべて完全個室マンツーマン」→ private_room=True（店舗ページごとに書かれている）
 ⚠️ HTML コメント <!-- … --> の中に古い文面が残っている（キャンペーン・コーチ等）。先に消してから読む。
 ⚠️ 月額は無い。チケット回数制（10回 税込110,000円 等）で、公式に「入会金をはじめ、会費…は一切かかりません」。
-   monthly_fee は None（月額制ではないので）。
+   monthly_fee は None（月額制ではないので）。/price/ の「プラクティス」も 都度3,300円・3か月30,030円（税込）で月額ではない。
+   トップからリンクされた /info/price2312.html に「月額制プラクティスパス：月額22,000円（税込）」があるが、
+   2024年1月改定の告知で、現在の /price/ の料金（10回 110,000円 等）と合わない古い表＝使わない。
 ⚠️ TEL は予約センター 0570-041-109 と店舗TEL がある。tel には店舗TEL を入れる。
 
   python3 scripts/collect_golftec.py
@@ -63,7 +69,22 @@ def info(h: str) -> dict:
     return out
 
 
+TECH_URL = f"{BASE}/concept/technology.html"
+
+
+def brand_equipment():
+    h = re.sub(r"(?s)<!--.*?-->", "", get(TECH_URL))
+    t = re.sub(r"\s+", " ", text(h))
+    if "ゴルフテックでは、3Dモーション解析、ハイスピード映像、弾道測定データを組み合わせて" in t \
+            and "OPTIMOTION" in t and "弾道測定機" in t and "2台のハイスピードカメラ" in t:
+        return "OPTIMOTION（3D動画解析）／弾道測定機（機種名は公式サイトに記載なし）／ハイスピードカメラ2台"
+    print("  ⚠️ テクノロジーページの記述が変わった → equipment は None")
+    return None
+
+
 def main() -> None:
+    equipment = brand_equipment()
+    time.sleep(1.5)
     listing = get(f"{BASE}/studio/")
     paths = sorted(set(re.findall(r'href="(/studio/[a-z_]+/[a-z_]+/)"', listing)))
     print(f"店舗候補 {len(paths)}件")
@@ -112,7 +133,9 @@ def main() -> None:
             "private_room": True if "完全個室" in intro else None,
             "parking": r.get("駐車場"),
             "monthly_fee": None,
-            "equipment": None,
+            "equipment": equipment,
+            "equipment_source_url": TECH_URL if equipment else None,
+            "note": "計測の設備はブランド共通の記載（ゴルフテックテクノロジーのページ）" if equipment else None,
             "open": not re.search(r"OPEN予定|オープン予定", intro),
             "official": url,
             "source_url": url, "fetched_at": today,

@@ -15,7 +15,14 @@
    - 機種は冒頭の紹介文で『VISION PLUS』のように名指しされている。クラブのブランド（『PXG』『PING』）も
      同じ『』で書かれているので、既知の機種名だけ通す。
 ⚠️ 月額は税抜の大きな数字と「（基本プラン・税込10,000円）」が並んでいる。載せるのは税込のほう。
-⚠️ 打席数・個室・機種は店舗情報の欄に無い（特徴の文章にだけ出てくる）ので None のままにする（/shop/ 形式）。
+⚠️ 打席数・個室・機種・駐車場は店舗トップではなく、店舗ごとの別ページにある（/shop/ 形式・2026-10-16 追加）:
+   <店舗>/equipments … 「打席数 4打席」「個別打席 個室あり／半個室あり／なし」「シミュレーター GDR Plus」
+   <店舗>/facility   … 「駐車場 なし／無料駐車場あり …」
+   以前は店舗トップしか読まず、全部「記載なし」になっていた。
+   - 「半個室あり」は個室に数えない（サイトは bays に「個室」の字があると個室ありと表示する）。private_room は None。
+   - facility ページ冒頭の「24時間365日、定額制で…」は 7時〜22時 の店（茅ヶ崎）にも出るテンプレートなので使わない。
+     定休日は店舗トップの紹介文の「24時間365日通い放題」「365日使い放題」「24時間365日営業」だけで判定する
+     （「365日レッスン受け放題」はプラン名・「電話：24時間365日受付可」は電話の話なので除く）。
 ⚠️ 公式に書いていない項目は None のままにする。推測で埋めない。
 
   python3 scripts/collect_mygol.py               # 取得して data/mygol.json に書く
@@ -61,7 +68,25 @@ FIXES = {
 LOCATED_RE = re.compile(r"([^\s「」。、]+?(?:市|区|町|村)[^\s「」。、]*?)に位置する")
 
 
+CACHE: Path | None = None
+
+
 def get(url: str) -> str:
+    fp = None
+    if CACHE is not None and "/shop/" in url and url.rstrip("/") != LIST_URL.rstrip("/"):
+        CACHE.mkdir(parents=True, exist_ok=True)
+        fp = CACHE / (re.sub(r"[^A-Za-z0-9]+", "_", url.split("mygol.jp", 1)[-1]).strip("_") + ".html")
+        if fp.exists() and fp.stat().st_size > 2000:
+            return fp.read_text(encoding="utf-8", errors="ignore")
+    h = _fetch(url)
+    if fp is not None and h:
+        fp.write_text(h, encoding="utf-8")
+    if "/equipments" in url or "/facility" in url:
+        time.sleep(2)   # 店舗ごとの別ページも公式サイトに負荷をかけない間隔で
+    return h
+
+
+def _fetch(url: str) -> str:
     for _ in range(3):
         r = subprocess.run(["curl", "-sL", "--max-time", "40", "-A", UA, url],
                            capture_output=True, text=True, timeout=60)
@@ -153,6 +178,58 @@ def clean_hours(hours: str | None) -> tuple[str | None, bool | None]:
     if m:
         return f"当面の間 {m.group(1)}（通常は{h.split('／')[0]}）", False
     return h, ("24時間" in h)
+
+
+def rows(page_html: str) -> dict:
+    """<店舗>/equipments・/facility の表（<p class="value"> の前の見出し）を {見出し: 値} で返す。"""
+    L = [x for x in (text(v) for v in re.split(r"<[^>]+>", strip_hidden(page_html))) if x]
+    out = {}
+    for i in range(len(L) - 1):
+        if L[i] in ("打席数", "個別打席", "シミュレーター", "駐車場", "スタッフアワー") and L[i] not in out:
+            out[L[i]] = L[i + 1]
+    return out
+
+
+# /shop/ の店の <店舗>/equipments に書かれた機種。表記はサイト内の既存の書き方にそろえる。
+SHOP_EQUIPMENT = {"GDR Plus": "GOLFZON GDR PLUS", "TWOVISION": "GOLFZON TWOVISION",
+                  "Joy Golf smart+": "Joy Golf smart+"}
+OPEN365_RE = re.compile(r"(?:24時間)?365日(?:通い放題|使い放題|営業|いつでも|利用できる)")
+
+
+def shop_extra(url: str, top_html: str) -> tuple[dict, list[str]]:
+    """/shop/ の店の equipments・facility ページと、トップの紹介文の 365日 の記載。"""
+    problems, src = [], {}
+    eq_url, fa_url = url.rstrip("/") + "/equipments", url.rstrip("/") + "/facility"
+    e = rows(get(eq_url))
+    f = rows(get(fa_url))
+    r = {"bays": None, "bays_num": None, "private_room": None, "equipment": None,
+         "parking": f.get("駐車場"), "closed": None}
+    if r["parking"]:
+        src["parking"] = fa_url
+    m = re.fullmatch(r"(\d+)打席", e.get("打席数", ""))
+    room = e.get("個別打席")
+    if m:
+        r["bays_num"] = int(m.group(1))
+        r["bays"] = f"{m.group(1)}打席" + ("（個室あり）" if room == "個室あり" else "")
+        src["bays"] = f"{eq_url}「打席数 {e['打席数']}／個別打席 {room}」"
+    if room == "個室あり":
+        r["private_room"] = True
+    elif room == "なし":
+        r["private_room"] = False
+    sim = e.get("シミュレーター")
+    if sim:
+        if sim in SHOP_EQUIPMENT:
+            r["equipment"] = SHOP_EQUIPMENT[sim]
+            src["equipment"] = f"{eq_url}「シミュレーター {sim}」"
+        else:
+            problems.append(f"{url}: 見覚えのない機種名「{sim}」（載せていない）")
+    body = text(top_html[:60000])
+    hit = next((mm.group(0) for mm in OPEN365_RE.finditer(body)), None)
+    if hit:
+        r["closed"] = "年中無休（365日営業）" if hit.endswith("営業") else f"年中無休（公式「{hit}」）"
+        src["closed"] = f"{url}「{hit}」"
+    r["field_sources"] = src
+    return r, problems
 
 
 # マイゴルフレンジ（/range/shop/）の紹介文に出る機種。サイト内の既存の表記にそろえる。
@@ -297,7 +374,11 @@ def main() -> None:
     ap.add_argument("--only", default="", help="このslug（カンマ区切り）だけ取り直して保存済みの結果に上書きする")
     ap.add_argument("--range-only", action="store_true",
                     help="/range/shop/ の店だけ取り直して保存済みの結果に差し込む（/shop/ の店は触らない）")
+    ap.add_argument("--cache", default="",
+                    help="店舗ページのキャッシュ先（同じ日に何度も取り直すとき用。古いキャッシュは使わない）")
     a = ap.parse_args()
+    global CACHE
+    CACHE = Path(a.cache) if a.cache else None
     only = {x for x in a.only.split(",") if x}
 
     listing = strip_hidden(get(LIST_URL))
@@ -348,6 +429,13 @@ def main() -> None:
         if tel:
             tel = re.sub(r"^TEL[：:]\s*", "", tel).replace("／", "（", 1) + ("）" if "／" in tel else "")
         opened = is_open(text(h[:60000]), today)
+        ex, pr = shop_extra(url, h)
+        problems.extend(pr)
+        src = ex["field_sources"]
+        if r.get("定休日"):
+            src["closed"] = url
+        if r.get("駐車場"):
+            src.pop("parking", None)
         stores.append({
             "brand": BRAND, "brand_slug": BRAND_SLUG,
             "slug": url.rstrip("/").rsplit("/", 1)[-1],
@@ -359,15 +447,17 @@ def main() -> None:
             "tel": tel,
             "hours": hours,
             "open_24h": is24,
-            "closed": r.get("定休日"),
-            "bays": None, "bays_num": None,
-            "private_room": None,
-            "parking": r.get("駐車場"),
+            "closed": r.get("定休日") or ex["closed"],
+            "bays": ex["bays"], "bays_num": ex["bays_num"],
+            "private_room": ex["private_room"],
+            # 駐車場は店舗トップの店舗情報を優先し、無ければ <店舗>/facility の「駐車場」
+            "parking": r.get("駐車場") or ex["parking"],
             "monthly_fee": fee(h),
-            "equipment": None,
+            "equipment": ex["equipment"],
             "open": opened,
             "official": url,
             "source_url": url, "fetched_at": today,
+            **({"field_sources": src} if src else {}),
         })
         s = stores[-1]
         s.update(FIXES.get(s["slug"], {}))

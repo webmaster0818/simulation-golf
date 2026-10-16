@@ -1,7 +1,7 @@
 {
  "brand": "ラハゴルフ24",
  "source_url": "https://laha-golf24.com/",
- "fetched_at": "2026-09-12",
+ "fetched_at": "2026-10-16",
  "count": 22,
  "stores": [
   {
@@ -16,10 +16,15 @@
    "open_24h": true,
    "access": "横浜駅きた東口から徒歩15分",
    "parking": null,
+   "closed": "年中無休",
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "equipment": "DITECT",
    "tel": "044-322-0603",
    "monthly_fee": "13,500円（税込）",
    "source_url": "https://laha-golf24.com/list/%e6%a8%aa%e6%b5%9c%e6%9d%b1%e5%8f%a3%e5%ba%97/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -33,10 +38,15 @@
    "open_24h": true,
    "access": "茅ヶ崎駅南口より徒歩5分 駐車場2台 駐輪場5台有",
    "parking": "駐車場2台",
+   "closed": "年中無休",
+   "bays": "LAHAGOLF24監修のEXpand GOLFシミュレーターを3台設置／ディテクト社製シミュレーター 1台",
+   "bays_num": 4,
+   "private_room": null,
+   "equipment": "EXpand GOLF／DITECT",
    "tel": "044-322-0603",
    "monthly_fee": "10,900円（税抜）",
    "source_url": "https://laha-golf24.com/list/chigasaki-minamiguchi/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -49,11 +59,16 @@
    "hours": "24時間営業",
    "open_24h": true,
    "access": "湘南台駅から車で約10分",
-   "parking": null,
+   "parking": "無料駐車場5台完備",
+   "closed": "年中無休",
+   "bays": "LAHAGOLF24監修のEXpand GOLFシミュレーターを3台設置",
+   "bays_num": 3,
+   "private_room": null,
+   "equipment": "EXpand GOLF",
    "tel": "044-322-0603",
    "monthly_fee": "11,990円（税込）",
    "source_url": "https://laha-golf24.com/list/fujisawa-endo/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -67,10 +82,15 @@
    "open_24h": true,
    "access": "京都丹後鉄道福知山市民病院口駅より徒歩10分 無料駐車場１０台完備",
    "parking": "無料駐車場１０台完備",
+   "closed": "年中無休",
+   "bays": null,
+   "bays_num": null,
+   "private_room": true,
+   "equipment": "EXpand GOLF",
    "tel": "044-322-0603",
    "monthly_fee": "レギュラープラン：11,000円（税抜）月間30コマまで・プレミアムプラン：18,000円（税抜）月間60コマまで※プレミアム会員様は個室打席の利用が可能。",
    "source_url": "https://laha-golf24.com/list/fukuchiyama/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -84,10 +104,15 @@
    "open_24h": true,
    "access": "東武野田線塚田駅から車で3分 無料駐車場15台分完備",
    "parking": "無料駐車場15台分完備",
+   "closed": "年中無休",
+   "bays": "LAHAGOLF24監修のEXpand GOLFシミュレーターを12台設置",
+   "bays_num": 12,
+   "private_room": true,
+   "equipment": "EXpand GOLF",
    "tel": "044-322-0603",
    "monthly_fee": "レギュラープラン：10,900円（税込11,990円）、プレミアムプラン：16,300円（税込17,930円）※プレミアムプラン会員様は専用個室打席の利用が可能になります。",
    "source_url": "https://laha-golf24.com/list/funabashi-natsumidai/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -101,10 +126,15 @@
    "open_24h": true,
    "access": "JR南武線川崎駅西口より徒歩10分",
    "parking": null,
+   "closed": "年中無休",
+   "bays": "設置シミュレーター 全10台設置店！／Golf swing better prizm pro(ディテクト社）1台／Golf navi(ゴルフナビ社） 9台",
+   "bays_num": 10,
+   "private_room": null,
+   "equipment": "DITECT／GOLF NAVI",
    "tel": "044-322-0603",
    "monthly_fee": "9,900円（税込10,890円）",
    "source_url": "https://laha-golf24.com/list/kawasaki-minamisaiwaicho/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -118,10 +148,15 @@
    "open_24h": true,
    "access": "京王相模原線京王稲田堤駅より徒歩1分、JR南武線稲田堤駅より徒歩5分",
    "parking": null,
+   "closed": "年中無休",
+   "bays": "設置シミュレーター 全6台設置店！／Golf swing better prizm pro(ディテクト社） 4台／Golf navi(ゴルフナビ社） 2台",
+   "bays_num": 6,
+   "private_room": null,
+   "equipment": "DITECT／GOLF NAVI",
    "tel": "044-322-0603",
    "monthly_fee": "9,900円（税込10,890円）",
    "source_url": "https://laha-golf24.com/list/keio-inadadutsumiekimae/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -135,10 +170,15 @@
    "open_24h": true,
    "access": "JR神戸線 六甲道駅徒歩５分、阪神本線 新在家駅徒歩５分 共用駐車場192台あり(3時間無料)",
    "parking": "共用駐車場192台あり(3時間無料)",
+   "closed": "年中無休",
+   "bays": "LAHAGOLF24監修のEXpand GOLFシミュレーターを2台設置／GOLF NAVIのシミュレーターを6台設置",
+   "bays_num": 8,
+   "private_room": null,
+   "equipment": "EXpand GOLF／GOLF NAVI",
    "tel": "044-322-0603",
    "monthly_fee": "10,900円（税込11,990円）",
    "source_url": "https://laha-golf24.com/list/kobe-rokkomichi/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -152,10 +192,15 @@
    "open_24h": true,
    "access": "無料駐車場3台完備",
    "parking": "無料駐車場3台完備",
+   "closed": "年中無休",
+   "bays": "LAHAGOLF24監修のEXpand GOLFシミュレーターを4台設置",
+   "bays_num": 4,
+   "private_room": null,
+   "equipment": "EXpand GOLF",
    "tel": "044-322-0603",
    "monthly_fee": "10,900円（税込11,990円）",
    "source_url": "https://laha-golf24.com/list/machida-asahimachi/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -169,10 +214,15 @@
    "open_24h": true,
    "access": "東急東横線元住吉駅から徒歩10分 無料駐車場13台分完備",
    "parking": "無料駐車場13台分完備",
+   "closed": "年中無休",
+   "bays": "LAHAGOLF24監修のEXpand GOLFシミュレーターを7台設置",
+   "bays_num": 7,
+   "private_room": true,
+   "equipment": "EXpand GOLF",
    "tel": "044-322-0603",
    "monthly_fee": "レギュラープラン：11,000円（税込12,100円）、プレミアムプラン：16,300円（税込17,930円）※プレミアムプラン会員様は専用個室打席の利用が可能になります。",
    "source_url": "https://laha-golf24.com/list/motosumiyoshi/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -186,10 +236,15 @@
    "open_24h": true,
    "access": "東急東横線武蔵小杉駅より徒歩1分、JR南武線武蔵小杉駅より徒歩3分",
    "parking": null,
+   "closed": "年中無休",
+   "bays": "LAHAGOLF24監修のEXpand GOLFシミュレーターを9台設置",
+   "bays_num": 9,
+   "private_room": null,
+   "equipment": "EXpand GOLF",
    "tel": "044-322-0603",
    "monthly_fee": "11,000円（税込12,100円）",
    "source_url": "https://laha-golf24.com/list/musashikosugi/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -203,10 +258,15 @@
    "open_24h": true,
    "access": "武蔵新城駅から徒歩12分 駐車場・駐輪場あり",
    "parking": "駐車場・駐輪場あり",
+   "closed": "年中無休",
+   "bays": "LAHAGOLF24監修のEXpand GOLFシミュレーターを6台設置",
+   "bays_num": 6,
+   "private_room": null,
+   "equipment": "EXpand GOLF",
    "tel": "044-322-0603",
    "monthly_fee": "13,200円（税込）",
    "source_url": "https://laha-golf24.com/list/musashishinjo/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -220,10 +280,15 @@
    "open_24h": true,
    "access": "共用駐車場100台（2時間無料）※無料分にはアクロスプラザ奈良登美ヶ丘の無料分60分を含みます。",
    "parking": "共用駐車場100台（2時間無料）※無料分にはアクロスプラザ奈良登美ヶ丘の無料分60分を含みます。",
+   "closed": "年中無休",
+   "bays": "高機能シミュレーター9打席設置／LAHAGOLF24監修のEXpand GOLFシミュレーターを9台設置",
+   "bays_num": 9,
+   "private_room": null,
+   "equipment": "EXpand GOLF",
    "tel": "044-322-0603",
    "monthly_fee": "12,000円（税込13,200円）",
    "source_url": "https://laha-golf24.com/list/naratomigaoka/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -237,10 +302,15 @@
    "open_24h": true,
    "access": "共用駐車場105台",
    "parking": "共用駐車場105台",
+   "closed": "年中無休",
+   "bays": "全11打席 調布市最大級／LAHAGOLF24監修のEXpand GOLFシミュレーターを9台設置",
+   "bays_num": 11,
+   "private_room": null,
+   "equipment": "EXpand GOLF",
    "tel": "044-322-0603",
    "monthly_fee": "12,000円（税込13,200円）",
    "source_url": "https://laha-golf24.com/list/nishi_chofu/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -254,10 +324,15 @@
    "open_24h": true,
    "access": "駐車場店舗前６台",
    "parking": "駐車場店舗前６台",
+   "closed": "年中無休",
+   "bays": "全4打席／LAHAGOLF24監修のEXpand GOLFシミュレーターを3台設置／ディテクト社製シミュレーター 1台",
+   "bays_num": 4,
+   "private_room": null,
+   "equipment": "EXpand GOLF／DITECT",
    "tel": "044-322-0603",
    "monthly_fee": "10,900円（税抜）",
    "source_url": "https://laha-golf24.com/list/okazakikamisato/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -270,11 +345,16 @@
    "hours": "24時間営業",
    "open_24h": true,
    "access": "共有駐車場33台 自転車/バイク駐輪場有り（満車時は近隣の駐車場をご利用下さい。その場合、自己負担となります。）",
-   "parking": "共有駐車場33台 バイク駐輪場有り（満車時は近隣の駐車場をご利用下さい。その場合",
+   "parking": "共有駐車場33台 自転車/バイク駐輪場有り（満車時は近隣の駐車場をご利用下さい。その場合、自己負担となります。）",
+   "closed": "年中無休",
+   "bays": "当店は最高峰シミュレーターTWOVISION NXを10台設置（内、両打打席1台）／さらにパッティング専用シュミレーターTOURPUTTを1台導入しております!!",
+   "bays_num": 10,
+   "private_room": null,
+   "equipment": "TWOVISION NX／TOURPUTT（パター専用）",
    "tel": "044-322-0603",
    "monthly_fee": "14,000円（税込15,400円）",
    "source_url": "https://laha-golf24.com/list/sagamiharachiyoda/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -288,10 +368,15 @@
    "open_24h": true,
    "access": "小田急小田原線下北沢駅東口より徒歩3分、京王井の頭線下北沢駅京王中央口より徒歩3分、駐輪場あり",
    "parking": null,
+   "closed": "年中無休",
+   "bays": "当店はGOLF NAVIのシミュレーターを10台設置（両打打席1台あり）／さらにうち1台はGOLF NAVI GTRという国内最新モデルを日本最速で導入します!!",
+   "bays_num": 10,
+   "private_room": null,
+   "equipment": "GOLF NAVI",
    "tel": "044-322-0603",
    "monthly_fee": "12,000円（税込13,200円）",
    "source_url": "https://laha-golf24.com/list/shimokitazawa/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -305,10 +390,15 @@
    "open_24h": true,
    "access": "駐車場５台（駐輪場別途あり）",
    "parking": "駐車場５台（駐輪場別途あり）",
+   "closed": "年中無休",
+   "bays": "LAHAGOLF24監修のEXpand GOLFシミュレーターを5台設置",
+   "bays_num": 5,
+   "private_room": null,
+   "equipment": "EXpand GOLF",
    "tel": "044-322-0603",
    "monthly_fee": "11,000円（税抜）",
    "source_url": "https://laha-golf24.com/list/souka/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -322,10 +412,15 @@
    "open_24h": true,
    "access": "共用駐車場あり",
    "parking": "共用駐車場あり",
+   "closed": "年中無休",
+   "bays": "LAHAGOLF24監修のEXpand GOLFシミュレーターを3台設置",
+   "bays_num": null,
+   "private_room": null,
+   "equipment": "UNEEKOR EYE XO／EXpand GOLF",
    "tel": "044-322-0603",
    "monthly_fee": "9,900円（税込10,890円）",
    "source_url": "https://laha-golf24.com/list/tsu-minatomachi/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -339,10 +434,15 @@
    "open_24h": true,
    "access": "小田急江ノ島線鶴間駅より徒歩1分",
    "parking": null,
+   "closed": "年中無休",
+   "bays": "LAHAGOLF24監修のEXpand GOLFシミュレーターを3台設置",
+   "bays_num": 3,
+   "private_room": null,
+   "equipment": "EXpand GOLF",
    "tel": "044-322-0603",
    "monthly_fee": "11,000円（税込12,100円）",
    "source_url": "https://laha-golf24.com/list/tsuruma/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -355,11 +455,16 @@
    "hours": "24時間営業",
    "open_24h": true,
    "access": "駐車場５台(道を挟んで向かいにあります.11.12.13.14.15)/駐輪場6台(左の地下にあります) 駐車場が満車の場合は、近くのコインパーキングにお停めください",
-   "parking": "駐車場５台(道を挟んで向かいにあります.11.12.13.14.15) 駐車場が満車の場合は",
+   "parking": "駐車場５台(道を挟んで向かいにあります.11.12.13.14.15)/駐輪場6台(左の地下にあります) 駐車場が満車の場合は、近くのコインパーキングにお停めください",
+   "closed": "年中無休",
+   "bays": "LAHAGOLF24監修のEXpand GOLFシミュレーターを3台設置／POD pro(ディテクト社） 1台／左右両打機（ディテクト社）1台",
+   "bays_num": 5,
+   "private_room": null,
+   "equipment": "EXpand GOLF／DITECT",
    "tel": "044-322-0603",
    "monthly_fee": "10,900円（税抜）",
    "source_url": "https://laha-golf24.com/list/urawa/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ラハゴルフ24",
@@ -373,10 +478,15 @@
    "open_24h": true,
    "access": "JR武蔵野線新八柱駅より徒歩2分、新京成電鉄八柱駅より徒歩2分、無料駐車場8台分完備",
    "parking": "無料駐車場8台分完備",
+   "closed": "年中無休",
+   "bays": "当店はGOLF NAVIのシミュレーターを7台設置",
+   "bays_num": 7,
+   "private_room": null,
+   "equipment": "GOLF NAVI",
    "tel": "044-322-0603",
    "monthly_fee": "10,900円（税込11,990円）",
    "source_url": "https://laha-golf24.com/list/yabashira/",
-   "fetched_at": "2026-09-12"
+   "fetched_at": "2026-10-16"
   }
  ],
  "failed": []

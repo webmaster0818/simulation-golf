@@ -52,10 +52,103 @@ def fetch(url, timeout=30):
 
 
 def text_of(html):
-    t = re.sub(r"<(script|style)[\s\S]*?</\1>", " ", html)
+    t = re.sub(r"<!--[\s\S]*?-->", " ", html)
+    t = re.sub(r"<(script|style)[\s\S]*?</\1>", " ", t)
     t = re.sub(r"<br\s*/?>", " ", t)
     t = re.sub(r"<[^>]+>", " ", t)
     return re.sub(r"\s+", " ", t)
+
+
+def lines_of(html):
+    """タグ境界で区切った行の列（表の「ラベル→値」を読むため）。"""
+    t = re.sub(r"<!--[\s\S]*?-->", " ", html)
+    t = re.sub(r"<(script|style)[\s\S]*?</\1>", " ", t)
+    t = re.sub(r"<br\s*/?>", " ", t)
+    t = re.sub(r"<[^>]+>", "\n", t).replace("&nbsp;", " ").replace("&amp;", "&")
+    return [x.strip() for x in t.split("\n") if x.strip()]
+
+
+def after_label(ls, label):
+    """「住所」「打席数」などのラベル行の次の行。"""
+    for i, x in enumerate(ls[:-1]):
+        if x == label:
+            return ls[i + 1]
+    return None
+
+
+# 機材: /simg/ に「i8GOLFでは、すべての店舗に…「OKONGOLF（オーケーオンゴルフ）」を導入しています。」
+#   （全店の記載）。ただし NICESHOT ライズモール戸塚の店舗ページは「高性能シミュレーターである「SDR」」
+#   と別の機種を書いている → 店舗ページを優先する。
+SIMG = "https://i8golf.jp/simg/"
+ALL_STORES_OKON = "i8GOLFでは、すべての店舗にプロも信頼する高性能シミュレーションゴルフ「OKONGOLF（オーケーオンゴルフ）」を導入しています。"
+
+
+def equipment_of(t, brandwide):
+    m = re.search(r"シミュレーター(?:である)?\s*[「『]?\s*(OKONGOLF|SDR|GOLFZON)", t)
+    if m:
+        return m.group(1), None
+    if brandwide:
+        return "OKONGOLF", f"機材は全店共通の記載（{SIMG}「{ALL_STORES_OKON}」）"
+    return None, None
+
+
+def fee_of(ls, t):
+    """料金表のカード（「プラン詳細へ」の直前）から月額プランの名前と金額を拾う。
+    ⚠️ 店ごとに書き方が違う: 「月額 6,600 円」（下諏訪）／「1年継続/月額 6,500 円 通常 7,300 円」（豊橋）／
+       「月額 5,000 円 (税込 5,500 円)」（高崎＝カードの金額は税抜）。カードの書き方のまま載せる。
+       税込は、カードに書いてあるか、下のプラン詳細に「6,600円(税込)」「(税込7,700円)」と同じ金額があるときだけ付ける。
+    ⚠️ 下のプラン詳細にも「月額」があるが、見出しが「こんな方におすすめ」の文なので名前として拾わない。"""
+    flat = re.sub(r"\s+", "", t)
+    plans = []
+    for j, x in enumerate(ls):
+        if x != "プラン詳細へ":
+            continue
+        k = next((i for i in range(j - 1, max(j - 10, 1), -1)
+                  if re.fullmatch(r"(?:1年継続/)?月額", ls[i])), None)
+        if k is None:
+            continue
+        name, tag = ls[k - 2], ls[k - 1]
+        body = "".join(ls[k:j])
+        if "要相談" in body or "FITNESS" in name or "フィットネス" in tag:
+            continue  # 法人（金額なし）・フィットネスのみ（ゴルフではない）
+        body = body.replace("円通常", "円・通常")
+        body = re.sub(r"・通常-円", "", body)
+        body = re.sub(r"\(税込-円\)", "", body)
+        if "税込" not in body:
+            nums = re.findall(r"([\d,]+)円", body)
+            if any(re.search(re.escape(n) + r"円\(税込\)|\(税込" + re.escape(n) + r"円\)", flat) for n in nums):
+                body += "(税込)"
+        plans.append(f"{name} {body}")
+    # 横浜の2店（別ドメイン）形式: [説明] / 名前 / ¥8,000 / 月額。「※月額は全て税込み価格です。」
+    for i in range(1, len(ls) - 1):
+        m = re.fullmatch(r"¥([\d,]+)", ls[i])
+        if m and ls[i + 1] == "月額":
+            item = f"{ls[i - 1]} 月額{m.group(1)}円"
+            if item not in plans:
+                plans.append(item)
+    if not plans:
+        return None
+    if all(x.endswith("(税込)") for x in plans):
+        return "／".join(x[:-4] for x in plans) + "（税込）"
+    if re.search(r"月額は全て税込み価格", t):
+        return "／".join(plans) + "（税込）"
+    return "／".join(plans)
+
+
+def access_of(ls, t):
+    # i8golf.jp 形式: 見出し下の「長野県下諏訪町 / 下諏訪駅から徒歩１０分」
+    for x in ls:
+        m = re.match(r"^\S+[都道府県]\S*\s*/\s*(\S*(?:駅|IC)\S*(?:徒歩|車)\S*分)$", x)
+        if m:
+            return m.group(1)
+    # 横浜の2店: 道順の文
+    m = re.search(r"(国道1号線沿いを[^。]+。)", t)
+    if m:
+        return m.group(1)
+    m = re.search(r"(環状3号線沿いにある[^。]+。)", t)
+    if m:
+        return m.group(1)
+    return None
 
 
 def store_links(html):
@@ -95,6 +188,10 @@ def main():
         print("トップを取得できませんでした", file=sys.stderr)
         return 1
     links = store_links(top)
+    simg = fetch(SIMG)
+    brandwide = ALL_STORES_OKON in text_of(simg).replace(" ", "")  or \
+        ALL_STORES_OKON in re.sub(r"\s+", "", text_of(simg))
+    print(f"/simg/ の全店OKONGOLFの記載: {brandwide}")
     print(f"店舗ページ {len(links)}件")
 
     out = []
@@ -115,7 +212,23 @@ def main():
         if full:
             pref = next((p for p in PREFS if full.startswith(p)), None) \
                 or next((v for k, v in CITY_PREF.items() if full.startswith(k)), None)
-        mb, mp = BAYS.search(t), PARK.search(t)
+        ls = lines_of(h)
+        # 打席数は店舗情報の「打席数」欄だけを見る（本文の「打席数」で松本店の文が混ざっていた）
+        bays = after_label(ls, "打席数")
+        if not bays:
+            m = re.search(r"(\d+打席)ご用意", t)          # 戸塚原宿「24時間営業で8打席ご用意しております」
+            bays = m.group(1) if m else None
+        if not bays:
+            m = re.search(r"([A-Z]・[A-Z]ルーム\d+部屋)", t)  # ライズモール「A・Bルーム2部屋」
+            bays = f"完全個室 {m.group(1)}" if m and "完全個室" in t else (m.group(1) if m else None)
+        mn = re.search(r"(\d+)(?:打席|部屋)", bays or "")
+        park = after_label(ls, "無料駐車場")
+        if park:
+            park = "無料駐車場" + park
+        else:
+            mp = PARK.search(t)
+            park = (mp.group(1) + mp.group(2)) if mp else None
+        equip, enote = equipment_of(t, brandwide)
         rec = {
             "segment": "indoor",
             "slug": SLUG.get(u),
@@ -130,10 +243,15 @@ def main():
             "tel": (TEL.search(t).group(1) if TEL.search(t) else None),
             "hours": "24時間" if "24時間" in t else None,
             "open_24h": "24時間" in t,
-            "bays": mb.group(1) if mb else None,
-            "parking": (mp.group(1) + mp.group(2)) if mp else None,
+            "access": access_of(ls, t),
+            "closed": None,             # 定休日の記載は店舗ページ・トップ・FAQに無い（2026-10-16 確認）
+            "bays": bays,
+            "bays_num": int(mn.group(1)) if mn else None,
+            "parking": park,
             "private_room": ("個室" in t) or None,
-            "equipment": None,          # 機材名は公式に明示が無い。書かない
+            "monthly_fee": fee_of(ls, t),
+            "equipment": equip,
+            **({"note": enote} if enote else {}),
             "open": True,
             "official": u,
             "source_url": u,

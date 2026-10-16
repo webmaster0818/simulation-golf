@@ -1,6 +1,6 @@
 {
  "brand": "インドアゴルフクラブ",
- "fetched_at": "2026-10-02",
+ "fetched_at": "2026-10-16",
  "stores": [
   {
    "brand": "インドアゴルフクラブ",
@@ -14,7 +14,7 @@
    "tel": "0776-52-0018",
    "hours": "24時間（利用できる時間は会員プランによる）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": "通常ブース 半個室：3打席(右打)",
    "bays_num": 3,
    "private_room": null,
@@ -24,7 +24,8 @@
    "open": true,
    "official": "https://indoorgolfclub.jp/studio/stores/takagi.html",
    "source_url": "https://indoorgolfclub.jp/studio/stores/takagi.html",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "closed_note": "ブランド全体の記載「IGCは24時間年中無休です。」（https://indoorgolfclub.jp/service）"
   },
   {
    "brand": "インドアゴルフクラブ",
@@ -38,17 +39,18 @@
    "tel": "0776-33-0188",
    "hours": "24時間（利用できる時間は会員プランによる）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": "通常ブース計3打席 （オープン打席2打席、個室1打席）：計4打席（右打3／両打1）／ラウンジルーム 個室、両打、傾斜機能有り：1室のみ",
    "bays_num": null,
-   "private_room": null,
+   "private_room": true,
    "parking": "11台駐車可能",
    "monthly_fee": "デイ会員 9,000円／シルバー会員 13,000円／ゴールド会員 20,000円（税込・入会金10,000円が別途・ほかに法人会員あり）",
    "equipment": null,
    "open": true,
    "official": "https://indoorgolfclub.jp/studio/stores/izuka.html",
    "source_url": "https://indoorgolfclub.jp/studio/stores/izuka.html",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "closed_note": "ブランド全体の記載「IGCは24時間年中無休です。」（https://indoorgolfclub.jp/service）"
   },
   {
    "brand": "インドアゴルフクラブ",
@@ -62,7 +64,7 @@
    "tel": "0776-97-6480",
    "hours": "24時間（利用できる時間は会員プランによる）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": "hole 1.2番 半個室（右打）：2打席／hole 3.4 半個室（右打）：2打席",
    "bays_num": 4,
    "private_room": null,
@@ -72,7 +74,8 @@
    "open": true,
    "official": "https://indoorgolfclub.jp/studio/stores/bunkyo.html",
    "source_url": "https://indoorgolfclub.jp/studio/stores/bunkyo.html",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "closed_note": "ブランド全体の記載「IGCは24時間年中無休です。」（https://indoorgolfclub.jp/service）"
   },
   {
    "brand": "インドアゴルフクラブ",
@@ -86,7 +89,7 @@
    "tel": "0776-52-0018",
    "hours": "24時間",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": "1番打席～4番打席 半個室：4打席",
    "bays_num": 4,
    "private_room": null,
@@ -96,7 +99,8 @@
    "open": true,
    "official": "https://indoorgolfclub.jp/studio/stores/morita.html",
    "source_url": "https://indoorgolfclub.jp/studio/stores/morita.html",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "closed_note": "ブランド全体の記載「IGCは24時間年中無休です。」（https://indoorgolfclub.jp/service）"
   },
   {
    "brand": "インドアゴルフクラブ",
@@ -110,17 +114,18 @@
    "tel": "0778-42-7715",
    "hours": "24時間",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": "オープン オープン打席／1番打席のみ両打 （打席間ロールカーテン有）：3打席／半個室 半個室(右打)：2打席／VIP 個室、両打、傾斜機能有：1室のみ",
    "bays_num": null,
-   "private_room": null,
+   "private_room": true,
    "parking": "18台駐車可能",
    "monthly_fee": "レギュラー会員 5,000円／シルバー会員 10,000円／ゴールド会員（武生店限定のゴールドプラン） 17,000円／ゴールド会員（IGC全店舗でご利用可能） 20,000円（税込・入会金5,000円が別途・ほかに法人会員あり）",
    "equipment": null,
    "open": true,
    "official": "https://indoorgolfclub.jp/studio/stores/takefu.html",
    "source_url": "https://indoorgolfclub.jp/studio/stores/takefu.html",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "closed_note": "ブランド全体の記載「IGCは24時間年中無休です。」（https://indoorgolfclub.jp/service）"
   },
   {
    "brand": "インドアゴルフクラブ",
@@ -134,17 +139,19 @@
    "tel": "0776-50-2320",
    "hours": "24時間（利用できる時間は会員プランによる）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": "通常ブース 半個室：2打席／トラックマンルーム：1打席",
    "bays_num": 3,
    "private_room": null,
-   "parking": null,
+   "parking": "駐車場あり（台数の記載なし）",
    "monthly_fee": "デイ会員 8,000円／シルバー会員 13,000円／ゴールド会員 20,000円（税込・入会金10,000円が別途・ほかに法人会員あり）",
    "equipment": "トラックマン",
    "open": true,
    "official": "https://indoorgolfclub.jp/studio/stores/mikuni.html",
    "source_url": "https://indoorgolfclub.jp/studio/stores/mikuni.html",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "closed_note": "ブランド全体の記載「IGCは24時間年中無休です。」（https://indoorgolfclub.jp/service）",
+   "parking_note": "店舗ページに駐車場の行なし。ブランド全体の記載「各店舖駐車場を完備しております。」（https://indoorgolfclub.jp/service）"
   },
   {
    "brand": "インドアゴルフクラブ",
@@ -158,17 +165,19 @@
    "tel": "080-4588-9140",
    "hours": "24時間（利用できる時間は会員プランによる）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": "Room1 AIレッスン 完全個室：1打席／スタンダード 半個室：2打席／Room4 ラウンジ 完全個室：1打席／Room5 酸素セラピー 個室：1打席",
    "bays_num": 5,
-   "private_room": null,
-   "parking": null,
+   "private_room": true,
+   "parking": "駐車場あり（台数の記載なし）",
    "monthly_fee": "サファイア会員 11,000円／ゴールド会員 20,000円／プラチナ会員 33,000円（税込・入会金33,000円が別途）",
    "equipment": null,
    "open": true,
    "official": "https://indoorgolfclub.jp/studio/stores/toiya.html",
    "source_url": "https://indoorgolfclub.jp/studio/stores/toiya.html",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "closed_note": "ブランド全体の記載「IGCは24時間年中無休です。」（https://indoorgolfclub.jp/service）",
+   "parking_note": "店舗ページに駐車場の行なし。ブランド全体の記載「各店舖駐車場を完備しております。」（https://indoorgolfclub.jp/service）"
   },
   {
    "brand": "インドアゴルフクラブ",
@@ -182,7 +191,7 @@
    "tel": "090-3887-4897",
    "hours": "24時間",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -192,7 +201,8 @@
    "open": true,
    "official": "https://indoorgolfclub.jp/studio/stores/imaichi.html",
    "source_url": "https://indoorgolfclub.jp/studio/stores/imaichi.html",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "closed_note": "ブランド全体の記載「IGCは24時間年中無休です。」（https://indoorgolfclub.jp/service）"
   },
   {
    "brand": "インドアゴルフクラブ",
@@ -206,17 +216,19 @@
    "tel": "076-204-8066",
    "hours": "24時間（利用できる時間は会員プランによる）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": "hole1.2.3 半個室：3打席／Room1.2.3 個室：3打席",
    "bays_num": 6,
-   "private_room": null,
-   "parking": null,
+   "private_room": true,
+   "parking": "駐車場あり（台数の記載なし）",
    "monthly_fee": "平日深夜会員 5,000円／平日デイ会員 6,000円／レギュラー会員 12,000円／レフティ会員 12,000円／プレミア会員 22,000円／ビジター会員 0円／ジュニア会員1 5,000円／ジュニア会員1 10,000円（税込・入会金10,000円が別途・ほかに法人会員あり）",
    "equipment": null,
    "open": true,
    "official": "https://indoorgolfclub.jp/studio/stores/kahoku.html",
    "source_url": "https://indoorgolfclub.jp/studio/stores/kahoku.html",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "closed_note": "ブランド全体の記載「IGCは24時間年中無休です。」（https://indoorgolfclub.jp/service）",
+   "parking_note": "店舗ページに駐車場の行なし。ブランド全体の記載「各店舖駐車場を完備しております。」（https://indoorgolfclub.jp/service）"
   },
   {
    "brand": "インドアゴルフクラブ",
@@ -230,17 +242,19 @@
    "tel": "076-227-9520",
    "hours": "24時間（利用できる時間は会員プランによる）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": "1-4番打席 半個室：計4打席（右打）／5番6番打席 個室：計2打席（両打）",
    "bays_num": 6,
-   "private_room": null,
-   "parking": null,
+   "private_room": true,
+   "parking": "駐車場あり（台数の記載なし）",
    "monthly_fee": "デイ会員 10,000円／レギュラー会員 14,000円／レギュラー会員(レフティ) 14,000円／シニアプラン 7,700円／プレミア会員 22,000円（税込・入会金10,000円が別途・ほかに法人会員あり）",
    "equipment": null,
    "open": true,
    "official": "https://indoorgolfclub.jp/studio/stores/nonoichi.html",
    "source_url": "https://indoorgolfclub.jp/studio/stores/nonoichi.html",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "closed_note": "ブランド全体の記載「IGCは24時間年中無休です。」（https://indoorgolfclub.jp/service）",
+   "parking_note": "店舗ページに駐車場の行なし。ブランド全体の記載「各店舖駐車場を完備しております。」（https://indoorgolfclub.jp/service）"
   },
   {
    "brand": "インドアゴルフクラブ",
@@ -254,7 +268,7 @@
    "tel": "076-256-0924",
    "hours": "24時間",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": "通常ブース 半個室：計3打席（右打2／両打1）",
    "bays_num": 3,
    "private_room": null,
@@ -264,7 +278,8 @@
    "open": true,
    "official": "https://indoorgolfclub.jp/studio/stores/sainen.html",
    "source_url": "https://indoorgolfclub.jp/studio/stores/sainen.html",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "closed_note": "ブランド全体の記載「IGCは24時間年中無休です。」（https://indoorgolfclub.jp/service）"
   },
   {
    "brand": "インドアゴルフクラブ",
@@ -278,7 +293,7 @@
    "tel": "050-1444-0411",
    "hours": "24時間（利用できる時間は会員プランによる）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": null,
    "bays_num": null,
    "private_room": null,
@@ -288,7 +303,8 @@
    "open": true,
    "official": "https://indoorgolfclub.jp/studio/stores/higashityaya.html",
    "source_url": "https://indoorgolfclub.jp/studio/stores/higashityaya.html",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "closed_note": "ブランド全体の記載「IGCは24時間年中無休です。」（https://indoorgolfclub.jp/service）"
   },
   {
    "brand": "インドアゴルフクラブ",
@@ -302,7 +318,7 @@
    "tel": "053-488-8823",
    "hours": "24時間",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": "1番打席～4番打席 半個室：4打席",
    "bays_num": 4,
    "private_room": null,
@@ -312,7 +328,8 @@
    "open": true,
    "official": "https://indoorgolfclub.jp/studio/stores/kosai.html",
    "source_url": "https://indoorgolfclub.jp/studio/stores/kosai.html",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "closed_note": "ブランド全体の記載「IGCは24時間年中無休です。」（https://indoorgolfclub.jp/service）"
   },
   {
    "brand": "インドアゴルフクラブ",
@@ -326,17 +343,19 @@
    "tel": "0985-65-3073",
    "hours": "24時間",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": "1番打席 両打ち半個室／2番3番4番打席 右打ち半個室",
    "bays_num": null,
    "private_room": null,
-   "parking": null,
+   "parking": "駐車場あり（台数の記載なし）",
    "monthly_fee": "シルバー会員 14,000円／ゴールド会員 20,000円（税込・入会金6,000円が別途・ほかに法人会員あり）",
    "equipment": null,
    "open": true,
    "official": "https://indoorgolfclub.jp/studio/stores/kyusyu.html",
    "source_url": "https://indoorgolfclub.jp/studio/stores/kyusyu.html",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "closed_note": "ブランド全体の記載「IGCは24時間年中無休です。」（https://indoorgolfclub.jp/service）",
+   "parking_note": "店舗ページに駐車場の行なし。ブランド全体の記載「各店舖駐車場を完備しております。」（https://indoorgolfclub.jp/service）"
   },
   {
    "brand": "インドアゴルフクラブ",
@@ -350,17 +369,19 @@
    "tel": "0985-65-3073",
    "hours": "24時間",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": "全打席右打ち",
    "bays_num": null,
    "private_room": null,
-   "parking": null,
+   "parking": "駐車場あり（台数の記載なし）",
    "monthly_fee": "シルバー会員 14,000円／ゴールド会員 20,000円（税込・入会金6,000円が別途・ほかに法人会員あり）",
    "equipment": null,
    "open": true,
    "official": "https://indoorgolfclub.jp/studio/stores/aoba.html",
    "source_url": "https://indoorgolfclub.jp/studio/stores/aoba.html",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-10-16",
+   "closed_note": "ブランド全体の記載「IGCは24時間年中無休です。」（https://indoorgolfclub.jp/service）",
+   "parking_note": "店舗ページに駐車場の行なし。ブランド全体の記載「各店舖駐車場を完備しております。」（https://indoorgolfclub.jp/service）"
   }
  ]
 }
