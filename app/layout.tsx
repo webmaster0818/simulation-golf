@@ -29,6 +29,8 @@ export const metadata: Metadata = {
   openGraph: OG_BASE,
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   alternates: { types: { 'application/xml': `${SITE.origin}/sitemap.xml` } },
+  // 2026-10-16 ロゴ A-3。ブラウザがファビコンを強くキャッシュするので、ファイル名ごと変えて読み直させる
+  icons: { icon: [{ url: '/favicon-20261016.png', type: 'image/png', sizes: '64x64' }], apple: '/apple-touch-icon.png?v=20261016' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -40,8 +42,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="site">
           <div className="inner">
             <Link href="/" className="logo">
-              SIM GOLF SEARCH
-              <em>シミュレーションゴルフ検索</em>
+              <img src="/images/logo-mark.png" alt="" width={38} height={38} />
+              <span className="t">SIM GOLF SEARCH<em>シミュレーションゴルフ検索</em></span>
             </Link>
             <nav>
               <Link href="/area/">エリアから探す</Link>

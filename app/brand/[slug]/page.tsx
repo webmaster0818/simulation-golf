@@ -1,6 +1,7 @@
 import { pageUrlMeta } from '../../../lib/meta'
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import BrandShot from '../../../components/BrandShot'
 import {
   SITE, PREF_SLUG, brands, byBrand, cityOf, asOf, GENERATED_AT,
   FACILITIES,
@@ -79,6 +80,7 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
           このブランドが公式で公開している項目だけを載せているため、
           他ブランドと比べて項目が少ない場合があります。
         </p>
+        <div className="g-brand-hero-shot"><BrandShot slug={slug} name={b.name} /></div>
       </section>
 
       <div className="stats">

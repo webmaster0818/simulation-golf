@@ -262,6 +262,9 @@ export const CITY_SLUG: Record<string, string> = {
   '横浜市中区': 'yokohama-naka', '千葉市中央区': 'chiba-chuo',
   '横浜市神奈川区': 'yokohama-kanagawa', '北区': 'kita', '文京区': 'bunkyo',
   '練馬区': 'nerima', '多摩市': 'tama',
+  // 2026-10-16 MediaXAI「東京都は23区を並べて。23区の記事がないとしたら作って」→ 残り9区（いずれも3施設以上）。読みは区の公式表記
+  '千代田区': 'chiyoda', '台東区': 'taito', '江東区': 'koto', '目黒区': 'meguro', '渋谷区': 'shibuya',
+  '中野区': 'nakano', '豊島区': 'toshima', '荒川区': 'arakawa', '葛飾区': 'katsushika',
 }
 
 /**

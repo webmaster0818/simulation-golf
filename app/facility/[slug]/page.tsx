@@ -1,6 +1,7 @@
 import { pageUrlMeta } from '../../../lib/meta'
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import BrandShot from '../../../components/BrandShot'
 import {
   SITE, PREF_SLUG, FACILITIES, OPEN_FACILITIES, bySlug, byPref, cityOf, wardOf,
   cities as cityPagesOf, asOf, REGIONS, formatZip,
@@ -105,6 +106,7 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
               : '弾道計測つきの練習場'}です。
           下の情報はすべて公式サイトに掲載されている内容で、{asOf(f.fetched_at)}のものです。
         </p>
+        {f.brand_slug && f.brand && <div className="g-brand-hero-shot"><BrandShot slug={f.brand_slug} name={f.brand} /></div>}
       </section>
 
       {!f.open && (

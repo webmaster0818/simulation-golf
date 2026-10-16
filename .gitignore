@@ -5,3 +5,4 @@ out/
 *.log
 data/.stepgolf-cache/
 __pycache__/
+design-proposals/

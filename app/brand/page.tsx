@@ -1,6 +1,7 @@
 import { pageUrlMeta } from '../../lib/meta'
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import BrandShot from '../../components/BrandShot'
 import { SITE, brands, PREF_SLUG } from '../../lib/data'
 import { JsonLd, breadcrumb, itemListLd } from '../../lib/seo'
 
@@ -42,7 +43,7 @@ export default function BrandIndex() {
           <tbody>
             {bs.map((b) => (
               <tr key={b.slug}>
-                <td><Link href={`/brand/${b.slug}/`}>{b.name}</Link></td>
+                <td><Link href={`/brand/${b.slug}/`} className="g-brand-cell"><BrandShot slug={b.slug} name={b.name} compact />{b.name}</Link></td>
                 <td className="num">{b.count}</td>
                 <td>{b.prefs.length}都道府県</td>
                 <td>{b.has.hours ? '公開あり' : '記載なし'}</td>
@@ -55,13 +56,15 @@ export default function BrandIndex() {
         </table>
       </div>
       <p className="source">
+        画像は各ブランドの公式サイトのトップページを当サイトが撮影したものです（撮影日は各画像に記載）。
         「記載なし」は、そのブランドの公式サイトの店舗ページにその項目が載っていないという意味です。
         設備が無いという意味ではありません。
       </p>
 
       {bs.map((b) => (
-        <div key={b.slug}>
+        <div key={b.slug} className="g-brand-block">
           <h2>{b.name}</h2>
+          <div className="g-brand-block-shot"><BrandShot slug={b.slug} name={b.name} /></div>
           <p>
             {b.count}店舗を掲載しています。展開エリアは{' '}
             {b.prefs.map((p, i) => (
