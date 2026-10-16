@@ -37,9 +37,9 @@ export default function Home() {
         </svg>
         <div className="kicker">Simulation Golf / Japan</div>
         <h1>
-          シミュレーションゴルフの施設を、
+          全国1,000以上のシミュレーションゴルフから、
           <br />
-          公式サイトの情報だけで比べる。
+          ベストを最短で見つける。
         </h1>
         <p className="lead">
           屋内のシミュレーションゴルフ施設と、弾道計測つきの練習場を、
