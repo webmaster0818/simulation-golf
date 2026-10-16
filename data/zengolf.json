@@ -1,6 +1,6 @@
 {
  "brand": "ZEN GOLF RANGE",
- "fetched_at": "2026-10-12",
+ "fetched_at": "2026-10-16",
  "stores": [
   {
    "brand": "ZEN GOLF RANGE",
@@ -18,13 +18,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場完備",
+   "parking": "駐車場完備 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/ageo/",
    "source_url": "https://zengolf.jp/ageo/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -42,13 +42,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場1時間無料",
+   "parking": "駐車場1時間無料 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/akabane/",
    "source_url": "https://zengolf.jp/akabane/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -72,7 +72,7 @@
    "open": true,
    "official": "https://zengolf.jp/akebonobashi/",
    "source_url": "https://zengolf.jp/akebonobashi/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -90,13 +90,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場90分無料",
+   "parking": "駐車場90分無料 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "18,000円 （税込19,800円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/centerkita/",
    "source_url": "https://zengolf.jp/centerkita/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -114,13 +114,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場80分無料 *無人営業時間帯はお渡し不可",
+   "parking": "駐車場80分無料 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "14,800円 （税込16,280円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/chibachuo/",
    "source_url": "https://zengolf.jp/chibachuo/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -144,7 +144,7 @@
    "open": true,
    "official": "https://zengolf.jp/daikanyama/",
    "source_url": "https://zengolf.jp/daikanyama/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -162,13 +162,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場最大120分無料（駐車場60分+当店ご利用で60分無料）",
+   "parking": "駐車場最大120分無料（駐車場60分+当店ご利用で60分無料） ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/dokkyodaigakumae/",
    "source_url": "https://zengolf.jp/dokkyodaigakumae/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -186,13 +186,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場60分無料（無人営業時間除く）",
+   "parking": "駐車場60分無料 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "19,000円 （税込20,900円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/ebisu/",
    "source_url": "https://zengolf.jp/ebisu/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -216,7 +216,7 @@
    "open": true,
    "official": "https://zengolf.jp/eifukucho/academy/",
    "source_url": "https://zengolf.jp/eifukucho/academy/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -234,13 +234,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場割引あり",
+   "parking": "駐車場割引あり ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/ekoda/",
    "source_url": "https://zengolf.jp/ekoda/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -264,7 +264,7 @@
    "open": true,
    "official": "https://zengolf.jp/fuchu/",
    "source_url": "https://zengolf.jp/fuchu/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -288,7 +288,7 @@
    "open": true,
    "official": "https://zengolf.jp/fujimidai/academy/",
    "source_url": "https://zengolf.jp/fujimidai/academy/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -312,7 +312,7 @@
    "open": true,
    "official": "https://zengolf.jp/hachioji/",
    "source_url": "https://zengolf.jp/hachioji/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -336,7 +336,7 @@
    "open": true,
    "official": "https://zengolf.jp/higashi-ikebukuro/",
    "source_url": "https://zengolf.jp/higashi-ikebukuro/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -354,13 +354,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場2時間無料",
+   "parking": "駐車場2時間無料 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "14,800円 （税込16,280円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/iruma/",
    "source_url": "https://zengolf.jp/iruma/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -378,13 +378,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場割引あり",
+   "parking": "駐車場割引あり ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "18,000円 （税込19,800円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/kagurazaka/",
    "source_url": "https://zengolf.jp/kagurazaka/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -402,13 +402,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "-->近隣パーキング利用補助あり （1日1回のみ） 詳細は こちら をご確認ください",
+   "parking": "-->近隣パーキング利用補助あり （1日1回のみ） 詳細は こちら をご確認ください ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/kasai/",
    "source_url": "https://zengolf.jp/kasai/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -432,7 +432,7 @@
    "open": true,
    "official": "https://zengolf.jp/kashiwa/",
    "source_url": "https://zengolf.jp/kashiwa/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -456,7 +456,7 @@
    "open": true,
    "official": "https://zengolf.jp/kasuga/academy/",
    "source_url": "https://zengolf.jp/kasuga/academy/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -474,13 +474,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場完備",
+   "parking": "駐車場",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/kasukabe/",
    "source_url": "https://zengolf.jp/kasukabe/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -498,13 +498,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場完備",
+   "parking": "駐車場完備 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/kawagoe/",
    "source_url": "https://zengolf.jp/kawagoe/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -528,7 +528,7 @@
    "open": true,
    "official": "https://zengolf.jp/kawaguchi-ekimae/",
    "source_url": "https://zengolf.jp/kawaguchi-ekimae/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -546,13 +546,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場完備",
+   "parking": "駐車場完備 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/kawaguchi/",
    "source_url": "https://zengolf.jp/kawaguchi/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -576,7 +576,7 @@
    "open": true,
    "official": "https://zengolf.jp/kawasaki/",
    "source_url": "https://zengolf.jp/kawasaki/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -600,7 +600,7 @@
    "open": true,
    "official": "https://zengolf.jp/kayabacho/",
    "source_url": "https://zengolf.jp/kayabacho/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -624,7 +624,7 @@
    "open": true,
    "official": "https://zengolf.jp/kikukawa/",
    "source_url": "https://zengolf.jp/kikukawa/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -642,13 +642,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "優先駐車場6台あり",
+   "parking": "優先駐車場6台あり ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "18,000円 （税込19,800円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/kitaomiya/",
    "source_url": "https://zengolf.jp/kitaomiya/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -666,13 +666,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "90分無料 *無人時間帯のお渡し不可",
+   "parking": "90分無料 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/kumegawa/",
    "source_url": "https://zengolf.jp/kumegawa/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -696,7 +696,7 @@
    "open": true,
    "official": "https://zengolf.jp/mejirodai/",
    "source_url": "https://zengolf.jp/mejirodai/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -714,13 +714,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "2時間無料",
+   "parking": "2時間無料 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/minamikoshigaya/",
    "source_url": "https://zengolf.jp/minamikoshigaya/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -738,13 +738,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場2時間無料",
+   "parking": "駐車場2時間無料 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/minamiosawa/",
    "source_url": "https://zengolf.jp/minamiosawa/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -768,7 +768,7 @@
    "open": true,
    "official": "https://zengolf.jp/misato/",
    "source_url": "https://zengolf.jp/misato/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -792,7 +792,7 @@
    "open": true,
    "official": "https://zengolf.jp/mizonokuchi/",
    "source_url": "https://zengolf.jp/mizonokuchi/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -816,7 +816,7 @@
    "open": true,
    "official": "https://zengolf.jp/musashikoganei/",
    "source_url": "https://zengolf.jp/musashikoganei/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -840,7 +840,7 @@
    "open": true,
    "official": "https://zengolf.jp/musashikosugi/",
    "source_url": "https://zengolf.jp/musashikosugi/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -864,7 +864,7 @@
    "open": true,
    "official": "https://zengolf.jp/musashiseki/academy/",
    "source_url": "https://zengolf.jp/musashiseki/academy/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -882,13 +882,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場40分無料",
+   "parking": "駐車場40分無料 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "19,000円 （税込20,900円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/nakanosakaue/",
    "source_url": "https://zengolf.jp/nakanosakaue/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -906,13 +906,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場2時間無料",
+   "parking": "駐車場2時間無料 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/nishiarai/",
    "source_url": "https://zengolf.jp/nishiarai/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -936,7 +936,7 @@
    "open": true,
    "official": "https://zengolf.jp/ogikubo/",
    "source_url": "https://zengolf.jp/ogikubo/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -954,13 +954,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場割引あり",
+   "parking": "駐車場割引あり ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/ogu/",
    "source_url": "https://zengolf.jp/ogu/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -984,7 +984,7 @@
    "open": true,
    "official": "https://zengolf.jp/okachimachi/",
    "source_url": "https://zengolf.jp/okachimachi/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1008,7 +1008,7 @@
    "open": true,
    "official": "https://zengolf.jp/omori/",
    "source_url": "https://zengolf.jp/omori/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1026,13 +1026,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "1時間無料",
+   "parking": "1時間無料 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/parco-urawa-ekimae/",
    "source_url": "https://zengolf.jp/parco-urawa-ekimae/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1056,7 +1056,7 @@
    "open": true,
    "official": "https://zengolf.jp/rangetogoshiginza/",
    "source_url": "https://zengolf.jp/rangetogoshiginza/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1074,13 +1074,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場完備",
+   "parking": "駐車場完備 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/sagamiono/",
    "source_url": "https://zengolf.jp/sagamiono/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1104,7 +1104,7 @@
    "open": true,
    "official": "https://zengolf.jp/sengawa/academy/",
    "source_url": "https://zengolf.jp/sengawa/academy/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1128,7 +1128,7 @@
    "open": true,
    "official": "https://zengolf.jp/shimoigusa/academy/",
    "source_url": "https://zengolf.jp/shimoigusa/academy/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1152,7 +1152,7 @@
    "open": true,
    "official": "https://zengolf.jp/shimomaruko/",
    "source_url": "https://zengolf.jp/shimomaruko/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1176,7 +1176,7 @@
    "open": true,
    "official": "https://zengolf.jp/shimouma/",
    "source_url": "https://zengolf.jp/shimouma/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1194,13 +1194,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場割引あり *無人時間帯はお渡し不可",
+   "parking": "駐車場割引あり ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "14,800円 （税込16,280円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/shinkoyasu/",
    "source_url": "https://zengolf.jp/shinkoyasu/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1218,13 +1218,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場90分無料",
+   "parking": "駐車場90分無料 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/shintoshin/",
    "source_url": "https://zengolf.jp/shintoshin/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1242,13 +1242,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場完備",
+   "parking": "駐車場完備 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/tobunerima/",
    "source_url": "https://zengolf.jp/tobunerima/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1266,13 +1266,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場2時間無料",
+   "parking": "駐車場2時間無料 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/toda/",
    "source_url": "https://zengolf.jp/toda/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1296,7 +1296,7 @@
    "open": true,
    "official": "https://zengolf.jp/tokorozawa/",
    "source_url": "https://zengolf.jp/tokorozawa/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1314,13 +1314,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場完備",
+   "parking": "駐車場完備 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/urawa/",
    "source_url": "https://zengolf.jp/urawa/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1338,13 +1338,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場完備",
+   "parking": "無料駐車場8台（地上のみ） ※地下駐車場は入居者様専用となります。必ず地上の駐車場にお停めいただけますようお願いいたします。",
    "monthly_fee": "14,800円 （税込16,280円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/wakabadai/academy/",
    "source_url": "https://zengolf.jp/wakabadai/academy/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1362,13 +1362,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場完備",
+   "parking": "駐車場完備 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/wako/",
    "source_url": "https://zengolf.jp/wako/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1386,13 +1386,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場完備",
+   "parking": "駐車場完備 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "14,800円 （税込16,280円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/yachiyo/",
    "source_url": "https://zengolf.jp/yachiyo/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1410,13 +1410,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場90分無料（無人時間お渡し不可）",
+   "parking": "駐車場90分無料 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "19,000円 （税込20,900円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/yoga/",
    "source_url": "https://zengolf.jp/yoga/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1434,13 +1434,13 @@
    "bays": null,
    "bays_num": null,
    "private_room": null,
-   "parking": "駐車場2時間無料",
+   "parking": "駐車場2時間無料 ※無人営業時間帯は駐車場サービス対象外となります。",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": null,
    "open": true,
    "official": "https://zengolf.jp/yoshikawa/",
    "source_url": "https://zengolf.jp/yoshikawa/",
-   "fetched_at": "2026-10-12"
+   "fetched_at": "2026-10-16"
   }
  ]
 }

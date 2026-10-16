@@ -1,8 +1,8 @@
 {
  "brand": "SWING24/7",
  "source_url": "https://swing24.co.jp/locations",
- "fetched_at": "2026-10-13",
- "count": 61,
+ "fetched_at": "2026-10-16",
+ "count": 60,
  "stores": [
   {
    "brand": "SWING24/7",
@@ -14,48 +14,12 @@
    "parking": "なし",
    "tel": "045-543-3398",
    "open": true,
-   "note": "一覧の予定欄は「10月10日能見台店OPEN!!」のまま。同じ一覧ページの公式インスタ欄に 2026-10-10 投稿「⛳️swing24/7能見台店⛳️ オープン⛳️ 能見台駅降りて目の前🙆‍♀️ 24時間インドアゴ」",
+   "note": null,
    "access": "京浜急行線 能見台駅",
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13",
-   "open_source_url": "https://swing24.co.jp/locations"
-  },
-  {
-   "brand": "SWING24/7",
-   "brand_slug": "swing247",
-   "name": "SWING24/7 町田店",
-   "zip": "194-0013",
-   "address": "東京都町田市原町田１丁目２−２４ アールレジデンス B1F",
-   "pref": "東京都",
-   "parking": "近くにコインパーキング多数有",
-   "tel": "042-860-6336",
-   "open": true,
-   "note": "一覧は「9月下旬町田店OPEN予定!!」のまま。店舗公式サイトに「SWING24/7町田店10/3（土）グランドオープン！ 24時間営業開始！入会キャンペーン実施中！」",
-   "access": "JR町田駅南口より徒歩1分、小田急線町田駅西口より徒歩3分",
-   "hours": "24時間365日（無人運営）",
-   "open_24h": true,
-   "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13",
-   "open_source_url": "https://swing24-machida.com/"
-  },
-  {
-   "brand": "SWING24/7",
-   "brand_slug": "swing247",
-   "name": "SWING24/7 江古田店",
-   "zip": "176-0004",
-   "address": "東京都練馬区小竹町1-77-13",
-   "pref": "東京都",
-   "parking": "近くにコインパーキング複数有",
-   "tel": null,
-   "open": false,
-   "note": "今夏 江古田店OPEN予定!!",
-   "access": "江古田駅から徒歩5分、小竹向原駅から徒歩8分、新桜台駅から徒歩8分",
-   "hours": "24時間365日（無人運営）",
-   "open_24h": true,
-   "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -72,7 +36,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -89,7 +53,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -106,7 +70,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -123,7 +87,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -140,7 +104,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -157,7 +121,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -174,7 +138,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -191,7 +155,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -208,7 +172,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -225,7 +189,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -242,7 +206,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -259,7 +223,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -276,7 +240,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -293,7 +257,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -310,7 +274,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -327,7 +291,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -344,7 +308,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -361,7 +325,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -378,7 +342,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -395,7 +359,24 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
+  },
+  {
+   "brand": "SWING24/7",
+   "brand_slug": "swing247",
+   "name": "SWING24/7 町田店",
+   "zip": "194-0013",
+   "address": "東京都町田市原町田１丁目２−２４ アールレジデンス B1F",
+   "pref": "東京都",
+   "parking": "近くにコインパーキング多数有",
+   "tel": "042-860-6336",
+   "open": true,
+   "note": null,
+   "access": "JR町田駅南口より徒歩1分、小田急線町田駅西口より徒歩3分",
+   "hours": "24時間365日（無人運営）",
+   "open_24h": true,
+   "source_url": "https://swing24.co.jp/locations",
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -412,7 +393,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -429,7 +410,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -446,7 +427,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -463,7 +444,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -480,7 +461,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -497,7 +478,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -514,7 +495,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -531,7 +512,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -548,7 +529,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -565,7 +546,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -582,7 +563,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -599,7 +580,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -616,7 +597,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -633,7 +614,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -650,7 +631,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -667,7 +648,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -684,7 +665,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -701,7 +682,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -718,7 +699,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -735,7 +716,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -752,7 +733,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -769,7 +750,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -786,7 +767,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -803,7 +784,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -820,7 +801,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -837,7 +818,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -854,7 +835,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -871,7 +852,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -888,7 +869,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -905,7 +886,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -922,7 +903,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -939,7 +920,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -956,7 +937,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -973,7 +954,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -990,7 +971,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -1007,7 +988,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -1024,7 +1005,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   },
   {
    "brand": "SWING24/7",
@@ -1041,7 +1022,7 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-13"
+   "fetched_at": "2026-10-16"
   }
  ]
 }

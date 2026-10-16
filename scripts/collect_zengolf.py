@@ -106,6 +106,15 @@ def main() -> None:
         title = text((re.search(r"<title>(.*?)</title>", h, re.S) or ["", ""])[1])
         name = title.split("|")[0].strip() or url.rstrip("/").rsplit("/", 1)[-1]
         hours = r.get("営業時間")
+        # 2026-10-16: 全店の営業時間の末尾に「2026/11/1からの新時間割は こちら」（別ページへのリンク）が付いた。
+        # リンク文言なのでページには出さない。吉川は公式の「定休日：月曜日し」の打ち間違いをそのまま拾うので直す。
+        if hours:
+            hours = re.sub(r"\s*\d{4}/\d{1,2}/\d{1,2}からの新時間割は\s*こちら\s*$", "", hours)
+            hours = hours.replace("月曜日し", "月曜日")
+        parking = r.get("駐車場")
+        # 春日部は公式の駐車場欄が「駐車場<br>V」（末尾の V は打ち間違い）
+        if parking:
+            parking = re.sub(r"\s+[A-Za-z]$", "", parking)
         # 店舗ページのスラッグをそのままURLに使う（/academy/ 付きは親を使う）
         slug = re.sub(r"/academy$", "", url.replace(BASE, "").strip("/"))
         stores.append({
@@ -123,7 +132,7 @@ def main() -> None:
             "closed": r.get("定休日") or ("なし" if hours and "定休日：なし" in hours else None),
             "bays": None, "bays_num": None,
             "private_room": None,
-            "parking": r.get("駐車場"),
+            "parking": parking,
             "monthly_fee": r.get("月会費"),
             "equipment": None,
             "open": True,
