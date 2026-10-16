@@ -252,3 +252,13 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 - 全チェーン差分: **SWING24/7 江古田店を削除**（公式一覧から消え、近日オープン欄も空・店舗サイトは Plesk 初期ページ）／**Lounge Range 甲府を追加（準備中・「2026年12月OPEN予定」）**／ZEN GOLF 駐車場に「※無人営業時間帯は駐車場サービス対象外」等（`collect_zengolf.py` で営業時間末尾の「2026/11/1からの新時間割は こちら」・吉川「月曜日し」・春日部駐車場の「V」を除去）。⚠️ `collect_smartgolf.py` の既定キャッシュ `/tmp/smartgolf-pages` が古いと五橋荒町を営業中と誤判定する→ `--cache` に新しいディレクトリを渡す。1047施設・1159ページ。ソース d53adee ／ deploy 486097b4a。
 - **TOP見出し・サイト名の変更（MediaXAI指定）**: h1「全国1,000以上のシミュレーションゴルフから、ベストを最短で見つける。」（掲載1,033で事実どおり・src 1d161fa）。
   サイト名「シミュレーションゴルフ ナビ／SIM GOLF NAVI」→ **SIM GOLF SEARCH**（`SITE.name`・ロゴ・404 title・OG画像。ロゴ下と OG の和文は「シミュレーションゴルフ検索」）。OG は `?v=20261016`。src 0f71537 ／ deploy ec9da4086。out/ に旧名 0件。
+- **ASP案件の未掲載ブランドを追加（MediaXAI依頼・12案件中9が未掲載）**: HYPERION GOLF STUDIO 4・Your Golf Space 1（indoor）／GANTT GOLF 2・チキンゴルフ 29・GOLFTEC 11・サンクチュアリゴルフ 23・JIN-golf 1（lesson）。
+  各 `scripts/collect_<slug>.py` → `data/<slug>.json` を build-facilities.py の読み込みリストに追加。掲載済み＝SMART GOLF・FiT24・ZEN GOLF RANGE。
+  ワイムシェアリング＝GOLF NEXT 24 の運営会社（掲載済み）。東京インドアゴルフは表示中のページにシミュレーター/弾道計測の記載が無く対象外。
+  サンクチュアリは閉店（銀座新橋）・非表示（多摩永山 404・横浜）と別名義の無人くんを除外。GANTT 江坂は公式内で機材が食い違い（GOLFZON WAVE／Sky Trak）→ equipment null。
+  1047→1118施設・1237ページ。
+- **表示の修正（新ブランドで見つかった既存の不具合）**:
+  ① ブランドページの「税抜と税込が混在」の注意書きが**全ブランドに無条件で出ていた**→ 表記が店舗で異なるときだけ（28→8ページ）。
+  ② 駐車場の判定がカード（近隣・近く のみ除外）と条件ページ（付近・周辺も除外）で違い、「駐車場はございません」（HYPERION）も「あり」になっていた
+  → `lib/data.ts` の `hasOwnParking` に統一（カード・条件ページ・市区町村の表）。⚠️ 文中の「無人時間帯の配布はございません」（ZEN の提携駐車場）や
+  「建物内に有料パーキング…および周辺に…」（GOLFTEC）は「あり」のまま。「非提携」は提携に数えない。カードの駐車場表示 62件が外れた（Lounge Range 46・マイゴル 7 など、すべて専用/提携駐車場なし）。

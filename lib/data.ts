@@ -45,6 +45,21 @@ export type Facility = {
 }
 
 export const FACILITIES: Facility[] = (raw as { facilities: Facility[] }).facilities
+/** 施設に専用・提携の駐車場があるか。カードの「駐車場」と条件ページで同じ判定を使う。
+ *  「駐車場はございません。周辺のコインパーキングを…」（HYPERION・2026-10-16）のような否定と、
+ *  近隣・付近・周辺のコインパーキング案内は「あり」に数えない。 */
+export function hasOwnParking(f: { parking: string | null }): boolean {
+  const p = f.parking
+  if (!p) return false
+  // 「専用駐車場無し」「駐車場はございません」「専用及び提携駐車場はありません」
+  // ⚠️ 文中の「無人時間帯の配布はございません」（ZEN GOLF の提携駐車場）は駐車場の否定ではない
+  if (/^無|なし|無し/.test(p)) return false
+  if (/駐車場[^。■※]*(ございません|ありません)/.test(p)) return false
+  // 建物内の有料駐車場・提携駐車場は、周辺のコインパーキング案内が併記されていても「あり」（「非提携」は除く）
+  if (/建物内|敷地内|併設|(?<!非)提携/.test(p)) return true
+  return !/近隣|近く|付近|周辺/.test(p)
+}
+
 export const GENERATED_AT: string = (raw as { generated_at: string }).generated_at
 
 export const SITE = {
@@ -165,7 +180,7 @@ export const FEATURES: { slug: string; label: string; note: string; match: (f: F
     note: '公式サイトに駐車場の記載がある施設（「近隣にコインパーキング」は含めない）',
     // 「店舗周辺にコインパーキングあり」「付近に有料駐車場あり」「専用駐車場無し（周辺にコインパーキング有）」が
     // 駐車場ありに数えられていた（2026-10-07、52件）。近隣・近く と同じ意味の語も除く
-    match: (f) => !!f.parking && !/^無|なし/.test(f.parking) && !/近隣|近く|付近|周辺/.test(f.parking),
+    match: (f) => hasOwnParking(f),
   },
   {
     slug: 'free-trace',

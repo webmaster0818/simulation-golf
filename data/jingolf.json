@@ -1,0 +1,31 @@
+{
+ "brand": "JIN-golf",
+ "fetched_at": "2026-10-16",
+ "stores": [
+  {
+   "brand": "JIN-golf",
+   "brand_slug": "jingolf",
+   "slug": "shinagawa",
+   "name": "JIN-golf 品川ゴルフアカデミー",
+   "pref": "東京都",
+   "zip": "1400004",
+   "address": "東京都品川区南品川3丁目5-3 青横ビル5階503号室",
+   "access": "青物横丁駅（京浜急行電鉄）徒歩約1分／品川シーサイド駅（りんかい線）徒歩約9分／JR大井町駅（京浜東北線）徒歩約12分／大井町駅（大井町線・りんかい線）徒歩約12分",
+   "tel": "03-3450-5557",
+   "hours": "10:00〜22:00",
+   "open_24h": false,
+   "closed": null,
+   "bays": null,
+   "bays_num": null,
+   "private_room": null,
+   "parking": "近隣コインパーキングの案内あり（パラカりそな銀行品川パーキング・タイムズ南品川２丁目・三井のリパーク南品川2丁目駐車場）",
+   "monthly_fee": null,
+   "equipment": "TRACKMAN",
+   "open": true,
+   "note": "打席は右打ちのみ（公式 /shop-info/）",
+   "official": "https://jin-golf.com/",
+   "source_url": "https://jin-golf.com/shop-info/",
+   "fetched_at": "2026-10-16"
+  }
+ ]
+}

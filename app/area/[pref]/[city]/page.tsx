@@ -2,7 +2,7 @@ import { pageUrlMeta } from '../../../../lib/meta'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
-  SITE, PREF_SLUG, SLUG_PREF, cities, wardOf, byPref, asOf, GENERATED_AT, CITY_MIN,
+  SITE, PREF_SLUG, SLUG_PREF, cities, wardOf, byPref, asOf, GENERATED_AT, CITY_MIN, hasOwnParking,
 } from '../../../../lib/data'
 import { JsonLd, breadcrumb, itemListLd } from '../../../../lib/seo'
 import FacilityCard from '../../../../components/FacilityCard'
@@ -54,7 +54,7 @@ export default async function CityPage({ params }: { params: Promise<Params> }) 
   const range = fs.filter((f) => f.segment === 'range')
   const n24 = fs.filter((f) => f.open_24h).length
   const nPrivate = fs.filter((f) => f.private_room === true || /個室/.test(f.bays ?? '')).length
-  const nPark = fs.filter((f) => f.parking).length
+  const nPark = fs.filter((f) => hasOwnParking(f)).length
 
   // 同じ都道府県にある、ページのある他の市区町村
   const siblings = cities().filter((x) => x.pref === c.pref && x.slug !== c.slug)
@@ -115,7 +115,7 @@ export default async function CityPage({ params }: { params: Promise<Params> }) 
                 <td className="num">
                   {f.private_room === true || /個室/.test(f.bays ?? '') ? '○' : '?'}
                 </td>
-                <td className="num">{f.parking ? '○' : '?'}</td>
+                <td className="num">{hasOwnParking(f) ? '○' : '?'}</td>
               </tr>
             ))}
           </tbody>

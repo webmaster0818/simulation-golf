@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import type { Facility } from '../lib/data'
+import { hasOwnParking, type Facility } from '../lib/data'
 
 /** 施設カード。
  *  ⚠️ タグは実データで判定できたものだけ出す。
@@ -12,7 +12,7 @@ const SEGMENT_LABEL: Record<string, string> = {
 }
 
 export default function FacilityCard({ f }: { f: Facility }) {
-  const hasParking = !!f.parking && !/^無|なし/.test(f.parking) && !/近隣|近く/.test(f.parking)
+  const hasParking = hasOwnParking(f)
   const isPrivate = f.private_room === true || /個室/.test(f.bays ?? '')
 
   return (

@@ -1,0 +1,32 @@
+{
+ "brand": "Your Golf Space",
+ "fetched_at": "2026-10-16",
+ "stores": [
+  {
+   "brand": "Your Golf Space",
+   "brand_slug": "yourgolfspace",
+   "slug": "suidobashi",
+   "name": "Your Golf Space",
+   "pref": "東京都",
+   "zip": null,
+   "address": "東京都千代田区神田三崎町2-17-9 SNT水道橋ビル 地下1階",
+   "access": "JR水道橋駅西口から徒歩2分",
+   "tel": null,
+   "hours": "24時間営業（年中無休）",
+   "open_24h": true,
+   "closed": "年中無休",
+   "bays": "右打席（打席数は記載なし）",
+   "bays_num": null,
+   "private_room": true,
+   "parking": "店舗周辺にコインパーキングあり",
+   "monthly_fee": "レギュラープラン 月額25,000円（税込）。回数制限なし（1コマ90分）を24時間利用可。／ビジター利用 1回6,500円（税込）",
+   "equipment": "GOLFZON",
+   "open": true,
+   "operator": "RPN合同会社",
+   "official": "https://yourgolfspace.jp/",
+   "source_url": "https://yourgolfspace.jp/",
+   "fetched_at": "2026-10-16",
+   "note": "駐車場・打席は同じ運営の旧ページ https://yourgolfspace.studio.site/ の記載"
+  }
+ ]
+}

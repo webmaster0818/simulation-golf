@@ -4,3 +4,4 @@ out/
 .DS_Store
 *.log
 data/.stepgolf-cache/
+__pycache__/

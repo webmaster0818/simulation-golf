@@ -27,6 +27,18 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   }
 }
 
+/** 月会費の税込・税抜の表記が店舗によって違うか（全店同じ表記のブランドでは注意書きを出さない） */
+function taxMixed(fs: { monthly_fee: string | null }[]): boolean {
+  const kinds = new Set(
+    fs.filter((f) => f.monthly_fee).map((f) => {
+      const v = f.monthly_fee as string
+      const inc = /税込/.test(v), exc = /税抜|税別/.test(v)
+      return inc && exc ? 'both' : inc ? 'inc' : exc ? 'exc' : 'none'
+    }),
+  )
+  return kinds.size > 1 || kinds.has('both')
+}
+
 export default async function BrandPage({ params }: { params: Promise<Params> }) {
   const { slug } = await params
   const b = brands().find((x) => x.slug === slug)
@@ -114,10 +126,12 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
               </tbody>
             </table>
           </div>
-          <p className="source">
-            ⚠️ 税抜と税込が店舗によって混在しています。公式サイトの表記をそのまま載せているため、
-            金額だけを並べて比べないでください。
-          </p>
+          {taxMixed(fs) && (
+            <p className="source">
+              ⚠️ 税込・税抜の表記が店舗によって異なります。公式サイトの表記をそのまま載せているため、
+              金額だけを並べて比べないでください。
+            </p>
+          )}
         </>
       )}
 
