@@ -277,4 +277,11 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
   施設ページ title の「ブランド名が無ければ付ける」処理は不要になったので外した。
 - ⚠️ 原因: 多くの collector が店舗一覧（や shop.js）だけ読み、各店舗ページを読んでいなかった。brand-*.json 経由では equipment/official を build が None で上書きしていた（修正）。
   `data/brand-captures.json` が `brand-*.json` の glob に掛かって build が落ちていた（店舗データでないファイルを飛ばす）。
-- 24ブランドを4並列で店舗ページから取り直し中。
+- 24ブランド942店を4並列で店舗ページ（料金/FAQ/設備ページ含む）から取り直し → 記載なし 3,181→1,320（定休日699→132・料金255→17・駐車場527→139・電話181→30・機材683→508）。
+  ブランド共通の値は「全店」と公式に書いてある場合だけ全店に入れた（GOLFERS24/ラハ/IGC/MIRA の FAQ・FiT24 の駐車場 FAQ）。各 data に field_sources/field_notes/note を残したが build は未連携。
+  ステップゴルフの旧「スカイトラック」一律は公式に記載が無く撤去（機種明記の21店のみ）。
+  準備中へ: DOOR TO GOLF 伏石駅前（11/15）・ステップゴルフ横浜元町（11月・プレオープン〜11/16）・インザゴルフLITE筑後（12/1）。
+  ⚠️ 手で直した値（collector 再実行で戻る）: MIRA 富士宮の住所＝ゴルフ別館 富士見ヶ丘1241（address_gym に旧値）・MIRA 裾野の hours・上記3店の open。
+  判断待ち: Lounge Range の電話＝特商法ページの運営会社番号（その旨を明記）・IGC の機材（/service に OK ON GOLF だが「全店」と書いていない→null）・GOLFERS24 赤坂/神楽坂（店舗ページはあるが一覧に無い→未掲載）。
+  未着手: トップトレーサー練習場176（GDO 由来・各公式を読む別作業）。
+- 本番 src cb2fd09 ／ deploy f4b6fc831。本番 curl で藤沢善行・ZEN川崎・SMART GOLF 久我山・DOOR ひたち野うしく2号の新しい値を確認。
