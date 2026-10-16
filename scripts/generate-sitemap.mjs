@@ -80,6 +80,6 @@ for (const f of ['out/404.html', 'out/404/index.html']) {
   const p = join(ROOT, f)
   if (!existsSync(p)) continue
   let h = readFileSync(p, 'utf8')
-  h = h.replace(/<title>[^<]*<\/title>/, '<title>ページが見つかりません｜シミュレーションゴルフ ナビ</title>')
+  h = h.replace(/<title>[^<]*<\/title>/, '<title>ページが見つかりません｜SIM GOLF SEARCH</title>')
   writeFileSync(p, h)
 }

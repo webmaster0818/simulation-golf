@@ -46,8 +46,8 @@ def main() -> None:
     def put(xy, s, font, size, fill):
         d.text((xy[0] * S, xy[1] * S), s, font=ImageFont.truetype(font, size * S), fill=fill)
 
-    put((86, 96), "SIM GOLF NAVI", EN_BOLD, 40, DIM)
-    put((86, 160), "シミュレーションゴルフ ナビ", JP_BOLD, 76, INK)
+    put((86, 96), "SIM GOLF SEARCH", EN_BOLD, 40, DIM)
+    put((86, 160), "シミュレーションゴルフ検索", JP_BOLD, 76, INK)
     put((86, 288), "全国の施設を公式サイトの情報だけで比較", JP, 38, INK)
     put((86, 350), "個室 / 打席数 / 24時間営業 / 駐車場 / 弾道計測の機材", JP, 28, FAINT)
     put((86, 566), "golf-simulate.com", JP, 28, FAINT)

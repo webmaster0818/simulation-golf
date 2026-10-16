@@ -40,8 +40,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="site">
           <div className="inner">
             <Link href="/" className="logo">
-              SIM GOLF NAVI
-              <em>シミュレーションゴルフ ナビ</em>
+              SIM GOLF SEARCH
+              <em>シミュレーションゴルフ検索</em>
             </Link>
             <nav>
               <Link href="/area/">エリアから探す</Link>

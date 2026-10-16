@@ -48,7 +48,7 @@ export const FACILITIES: Facility[] = (raw as { facilities: Facility[] }).facili
 export const GENERATED_AT: string = (raw as { generated_at: string }).generated_at
 
 export const SITE = {
-  name: 'シミュレーションゴルフ ナビ',
+  name: 'SIM GOLF SEARCH',
   // ⚠️ ドメイン確定後にここだけ差し替える。canonical・sitemap・構造化データが全てここを見る。
   origin: 'https://golf-simulate.com',
   description:

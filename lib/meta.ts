@@ -4,7 +4,7 @@ import { SITE } from './data'
 // ⚠️ OG画像を差し替えたら v= を必ず上げる。/og-image.png は _headers で7日キャッシュさせており、
 //    同じURLのままだと Cloudflare のエッジに古い画像が残る（2026-10-02、差し替え後も
 //    独自ドメインだけ旧画像が返った。pages.dev は新しくなるので気づきにくい）。
-export const OG_IMAGE = '/og-image.png?v=20261002'
+export const OG_IMAGE = '/og-image.png?v=20261016'
 
 /**
  * OGP の共通値（layout.tsx と各ページで共用）。
