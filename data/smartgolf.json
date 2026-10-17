@@ -1611,11 +1611,11 @@
    "parking": "建物横に専用駐車場がございます(1台分)。",
    "monthly_fee": "ブロンズプラン 16,500円／シルバープラン 19,800円／ゴールドプラン 22,000円／プラチナプラン 25,000円／ルビープラン 35,000円／デイプラン 11,880円／回数プラン月3回 13,200円／回数プラン月2回 8,800円／回数プラン月1回 4,400円／ファミリープラン 25,000円（税込）",
    "equipment": null,
-   "open": false,
-   "note": "2026年10月17日 GRAND OPEN",
+   "open": true,
+   "note": "2026年10月17日 GRAND OPEN（店舗ページ・店舗一覧 /shop-all/ とも同日。プレオープン 10/3~10/16 終了）",
    "official": "https://sma-gol.com/shop/itsutsubashi/",
    "source_url": "https://sma-gol.com/shop/itsutsubashi/",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-17",
    "field_sources": {
     "parking": "店舗ページ「アクセス・営業時間」欄の駐車場"
    }

@@ -49,7 +49,7 @@
    "monthly_fee": "ライト会員（4回枠/月） 月額12,000円(税抜)・税込13,200円／スタンダード会員（8回枠/月） 月額18,000円(税抜)・税込19,800円／アドバンス会員（12回枠/月） 月額24,000円(税抜)・税込26,400円／ナイト（４）会員（4回枠/月） 月額8,000円(税抜)・税込8,800円／ナイト（８）会員（8回枠/月） 月額12,000円(税抜)・税込13,200円",
    "equipment": "Trackman iO（トラックマンiO）",
    "open": false,
-   "note": "お知らせ「続々新店舗オープン!」（2026-10-07）: 上小田井店 オープン予定日：11月22日",
+   "note": "お知らせ「続々新店舗オープン!」（2026-10-07）: 上小田井店 オープン予定日：11月28日（2026-10-17 確認。10-13 取得時は11月22日）",
    "official": "https://doortogolf.com/shop-post-newplan/kamiotai/",
    "source_url": "https://doortogolf.com/shop-post-newplan/kamiotai/",
    "fetched_at": "2026-10-16"
@@ -125,11 +125,11 @@
    "parking": "駐車場 2台",
    "monthly_fee": "ライト会員（4回枠/月） 月額12,000円(税抜)→10,000円(税抜)・税込11,000円／スタンダード会員（8回枠/月） 月額18,000円(税抜)→16,000円(税抜)・税込17,600円／プラチナ会員（15回枠/月） 月額23,000円(税抜)→21,000円(税抜)・税込23,100円（「A→B」は公式の料金欄の2段表記どおり。Bが現在の表示価格）",
    "equipment": "Trackman iO（トラックマンiO）",
-   "open": false,
-   "note": "【ENEOSセルフ土浦駅東店】10月16日 OPEN予定",
+   "open": true,
+   "note": "公式お知らせ「【ENEOSセルフ土浦駅東店】10月16日 OPEN🎊」（2026-10-16 掲載・https://doortogolf.com/tuchiura-open-2-2-4-2/）「DOOR TO GOLF ENEOSセルフ土浦駅東店がOPEN」",
    "official": "https://doortogolf.com/shop-post-newplan/tuchiura/",
    "source_url": "https://doortogolf.com/shop-post-newplan/tuchiura/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-10-17"
   },
   {
    "brand": "DOOR TO GOLF",

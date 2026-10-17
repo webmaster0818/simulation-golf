@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16",
+ "generated_at": "2026-10-17",
  "count": 1118,
  "facilities": [
   {
@@ -12343,10 +12343,10 @@
    "parking": "駐車場 2台",
    "monthly_fee": "ライト会員（4回枠/月） 月額12,000円(税抜)→10,000円(税抜)・税込11,000円／スタンダード会員（8回枠/月） 月額18,000円(税抜)→16,000円(税抜)・税込17,600円／プラチナ会員（15回枠/月） 月額23,000円(税抜)→21,000円(税抜)・税込23,100円（「A→B」は公式の料金欄の2段表記どおり。Bが現在の表示価格）",
    "equipment": "Trackman iO（トラックマンiO）",
-   "open": false,
+   "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/tuchiura/",
    "source_url": "https://doortogolf.com/shop-post-newplan/tuchiura/",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-17",
    "store_name": "ENEOSセルフ土浦駅東店"
   },
   {
@@ -21964,10 +21964,10 @@
    "parking": "建物横に専用駐車場がございます(1台分)。",
    "monthly_fee": "ブロンズプラン 16,500円／シルバープラン 19,800円／ゴールドプラン 22,000円／プラチナプラン 25,000円／ルビープラン 35,000円／デイプラン 11,880円／回数プラン月3回 13,200円／回数プラン月2回 8,800円／回数プラン月1回 4,400円／ファミリープラン 25,000円（税込）",
    "equipment": null,
-   "open": false,
+   "open": true,
    "official": "https://sma-gol.com/shop/itsutsubashi/",
    "source_url": "https://sma-gol.com/shop/itsutsubashi/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-10-17"
   },
   {
    "segment": "indoor",
