@@ -143,17 +143,37 @@ def news_facts():
         if not names:
             ttl = unescape((re.search(r"<title>([^<]*)", h) or [None, ""])[1])
             names = {x for x in re.findall(r"『([^』]+)』", ttl) if re.search(r"(店|EXtra .+)$", x)}
-        names = {re.sub(r"\s+", "", unicodedata.normalize("NFKC", x)) for x in names}
+        # 「■店舗名：ステップゴルフプラス川越駅前店 https://…/store/kawagoe-ekimae_top」のように URL が続く記事がある
+        names = {re.sub(r"\s+", "", unicodedata.normalize("NFKC", re.sub(r"https?://\S+", "", x))) for x in names}
         if len(names) != 1:
             continue
+        name = names.pop()
+        rec = {"url": BASE + p}
+        # 開業前の判定（2026-10-18）: 新店の店舗ページには開業予定の記載が無く、普通の店として出る
+        # （川越駅前・守口大日・横浜元町）。予定はニュースの店舗概要にだけある:
+        #   「★グランドオープン：2026年12月4日（金）予定」／日付の無い記事は「■先行入会＆プレオープン：9月3日（木）～ 11月16日（月）」。
+        # グランドオープン日が今日より後（日付が無ければプレオープンの最終日が今日以降）なら準備中にする。
+        today = date.today()
+        g = re.search(r"グランドオープン[：:]\s*(\d{4})年(\d{1,2})月(\d{1,2})日", t)
+        pre = re.search(r"プレオープン[：:][^■★]*?[～〜~]\s*(\d{1,2})月(\d{1,2})日", t)
+        if g:
+            if date(int(g[1]), int(g[2]), int(g[3])) > today:
+                rec["not_open"] = f"{BASE + p} 「{g.group(0)}」"
+        elif pre:
+            pd = re.search(r"/news/(\d{2})(\d{2})", p)          # /news/2610030900 → 2026年10月の記事
+            yr = 2000 + int(pd[1]) if pd else today.year
+            if pd and int(pre[1]) < int(pd[2]):
+                yr += 1                                        # 記事の月より前の月＝翌年
+            if date(yr, int(pre[1]), int(pre[2])) >= today:
+                rec["not_open"] = f"{BASE + p} 「{pre.group(0).strip()}」"
         m = (re.search(r"打席数[：:]\s*([0-9０-９]+)打席", t) or re.search(r"全([0-9０-９]+)打席に", t)
              or re.search(r"([0-9０-９]+)打席すべてに", t))
-        if not m:
-            continue
-        n = int(unicodedata.normalize("NFKC", m.group(1)))
-        eq = "GTRAK" if "GTRAK" in t else ("GOLFZON GDR" if "GDR" in t else None)
-        out[names.pop()] = {"bays_num": n, "equipment": eq, "url": BASE + p,
-                            "quote": t[max(0, m.start() - 10): m.end() + 30].strip()}
+        if m:
+            rec.update({"bays_num": int(unicodedata.normalize("NFKC", m.group(1))),
+                        "equipment": "GTRAK" if "GTRAK" in t else ("GOLFZON GDR" if "GDR" in t else None),
+                        "quote": t[max(0, m.start() - 10): m.end() + 30].strip()})
+        if m or rec.get("not_open"):
+            out[name] = rec
     return out
 
 
@@ -429,10 +449,13 @@ def main():
         nf = news.get(_norm_name(rec["name"]))
         if nf:
             used_news.add(_norm_name(rec["name"]))
-            if not rec["bays_num"]:
+            if nf.get("not_open"):
+                rec["open"] = False
+                rec["note"] = "公式ニュース " + nf["not_open"]
+            if not rec["bays_num"] and nf.get("bays_num"):
                 rec["bays"], rec["bays_num"] = f"{nf['bays_num']}打席", nf["bays_num"]
                 notes["bays"] = f"{nf['url']} 「{nf['quote']}」"
-            if not rec["equipment"] and nf["equipment"]:
+            if not rec["equipment"] and nf.get("equipment"):
                 rec["equipment"] = nf["equipment"]
                 notes["equipment"] = f"{nf['url']} 「{nf['quote']}」"
         if x.get("equipment_quote"):

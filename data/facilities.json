@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17",
+ "generated_at": "2026-10-18",
  "count": 1118,
  "facilities": [
   {
@@ -9439,7 +9439,7 @@
    "parking": null,
    "monthly_fee": "・平日デイプラン 8,980円〜(税込9,878円〜)",
    "equipment": null,
-   "open": true,
+   "open": false,
    "official": "https://www.stepgolf.co.jp/store/kawagoe-ekimae_top",
    "source_url": "https://www.stepgolf.co.jp/store/kawagoe-ekimae_top",
    "fetched_at": "2026-10-16"
@@ -10139,7 +10139,7 @@
    "parking": "駐車場(提携含む）",
    "monthly_fee": "・平日デイプラン 9,980円〜(税込10,978円〜)",
    "equipment": "GTRAK",
-   "open": true,
+   "open": false,
    "official": "https://www.stepgolf.co.jp/store/moriguchi_dainichi_top",
    "source_url": "https://www.stepgolf.co.jp/store/moriguchi_dainichi_top",
    "fetched_at": "2026-10-16"
