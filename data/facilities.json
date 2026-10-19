@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18",
+ "generated_at": "2026-10-19",
  "count": 1118,
  "facilities": [
   {
@@ -12393,12 +12393,12 @@
    "bays_num": null,
    "private_room": true,
    "parking": "駐車場 7台",
-   "monthly_fee": "通い放題会員（通い放題） 月額22,000円(税抜)→22,000円(税抜)・税込24,200円／ライト会員（4回枠/月） 月額12,000円(税抜)→12,000円(税抜)・税込13,200円／スタンダード会員（8回枠/月） 月額18,000円(税抜)→18,000円(税抜)・税込19,800円／ナイト（４）会員（4回枠/月） 月額8,000円(税抜)→8,000円(税抜)・税込8,800円／ナイト（８）会員（8回枠/月） 月額10,000円(税抜)→12,000円(税抜)・税込13,200円（「A→B」は公式の料金欄の2段表記どおり。Bが現在の表示価格）",
+   "monthly_fee": "通い放題会員（通い放題） 月額22,000円(税抜)→20,000円(税抜)・税込22,000円／ライト会員（4回枠/月） 月額12,000円(税抜)→10,000円(税抜)・税込11,000円／スタンダード会員（8回枠/月） 月額18,000円(税抜)→16,000円(税抜)・税込17,600円／ナイト（４）会員（4回枠/月） 月額8,000円(税抜)→6,000円(税抜)・税込6,600円／ナイト（８）会員（8回枠/月） 月額12,000円(税抜)→10,000円(税抜)・税込11,000円（「A→B」は公式の料金欄の2段表記どおり。Bが現在の表示価格）",
    "equipment": "Trackman iO（トラックマンiO）",
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/toyotaobayashi/",
    "source_url": "https://doortogolf.com/shop-post-newplan/toyotaobayashi/",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-19",
    "store_name": "豊田大林店"
   },
   {
@@ -12913,12 +12913,12 @@
    "bays_num": null,
    "private_room": true,
    "parking": null,
-   "monthly_fee": "ライト会員（4回枠/月） 月額15,000円(税抜)・税込16,500円／NIGHTTIME会員（通い放題） 月額13,637円(税抜)・税込15,000円／通い放題会員（通い放題） 月額22,728円(税抜)・税込25,000円",
+   "monthly_fee": "ライト会員（4回枠/月） 月額15,000円(税抜)・税込16,500円／NIGHT TIME会員（通い放題） 月額13,637円(税抜)・税込15,000円／通い放題会員（通い放題） 月額22,728円(税抜)・税込25,000円",
    "equipment": "SDR",
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/kannai/",
    "source_url": "https://doortogolf.com/shop-post-newplan/kannai/",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-19",
    "store_name": "関内店"
   },
   {
@@ -12939,12 +12939,12 @@
    "bays_num": null,
    "private_room": true,
    "parking": "駐車場 1台",
-   "monthly_fee": "ALLTIME会員（通い放題） 月額20,910円(税抜)・税込23,000円／ライト会員（4回枠/月） 月額15,000円(税抜)・税込16,500円",
+   "monthly_fee": "ALL TIME会員（通い放題） 月額20,910円(税抜)・税込23,000円／ライト会員（4回枠/月） 月額15,000円(税抜)・税込16,500円",
    "equipment": "SDR",
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/higashibetsuin/",
    "source_url": "https://doortogolf.com/shop-post-newplan/higashibetsuin/",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-19",
    "store_name": "東別院店"
   },
   {
@@ -12965,12 +12965,12 @@
    "bays_num": null,
    "private_room": true,
    "parking": "駐車場 1台",
-   "monthly_fee": "月2回プラン会員（2回枠/月） 月額8,000円(税抜)・税込8,800円／ライトプラン会員（4回枠/月） 月額15,000円(税抜)・税込16,500円／NIGHTTIME会員（通い放題） 月額10,910円(税抜)・税込12,000円／通い放題会員（通い放題） 月額17,728円(税抜)・税込19,500円",
+   "monthly_fee": "月2回プラン会員（2回枠/月） 月額8,000円(税抜)・税込8,800円／ライトプラン会員（4回枠/月） 月額15,000円(税抜)・税込16,500円／NIGHT TIME会員（通い放題） 月額10,910円(税抜)・税込12,000円／通い放題会員（通い放題） 月額17,728円(税抜)・税込19,500円",
    "equipment": "SDR",
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/inage/",
    "source_url": "https://doortogolf.com/shop-post-newplan/inage/",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-19",
    "store_name": "稲毛海岸店"
   },
   {
@@ -13251,12 +13251,12 @@
    "bays_num": null,
    "private_room": true,
    "parking": "駐車場 2台",
-   "monthly_fee": "NIGHTTIME会員（通い放題） 月額10,910円(税抜)・税込12,000円／ライト会員（4回枠/月） 月額15,000円(税抜)・税込16,500円／通い放題会員（通い放題） 月額20,910円(税抜)・税込23,000円",
+   "monthly_fee": "NIGHT TIME会員（通い放題） 月額10,910円(税抜)・税込12,000円／ライト会員（4回枠/月） 月額15,000円(税抜)・税込16,500円／通い放題会員（通い放題） 月額20,910円(税抜)・税込23,000円",
    "equipment": "SDR",
    "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/minowa/",
    "source_url": "https://doortogolf.com/shop-post-newplan/minowa/",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-19",
    "store_name": "三ノ輪店"
   },
   {

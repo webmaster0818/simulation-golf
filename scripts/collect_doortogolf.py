@@ -115,7 +115,8 @@ def plans(h: str):
     """料金プランを「プラン名 月額…(税抜)→…(税抜)・税込…」で並べる。"""
     out = []
     for m in re.finditer(r"<li>\s*<h4>(.*?)</h4>\s*<div class=\"main\">(.*?)</div>\s*<div class=\"foot\">", h, re.S):
-        name = re.sub(r"\s+", "", text(m.group(1)))
+        # 英単語の間の空白は残す（公式「NIGHT TIME会員」を全部詰めて「NIGHTTIME会員」と出していた・2026-10-19）
+        name = re.sub(r"(?<![A-Za-z])\s+|\s+(?![A-Za-z])", "", text(m.group(1)))
         body = m.group(2)
         def price(cls):
             pm = re.search(rf'<div class="{cls}">(.*?)</div>', body, re.S)
