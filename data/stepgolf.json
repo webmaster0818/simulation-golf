@@ -399,7 +399,7 @@
    "address": "広島県福山市御幸町上岩成字正戸 476-5 福山ビッグローズ内",
    "access": null,
    "tel": "084-999-0562",
-   "hours": "店舗営業 9:00～19:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 12:00～20:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
+   "hours": "店舗営業 ［平日］ 12:00～20:00 ［土日祝］ 9:00～19:00 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 12:00～20:00 ［休憩］ 16:00～16:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "monthly_fee": "・平日デイプラン 6,980円〜(税込7,678円〜)",
    "closed": "コーチ定休日：火・水曜日",
@@ -417,7 +417,7 @@
    "open": true,
    "official": "https://www.stepgolf.co.jp/store/fukuyama-miyuki_top",
    "source_url": "https://www.stepgolf.co.jp/store/fukuyama-miyuki_top",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-20",
    "field_notes": {
     "parking": "https://www.stepgolf.co.jp/store/fukuyama-miyuki_top 店名の下のタグ「駐車場(提携含む）」／店舗情報の住所・アクセス欄",
     "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"

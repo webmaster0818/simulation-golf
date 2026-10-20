@@ -256,7 +256,13 @@ def parse_store(html, path):
         i = sp.index("レッスンタイム")
         parts = []
         store_h = sp[i - 1]
-        if store_h == "24時間営業" or TIME.search(store_h):
+        # 営業時間が「平日 / 12:00～20:00 / 土日祝 / 9:00～19:00」と曜日別に並ぶ店がある（福山御幸ほか・2026-10-20）。
+        # 直前の1項目だけ取ると土日祝の時間だけが「店舗営業」になる → 「営業時間」の見出しから並びごと読む。
+        h0 = max((k for k in range(max(0, i - 8), i) if sp[k] == "営業時間"), default=None)
+        blk = sp[h0 + 1:i] if h0 is not None else []
+        if len(blk) > 1 and all(x in ("平日", "土日祝") or (TIME.search(x) and len(x) < 20) for x in blk):
+            parts.append("店舗営業 " + " ".join(f"［{x}］" if x in ("平日", "土日祝") else x for x in blk))
+        elif store_h == "24時間営業" or TIME.search(store_h):
             parts.append(f"店舗営業 {store_h}")
         parts.append("レッスンタイム")
         j = i + 1
