@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20",
+ "generated_at": "2026-10-21",
  "count": 1118,
  "facilities": [
   {
@@ -9433,16 +9433,16 @@
    "hours": "店舗営業 24時間営業 レッスンタイム ［コーチ定休日］ 火・水曜日 ［平日］ 14:00～22:00 ［休憩］ 17:00～17:50 ［土日祝］ 9:00～19:00 ［休憩］ 14:00～14:50",
    "open_24h": false,
    "closed": "コーチ定休日：火・水曜日",
-   "bays": null,
-   "bays_num": null,
+   "bays": "3打席",
+   "bays_num": 3,
    "private_room": null,
    "parking": null,
    "monthly_fee": "・平日デイプラン 8,980円〜(税込9,878円〜)",
-   "equipment": null,
+   "equipment": "GTRAK",
    "open": false,
    "official": "https://www.stepgolf.co.jp/store/kawagoe-ekimae_top",
    "source_url": "https://www.stepgolf.co.jp/store/kawagoe-ekimae_top",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-10-21"
   },
   {
    "segment": "lesson",

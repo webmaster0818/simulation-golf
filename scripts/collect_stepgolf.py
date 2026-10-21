@@ -260,7 +260,10 @@ def parse_store(html, path):
         # 直前の1項目だけ取ると土日祝の時間だけが「店舗営業」になる → 「営業時間」の見出しから並びごと読む。
         h0 = max((k for k in range(max(0, i - 8), i) if sp[k] == "営業時間"), default=None)
         blk = sp[h0 + 1:i] if h0 is not None else []
-        if len(blk) > 1 and all(x in ("平日", "土日祝") or (TIME.search(x) and len(x) < 20) for x in blk):
+        # 南船橋（2026-10-21）は並びの頭に「※セルフタイムは、火曜日水曜日10:00～19:45／その他の平日10:00～12:30」の
+        # 注記行がある → 時刻を含む「※」行は原文のまま並びに残す（無いと直前1項目＝土日祝の時間だけになっていた）。
+        if len(blk) > 1 and all(x in ("平日", "土日祝") or (TIME.search(x) and len(x) < 20)
+                                or (x.startswith("※") and TIME.search(x) and len(x) < 100) for x in blk):
             parts.append("店舗営業 " + " ".join(f"［{x}］" if x in ("平日", "土日祝") else x for x in blk))
         elif store_h == "24時間営業" or TIME.search(store_h):
             parts.append(f"店舗営業 {store_h}")

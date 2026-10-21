@@ -1464,10 +1464,10 @@
    "monthly_fee": "・平日デイプラン 8,980円〜(税込9,878円〜)",
    "closed": "コーチ定休日：火・水曜日",
    "parking": null,
-   "bays": null,
-   "bays_num": null,
+   "bays": "3打席",
+   "bays_num": 3,
    "private_room": null,
-   "equipment": null,
+   "equipment": "GTRAK",
    "features": [
     "スイング解析",
     "弾道解析",
@@ -1477,9 +1477,11 @@
    "open": false,
    "official": "https://www.stepgolf.co.jp/store/kawagoe-ekimae_top",
    "source_url": "https://www.stepgolf.co.jp/store/kawagoe-ekimae_top",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-21",
    "field_notes": {
-    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
+    "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）",
+    "bays": "https://www.stepgolf.co.jp/news/2610161300 「シンザンビル6F ■打席数：3打席（全打席に「GTRAK」を完備） ■先行入会＆プレオープン：」",
+    "equipment": "https://www.stepgolf.co.jp/news/2610161300 「シンザンビル6F ■打席数：3打席（全打席に「GTRAK」を完備） ■先行入会＆プレオープン：」"
    },
    "note": "公式ニュース https://www.stepgolf.co.jp/news/2610161300 「グランドオープン：2026年12月4日」（2026-10-16 掲載・先行入会＆プレオープン 9/24〜12/3）"
   },
