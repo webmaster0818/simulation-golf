@@ -159,6 +159,10 @@ def news_facts():
         if g:
             if date(int(g[1]), int(g[2]), int(g[3])) > today:
                 rec["not_open"] = f"{BASE + p} 「{g.group(0)}」"
+                # プレオープン期間も note に残す（2026-10-22・手で書いていた note と同じ内容にする）
+                pr = re.search(r"プレオープン[：:]\s*(\d{1,2})月(\d{1,2})日[^■★～〜~]*[～〜~]\s*(\d{1,2})月(\d{1,2})日", t)
+                if pr:
+                    rec["not_open"] += f"（先行入会＆プレオープン {pr[1]}/{pr[2]}〜{pr[3]}/{pr[4]}）"
         elif pre:
             pd = re.search(r"/news/(\d{2})(\d{2})", p)          # /news/2610030900 → 2026年10月の記事
             yr = 2000 + int(pd[1]) if pd else today.year

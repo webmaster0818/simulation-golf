@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21",
+ "generated_at": "2026-10-22",
  "count": 1118,
  "facilities": [
   {
@@ -9442,7 +9442,7 @@
    "open": false,
    "official": "https://www.stepgolf.co.jp/store/kawagoe-ekimae_top",
    "source_url": "https://www.stepgolf.co.jp/store/kawagoe-ekimae_top",
-   "fetched_at": "2026-10-21"
+   "fetched_at": "2026-10-22"
   },
   {
    "segment": "lesson",
@@ -10142,7 +10142,7 @@
    "open": false,
    "official": "https://www.stepgolf.co.jp/store/moriguchi_dainichi_top",
    "source_url": "https://www.stepgolf.co.jp/store/moriguchi_dainichi_top",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-10-22"
   },
   {
    "segment": "lesson",
@@ -11863,11 +11863,11 @@
    "private_room": null,
    "parking": null,
    "monthly_fee": "・平日デイプラン 9,980円〜(税込10,978円〜)",
-   "equipment": "GOLFZON GDR+",
+   "equipment": "GOLFZON GDR",
    "open": false,
    "official": "https://www.stepgolf.co.jp/store/y-motomachi_extra",
    "source_url": "https://www.stepgolf.co.jp/store/y-motomachi_extra",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-10-22"
   },
   {
    "segment": "lesson",

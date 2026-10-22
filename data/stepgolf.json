@@ -1477,13 +1477,13 @@
    "open": false,
    "official": "https://www.stepgolf.co.jp/store/kawagoe-ekimae_top",
    "source_url": "https://www.stepgolf.co.jp/store/kawagoe-ekimae_top",
-   "fetched_at": "2026-10-21",
+   "fetched_at": "2026-10-22",
    "field_notes": {
     "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）",
     "bays": "https://www.stepgolf.co.jp/news/2610161300 「シンザンビル6F ■打席数：3打席（全打席に「GTRAK」を完備） ■先行入会＆プレオープン：」",
     "equipment": "https://www.stepgolf.co.jp/news/2610161300 「シンザンビル6F ■打席数：3打席（全打席に「GTRAK」を完備） ■先行入会＆プレオープン：」"
    },
-   "note": "公式ニュース https://www.stepgolf.co.jp/news/2610161300 「グランドオープン：2026年12月4日」（2026-10-16 掲載・先行入会＆プレオープン 9/24〜12/3）"
+   "note": "公式ニュース https://www.stepgolf.co.jp/news/2610161300 「グランドオープン：2026年12月4日」（先行入会＆プレオープン 9/24〜12/3）"
   },
   {
    "segment": "lesson",
@@ -2388,7 +2388,7 @@
    "open": false,
    "official": "https://www.stepgolf.co.jp/store/moriguchi_dainichi_top",
    "source_url": "https://www.stepgolf.co.jp/store/moriguchi_dainichi_top",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-22",
    "field_notes": {
     "bays": "https://www.stepgolf.co.jp/news/2609080900 「1 ニトリ敷地内 ■打席数：５打席 弾道測定器（GTRAKスクリーン投影を完備） ■先行入会＆」",
     "equipment": "https://www.stepgolf.co.jp/news/2609080900 「1 ニトリ敷地内 ■打席数：５打席 弾道測定器（GTRAKスクリーン投影を完備） ■先行入会＆」",
@@ -4611,7 +4611,7 @@
    "bays": "4打席",
    "bays_num": 4,
    "private_room": null,
-   "equipment": "GOLFZON GDR+",
+   "equipment": "GOLFZON GDR",
    "features": [
     "スイング解析",
     "弾道解析",
@@ -4620,13 +4620,13 @@
    "open": false,
    "official": "https://www.stepgolf.co.jp/store/y-motomachi_extra",
    "source_url": "https://www.stepgolf.co.jp/store/y-motomachi_extra",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-22",
    "field_notes": {
     "bays": "https://www.stepgolf.co.jp/news/2610030900 「地 宝田ビル2階 ■打席数：4打席（全打席に「GDR+」を完備） ■先行入会＆プレオープン：9」",
     "equipment": "https://www.stepgolf.co.jp/store/y-motomachi_extra 「★全打席「GOLFZON社製GDR」シミュレーター完備‼」",
     "closed": "店舗ページの店舗情報「※コーチ定休日：」（レッスンタイム以外はセルフ営業）"
    },
-   "note": "公式ニュース「11月グランドオープン予定」「先行入会＆プレオープン：9月3日（木）～ 11月16日（月）」「打席数：4打席（全打席に「GDR+」を完備）」"
+   "note": "公式ニュース https://www.stepgolf.co.jp/news/2610030900 「グランドオープン：2026年11月19日」（先行入会＆プレオープン 9/3〜11/16）"
   },
   {
    "segment": "lesson",
