@@ -474,13 +474,13 @@
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
-   "parking": "駐車場",
+   "parking": "駐車場あり（店舗1階部分）",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": "GOLFZON GDR",
    "open": true,
    "official": "https://zengolf.jp/kasukabe/",
    "source_url": "https://zengolf.jp/kasukabe/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-10-23"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -642,13 +642,13 @@
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
-   "parking": "優先駐車場6台あり ※無人営業時間帯は駐車場サービス対象外となります。",
+   "parking": "優先駐車場6台あり ※台数に限りがあるため、ご利用後は速やかなご移動をお願いいたします。",
    "monthly_fee": "18,000円 （税込19,800円）",
    "equipment": "SKYTRAK ST MAX",
    "open": true,
    "official": "https://zengolf.jp/kitaomiya/",
    "source_url": "https://zengolf.jp/kitaomiya/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-10-23"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1386,13 +1386,13 @@
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
-   "parking": "駐車場完備 ※無人営業時間帯は駐車場サービス対象外となります。",
+   "parking": "駐車場完備（ドンキホーテ駐車場）",
    "monthly_fee": "14,800円 （税込16,280円）",
    "equipment": "GOLFZON GDR",
    "open": true,
    "official": "https://zengolf.jp/yachiyo/",
    "source_url": "https://zengolf.jp/yachiyo/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-10-23"
   },
   {
    "brand": "ZEN GOLF RANGE",

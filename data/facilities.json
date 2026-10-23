@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22",
+ "generated_at": "2026-10-23",
  "count": 1118,
  "facilities": [
   {
@@ -13770,13 +13770,13 @@
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
-   "parking": "駐車場",
+   "parking": "駐車場あり（店舗1階部分）",
    "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": "GOLFZON GDR",
    "open": true,
    "official": "https://zengolf.jp/kasukabe/",
    "source_url": "https://zengolf.jp/kasukabe/",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-23",
    "store_name": "春日部店"
   },
   {
@@ -13952,13 +13952,13 @@
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
-   "parking": "優先駐車場6台あり ※無人営業時間帯は駐車場サービス対象外となります。",
+   "parking": "優先駐車場6台あり ※台数に限りがあるため、ご利用後は速やかなご移動をお願いいたします。",
    "monthly_fee": "18,000円 （税込19,800円）",
    "equipment": "SKYTRAK ST MAX",
    "open": true,
    "official": "https://zengolf.jp/kitaomiya/",
    "source_url": "https://zengolf.jp/kitaomiya/",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-23",
    "store_name": "北大宮店"
   },
   {
@@ -14758,13 +14758,13 @@
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
-   "parking": "駐車場完備 ※無人営業時間帯は駐車場サービス対象外となります。",
+   "parking": "駐車場完備（ドンキホーテ駐車場）",
    "monthly_fee": "14,800円 （税込16,280円）",
    "equipment": "GOLFZON GDR",
    "open": true,
    "official": "https://zengolf.jp/yachiyo/",
    "source_url": "https://zengolf.jp/yachiyo/",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-23",
    "store_name": "八千代店"
   },
   {
@@ -15330,7 +15330,7 @@
    "address": "大分県大分市中津留1丁目1-23",
    "access": "大分駅から車約9分／国道197号線沿い",
    "tel": "050-1726-3191",
-   "hours": "コーチレッスン 11:00〜20:00 （月・火・水・金・土） 9:00〜18:00 （日・祝） 毎週水曜・木曜はノーコーチデーのため、無料体験・レッスンはなく自主練習となります 不定期でノーコーチデー(自主練習)があります 年末年始・夏季休暇あり",
+   "hours": "コーチレッスン 11:00〜20:00 （月・火・金・土） 9:00〜18:00 （日・祝） 毎週水曜・木曜はノーコーチデーのため、無料体験・レッスンはなく自主練習となります 不定期でノーコーチデー(自主練習)があります 年末年始・夏季休暇あり",
    "open_24h": false,
    "closed": "年末年始・夏季休暇あり",
    "bays": "7打席",
@@ -15342,7 +15342,7 @@
    "open": true,
    "official": "https://inthegolf.com/list/oita-nakatsuru/",
    "source_url": "https://inthegolf.com/list/oita-nakatsuru/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-10-23"
   },
   {
    "segment": "lesson",
