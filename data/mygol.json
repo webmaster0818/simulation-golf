@@ -1005,8 +1005,8 @@
    "address": "神奈川県横浜市西区浜松町12−27 西横浜ytビル4F",
    "access": "相鉄線 西横浜駅南口1から徒歩約5分",
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
-   "hours": "7時〜23時",
-   "open_24h": false,
+   "hours": "24時間営業",
+   "open_24h": true,
    "closed": "年中無休（公式「365日使い放題」）",
    "bays": "4打席",
    "bays_num": 4,
@@ -1017,12 +1017,13 @@
    "open": true,
    "official": "https://www.mygol.jp/shop/nishiyokohama/",
    "source_url": "https://www.mygol.jp/shop/nishiyokohama/",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-24",
    "field_sources": {
     "parking": "https://www.mygol.jp/shop/nishiyokohama/facility",
     "bays": "https://www.mygol.jp/shop/nishiyokohama/equipments「打席数 4打席／個別打席 なし」",
     "equipment": "https://www.mygol.jp/shop/nishiyokohama/equipments「シミュレーター GDR Plus」",
-    "closed": "https://www.mygol.jp/shop/nishiyokohama/「365日使い放題」"
+    "closed": "https://www.mygol.jp/shop/nishiyokohama/「365日使い放題」",
+    "hours": "https://www.mygol.jp/shop/nishiyokohama/「営業時間 24時間営業」「365日、24時間使い放題」（2026-10-24確認）"
    }
   },
   {

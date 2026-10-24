@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23",
+ "generated_at": "2026-10-24",
  "count": 1118,
  "facilities": [
   {
@@ -18530,8 +18530,8 @@
    "address": "神奈川県横浜市西区浜松町12−27 西横浜ytビル4F",
    "access": "相鉄線 西横浜駅南口1から徒歩約5分",
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
-   "hours": "7時〜23時",
-   "open_24h": false,
+   "hours": "24時間営業",
+   "open_24h": true,
    "closed": "年中無休（公式「365日使い放題」）",
    "bays": "4打席",
    "bays_num": 4,
@@ -18542,7 +18542,7 @@
    "open": true,
    "official": "https://www.mygol.jp/shop/nishiyokohama/",
    "source_url": "https://www.mygol.jp/shop/nishiyokohama/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-10-24"
   },
   {
    "segment": "indoor",
