@@ -890,7 +890,7 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "closed": null,
    "bays": "4打席",
    "bays_num": 4,
    "private_room": false,
@@ -900,11 +900,10 @@
    "open": true,
    "official": "https://www.mygol.jp/shop/atsugihayashi/",
    "source_url": "https://www.mygol.jp/shop/atsugihayashi/",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-25",
    "field_sources": {
     "bays": "https://www.mygol.jp/shop/atsugihayashi/equipments「打席数 4打席／個別打席 なし」",
-    "equipment": "https://www.mygol.jp/shop/atsugihayashi/equipments「シミュレーター GDR Plus」",
-    "closed": "https://www.mygol.jp/shop/atsugihayashi/「24時間365日使い放題」"
+    "equipment": "https://www.mygol.jp/shop/atsugihayashi/equipments「シミュレーター GDR Plus」"
    }
   },
   {
@@ -977,7 +976,7 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "当面の間 6:00〜23:00（通常は24時間営業）",
    "open_24h": false,
-   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "closed": null,
    "bays": "2打席",
    "bays_num": 2,
    "private_room": null,
@@ -987,12 +986,11 @@
    "open": true,
    "official": "https://www.mygol.jp/shop/miyazakidai/",
    "source_url": "https://www.mygol.jp/shop/miyazakidai/",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-25",
    "field_sources": {
     "parking": "https://www.mygol.jp/shop/miyazakidai/facility",
     "bays": "https://www.mygol.jp/shop/miyazakidai/equipments「打席数 2打席／個別打席 半個室あり」",
-    "equipment": "https://www.mygol.jp/shop/miyazakidai/equipments「シミュレーター GDR Plus」",
-    "closed": "https://www.mygol.jp/shop/miyazakidai/「24時間365日通い放題」"
+    "equipment": "https://www.mygol.jp/shop/miyazakidai/equipments「シミュレーター GDR Plus」"
    }
   },
   {
@@ -1007,7 +1005,7 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": "年中無休（公式「365日使い放題」）",
+   "closed": "年中無休（公式「365日、24時間使い放題」）",
    "bays": "4打席",
    "bays_num": 4,
    "private_room": false,
@@ -1017,12 +1015,12 @@
    "open": true,
    "official": "https://www.mygol.jp/shop/nishiyokohama/",
    "source_url": "https://www.mygol.jp/shop/nishiyokohama/",
-   "fetched_at": "2026-10-24",
+   "fetched_at": "2026-10-25",
    "field_sources": {
     "parking": "https://www.mygol.jp/shop/nishiyokohama/facility",
     "bays": "https://www.mygol.jp/shop/nishiyokohama/equipments「打席数 4打席／個別打席 なし」",
     "equipment": "https://www.mygol.jp/shop/nishiyokohama/equipments「シミュレーター GDR Plus」",
-    "closed": "https://www.mygol.jp/shop/nishiyokohama/「365日使い放題」",
+    "closed": "https://www.mygol.jp/shop/nishiyokohama/「365日、24時間使い放題」",
     "hours": "https://www.mygol.jp/shop/nishiyokohama/「営業時間 24時間営業」「365日、24時間使い放題」（2026-10-24確認）"
    }
   },

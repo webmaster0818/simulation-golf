@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24",
+ "generated_at": "2026-10-25",
  "count": 1118,
  "facilities": [
   {
@@ -18432,7 +18432,7 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "closed": null,
    "bays": "4打席",
    "bays_num": 4,
    "private_room": false,
@@ -18442,7 +18442,7 @@
    "open": true,
    "official": "https://www.mygol.jp/shop/atsugihayashi/",
    "source_url": "https://www.mygol.jp/shop/atsugihayashi/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-10-25"
   },
   {
    "segment": "indoor",
@@ -18507,7 +18507,7 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "当面の間 6:00〜23:00（通常は24時間営業）",
    "open_24h": false,
-   "closed": "年中無休（公式「24時間365日通い放題」）",
+   "closed": null,
    "bays": "2打席",
    "bays_num": 2,
    "private_room": null,
@@ -18517,7 +18517,7 @@
    "open": true,
    "official": "https://www.mygol.jp/shop/miyazakidai/",
    "source_url": "https://www.mygol.jp/shop/miyazakidai/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-10-25"
   },
   {
    "segment": "indoor",
@@ -18532,7 +18532,7 @@
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
-   "closed": "年中無休（公式「365日使い放題」）",
+   "closed": "年中無休（公式「365日、24時間使い放題」）",
    "bays": "4打席",
    "bays_num": 4,
    "private_room": false,
@@ -18542,7 +18542,7 @@
    "open": true,
    "official": "https://www.mygol.jp/shop/nishiyokohama/",
    "source_url": "https://www.mygol.jp/shop/nishiyokohama/",
-   "fetched_at": "2026-10-24"
+   "fetched_at": "2026-10-25"
   },
   {
    "segment": "indoor",

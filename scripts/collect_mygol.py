@@ -193,7 +193,8 @@ def rows(page_html: str) -> dict:
 # /shop/ の店の <店舗>/equipments に書かれた機種。表記はサイト内の既存の書き方にそろえる。
 SHOP_EQUIPMENT = {"GDR Plus": "GOLFZON GDR PLUS", "TWOVISION": "GOLFZON TWOVISION",
                   "Joy Golf smart+": "Joy Golf smart+"}
-OPEN365_RE = re.compile(r"(?:24時間)?365日(?:通い放題|使い放題|営業|いつでも|利用できる)")
+# 西横浜店は「365日、24時間使い放題」と間に「、24時間」が入る（2026-10-25・以前は読めず closed が None になっていた）
+OPEN365_RE = re.compile(r"(?:24時間)?365日(?:、24時間)?(?:通い放題|使い放題|営業|いつでも|利用できる)")
 
 
 def shop_extra(url: str, top_html: str) -> tuple[dict, list[str]]:
