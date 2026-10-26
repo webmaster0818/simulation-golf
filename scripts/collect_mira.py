@@ -161,11 +161,14 @@ def parse_store(h: str) -> dict:
         # 「月〜日」「24時間営業」「スタッフアワー:11:00~15:00 16:00~20:00」「(金曜日・年末年始除く)」
         d["hours_raw"] = " ".join(hs)
         d["open_24h"] = "24時間" in d["hours_raw"]
-        st = re.search(r"スタッフアワー[:：]?\s*([\d:~〜\-\s]+)", d["hours_raw"])
-        note = re.search(r"\(([^)]*除く)\)", d["hours_raw"])
+        # ⚠️ 裾野は「■スタッフアワー：11:00～15:00/16:00～20:00（スタッフ不在：毎週金曜）」と全角の「～」「/」「（）」で
+        #    書いている。以前は「～」を読めず「スタッフアワー 11:00」で切れていた（2026-10-26 修正）。
+        st = re.search(r"スタッフアワー[:：]?\s*([\d:~〜～/\-\s]+)", d["hours_raw"])
+        note = re.search(r"[(（]([^)）]*除く|スタッフ不在[:：][^)）]*)[)）]", d["hours_raw"])
         hours = "24時間営業" if d["open_24h"] else hs[1] if len(hs) > 1 else hs[0]
         if st:
-            hours += f"（スタッフアワー {st.group(1).strip().replace('~', '〜').replace(' ', '／')}"
+            span = re.sub(r"\s*/\s*|\s+", "／", st.group(1).strip().rstrip("/").strip()).replace("~", "〜")
+            hours += f"（スタッフアワー {span}"
             hours += f"、{note.group(1)}）" if note else "）"
         d["hours"] = hours
     # 施設・設備

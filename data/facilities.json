@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-25",
- "count": 1118,
+ "generated_at": "2026-10-26",
+ "count": 1119,
  "facilities": [
   {
    "segment": "indoor",
@@ -3941,12 +3941,12 @@
    "bays_num": null,
    "private_room": null,
    "parking": "敷地内に無料駐車場を完備",
-   "monthly_fee": "個人向け会費(月額プラン) 12,100円（税込）",
+   "monthly_fee": null,
    "equipment": null,
    "open": true,
    "official": "https://swing24-ami.com/",
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-10-26"
   },
   {
    "segment": "indoor",
@@ -17826,8 +17826,8 @@
    "slug": "mygol-koshigaya",
    "name": "マイゴル越谷せんげん台駅東口店",
    "pref": "埼玉県",
-   "zip": null,
-   "address": "埼玉県越谷市千間台東",
+   "zip": "3430042",
+   "address": "埼玉県越谷市千間台東1丁目3-1",
    "access": "せんげん台駅から徒歩2分",
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
@@ -17842,7 +17842,7 @@
    "open": false,
    "official": "https://www.mygol.jp/shop/koshigaya/",
    "source_url": "https://www.mygol.jp/shop/koshigaya/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-10-26"
   },
   {
    "segment": "indoor",
@@ -18423,6 +18423,31 @@
    "segment": "indoor",
    "brand": "マイゴル",
    "brand_slug": "mygol",
+   "slug": "mygol-yokohamafujigaoka",
+   "name": "マイゴル横浜藤が丘店",
+   "pref": "神奈川県",
+   "zip": "2270043",
+   "address": "神奈川県横浜市青葉区藤が丘2丁目3-3 第2飯田ビル 1F",
+   "access": "藤が丘駅から徒歩3分",
+   "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
+   "hours": "24時間営業",
+   "open_24h": true,
+   "closed": "年中無休（公式「24時間365日使い放題」）",
+   "bays": "4打席",
+   "bays_num": 4,
+   "private_room": null,
+   "parking": "有料駐車場あり",
+   "monthly_fee": "平日練習し放題 14,300円（平日デイプラン）／24時間練習し放題 19,800円（ベーシックプラン）（税込）",
+   "equipment": "GOLFZON GDR PLUS",
+   "open": false,
+   "official": "https://www.mygol.jp/shop/yokohamafujigaoka/",
+   "source_url": "https://www.mygol.jp/shop/yokohamafujigaoka/",
+   "fetched_at": "2026-10-26"
+  },
+  {
+   "segment": "indoor",
+   "brand": "マイゴル",
+   "brand_slug": "mygol",
    "slug": "mygol-atsugihayashi",
    "name": "マイゴル厚木林店",
    "pref": "神奈川県",
@@ -18787,12 +18812,12 @@
    "bays_num": 4,
    "private_room": false,
    "parking": "無料駐車場あり",
-   "monthly_fee": "練習し放題 12,100円（平日デイプラン）／24時間練習し放題 15,400円（リミテッドプラン）（税込）",
+   "monthly_fee": "練習し放題 12,100円（平日デイプラン）／レッスン受け放題 17,100円（平日デイレッスン受け放題プラン）（税込）",
    "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/megadonquijotetoyohashi/",
    "source_url": "https://www.mygol.jp/shop/megadonquijotetoyohashi/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-10-26"
   },
   {
    "segment": "indoor",
@@ -19337,12 +19362,12 @@
    "bays_num": 4,
    "private_room": true,
    "parking": "店舗前に無料駐車場あり",
-   "monthly_fee": "練習し放題 9,900円（デイプラン）／24時間練習し放題 14,300円（ベーシックプラン）（税込）",
+   "monthly_fee": "練習し放題 8,800円（深夜プラン）／24時間練習し放題 14,300円（ベーシックプラン）（税込）",
    "equipment": "GOLFZON GDR PLUS",
    "open": true,
    "official": "https://www.mygol.jp/shop/hiroshimaotemachi/",
    "source_url": "https://www.mygol.jp/shop/hiroshimaotemachi/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-10-26"
   },
   {
    "segment": "indoor",

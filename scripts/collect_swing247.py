@@ -109,6 +109,8 @@ def opened_on_feed(page: str, name: str, note: str | None) -> str | None:
 #    → equipment は None のまま。
 # ⚠️ 希望ヶ丘・宇都宮・今里 は料金が画像（price.webp / campaign_price_*.png / price_*.svg）だけで、
 #    本文に金額が無い → monthly_fee は None（画像の数字は読まない）。
+#    荒川沖東（swing24-ami.com）も 2026-10 に個人の月会費がキャンペーン画像（campaign_price_2.png）だけになった
+#    （本文の ¥12,100／¥11,000 はコメントアウト）。collector の不具合ではない（2026-10-26 確認）。
 # ⚠️ 本文の「会員様同士であっても1打席を…」「左打席は1打席ご用意」は打席数ではない。打席数として
 #    書かれた形（打席数 3打席／打席数は4打席です／全打席(4打席)／4打席全てに）だけ拾う。
 FEE_MAIN = re.compile(r"^(会費[(（]月額[)）]|月額会費|月会費|月額費用|個人向け会費[(（]月額プラン[)）]|レディース割引[(（]月額[)）])$")

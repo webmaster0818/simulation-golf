@@ -1210,16 +1210,18 @@
    "hours": "24時間365日（無人運営）",
    "open_24h": true,
    "source_url": "https://swing24.co.jp/locations",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-26",
    "closed": "年中無休（365日営業）",
    "bays": null,
    "bays_num": null,
-   "monthly_fee": "個人向け会費(月額プラン) 12,100円（税込）",
+   "monthly_fee": null,
    "equipment": null,
    "official": "https://swing24-ami.com/",
    "field_sources": {
-    "closed": "https://swing24-ami.com/「24時間365日営業」",
-    "monthly_fee": "https://swing24-ami.com/"
+    "closed": "https://swing24-ami.com/「24時間365日営業」"
+   },
+   "field_notes": {
+    "monthly_fee": "https://swing24-ami.com/ 2026-10-26確認: 「個人向け会費(月額プラン)」の金額は画像（campaign_price_2.png）だけになり本文に金額の記載がない。画像の数字は読まない方針（希望ヶ丘・宇都宮・今里と同じ）"
    }
   },
   {
