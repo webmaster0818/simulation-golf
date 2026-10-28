@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27",
+ "generated_at": "2026-10-28",
  "count": 1119,
  "facilities": [
   {
@@ -23361,13 +23361,13 @@
    "bays": "2ルーム／シミュレーター2台設置",
    "bays_num": 2,
    "private_room": null,
-   "parking": "提携駐車場のご用意はございませんのでお近くのパーキングをご利用ください。",
+   "parking": "店舗から徒歩約2分のところに専用駐車場がございます（1台分）。",
    "monthly_fee": "ブロンズプラン 19,800円／シルバープラン 22,000円／ゴールドプラン 29,700円／プラチナプラン 33,000円／ルビープラン 44,000円／シニアプラン 13,200円／ナイトプラン 11,800円／回数プラン月3回 13,200円／回数プラン月2回 8,800円／回数プラン月1回 4,400円／ファミリープラン 29,700円（税込）",
    "equipment": null,
    "open": true,
    "official": "https://sma-gol.com/shop/miyahara/",
    "source_url": "https://sma-gol.com/shop/miyahara/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-10-28"
   },
   {
    "segment": "indoor",
