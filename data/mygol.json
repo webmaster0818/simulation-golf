@@ -1,6 +1,6 @@
 {
  "brand": "マイゴル",
- "fetched_at": "2026-10-26",
+ "fetched_at": "2026-10-31",
  "stores": [
   {
    "brand": "マイゴル",
@@ -473,7 +473,7 @@
    "pref": "東京都",
    "zip": "1690073",
    "address": "東京都新宿区百人町4丁目9-5 1階",
-   "access": "小滝橋から徒歩2分",
+   "access": "東京メトロ東西線 「落合駅」徒歩9分／JR総武線 「東中野駅」徒歩13分／JR山手線 「高田馬場駅」徒歩14分",
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
@@ -484,10 +484,10 @@
    "parking": "なし",
    "monthly_fee": "平日練習し放題 13,200円（リミテッド平日デイプラン）／24時間練習し放題 19,800円（ベーシックプラン）（税込）",
    "equipment": "GOLFZON GDR PLUS",
-   "open": false,
+   "open": true,
    "official": "https://www.mygol.jp/shop/shinjukuhyakunincho/",
    "source_url": "https://www.mygol.jp/shop/shinjukuhyakunincho/",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-10-31",
    "field_sources": {
     "parking": "https://www.mygol.jp/shop/shinjukuhyakunincho/facility",
     "bays": "https://www.mygol.jp/shop/shinjukuhyakunincho/equipments「打席数 4打席／個別打席 なし」",
