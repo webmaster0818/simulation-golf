@@ -382,3 +382,6 @@ header.site nav a:hover { color: var(--trace); }
 .flow li { counter-increment: flow; position: relative; padding: 1.1rem 0 1.1rem 3.2rem; border-bottom: 1px solid var(--line); line-height: 1.85; color: var(--muted); }
 .flow li::before { content: counter(flow, decimal-leading-zero); position: absolute; left: 0; top: 1.05rem; font-family: var(--font-display, inherit); font-weight: 700; color: var(--trace); font-size: 1.1rem; }
 .flow li strong { display: block; color: var(--ink); margin-bottom: .25rem; }
+/* 2026-11-02 店舗ページ冒頭からブランドの全店舗一覧へ（ブランド名だけの検索の着地を寄せる） */
+.g-brand-jump { margin: .4rem 0 1.4rem; padding: .7rem 1rem; border: 1px solid var(--line); border-left: 3px solid var(--trace); background: var(--base-2); border-radius: 6px; font-size: 14px; }
+.g-brand-jump a { font-weight: 700; }

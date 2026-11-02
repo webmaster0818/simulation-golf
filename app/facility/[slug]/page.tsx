@@ -7,6 +7,7 @@ import {
   cities as cityPagesOf, asOf, REGIONS, formatZip,
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
+import { BRAND_FACTS, brandLabel, feeRange, yen } from '../../../lib/brand-facts'
 import { JsonLd, breadcrumb, facilityCrumbs, facilityLd, facilityDescription, clip, titleName } from '../../../lib/seo'
 
 type Params = { slug: string }
@@ -65,6 +66,12 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
     ? OPEN_FACILITIES.filter((x) => x.brand_slug === f.brand_slug && x.slug !== f.slug)
     : []
 
+  // 2026-11-02 ブランド名だけの検索（「ステップゴルフ」「マイゴル」）が店舗ページに着地して割れていたので、
+  // 冒頭からブランドの全店舗一覧へ繋ぐ（BRAND_FACTS にあるブランドだけ）
+  const brandFr = f.brand_slug && BRAND_FACTS[f.brand_slug]
+    ? feeRange(f.brand_slug, OPEN_FACILITIES.filter((x) => x.brand_slug === f.brand_slug))
+    : null
+
   // 構造化データ。住所が取れているものだけ出す（不完全なデータを機械に渡さない）。
   const ld = [facilityLd(f), breadcrumb(facilityCrumbs(f))]
 
@@ -106,6 +113,14 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
         </p>
         {f.brand_slug && f.brand && <div className="g-brand-hero-shot"><BrandShot slug={f.brand_slug} name={f.brand} /></div>}
       </section>
+
+      {f.brand_slug && f.brand && BRAND_FACTS[f.brand_slug] && (
+        <p className="g-brand-jump">
+          {brandLabel(f.brand_slug, f.brand)}の全{sameBrand.length + (f.open ? 1 : 0)}店舗
+          {brandFr ? `（月会費 税込${yen(brandFr.min)}〜${yen(brandFr.max)}）` : ''}を比べるなら
+          {' '}<Link href={`/brand/${f.brand_slug}/`}>{f.brand}の店舗一覧・料金</Link>
+        </p>
+      )}
 
       {!f.open && (
         <div className="verdict">

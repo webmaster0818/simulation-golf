@@ -8,6 +8,7 @@ import {
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
 import { JsonLd, breadcrumb, itemListLd } from '../../../lib/seo'
+import { BRAND_FACTS, brandLabel, feeRange, yen } from '../../../lib/brand-facts'
 
 type Params = { slug: string }
 
@@ -19,6 +20,20 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { slug } = await params
   const b = brands().find((x) => x.slug === slug)
   if (!b) return {}
+  // 2026-11-02 表記ゆれ（カナ／英字）と料金で検索されるブランドは、title に両表記と月会費の下限を出す
+  const fact = BRAND_FACTS[slug]
+  const fr = fact ? feeRange(slug, byBrand(slug)) : null
+  if (fact && fr) {
+    const label = brandLabel(slug, b.name)
+    return {
+      title: `${label}の店舗一覧${b.count}件｜月会費 税込${yen(fr.min)}〜`,
+      description:
+        `${label}の全${b.count}店舗の月会費・営業時間・アクセスを公式サイトの掲載どおりに一覧で掲載。` +
+        `月会費は店舗・プランにより税込${yen(fr.min)}〜${yen(fr.max)}。${b.prefs.length}都道府県に展開。` +
+        (fact.trial ? '公式の体験の案内も掲載しています。' : ''),
+      ...pageUrlMeta(`/brand/${slug}/`),
+    }
+  }
   return {
     title: `${b.name}の店舗一覧${b.count}件｜料金・営業時間・個室の有無`,
     description:
@@ -49,6 +64,9 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
   const soon = FACILITIES.filter((f) => !f.open && f.brand_slug === slug)
   const n24 = fs.filter((f) => f.open_24h).length
   const nPrivate = fs.filter((f) => f.private_room === true || /個室/.test(f.bays ?? '')).length
+  const fact = BRAND_FACTS[slug]
+  const fr = fact ? feeRange(slug, fs) : null
+  const label = brandLabel(slug, b.name)
 
   const byPrefMap = new Map<string, typeof fs>()
   for (const f of fs) {
@@ -74,13 +92,79 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
 
       <section className="hero">
         <div className="kicker">{slug}</div>
-        <h1>{b.name}の店舗一覧（{b.count}件）</h1>
+        <h1>{label}の店舗一覧（{b.count}件）</h1>
+        {fact && (
+          <p className="lead">
+            {label}の店舗を、公式サイトの店舗ページの掲載どおりに{b.prefs.length}都道府県・{b.count}件掲載しています。
+            {fr && <>月会費は店舗・プランにより税込{yen(fr.min)}〜{yen(fr.max)}です。</>}
+            {fact.trial && <>公式サイトに体験の案内があります。</>}
+          </p>
+        )}
         <p className="lead">
           公式サイトに掲載されている{b.name}の店舗を、都道府県別に掲載しています。
           公式サイトで公開されている項目のみを掲載しているため、他のブランドと比べて掲載項目が少ない場合があります。
         </p>
         <div className="g-brand-hero-shot"><BrandShot slug={slug} name={b.name} /></div>
       </section>
+
+      {fact && (
+        <>
+          <h2>{label}の店舗数・料金・体験（要点）</h2>
+          <dl className="spec">
+            <div>
+              <dt>店舗数</dt>
+              <dd>
+                当サイトの掲載は営業中の{b.count}店舗（{b.prefs.length}都道府県）{soon.length > 0 ? `・開業準備中${soon.length}店舗` : ''}です。
+                {fact.officialCount && (
+                  <>
+                    {' '}{fact.officialCount.text}（
+                    <a href={fact.officialCount.url} target="_blank" rel="noopener noreferrer">出典</a>
+                    ）。公式の数には、当サイトで店舗ページの記載を確認できていない店舗が含まれる場合があります。
+                  </>
+                )}
+              </dd>
+            </div>
+            {fr && (
+              <div>
+                <dt>月会費（税込）</dt>
+                <dd>
+                  店舗・プランにより{yen(fr.min)}〜{yen(fr.max)}（公式の店舗ページの掲載額。
+                  最も低い額は<Link href={`/facility/${fr.minSlug}/`}>{fr.minName}</Link>
+                  {fr.minPlan && <>の「{fr.minPlan}」</>}、
+                  最も高い額は<Link href={`/facility/${fr.maxSlug}/`}>{fr.maxName}</Link>の掲載）。
+                  プランの利用時間帯などの条件は店舗ごとに異なります。各店舗の金額は下の「店舗ごとの月会費」をご覧ください。
+                </dd>
+              </div>
+            )}
+            {fact.trial && (
+              <div>
+                <dt>体験</dt>
+                <dd>
+                  {fact.trial.text}（<a href={fact.trial.url} target="_blank" rel="noopener noreferrer">出典</a>）。
+                </dd>
+              </div>
+            )}
+            {fact.company && (
+              <div>
+                <dt>運営会社</dt>
+                <dd>
+                  {fact.company.text}（<a href={fact.company.url} target="_blank" rel="noopener noreferrer">出典</a>）。
+                </dd>
+              </div>
+            )}
+            <div>
+              <dt>公式の店舗一覧</dt>
+              <dd>
+                <a href={fact.storeList} target="_blank" rel="noopener noreferrer">{fact.storeList}</a>
+              </dd>
+            </div>
+          </dl>
+          <p className="source">
+            店舗数・体験・運営会社は{fact.checked.replace(/^(\d+)-0?(\d+)-0?(\d+)$/, '$1年$2月$3日')}に公式サイトで確認した内容です。
+            料金・営業時間は変更される場合がありますので、ご利用前に公式サイトにてご確認ください。
+          </p>
+        </>
+      )}
 
       <div className="stats">
         <div><div className="v">{b.count}</div><div className="k">掲載店舗</div></div>
