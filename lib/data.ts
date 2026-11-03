@@ -5,6 +5,7 @@
 //    載っていない項目は null のまま入っている。null は null のまま扱い、
 //    ページ側で「公式サイトに記載なし」と出す。
 import raw from '../data/facilities.json'
+import officialChecks from '../data/official-checks.json'
 
 export type Facility = {
   /**
@@ -42,9 +43,28 @@ export type Facility = {
   official: string | null
   source_url: string
   fetched_at: string
+  /** 施設の公式サイトを人が開いて確認した値（data/official-checks.json）。ある施設だけ */
+  official_check?: OfficialCheck
 }
 
-export const FACILITIES: Facility[] = (raw as { facilities: Facility[] }).facilities
+export type OfficialCheck = {
+  checked: string
+  url: string
+  values?: Partial<Pick<Facility, 'tel' | 'hours' | 'closed' | 'bays' | 'access' | 'parking'>>
+  corrections?: string[]
+  quick?: { k: string; v: string }[]
+  quick_note?: string
+}
+
+// 2026-11-03 GDO 由来の練習場（トップトレーサー）は営業時間・料金が null で、電話番号の誤りもあった（加藤農園）。
+// 公式サイトで確認した値を facilities.json の上に重ねる（collector・build を再実行しても消えないよう別ファイル）。
+const CHECKS = officialChecks as unknown as Record<string, OfficialCheck>
+export const FACILITIES: Facility[] = (raw as { facilities: Facility[] }).facilities.map((f) => {
+  const c = CHECKS[f.slug]
+  return c && typeof c === 'object' && 'checked' in c
+    ? { ...f, ...(c.values ?? {}), official_check: c }
+    : f
+})
 /** 施設に専用・提携の駐車場があるか。カードの「駐車場」と条件ページで同じ判定を使う。
  *  「駐車場はございません。周辺のコインパーキングを…」（HYPERION・2026-10-16）のような否定と、
  *  近隣・付近・周辺のコインパーキング案内は「あり」に数えない。 */

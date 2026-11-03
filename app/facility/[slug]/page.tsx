@@ -31,6 +31,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   }
 }
 
+const jpDate = (d: string) => { const [y, m, day] = d.split('-'); return `${y}年${Number(m)}月${Number(day)}日` }
+
 /** 値が無いときは推測せず、無いと書く */
 function Row({ k, v }: { k: string; v: string | null | undefined }) {
   return (
@@ -131,6 +133,30 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
             ご利用前に公式サイトにてご確認ください。
           </p>
         </div>
+      )}
+
+      {/* 2026-11-03 施設名の検索（「ジャンボゴルフガーデン」等・11位前後）で、料金・営業時間を冒頭で答える。
+          値は施設の公式サイトを開いて確認したものだけ（data/official-checks.json） */}
+      {f.official_check?.quick && f.official_check.quick.length > 0 && (
+        <>
+          <h2>料金・営業時間の早見表</h2>
+          <div className="tablewrap">
+            <table>
+              <thead><tr><th>項目</th><th>公式サイトの記載</th></tr></thead>
+              <tbody>
+                {f.official_check.quick.map((r) => (
+                  <tr key={r.k}><td>{r.k}</td><td>{r.v}</td></tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="source">
+            出典：
+            <a href={f.official_check.url} target="_blank" rel="noopener noreferrer">{f.name} 公式サイト</a>
+            （{jpDate(f.official_check.checked)}に確認）。
+            {f.official_check.quick_note ?? ''}
+          </p>
+        </>
       )}
 
       <h2>基本情報</h2>
@@ -235,6 +261,18 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
         出典：
         <a href={f.source_url} target="_blank" rel="noopener noreferrer">{f.source_url}</a>
         （{asOf(f.fetched_at)}の情報）。
+        {f.official_check?.values && Object.keys(f.official_check.values).length > 0 && (
+          <>
+            {([
+              ['tel', '電話番号'], ['hours', '営業時間'], ['closed', '定休日'],
+              ['bays', '打席・個室'], ['access', 'アクセス'], ['parking', '駐車場'],
+            ] as const).filter(([k]) => k in (f.official_check?.values ?? {})).map(([, l]) => l).join('・')}
+            は、
+            <a href={f.official_check.url} target="_blank" rel="noopener noreferrer">施設の公式サイト</a>
+            で{jpDate(f.official_check.checked)}に確認した記載です。
+          </>
+        )}
+        {(f.official_check?.corrections ?? []).map((c) => <span key={c}>{c}。</span>)}
         料金・営業時間・設備は変更される場合がありますので、ご利用前に公式サイトにて最新情報をご確認ください。
       </p>
 
