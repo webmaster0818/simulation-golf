@@ -7,6 +7,7 @@ import {
   FACILITIES,
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
+import OfficialTables from '../../../components/OfficialTables'
 import { JsonLd, breadcrumb, itemListLd } from '../../../lib/seo'
 import { BRAND_FACTS, brandLabel, feeRange, yen } from '../../../lib/brand-facts'
 
@@ -172,6 +173,8 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
         <div><div className="v">{n24}</div><div className="k">24時間営業</div></div>
         <div><div className="v">{nPrivate}</div><div className="k">個室で打てる</div></div>
       </div>
+
+      <OfficialTables pageKey={`brand/${slug}`} />
 
       <h2>公式サイトでの情報公開状況</h2>
       <div className="tablewrap">

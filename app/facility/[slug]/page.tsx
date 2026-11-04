@@ -265,7 +265,7 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
           <>
             {([
               ['tel', '電話番号'], ['hours', '営業時間'], ['closed', '定休日'],
-              ['bays', '打席・個室'], ['access', 'アクセス'], ['parking', '駐車場'],
+              ['bays', '打席・個室'], ['access', 'アクセス'], ['parking', '駐車場'], ['usage_fee', '料金'],
             ] as const).filter(([k]) => k in (f.official_check?.values ?? {})).map(([, l]) => l).join('・')}
             は、
             <a href={f.official_check.url} target="_blank" rel="noopener noreferrer">施設の公式サイト</a>

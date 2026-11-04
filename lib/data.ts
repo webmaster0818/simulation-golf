@@ -50,7 +50,7 @@ export type Facility = {
 export type OfficialCheck = {
   checked: string
   url: string
-  values?: Partial<Pick<Facility, 'tel' | 'hours' | 'closed' | 'bays' | 'access' | 'parking'>>
+  values?: Partial<Pick<Facility, 'tel' | 'hours' | 'closed' | 'bays' | 'access' | 'parking' | 'usage_fee'>>
   corrections?: string[]
   quick?: { k: string; v: string }[]
   quick_note?: string

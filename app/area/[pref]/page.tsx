@@ -7,6 +7,7 @@ import {
   cities as cityPagesOf, REGIONS, OPEN_FACILITIES,
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
+import OfficialTables from '../../../components/OfficialTables'
 import { JsonLd, breadcrumb, itemListLd } from '../../../lib/seo'
 
 type Params = { pref: string }
@@ -106,6 +107,8 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
         <div><div className="v">{nPrivate}</div><div className="k">個室で打てる</div></div>
       </div>
       <p className="source">{asOf(GENERATED_AT)}の公式サイトの掲載内容にもとづいています。</p>
+
+      <OfficialTables pageKey={`area/${slug}`} />
 
       {cityList.length > 1 && (
         <>
