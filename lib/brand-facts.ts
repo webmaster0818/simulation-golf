@@ -17,6 +17,12 @@ export type BrandFact = {
   /** 公式の店舗一覧（店舗検索）ページ */
   storeList: string
   checked: string
+  /** 月会費の範囲を掲載データから計算できないブランド（プラン別の金額が monthly_fee に無い）で、公式の全店舗の料金表を読んだ値 */
+  feeFixed?: { min: number; minSlug: string; minName: string; minPlan: string; max: number; maxSlug: string; maxName: string; n: number }
+  /** 月会費のほかにかかる費用の注記（title の「月会費」だけで安く見えないように） */
+  feeNote?: string
+  /** 店舗ページ冒頭のブランド一覧への導線を出さない（ブランドページだけ変えて効果を切り分けるとき） */
+  noStoreJump?: boolean
 }
 
 export const BRAND_FACTS: Record<string, BrandFact> = {
@@ -62,6 +68,30 @@ export const BRAND_FACTS: Record<string, BrandFact> = {
     storeList: 'https://doortogolf.com/shop/',
     checked: '2026-11-02',
   },
+  // 2026-11-04 掲載の monthly_fee は各店のレッスン会員・全日だけなので、下限は全60店の公式の料金表（店舗ページ・/price/）を読んだ値を持つ
+  zengolf: {
+    alt: 'ゼンゴルフ／ZENGOLF',
+    officialCount: {
+      text: '公式サイトのトップページでは「ZENGOLF RANGE 首都圏50店舗以上」「ZENGOLF ACADEMY 首都圏7店舗」と案内されています',
+      url: 'https://zengolf.jp/',
+    },
+    trial: {
+      text: '公式の店舗ページに「2026年11月のお得なキャンペーン」として「体験レッスン 3,300円⇒0円」との案内があります',
+      url: 'https://zengolf.jp/ageo/',
+    },
+    company: {
+      text: '販売業者はツリーベル株式会社（本社所在地 東京都目黒区三田1丁目4-2 恵比寿ガーデンテラス壱番館2階）です',
+      url: 'https://zengolf.jp/legal-notice/',
+    },
+    storeList: 'https://zengolf.jp/location/',
+    checked: '2026-11-04',
+    feeFixed: {
+      min: 8580, minSlug: 'zengolf-chibachuo', minName: 'ZEN GOLF RANGE 千葉中央店', minPlan: 'レンジ会員 ナイト（24:00〜翌6:55）',
+      max: 22000, maxSlug: 'zengolf-ebisu', maxName: 'ZEN GOLF RANGE 恵比寿店', n: 60,
+    },
+    feeNote: '多くの店舗で、月会費とは別に打席料（55分 税込550円）がかかります。',
+    noStoreJump: true,
+  },
 }
 
 /** ブランドの表示名に別表記を併記（「ステップゴルフ（STEP GOLF）」） */
@@ -80,6 +110,7 @@ export function feeRange(
   fs: { slug: string; name: string; monthly_fee: string | null }[],
 ): { min: number; minName: string; minSlug: string; minPlan: string; max: number; maxName: string; maxSlug: string; n: number } | null {
   if (!BRAND_FACTS[slug]) return null
+  if (BRAND_FACTS[slug].feeFixed) return BRAND_FACTS[slug].feeFixed as NonNullable<ReturnType<typeof feeRange>>
   let min = Infinity, max = -Infinity, minName = '', maxName = '', minSlug = '', maxSlug = '', minPlan = '', n = 0
   for (const f of fs) {
     if (!f.monthly_fee) continue

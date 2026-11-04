@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
       title: `${label}の店舗一覧${b.count}件｜月会費 税込${yen(fr.min)}〜`,
       description:
         `${label}の全${b.count}店舗の月会費・営業時間・アクセスを公式サイトの掲載どおりに一覧で掲載。` +
-        `月会費は店舗・プランにより税込${yen(fr.min)}〜${yen(fr.max)}。${b.prefs.length}都道府県に展開。` +
+        `月会費は店舗・プランにより税込${yen(fr.min)}〜${yen(fr.max)}。${fact.feeNote ?? ''}${b.prefs.length}都道府県に展開。` +
         (fact.trial ? '公式の体験の案内も掲載しています。' : ''),
       ...pageUrlMeta(`/brand/${slug}/`),
     }
@@ -134,6 +134,7 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
                   {fr.minPlan && <>の「{fr.minPlan}」</>}、
                   最も高い額は<Link href={`/facility/${fr.maxSlug}/`}>{fr.maxName}</Link>の掲載）。
                   プランの利用時間帯などの条件は店舗ごとに異なります。各店舗の金額は下の「店舗ごとの月会費」をご覧ください。
+                  {fact.feeNote ?? ''}
                 </dd>
               </div>
             )}

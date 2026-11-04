@@ -116,7 +116,7 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
         {f.brand_slug && f.brand && <div className="g-brand-hero-shot"><BrandShot slug={f.brand_slug} name={f.brand} /></div>}
       </section>
 
-      {f.brand_slug && f.brand && BRAND_FACTS[f.brand_slug] && (
+      {f.brand_slug && f.brand && BRAND_FACTS[f.brand_slug] && !BRAND_FACTS[f.brand_slug].noStoreJump && (
         <p className="g-brand-jump">
           {brandLabel(f.brand_slug, f.brand)}の全{sameBrand.length + (f.open ? 1 : 0)}店舗
           {brandFr ? `（月会費 税込${yen(brandFr.min)}〜${yen(brandFr.max)}）` : ''}を比べるなら

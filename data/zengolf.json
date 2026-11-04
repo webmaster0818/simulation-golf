@@ -12,7 +12,7 @@
    "address": "埼玉県上尾市愛宕3-8-1 イオンモール上尾 2F",
    "access": "JR高崎線「上尾駅」より東口バス5分",
    "tel": "050-5491-3160",
-   "hours": "平日 火～木 9:00～21:00 土日祝 9:00～20:30 レッスン時間 火～木 10:00～20:55 土日祝 9:00〜19:25 定休日：なし",
+   "hours": "平日 9:00～21:00 土日祝 9:00～21:00 レッスン時間 火〜木 11:00〜20:55 土日祝 9:00〜17:55 定休日：なし",
    "open_24h": false,
    "closed": "なし",
    "bays": "6打席",
@@ -24,7 +24,7 @@
    "open": true,
    "official": "https://zengolf.jp/ageo/",
    "source_url": "https://zengolf.jp/ageo/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -36,9 +36,9 @@
    "address": "東京都北区赤羽西1-6-1 ビビオ 赤羽 B1",
    "access": "JR東北本線「赤羽駅」より徒歩2分",
    "tel": "050-5530-4032",
-   "hours": "平日 10:00 ～ 21:30 土日祝 9:00 ～ 19:30 定休日：月曜日",
+   "hours": "平日 10:05 ～ 23:00 土日祝 10:05 ～ 23:00 レッスン時間 火～金 11:05〜21:00 土日祝 10:05～19:00 定休日：なし",
    "open_24h": false,
-   "closed": "月曜日",
+   "closed": "なし",
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
@@ -48,7 +48,7 @@
    "open": true,
    "official": "https://zengolf.jp/akabane/",
    "source_url": "https://zengolf.jp/akabane/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -60,7 +60,7 @@
    "address": "東京都新宿区富久町12-1 ローレルコート新宿タワー 2F",
    "access": "都営新宿線「曙橋」駅 徒歩11分 東京メトロ丸の内線「新宿御苑前」駅 徒歩9分 東京メトロ副都心線「新宿三丁目」駅 徒歩12分",
    "tel": "050-5445-6622",
-   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～木 10:00〜21:25 土日祝 9:00～19:25 定休日：なし",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～木 13:00〜21:25 土日祝 9:00～17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": "6打席",
@@ -72,7 +72,7 @@
    "open": true,
    "official": "https://zengolf.jp/akebonobashi/",
    "source_url": "https://zengolf.jp/akebonobashi/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -84,9 +84,9 @@
    "address": "神奈川県横浜市都筑区中川中央1-30-1 プレミアヨコハマ 2F",
    "access": "市営地下鉄「センター北駅」より徒歩2分",
    "tel": "050-5445-6622",
-   "hours": "平日 10:00 ～ 21:30 土日祝 9:00 ～ 19:30 定休日：月曜日",
+   "hours": "平日 7:00〜24:00 土日祝 7:00〜18:00 レッスン時間 火〜金 11:00〜20:55 土日祝 9:00〜17:55 定休日：なし",
    "open_24h": false,
-   "closed": "月曜日",
+   "closed": "なし",
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
@@ -96,7 +96,7 @@
    "open": true,
    "official": "https://zengolf.jp/centerkita/",
    "source_url": "https://zengolf.jp/centerkita/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -132,7 +132,7 @@
    "address": "東京都渋谷区恵比寿西2-21-1 ジョワレ代官山 B1F",
    "access": "東急電鉄東横線「代官山駅」より徒歩1分",
    "tel": "050-5213-1703",
-   "hours": "平日 10:00 ～ 21:30 土日祝 9:00 ～ 19:30 定休日：月曜日",
+   "hours": "平日 11:00 ～ 21:00 土日祝 9:00 ～ 18:00 定休日：月曜日",
    "open_24h": false,
    "closed": "月曜日",
    "bays": "6打席",
@@ -144,7 +144,7 @@
    "open": true,
    "official": "https://zengolf.jp/daikanyama/",
    "source_url": "https://zengolf.jp/daikanyama/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -156,7 +156,7 @@
    "address": "埼玉県草加市松原三丁目3-1 トーブイコート 2F",
    "access": "東武スカイツリーライン「獨協大学前＜草加松原＞駅」より徒歩12分",
    "tel": "050-5530-4034",
-   "hours": "平日 9:00〜21:30 土日祝 9:00〜21:30 レッスン時間 火～金 10:00〜21:25 土日祝 9:00～ 19:25 定休日：なし",
+   "hours": "平日 9:00〜21:00 土日祝 9:00〜21:00 レッスン時間 火～木 11:00〜20:55 土日祝 9:00～17:55 定休日：なし ※11月1日からは9:00〜21:00",
    "open_24h": false,
    "closed": "なし",
    "bays": "6打席",
@@ -168,7 +168,7 @@
    "open": true,
    "official": "https://zengolf.jp/dokkyodaigakumae/",
    "source_url": "https://zengolf.jp/dokkyodaigakumae/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -180,19 +180,19 @@
    "address": "東京都目黒区三田1丁目４番２号 恵比寿ガーデンテラス壱番館1F",
    "access": "JR「恵比寿駅」より徒歩10分 東京メトロ日比谷線「恵比寿駅」1番出口より徒歩11分",
    "tel": "050-5538-3882",
-   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～金 10:00〜21:25 土日祝 9:00～19:25 定休日：なし",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～金 11:00〜20:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
    "parking": "駐車場60分無料 ※無人営業時間帯は駐車場サービス対象外となります。",
-   "monthly_fee": "19,000円 （税込20,900円）",
+   "monthly_fee": "20,000円 （税込22,000円）",
    "equipment": "GOLFZON GDR Plus",
    "open": true,
    "official": "https://zengolf.jp/ebisu/",
    "source_url": "https://zengolf.jp/ebisu/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -204,7 +204,7 @@
    "address": "東京都杉並区永福2丁目50-17",
    "access": "京王井の頭線「永福町駅」南口から徒歩2分",
    "tel": "050-5530-3216",
-   "hours": "平日 7:00〜23:00 土日祝 7:00〜23:00 レッスン時間 火～木 10:00〜20:55 土日祝 9:00～19:55 定休日：なし",
+   "hours": "平日 7:00〜23:00 土日祝 7:00〜23:00 レッスン時間 火～木 11:00〜20:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": false,
    "closed": "なし",
    "bays": null,
@@ -216,7 +216,7 @@
    "open": true,
    "official": "https://zengolf.jp/eifukucho/academy/",
    "source_url": "https://zengolf.jp/eifukucho/academy/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -228,9 +228,9 @@
    "address": "東京都練馬区旭丘1-65−20 NSセントラルハイム 2F",
    "access": "西武鉄道池袋線「江古田駅」より徒歩4分",
    "tel": "050-5357-8374",
-   "hours": "平日 10:00 ～ 21:30 土日祝 9:00 ～ 19:30 定休日：月曜日",
+   "hours": "平日 9:00〜22:00 土日祝 9:00〜22:00 レッスン時間 火〜金 11:00〜20:55 土日祝 9:00〜17:55 定休日：なし",
    "open_24h": false,
-   "closed": "月曜日",
+   "closed": "なし",
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
@@ -240,7 +240,7 @@
    "open": true,
    "official": "https://zengolf.jp/ekoda/",
    "source_url": "https://zengolf.jp/ekoda/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -252,7 +252,7 @@
    "address": "東京都府中市宮町一丁目40番地 KDX府中ビル",
    "access": "京王線「府中」駅 徒歩約3分",
    "tel": "050-5445-6622",
-   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～金 13:00〜21:55 土日祝 9:00～17:55 定休日：なし",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 月～金 11:00〜20:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": "6打席",
@@ -264,7 +264,7 @@
    "open": true,
    "official": "https://zengolf.jp/fuchu/",
    "source_url": "https://zengolf.jp/fuchu/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -276,7 +276,7 @@
    "address": "東京都練馬区貫井3-4-6 ブランシカ練馬富士見台 2F",
    "access": "西武池袋線「富士見台駅」より徒歩2分",
    "tel": "050-5530-3216",
-   "hours": "平日 7:00〜23:00 土日祝 7:00〜23:00 レッスン時間 火～木 10:00〜20:55 土日祝 9:00 ～19:55 定休日：なし",
+   "hours": "平日 7:00〜23:00 土日祝 7:00〜23:00 レッスン時間 火～木 11:00〜20:55 土日祝 9:00 ～17:55 定休日：なし",
    "open_24h": false,
    "closed": "なし",
    "bays": null,
@@ -288,7 +288,7 @@
    "open": true,
    "official": "https://zengolf.jp/fujimidai/academy/",
    "source_url": "https://zengolf.jp/fujimidai/academy/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -372,19 +372,19 @@
    "address": "東京都新宿区津久戸町4-6 第3都ビル 2F",
    "access": "JR総武線 東京メトロ東西線/有楽町線/南北線 都営大江戸線「飯田橋駅」より徒歩4分 都営大江戸線「牛込神楽坂駅」より徒歩5分",
    "tel": "050-5526-3763",
-   "hours": "平日 10:00 ～ 21:30 土日祝 9:00 ～ 19:30 定休日：月曜日",
-   "open_24h": false,
-   "closed": "月曜日",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 月〜金 11:00〜20:55 土日祝 9:00〜17:55 定休日：なし",
+   "open_24h": true,
+   "closed": "なし",
    "bays": "7打席",
    "bays_num": 7,
    "private_room": null,
    "parking": "駐車場割引あり ※無人営業時間帯は駐車場サービス対象外となります。",
-   "monthly_fee": "18,000円 （税込19,800円）",
+   "monthly_fee": "19,000円 （税込20,900円）",
    "equipment": "X-GOLF",
    "open": true,
    "official": "https://zengolf.jp/kagurazaka/",
    "source_url": "https://zengolf.jp/kagurazaka/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -396,7 +396,7 @@
    "address": "東京都江戸川区南葛西1-14-13 シティパレス 1F",
    "access": "東京メトロ東西線「葛西駅」より徒歩15分",
    "tel": "050-5445-6622",
-   "hours": "平日 24時間 土日祝 24時間 レッスン時間 火〜木：10:00 ～ 21:25 土日祝：9:00 ～ 19:25 定休日：なし",
+   "hours": "平日 24時間 土日祝 24時間 レッスン時間 火〜木 13:00〜21:55 土日祝 9:00〜17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": "6打席",
@@ -408,7 +408,7 @@
    "open": true,
    "official": "https://zengolf.jp/kasai/",
    "source_url": "https://zengolf.jp/kasai/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -420,7 +420,7 @@
    "address": "千葉県柏市大山台2-3 モラージュ柏 PartⅡ 2F",
    "access": "柏駅からモラージュ柏への無料シャトルバス有 約10分",
    "tel": "050-5445-6622",
-   "hours": "平日 10:05 ～ 21:00 土日祝 9:05 ～ 20:30 レッスン時間 火～金 10:05〜21:00 土日祝 9:05～19:30 定休日：なし",
+   "hours": "平日 10:05 ～ 21:00 土日祝 10:05 ～ 21:00 レッスン時間 火～金 11:05〜21:00 土日祝 10:05～19:00 定休日：なし",
    "open_24h": false,
    "closed": "なし",
    "bays": "6打席",
@@ -432,7 +432,7 @@
    "open": true,
    "official": "https://zengolf.jp/kashiwa/",
    "source_url": "https://zengolf.jp/kashiwa/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -444,7 +444,7 @@
    "address": "東京都文京区小石川1-17-1 エルアージュ小石川1F",
    "access": "都営大江戸線、都営三田線「春日駅」A5出口から徒歩3分",
    "tel": "050-5530-3216",
-   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～木 10:00〜20:55 土日祝 9:00～19:55 定休日：なし",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～木 11:00〜20:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": null,
@@ -456,7 +456,7 @@
    "open": true,
    "official": "https://zengolf.jp/kasuga/academy/",
    "source_url": "https://zengolf.jp/kasuga/academy/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -468,9 +468,9 @@
    "address": "埼玉県春日部市小渕221-3",
    "access": "東武鉄道伊勢崎線／野田線「春日部駅」より徒歩19分",
    "tel": "050-5445-6622",
-   "hours": "平日 10:00 ～ 21:00 土日祝 9:00 ～ 19:30 定休日：月曜日",
+   "hours": "平日 10:00 ～ 21:00 土日祝 9:00 ～ 21:00 レッスン時間 火〜木 11:00〜20:55 土日祝 9:00〜17:55 定休日：なし",
    "open_24h": false,
-   "closed": "月曜日",
+   "closed": "なし",
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
@@ -480,7 +480,7 @@
    "open": true,
    "official": "https://zengolf.jp/kasukabe/",
    "source_url": "https://zengolf.jp/kasukabe/",
-   "fetched_at": "2026-10-23"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -492,7 +492,7 @@
    "address": "埼玉県川越市大塚1-28-8 二木ゴルフ川越インター店内",
    "access": "・JR「川越駅」から約2㎞ タクシー10分 ・西武新宿線「南大塚駅」から約1.5㎞ タクシー5分",
    "tel": "050-5444-3468",
-   "hours": "平日 10:00 ～ 21:30 土日祝 9:00 ～ 19:30 定休日：月曜日",
+   "hours": "平日 11:00 ～ 21:00 土日祝 9:00 ～ 18:00 定休日：月曜日",
    "open_24h": false,
    "closed": "月曜日",
    "bays": "6打席",
@@ -504,7 +504,7 @@
    "open": true,
    "official": "https://zengolf.jp/kawagoe/",
    "source_url": "https://zengolf.jp/kawagoe/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -516,7 +516,7 @@
    "address": "埼玉県川口市栄町3丁目8-15 THE KINDAI 23 KAWAGUCHI 7階",
    "access": "JR京浜東北線「川口駅」より徒歩3分",
    "tel": "050-5530-4033",
-   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～金 10:00〜21:25 土日祝 9:00～19:25 定休日：なし",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 月～金 11:00〜20:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": "6打席",
@@ -528,7 +528,7 @@
    "open": true,
    "official": "https://zengolf.jp/kawaguchi-ekimae/",
    "source_url": "https://zengolf.jp/kawaguchi-ekimae/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -540,7 +540,7 @@
    "address": "埼玉県川口市安行領根岸 3180 イオンモール川口 3F",
    "access": "京浜東北線「川口駅」よりバス20分",
    "tel": "050-5445-6622",
-   "hours": "平日 月 10:05〜21:00 火〜金 10:00〜21:30 土日祝 9:00〜19:30 レッスン時間 火～金 10:00〜21:25 土日祝 9:00〜19:25 定休日：なし",
+   "hours": "平日 月〜金 10:05〜21:00 土日祝 9:05〜21:00 レッスン時間 火～金 11:05〜21:00 土日祝 9:05〜18:00 定休日：なし",
    "open_24h": false,
    "closed": "なし",
    "bays": "6打席",
@@ -552,7 +552,7 @@
    "open": true,
    "official": "https://zengolf.jp/kawaguchi/",
    "source_url": "https://zengolf.jp/kawaguchi/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -564,19 +564,19 @@
    "address": "神奈川県川崎市川崎区東田町6-2 ミヤダイビル B1F",
    "access": "JR京浜東北線/東海道線/南武線「川崎駅」より徒歩7分 京急本線/京急大師線「京急川崎駅」より徒歩5分",
    "tel": "050-5445-6622",
-   "hours": "平日 7:05〜24:00 土日祝 7:05〜23:30 レッスン時間 火～金 11:05〜22:00 土日祝 9:05〜19:30 定休日：なし",
+   "hours": "平日 7:05〜24:00 土日祝 7:05〜24:00 レッスン時間 火〜金 11:05〜21:00 土日祝 9:05〜18:00 定休日：なし",
    "open_24h": false,
    "closed": "なし",
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
    "parking": "なし",
-   "monthly_fee": "14,000円 （税込15,400円）",
+   "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": "GOLFZON GDR",
    "open": true,
    "official": "https://zengolf.jp/kawasaki/",
    "source_url": "https://zengolf.jp/kawasaki/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -588,9 +588,9 @@
    "address": "東京都中央区日本橋茅場町2-8-4 全国中小企業会館 B1F",
    "access": "東京メトロ東西線・日比谷線「茅場町駅」より徒歩1分",
    "tel": "050-5805-1074",
-   "hours": "平日 10:00 ～ 21:30 土日祝 9:00 ～ 19:30 定休日：月曜日",
+   "hours": "平日 11:00 ～ 21:00 土日祝 9:00 ～ 18:00 定休日：なし",
    "open_24h": false,
-   "closed": "月曜日",
+   "closed": "なし",
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
@@ -600,7 +600,7 @@
    "open": true,
    "official": "https://zengolf.jp/kayabacho/",
    "source_url": "https://zengolf.jp/kayabacho/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -612,7 +612,7 @@
    "address": "東京都江東区森下4-10-8 アプリーレ菊川1F",
    "access": "都営新宿線「菊川」駅より徒歩約4分",
    "tel": "050-5445-6622",
-   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～木 10:00〜21:25 土日祝 9:00～19:25 定休日：なし",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～木 13:00〜21:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": "6打席",
@@ -624,7 +624,7 @@
    "open": true,
    "official": "https://zengolf.jp/kikukawa/",
    "source_url": "https://zengolf.jp/kikukawa/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -660,7 +660,7 @@
    "address": "東京都東村山市栄町1-28-5 RONDO ANNEX 1F",
    "access": "西武新宿線「久米川駅」より徒歩2分",
    "tel": "050-5805-1072",
-   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～金 10:00〜21:25 土日祝 9:00～19:25 定休日：なし",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～金 10:00〜21:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": "6打席",
@@ -672,7 +672,7 @@
    "open": true,
    "official": "https://zengolf.jp/kumegawa/",
    "source_url": "https://zengolf.jp/kumegawa/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -684,7 +684,7 @@
    "address": "東京都文京区目白台2-7-12 アーバンドヌール目白台2F",
    "access": "東京メトロ有楽町線「護国寺」駅より徒歩約8分",
    "tel": "050-5838-3406",
-   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～木 10:00〜21:25 土日祝 9:00～19:25 定休日：なし",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～木 13:00〜21:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": "6打席",
@@ -696,7 +696,7 @@
    "open": true,
    "official": "https://zengolf.jp/mejirodai/",
    "source_url": "https://zengolf.jp/mejirodai/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -708,9 +708,9 @@
    "address": "埼玉県越谷市南越谷1-15-1 南越谷ラクーン 4F",
    "access": "JR武蔵野線「南越谷駅」より徒歩3分 東武スカイツリーライン「新越谷駅」より徒歩3分",
    "tel": "050-5527-8776",
-   "hours": "平日 10:00 ～ 21:30 土日祝 9:00 ～ 19:30 定休日：月曜日",
+   "hours": "平日 9:00 ～ 22:00 土日祝 9:00 ～ 22:00 レッスン時間 火〜木 13:00〜21:55 土日祝 9:00〜17:55 定休日：なし",
    "open_24h": false,
-   "closed": "月曜日",
+   "closed": "なし",
    "bays": "7打席",
    "bays_num": 7,
    "private_room": null,
@@ -720,7 +720,7 @@
    "open": true,
    "official": "https://zengolf.jp/minamikoshigaya/",
    "source_url": "https://zengolf.jp/minamikoshigaya/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -732,7 +732,7 @@
    "address": "東京都八王子市南大沢2-25 フォレストモール南大沢 3F",
    "access": "京王電鉄相模原線「南大沢駅」より徒歩2分",
    "tel": "050-5445-6621",
-   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～金 10:00〜21:25 土日祝 9:00〜19:25 定休日：なし",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～金 11:00〜20:55 土日祝 9:00〜17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": "6打席",
@@ -744,7 +744,7 @@
    "open": true,
    "official": "https://zengolf.jp/minamiosawa/",
    "source_url": "https://zengolf.jp/minamiosawa/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -756,7 +756,7 @@
    "address": "埼玉県三郷市ピアラシティ 1-1-1 イトーヨーカドー三郷店 2F",
    "access": "・JR武蔵野線「新三郷駅」より「三郷駅行き」バス約10分「ピアラシティ」下車 ・JR武蔵野線「三郷駅」より「ピアラシティ行き」バス約10分「ピアラシティ」下車",
    "tel": "050-5445-8658",
-   "hours": "平日 10:05 ～ 21:00 土日祝 9:05〜21:00 レッスン時間 火～金 11:05〜21:00 土日祝 9:05〜18:00 定休日：なし",
+   "hours": "平日 10:05 ～ 21:00 土日祝 10:05〜21:00 レッスン時間 火～金 11:05〜21:00 土日祝 10:05〜19:00 定休日：なし",
    "open_24h": false,
    "closed": "なし",
    "bays": "6打席",
@@ -768,7 +768,7 @@
    "open": true,
    "official": "https://zengolf.jp/misato/",
    "source_url": "https://zengolf.jp/misato/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -804,7 +804,7 @@
    "address": "東京都小金井市本町6丁目13-14 スターハイツ2F",
    "access": "JR中央線「武蔵小金井駅」より徒歩2分",
    "tel": "050-5445-6622",
-   "hours": "平日 8:00〜21:30 土日祝 8:00〜21:30 レッスン時間 平日 10:00～21:25 土日祝 9:00～19:25 定休日：なし",
+   "hours": "平日 8:00〜22:00 土日祝 8:00〜22:00 レッスン時間 火〜木 11:00〜20:55 土日祝 9:00〜17:55 定休日：なし",
    "open_24h": false,
    "closed": "なし",
    "bays": "6打席",
@@ -816,7 +816,7 @@
    "open": true,
    "official": "https://zengolf.jp/musashikoganei/",
    "source_url": "https://zengolf.jp/musashikoganei/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -828,19 +828,19 @@
    "address": "神奈川県川崎市中原区小杉町三丁目600番 Kosugi 3rd Avenue 3階",
    "access": "JR線「武蔵小杉駅」より徒歩1分 東急東横線・目黒線「武蔵小杉駅」より徒歩2分",
    "tel": "050-5536-6008",
-   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～金 10:00〜21:25 土日祝 9:00～19:25 定休日：なし",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 月～金 11:00〜20:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
    "parking": "駐車場30分無料 *無人時間帯はお渡し不可",
-   "monthly_fee": "19,000円 （税込20,900円）",
+   "monthly_fee": "20,000円 （税込22,000円）",
    "equipment": "GOLFZON GDR Plus",
    "open": true,
    "official": "https://zengolf.jp/musashikosugi/",
    "source_url": "https://zengolf.jp/musashikosugi/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -852,19 +852,19 @@
    "address": "東京都練馬区石神井台7-13-10七冨ビル1階",
    "access": "西武新宿線武蔵関駅から徒歩7分",
    "tel": "050-5530-3216",
-   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～木 10:00〜20:55 土日祝 9:00～17:55 定休日：なし",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～木 11:00〜20:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": null,
    "bays_num": null,
    "private_room": null,
    "parking": "無料駐車場あり（5台） 台数が限られておりますので、店舗利用後は速やかにご移動をお願いいたします。",
-   "monthly_fee": "14,800円 （税込16,280円）",
+   "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": "GOLFZON GDR",
    "open": true,
    "official": "https://zengolf.jp/musashiseki/academy/",
    "source_url": "https://zengolf.jp/musashiseki/academy/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -876,9 +876,9 @@
    "address": "東京都中野区本町2-46-4 中野坂上サンブライトアネックス 3F",
    "access": "東京メトロ丸ノ内線・都営大江戸線「中野坂上駅」より徒歩1分",
    "tel": "050-5530-0709",
-   "hours": "平日 10:00 ～ 21:30 土日祝 9:00 ～ 19:30 定休日：月曜日",
-   "open_24h": false,
-   "closed": "月曜日",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 月〜金 11:00〜20:55 土日祝 9:00〜17:55 定休日：なし",
+   "open_24h": true,
+   "closed": "なし",
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
@@ -888,7 +888,7 @@
    "open": true,
    "official": "https://zengolf.jp/nakanosakaue/",
    "source_url": "https://zengolf.jp/nakanosakaue/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -900,9 +900,9 @@
    "address": "東京都足立区西新井栄町1-17-1 パサージオ西新井 2F",
    "access": "東武鉄道・東武スカイツリーライン「西新井駅」より徒歩1分",
    "tel": "050-5805-1071",
-   "hours": "平日 10:00 ～ 21:30 土日祝 9:00 ～ 19:30 定休日：月曜日",
+   "hours": "平日 7:00 ～ 23:00 土日祝 7:00 ～ 23:00 レッスン時間 火〜木 11:00 〜 20:55 土日祝 9:00 〜 17:55 定休日：なし",
    "open_24h": false,
-   "closed": "月曜日",
+   "closed": "なし",
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
@@ -912,7 +912,7 @@
    "open": true,
    "official": "https://zengolf.jp/nishiarai/",
    "source_url": "https://zengolf.jp/nishiarai/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -924,7 +924,7 @@
    "address": "東京都杉並区南荻窪3-33-7",
    "access": "JR中央線・総武線「荻窪」駅より徒歩約10分",
    "tel": "050-5445-6622",
-   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～木 10:00〜21:25 土日祝 9:00～19:25 定休日：なし",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～木 13:00〜21:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": "6打席",
@@ -936,7 +936,7 @@
    "open": true,
    "official": "https://zengolf.jp/ogikubo/",
    "source_url": "https://zengolf.jp/ogikubo/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -948,7 +948,7 @@
    "address": "東京都荒川区東尾久6-33-8 2F",
    "access": "日暮里・舎人ライナー 「熊野前駅」より徒歩6分",
    "tel": "050-5445-6622",
-   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～金 10:00〜21:25 土日祝 9:00〜19:25 定休日：なし",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火〜木 11:00〜20:55 土日祝 9:00〜17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": "6打席",
@@ -960,7 +960,7 @@
    "open": true,
    "official": "https://zengolf.jp/ogu/",
    "source_url": "https://zengolf.jp/ogu/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -972,19 +972,19 @@
    "address": "東京都台東区東上野1-18-6タカラ第三ビル1F",
    "access": "JR山手線/京浜東北線「御徒町駅」より徒歩6分 東京メトロ日比谷線「仲御徒町」より徒歩3分 接続駅：東京メトロ銀座線「上野広小路駅」、都営大江戸線「上野御徒町駅」",
    "tel": "050-5433-7190",
-   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～金 10:00〜21:25 土日祝 9:00～19:25 定休日：なし",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 月〜金 11:00〜20:55 土日祝 9:00〜17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": "8打席（GDR 6打席 / X-SWING 2打席）",
    "bays_num": 8,
    "private_room": null,
    "parking": "なし",
-   "monthly_fee": "17,000円 （税込18,700円）",
+   "monthly_fee": "18,000円 （税込19,800円）",
    "equipment": "GOLFZON GDR／X-SWING",
    "open": true,
    "official": "https://zengolf.jp/okachimachi/",
    "source_url": "https://zengolf.jp/okachimachi/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1020,9 +1020,9 @@
    "address": "埼玉県さいたま市浦和区東高砂町11-1 浦和パルコ6F",
    "access": "JR「浦和駅」より徒歩1分",
    "tel": "050-5536-6007",
-   "hours": "平日 10:00 ～ 21:30 土日祝 9:00 ～ 19:30 定休日：月曜日",
+   "hours": "平日 9:00 ～ 22:00 土日祝 9:00 ～ 22:00 レッスン時間 火～金 11:00〜20:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": false,
-   "closed": "月曜日",
+   "closed": "なし",
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
@@ -1032,7 +1032,7 @@
    "open": true,
    "official": "https://zengolf.jp/parco-urawa-ekimae/",
    "source_url": "https://zengolf.jp/parco-urawa-ekimae/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1068,7 +1068,7 @@
    "address": "神奈川県相模原市南区若松5-19-5 ライフ相模原若松店 2F",
    "access": "小田急小田原線「相模大野駅」よりバス10分（徒歩20分）",
    "tel": "050-5491-5812",
-   "hours": "平日 9:00〜23:00 土日祝 9:00〜22:30 レッスン時間 火～金 10:00〜20:55 土日祝 9:00〜19:25 定休日：なし",
+   "hours": "平日 9:00〜23:00 土日祝 9:00〜23:00 レッスン時間 火～金 11:00〜20:55 土日祝 9:00〜17:55 定休日：なし",
    "open_24h": false,
    "closed": "なし",
    "bays": "6打席",
@@ -1080,7 +1080,7 @@
    "open": true,
    "official": "https://zengolf.jp/sagamiono/",
    "source_url": "https://zengolf.jp/sagamiono/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1092,7 +1092,7 @@
    "address": "東京都調布市仙川1丁目15-52",
    "access": "京王電鉄京王線「仙川駅」から徒歩5分",
    "tel": "050-5530-3216",
-   "hours": "平日 7:00〜23:00 土日祝 7:00〜23:00 レッスン時間 火～木 10:00〜20:55 土日祝 9:00～19:55 定休日：なし",
+   "hours": "平日 7:00〜23:00 土日祝 7:00〜23:00 レッスン時間 火～木 11:00〜20:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": false,
    "closed": "なし",
    "bays": null,
@@ -1104,7 +1104,7 @@
    "open": true,
    "official": "https://zengolf.jp/sengawa/academy/",
    "source_url": "https://zengolf.jp/sengawa/academy/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1116,7 +1116,7 @@
    "address": "東京都杉並区下井草2-39-15 ファインシティ下井草",
    "access": "西武新宿線「下井草駅」 徒歩2分",
    "tel": "050-5530-3216",
-   "hours": "平日 7:00〜23:00 土日祝 7:00〜23:00 レッスン時間 火～木 10:00〜20:55 土日祝 9:00～19:55 定休日：なし",
+   "hours": "平日 7:00〜23:00 土日祝 7:00〜23:00 レッスン時間 火～木 11:00〜20:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": false,
    "closed": "なし",
    "bays": null,
@@ -1128,7 +1128,7 @@
    "open": true,
    "official": "https://zengolf.jp/shimoigusa/academy/",
    "source_url": "https://zengolf.jp/shimoigusa/academy/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1140,7 +1140,7 @@
    "address": "東京都大田区下丸子3-28-7 中島ビル 2F",
    "access": "東急電鉄東急多摩川線「下丸子駅」より徒歩 7分",
    "tel": "050-5445-6622",
-   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～金 10:00〜21:25 土日祝 9:00～19:25 定休日：なし",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～木 11:00〜20:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": "6打席",
@@ -1152,7 +1152,7 @@
    "open": true,
    "official": "https://zengolf.jp/shimomaruko/",
    "source_url": "https://zengolf.jp/shimomaruko/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1164,7 +1164,7 @@
    "address": "東京都世田谷区下馬3丁目16-17 パラシオン下馬 1F",
    "access": "田園都市線「三軒茶屋」駅よりバス5分（徒歩19分） 東京メトロ「三軒茶屋」駅より徒歩18分",
    "tel": "050-5445-6622",
-   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～木 10:00〜21:25 土日祝 9:00～19:25 定休日：なし",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～木 11:00〜20:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": "6打席",
@@ -1176,7 +1176,7 @@
    "open": true,
    "official": "https://zengolf.jp/shimouma/",
    "source_url": "https://zengolf.jp/shimouma/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1212,19 +1212,19 @@
    "address": "埼玉県さいたま市中央区新都心10 けやきひろば1F",
    "access": "JR京浜東北線/宇都宮線/高崎線「さいたま新都心駅」より徒歩1分 JR埼京線「北与野」駅より徒歩6分",
    "tel": "050-5358-3070",
-   "hours": "平日 10:00 ～ 21:30 土日祝 9:00 ～ 19:30 定休日：月曜日",
+   "hours": "平日 7:00〜23:00 土日祝 7:00〜23:00 レッスン時間 月〜金 11:00〜20:55 土日祝 9:00〜17:55 定休日：なし",
    "open_24h": false,
-   "closed": "月曜日",
+   "closed": "なし",
    "bays": "8打席",
    "bays_num": 8,
    "private_room": null,
    "parking": "駐車場90分無料 ※無人営業時間帯は駐車場サービス対象外となります。",
-   "monthly_fee": "17,000円 （税込18,700円）",
+   "monthly_fee": "18,000円 （税込19,800円）",
    "equipment": "GOLFZON GDR",
    "open": true,
    "official": "https://zengolf.jp/shintoshin/",
    "source_url": "https://zengolf.jp/shintoshin/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1236,9 +1236,9 @@
    "address": "東京都練馬区北町1-11-12 練馬北町ビル 1F",
    "access": "東武鉄道東上本線「東武練馬駅」より徒歩12分",
    "tel": "050-5357-8375",
-   "hours": "平日 10:00 ～ 21:30 土日祝 9:00 ～ 19:30 定休日：月曜日",
-   "open_24h": false,
-   "closed": "月曜日",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火〜金 11:00〜20:55 土日祝 9:00〜17:55 定休日：なし",
+   "open_24h": true,
+   "closed": "なし",
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
@@ -1248,7 +1248,7 @@
    "open": true,
    "official": "https://zengolf.jp/tobunerima/",
    "source_url": "https://zengolf.jp/tobunerima/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1260,9 +1260,9 @@
    "address": "埼玉県戸田市新曽662 T-FRONTE 2F",
    "access": "JR埼京線「戸田駅」より徒歩3分",
    "tel": "050-5358-5811",
-   "hours": "平日 10:00 ～ 21:30 土日祝 9:00 ～ 19:30 定休日：月曜日",
+   "hours": "平日 10:05〜21:00 土日祝 10:05〜21:00 レッスン時間 火〜金 11:05〜21:00 土日祝 10:05〜19:00 定休日：なし",
    "open_24h": false,
-   "closed": "月曜日",
+   "closed": "なし",
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
@@ -1272,7 +1272,7 @@
    "open": true,
    "official": "https://zengolf.jp/toda/",
    "source_url": "https://zengolf.jp/toda/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1284,7 +1284,7 @@
    "address": "埼玉県所沢市東町12-10 ブランズタワー所沢1F",
    "access": "西武池袋線・西武新宿線「所沢駅」より徒歩６分",
    "tel": "050-5805-9453",
-   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～金 10:00〜21:25 土日祝 9:00～19:25 定休日：なし",
+   "hours": "平日 24時間営業 土日祝 24時間営業 レッスン時間 火～木 13:00〜21:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": true,
    "closed": "なし",
    "bays": "6打席",
@@ -1296,7 +1296,7 @@
    "open": true,
    "official": "https://zengolf.jp/tokorozawa/",
    "source_url": "https://zengolf.jp/tokorozawa/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1308,9 +1308,9 @@
    "address": "埼玉県さいたま市南区根岸4-17-14 ベルニクステクニカルセンター 別館 2F",
    "access": "JR京浜東北線/武蔵野線「南浦和駅」より徒歩14分",
    "tel": "050-5445-6622",
-   "hours": "平日 10:00 ～ 21:30 土日祝 9:00 ～ 19:30 定休日：月曜日",
+   "hours": "平日 11:00〜21:00 土日祝 9:00〜18:00 レッスン時間 火〜木 11:00〜20:55 土日祝 9:00〜17:55 定休日：月曜日・金曜日",
    "open_24h": false,
-   "closed": "月曜日",
+   "closed": "月曜日・金曜日",
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
@@ -1320,7 +1320,7 @@
    "open": true,
    "official": "https://zengolf.jp/urawa/",
    "source_url": "https://zengolf.jp/urawa/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1339,12 +1339,12 @@
    "bays_num": null,
    "private_room": null,
    "parking": "無料駐車場8台（地上のみ） ※地下駐車場は入居者様専用となります。必ず地上の駐車場にお停めいただけますようお願いいたします。",
-   "monthly_fee": "14,800円 （税込16,280円）",
+   "monthly_fee": "17,000円 （税込18,700円）",
    "equipment": "GOLFZON GDR",
    "open": true,
    "official": "https://zengolf.jp/wakabadai/academy/",
    "source_url": "https://zengolf.jp/wakabadai/academy/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1356,9 +1356,9 @@
    "address": "埼玉県和光市丸山台3-13-1 ヤオコー和光丸山台店 2F",
    "access": "東武鉄道・東京メトロ有楽町線・副都心線「和光市」駅より徒歩12分",
    "tel": "050-5526-4531",
-   "hours": "平日 10:00 ～ 21:30 土日祝 9:00 ～ 19:30 定休日：月曜日",
+   "hours": "平日 9:00 ～ 21:00 土日祝 9:00 ～ 21:00 レッスン時間 火〜金 11:00〜20:55 土日祝 9:00〜17:55 定休日：なし",
    "open_24h": false,
-   "closed": "月曜日",
+   "closed": "なし",
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
@@ -1368,7 +1368,7 @@
    "open": true,
    "official": "https://zengolf.jp/wako/",
    "source_url": "https://zengolf.jp/wako/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1404,19 +1404,19 @@
    "address": "東京都世田谷区用賀4-10-1 世田谷ビジネススクエア テラス1（2階）",
    "access": "東急田園都市線「用賀駅」より徒歩1分",
    "tel": "050-5536-6009",
-   "hours": "平日 9:00 〜 22:00 土日祝 9:00 ～ 22:00 レッスン時間 火～金 11:00〜20:55 土日祝 9:00～17:55 定休日：なし",
+   "hours": "平日 9:00 〜 22:00 土日祝 9:00 ～ 22:00 レッスン時間 月～金 11:00〜20:55 土日祝 9:00～17:55 定休日：なし",
    "open_24h": false,
    "closed": "なし",
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
    "parking": "駐車場90分無料 ※無人営業時間帯は駐車場サービス対象外となります。",
-   "monthly_fee": "19,000円 （税込20,900円）",
+   "monthly_fee": "20,000円 （税込22,000円）",
    "equipment": "GOLFZON GDR Plus",
    "open": true,
    "official": "https://zengolf.jp/yoga/",
    "source_url": "https://zengolf.jp/yoga/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   },
   {
    "brand": "ZEN GOLF RANGE",
@@ -1428,9 +1428,9 @@
    "address": "埼玉県吉川市保1-13-3 LIFE吉川駅前店 3F",
    "access": "JR武蔵野線「吉川駅」より徒歩3分",
    "tel": "050-5370-3225",
-   "hours": "平日 10:00 ～ 21:30 土日祝 10:00 ～ 19:30 定休日：月曜日",
+   "hours": "平日 10:05 〜 21:00 土日祝 10:05 〜 21:00 レッスン時間 火〜木 11:05 〜 21:00 土日祝 10:05 〜 19:00 定休日：なし",
    "open_24h": false,
-   "closed": "月曜日",
+   "closed": "なし",
    "bays": "6打席",
    "bays_num": 6,
    "private_room": null,
@@ -1440,7 +1440,7 @@
    "open": true,
    "official": "https://zengolf.jp/yoshikawa/",
    "source_url": "https://zengolf.jp/yoshikawa/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-04"
   }
  ]
 }
