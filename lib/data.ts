@@ -54,6 +54,8 @@ export type OfficialCheck = {
   corrections?: string[]
   quick?: { k: string; v: string }[]
   quick_note?: string
+  /** 2026-11-05 ブランド一覧・同じ地域の店など、冒頭に置く導線。ある施設だけ */
+  jumps?: { lead: string; links: { href: string; label: string }[] }[]
 }
 
 // 2026-11-03 GDO 由来の練習場（トップトレーサー）は営業時間・料金が null で、電話番号の誤りもあった（加藤農園）。

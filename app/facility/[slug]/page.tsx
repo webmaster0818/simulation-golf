@@ -135,6 +135,19 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
         </div>
       )}
 
+      {f.official_check?.jumps?.map((j) => (
+        <p className="g-brand-jump" key={j.lead}>
+          {j.lead}
+          {' → '}
+          {j.links.map((l, i) => (
+            <span key={l.href}>
+              {i > 0 ? '／' : ''}
+              <Link href={l.href}>{l.label}</Link>
+            </span>
+          ))}
+        </p>
+      ))}
+
       {/* 2026-11-03 施設名の検索（「ジャンボゴルフガーデン」等・11位前後）で、料金・営業時間を冒頭で答える。
           値は施設の公式サイトを開いて確認したものだけ（data/official-checks.json） */}
       {f.official_check?.quick && f.official_check.quick.length > 0 && (
