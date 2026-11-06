@@ -886,7 +886,7 @@
    "pref": "神奈川県",
    "zip": "2270043",
    "address": "神奈川県横浜市青葉区藤が丘2丁目3-3 第2飯田ビル 1F",
-   "access": "藤が丘駅から徒歩3分",
+   "access": "藤が丘駅から徒歩2分",
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
@@ -900,7 +900,7 @@
    "open": false,
    "official": "https://www.mygol.jp/shop/yokohamafujigaoka/",
    "source_url": "https://www.mygol.jp/shop/yokohamafujigaoka/",
-   "fetched_at": "2026-10-26",
+   "fetched_at": "2026-11-06",
    "field_sources": {
     "bays": "https://www.mygol.jp/shop/yokohamafujigaoka/equipments「打席数 4打席／個別打席 半個室あり」",
     "equipment": "https://www.mygol.jp/shop/yokohamafujigaoka/equipments「シミュレーター GDR Plus」",
