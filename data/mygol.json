@@ -678,8 +678,8 @@
    "name": "マイゴル竹ノ塚店",
    "pref": "東京都",
    "zip": "1210813",
-   "address": "東京都足立区竹の塚3丁目6−7",
-   "access": null,
+   "address": "東京都足立区竹の塚3丁目6−7 プライムビル1階",
+   "access": "竹の塚駅から徒歩12分",
    "tel": "0120-150-562（受付時間：電話受付24時間OK！）",
    "hours": "24時間営業",
    "open_24h": true,
@@ -693,11 +693,12 @@
    "open": false,
    "official": "https://www.mygol.jp/shop/takenozuka/",
    "source_url": "https://www.mygol.jp/shop/takenozuka/",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-11-07",
    "field_sources": {
     "parking": "https://www.mygol.jp/shop/takenozuka/facility",
     "bays": "https://www.mygol.jp/shop/takenozuka/equipments「打席数 4打席／個別打席 なし」",
     "equipment": "https://www.mygol.jp/shop/takenozuka/equipments「シミュレーター GDR Plus」",
+    "access": "https://www.mygol.jp/shop/takenozuka/ 本文「竹の塚駅から徒歩12分」（店舗情報欄にアクセスの行なし・2026-11-07 確認）",
     "closed": "https://www.mygol.jp/shop/takenozuka/「365日使い放題」"
    }
   },
