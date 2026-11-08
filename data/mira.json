@@ -671,13 +671,15 @@
    "parking": "無料駐車場",
    "monthly_fee": "ゴルフ会員 7,678円／ジム・ゴルフ会員 10,978円／デイゴルフ会員 5,478円（税込・打席料1回200円・入会金2,200円＋登録事務手数料3,300円が別途）",
    "equipment": null,
-   "open": false,
+   "open": true,
    "official": "https://shop.mirafitness.jp/detail/arakawa/",
    "source_url": "https://shop.mirafitness.jp/detail/arakawa/",
-   "fetched_at": "2026-10-16",
+   "fetched_at": "2026-11-08",
    "field_notes": {
     "closed": "https://golf.mirafitness.jp/ FAQ「24時間年中無休になります。」"
-   }
+   },
+   "open_source_url": "https://mirafitness.jp/",
+   "note": "公式トップ「甲府荒川店 2026年8月14日[金] グランドオープン！」（2026-11-08確認）。運営会社 aprecio の出店情報も同日。店舗ページの設備にシミュレーションゴルフ・11/2 の入会キャンペーン告知あり。"
   },
   {
    "brand": "MIRA GOLF",

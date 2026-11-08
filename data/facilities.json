@@ -20564,10 +20564,10 @@
    "parking": "無料駐車場",
    "monthly_fee": "ゴルフ会員 7,678円／ジム・ゴルフ会員 10,978円／デイゴルフ会員 5,478円（税込・打席料1回200円・入会金2,200円＋登録事務手数料3,300円が別途）",
    "equipment": null,
-   "open": false,
+   "open": true,
    "official": "https://shop.mirafitness.jp/detail/arakawa/",
    "source_url": "https://shop.mirafitness.jp/detail/arakawa/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-08"
   },
   {
    "segment": "indoor",
