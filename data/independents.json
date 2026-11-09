@@ -19,7 +19,7 @@
    "equipment": "トラックマン4／GOLFZON T2 VISION／DITECT Golf Swing Better Prizm POD",
    "official": "https://indoorgolfpark-20do-c.jp/",
    "source_url": "https://indoorgolfpark-20do-c.jp/",
-   "fetched_at": "2026-10-01"
+   "fetched_at": "2026-11-09"
   },
   {
    "segment": "indoor",
@@ -36,10 +36,11 @@
    "bays_num": null,
    "monthly_fee": null,
    "equipment": "トラックマン4",
-   "note": "旅館に併設。公式サイトに「ご宿泊のお客様以外の方もご利用いただけます」と記載。営業時間・打席数・料金は公式に記載なし。",
+   "note": "旅館に併設。公式サイトに「ご宿泊のお客様以外の方もご利用いただけます」と記載。料金は公式のインドアゴルフのページ（https://www.kikusuikan.jp/indoor-golf）に掲載。営業時間・打席数は公式に記載なし（同ページの「受付時間 9:00〜20:00」は予約受付の時間）。",
    "official": "https://www.kikusuikan.jp/",
-   "source_url": "https://www.kikusuikan.jp/",
-   "fetched_at": "2026-10-01"
+   "source_url": "https://www.kikusuikan.jp/indoor-golf",
+   "fetched_at": "2026-11-09",
+   "usage_fee": "一般 1名様 3,000円／2名様 2,000円／3名様以上 1,500円、宿泊者 1,500円（1時間あたり・お一人様の目安）"
   },
   {
    "segment": "range",
@@ -49,16 +50,16 @@
    "zip": "9900004",
    "address": "山形県山形市上山家町705-5",
    "tel": "023-631-3222",
-   "hours": "4〜11月 平日 5:00〜7:30／9:30〜21:00／21:00〜23:00、土日祝 5:00〜7:30／9:00〜21:00／21:00〜23:00（12〜3月は5:30開始）",
+   "hours": "4〜11月 平日 5:00〜7:30／9:30〜21:00（第2火曜のみ12:00〜21:00）／21:00〜23:00、土日祝 5:00〜7:30／9:00〜21:00／21:00〜23:00（12〜3月は5:30開始・9:30〜21:00）",
    "open_24h": false,
    "closed": null,
    "bays": null,
    "bays_num": null,
-   "usage_fee": "打ち放題パック サービスタイム平日1,300円〜／土日祝1,700円〜（1球単価は早朝9円〜深夜12円）",
+   "usage_fee": "打ち放題のサービスタイム 平日9:30〜17:00（最大2時間）1,200円〜1,500円／土日祝20:00〜23:00（最大3時間）1,300円〜1,700円（会員・性別・年齢・階で異なる。1球単価は9円〜12円）",
    "equipment": "トラックマンレンジ／トラックマン4",
    "official": "https://www.sailvangolf.com/",
    "source_url": "https://www.sailvangolf.com/",
-   "fetched_at": "2026-10-01"
+   "fetched_at": "2026-11-09"
   },
   {
    "segment": "indoor",
@@ -77,7 +78,7 @@
    "equipment": "トラックマン4／GOLFZON TWO VISION／DITECT／GOLFZON GDR+",
    "official": "https://gol-one.com/",
    "source_url": "https://gol-one.com/",
-   "fetched_at": "2026-10-01"
+   "fetched_at": "2026-11-09"
   },
   {
    "segment": "range",
@@ -87,9 +88,9 @@
    "zip": "8850061",
    "address": "宮崎県都城市下長飯町2050番地",
    "tel": null,
-   "hours": "平日 7:00〜21:00／土日祝 6:30〜21:00（セルフ入場は6:00から）",
+   "hours": "平日・土曜 7:00〜22:00／日曜・祝日 7:00〜21:00（セルフ入場は6:00から）",
    "open_24h": false,
-   "closed": null,
+   "closed": "なし（年中無休）",
    "bays": "60打席",
    "bays_num": 60,
    "usage_fee": null,
@@ -97,7 +98,7 @@
    "distance_yard": 200,
    "official": "https://www.sunpowergolf.com/",
    "source_url": "https://www.sunpowergolf.com/",
-   "fetched_at": "2026-10-01"
+   "fetched_at": "2026-11-09"
   },
   {
    "segment": "indoor",
@@ -112,12 +113,12 @@
    "closed": "年中無休",
    "bays": "5打席（うち1打席が傾斜板対応）",
    "bays_num": 5,
-   "monthly_fee": "平日デイタイム 11,000円／平日フルタイム 13,200円／全日フルタイム 15,400円／土日祝フルタイム 11,000円（入会金11,000円）",
+   "monthly_fee": "平日デイタイム 11,000円／平日フルタイム 13,200円／全日フルタイム 15,400円／土日祝フルタイム 11,000円（税込・入会金0円。年間全日フルタイムプランを除く）",
    "equipment": "Golf Swing Better Prizm Pro／Golf Swing Better Stingray（1番打席のみ）",
    "note": "公式サイトに札幌店・つくば店の記載あり。山梨県内は甲府店のみ。",
    "official": "https://golfrangeluana.jp/kofu.html",
    "source_url": "https://golfrangeluana.jp/kofu.html",
-   "fetched_at": "2026-10-01"
+   "fetched_at": "2026-11-09"
   },
   {
    "segment": "indoor",
@@ -137,7 +138,7 @@
    "equipment": "SDRゴルフシミュレーター",
    "official": "https://poaannua-kochi.jp/",
    "source_url": "https://poaannua-kochi.jp/",
-   "fetched_at": "2026-10-01"
+   "fetched_at": "2026-11-09"
   },
   {
    "segment": "indoor",
@@ -159,7 +160,7 @@
    "note": "ブースごとの打席数は公式サイトに記載なし。料金は https://fusion-golf.com/indoor-price/ で確認。",
    "official": "https://fusion-golf.com/",
    "source_url": "https://fusion-golf.com/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-11-09"
   },
   {
    "segment": "indoor",
@@ -181,7 +182,7 @@
    "note": "住所は公式サイトに「高知市追手筋1丁目7-11」と記載（県名は当サイトで補った）。",
    "official": "https://ninomiya.co.jp/",
    "source_url": "https://ninomiya.co.jp/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-11-09"
   },
   {
    "segment": "indoor",
@@ -202,7 +203,7 @@
    "note": "公式サイトに「人気シミュレーションマシンを2種類導入」とあるが、トラックマン以外の機種名は記載なし。会員種別ごとの月額は料金詳細ページ。",
    "official": "https://indoorgolf-kouyasan.com/",
    "source_url": "https://indoorgolf-kouyasan.com/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-11-09"
   },
   {
    "segment": "indoor",
