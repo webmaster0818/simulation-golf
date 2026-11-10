@@ -6,6 +6,7 @@ import {
 } from '../../../../lib/data'
 import { JsonLd, breadcrumb, itemListLd } from '../../../../lib/seo'
 import FacilityCard from '../../../../components/FacilityCard'
+import OfficialTables from '../../../../components/OfficialTables'
 
 type Params = { pref: string; city: string }
 
@@ -97,6 +98,9 @@ export default async function CityPage({ params }: { params: Promise<Params> }) 
         <div><div className="v">{nPark}</div><div className="k">駐車場あり</div></div>
       </div>
       <p className="source">{asOf(GENERATED_AT)}の公式サイトの掲載内容にもとづいています。</p>
+
+      {/* 2026-11-10 キーのある市区町村だけ表が出る（lib/page-official-tables.ts）。キーの無いページは変化なし */}
+      <OfficialTables pageKey={`area/${prefSlug}/${citySlug}`} />
 
       <h2>{c.city}の施設一覧</h2>
       <div className="tablewrap">
