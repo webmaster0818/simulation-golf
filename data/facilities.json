@@ -28095,7 +28095,7 @@
    "open": true,
    "official": "https://swingpark24.com/",
    "source_url": "https://swingpark24.com/access/",
-   "fetched_at": "2026-10-03"
+   "fetched_at": "2026-11-10"
   },
   {
    "segment": "indoor",
@@ -28122,7 +28122,7 @@
    "open": true,
    "official": "https://www.fitbox24.com/golf/",
    "source_url": "https://www.fitbox24.com/golf/",
-   "fetched_at": "2026-10-03"
+   "fetched_at": "2026-11-10"
   },
   {
    "segment": "indoor",
@@ -28149,7 +28149,7 @@
    "open": true,
    "official": "https://www.golfin.jp/",
    "source_url": "https://www.golfin.jp/fee.php",
-   "fetched_at": "2026-10-03"
+   "fetched_at": "2026-11-10"
   },
   {
    "segment": "indoor",
@@ -28162,9 +28162,9 @@
    "address": "沖縄県那覇市上之屋1丁目20-9 富士家オーシャンビル2F",
    "access": null,
    "tel": "0120-426-847",
-   "hours": "24時間（電子錠でいつでも入退館可）",
+   "hours": "24時間（会員は電子錠でいつでも入退館可）。公式アクセスページの営業時間は DAY 7:00〜19:00（18:00最終受付）／NIGHT 19:00〜26:00（25:00最終受付）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": "完全個室3ルーム（A・Bルーム＝右打ち／Cルーム＝両打ち）",
    "bays_num": 3,
    "private_room": true,
@@ -28176,7 +28176,7 @@
    "open": true,
    "official": "https://golf365.jp/",
    "source_url": "https://golf365.jp/access.html",
-   "fetched_at": "2026-10-03"
+   "fetched_at": "2026-11-10"
   },
   {
    "segment": "indoor",
@@ -28203,7 +28203,7 @@
    "open": true,
    "official": "https://idgolf.jp/",
    "source_url": "https://idgolf.jp/",
-   "fetched_at": "2026-10-04"
+   "fetched_at": "2026-11-10"
   },
   {
    "segment": "indoor",
@@ -28230,7 +28230,7 @@
    "open": true,
    "official": "https://guln.kizuna-casa.com/",
    "source_url": "https://guln.kizuna-casa.com/",
-   "fetched_at": "2026-10-04"
+   "fetched_at": "2026-11-10"
   },
   {
    "segment": "indoor",
@@ -28257,7 +28257,7 @@
    "open": true,
    "official": "https://granlab.jp/golf/",
    "source_url": "https://granlab.jp/golf/",
-   "fetched_at": "2026-10-04"
+   "fetched_at": "2026-11-10"
   },
   {
    "segment": "indoor",
@@ -28284,7 +28284,7 @@
    "open": true,
    "official": "https://emon-golf.com/",
    "source_url": "https://emon-golf.com/",
-   "fetched_at": "2026-10-04"
+   "fetched_at": "2026-11-10"
   },
   {
    "segment": "indoor",
@@ -28311,7 +28311,7 @@
    "open": true,
    "official": "https://golf-zero.wixsite.com/golf-zero",
    "source_url": "https://golf-zero.wixsite.com/golf-zero",
-   "fetched_at": "2026-10-04"
+   "fetched_at": "2026-11-10"
   },
   {
    "segment": "indoor",
@@ -28330,7 +28330,7 @@
    "bays": "半個室ブース（X-swing：1〜4名／SkyTrakスクリーン：1〜2名／SkyTrakモバイル：1名）＋パター場12ホール",
    "bays_num": null,
    "private_room": null,
-   "parking": "屋外8台・屋内8台",
+   "parking": "屋外8台・屋内8台・裏手5台",
    "monthly_fee": "入会手続き・年会費は無し（公式）。利用料金は公式の料金表が画像のため、金額を転記していない",
    "usage_fee": null,
    "equipment": "GPRO X-swing／SkyTrak",
@@ -28338,7 +28338,7 @@
    "open": true,
    "official": "https://www.golfers-takaoka.com/",
    "source_url": "https://www.golfers-takaoka.com/blank-1",
-   "fetched_at": "2026-10-04"
+   "fetched_at": "2026-11-10"
   },
   {
    "segment": "indoor",

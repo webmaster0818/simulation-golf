@@ -292,7 +292,7 @@
    "note": "郵便番号は公式に記載がなく、住所から郵便番号検索で引いた。",
    "official": "https://swingpark24.com/",
    "source_url": "https://swingpark24.com/access/",
-   "fetched_at": "2026-10-03"
+   "fetched_at": "2026-11-10"
   },
   {
    "segment": "indoor",
@@ -315,7 +315,7 @@
    "note": "ボクシング＆フィットネスジムに併設のゴルフ個室。郵便番号は公式に記載がなく、住所から郵便番号検索で引いた。",
    "official": "https://www.fitbox24.com/golf/",
    "source_url": "https://www.fitbox24.com/golf/",
-   "fetched_at": "2026-10-03"
+   "fetched_at": "2026-11-10"
   },
   {
    "segment": "indoor",
@@ -338,7 +338,7 @@
    "note": "都度利用の室内練習場。公式に「左打ち不可」の記載あり。",
    "official": "https://www.golfin.jp/",
    "source_url": "https://www.golfin.jp/fee.php",
-   "fetched_at": "2026-10-03"
+   "fetched_at": "2026-11-10"
   },
   {
    "segment": "indoor",
@@ -348,9 +348,9 @@
    "zip": "9000011",
    "address": "沖縄県那覇市上之屋1丁目20-9 富士家オーシャンビル2F",
    "tel": "0120-426-847",
-   "hours": "24時間（電子錠でいつでも入退館可）",
+   "hours": "24時間（会員は電子錠でいつでも入退館可）。公式アクセスページの営業時間は DAY 7:00〜19:00（18:00最終受付）／NIGHT 19:00〜26:00（25:00最終受付）",
    "open_24h": true,
-   "closed": null,
+   "closed": "年中無休",
    "bays": "完全個室3ルーム（A・Bルーム＝右打ち／Cルーム＝両打ち）",
    "bays_num": 3,
    "private_room": true,
@@ -358,10 +358,10 @@
    "monthly_fee": "会員の打席使用料 1コマ（50分）1,100円／2コマ（110分）1,980円。サブスク（1日1コマ打ち放題）は＋11,000円（いずれも税込。月会費・入会金の金額は公式の料金表で確認）",
    "usage_fee": "ビジター A・Bルーム 1コマ3,300円／2コマ6,050円、Cルーム 1コマ4,950円／2コマ8,800円（税込）",
    "equipment": "GOLFZON GDR",
-   "note": "料金表の月会費・入会金は項目名が画像で、金額だけでは判別できないため転記していない。",
+   "note": "料金表の月会費・入会金は項目名が画像で、金額だけでは判別できないため転記していない。営業時間・定休日は公式のアクセスページ（https://golf365.jp/access.html）の表記。",
    "official": "https://golf365.jp/",
    "source_url": "https://golf365.jp/access.html",
-   "fetched_at": "2026-10-03"
+   "fetched_at": "2026-11-10"
   },
   {
    "segment": "indoor",
@@ -384,7 +384,7 @@
    "note": "打席数は公式サイトに明記が無いため載せていない（FAQに「左利きは3打席で利用可能」とある）。",
    "official": "https://idgolf.jp/",
    "source_url": "https://idgolf.jp/",
-   "fetched_at": "2026-10-04",
+   "fetched_at": "2026-11-10",
    "access": null
   },
   {
@@ -408,7 +408,7 @@
    "note": "電話番号は運営会社（株式会社絆）のものしか公式に記載が無いため載せていない。",
    "official": "https://guln.kizuna-casa.com/",
    "source_url": "https://guln.kizuna-casa.com/",
-   "fetched_at": "2026-10-04",
+   "fetched_at": "2026-11-10",
    "access": null
   },
   {
@@ -432,7 +432,7 @@
    "note": "郵便番号は公式に記載が無く、住所から引いた（760-0033）。",
    "official": "https://granlab.jp/golf/",
    "source_url": "https://granlab.jp/golf/",
-   "fetched_at": "2026-10-04",
+   "fetched_at": "2026-11-10",
    "access": null
   },
   {
@@ -456,7 +456,7 @@
    "note": null,
    "official": "https://emon-golf.com/",
    "source_url": "https://emon-golf.com/",
-   "fetched_at": "2026-10-04",
+   "fetched_at": "2026-11-10",
    "access": "ことでんバス西植田線 西植田駅より徒歩2分"
   },
   {
@@ -480,7 +480,7 @@
    "note": null,
    "official": "https://golf-zero.wixsite.com/golf-zero",
    "source_url": "https://golf-zero.wixsite.com/golf-zero",
-   "fetched_at": "2026-10-04",
+   "fetched_at": "2026-11-10",
    "access": null
   },
   {
@@ -497,14 +497,14 @@
    "bays": "半個室ブース（X-swing：1〜4名／SkyTrakスクリーン：1〜2名／SkyTrakモバイル：1名）＋パター場12ホール",
    "bays_num": null,
    "private_room": null,
-   "parking": "屋外8台・屋内8台",
+   "parking": "屋外8台・屋内8台・裏手5台",
    "monthly_fee": "入会手続き・年会費は無し（公式）。利用料金は公式の料金表が画像のため、金額を転記していない",
    "usage_fee": null,
    "equipment": "GPRO X-swing／SkyTrak",
    "note": "入会手続き・年会費は無し（公式）。料金表は画像のため金額を転記していない。郵便番号は公式に記載が無く、住所から引いた（933-0941）。",
    "official": "https://www.golfers-takaoka.com/",
    "source_url": "https://www.golfers-takaoka.com/blank-1",
-   "fetched_at": "2026-10-04",
+   "fetched_at": "2026-11-10",
    "access": null
   },
   {
