@@ -19,7 +19,7 @@
    "equipment": "トラックマン4／GOLFZON T2 VISION／DITECT Golf Swing Better Prizm POD",
    "official": "https://indoorgolfpark-20do-c.jp/",
    "source_url": "https://indoorgolfpark-20do-c.jp/",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-11"
   },
   {
    "segment": "indoor",
@@ -223,7 +223,7 @@
    "note": "月額の金額は公式の料金表が画像のため、当サイトでは転記していない。",
    "official": "https://genki-golf-studio.jimdofree.com/",
    "source_url": "https://genki-golf-studio.jimdofree.com/",
-   "fetched_at": "2026-10-02"
+   "fetched_at": "2026-11-11"
   },
   {
    "segment": "indoor",
@@ -240,13 +240,13 @@
    "bays_num": 2,
    "private_room": true,
    "parking": "敷地内にお客様専用駐車場（公式FAQ）",
-   "monthly_fee": "全日フリープラン 14,080円（6ヶ月継続 12,980円）／平日フリー 11,880円／休日フリー 11,880円／ナイトフリー（22:00〜翌6:00）7,260円／カジュアル 5,500円＋割引利用チケット1,100円／ビジター 0円＋通常利用チケット3,300円（税込・入会金5,500円（公式の「今だけ0円」は2027年1月31日まで）・1日最大2コマ）",
+   "monthly_fee": "全日フリープラン 14,080円／平日フリー 11,880円／休日フリー 11,880円／ナイトフリー（22:00〜翌6:00）7,260円／カジュアル 5,500円＋割引利用チケット1,100円／ビジター 0円＋通常利用チケット3,300円（税込・単月利用の月会費。6ヶ月継続利用は全日 12,980円・平日 10,780円・休日 10,780円・ナイト 6,160円・カジュアル 4,400円。入会金5,500円（公式の「今だけ0円」は2027年1月31日まで）・1日最大2コマ）",
    "usage_fee": null,
    "equipment": "トラックマン（Trackman）",
    "note": "運営は紀州ゴルフセンター。2店舗で相互利用可。",
    "official": "https://www.kisyugolf.com/private_indoor/",
    "source_url": "https://www.kisyugolf.com/private_indoor/",
-   "fetched_at": "2026-11-05"
+   "fetched_at": "2026-11-11"
   },
   {
    "segment": "indoor",
@@ -263,13 +263,13 @@
    "bays_num": 10,
    "private_room": true,
    "parking": "敷地内にお客様専用駐車場（公式FAQ）",
-   "monthly_fee": "全日フリープラン 14,080円（6ヶ月継続 12,980円）／平日フリー 11,880円／休日フリー 11,880円／ナイトフリー（22:00〜翌6:00）7,260円／カジュアル 5,500円＋割引利用チケット1,100円／ビジター 0円＋通常利用チケット3,300円（税込・入会金5,500円（公式の「今だけ0円」は2027年1月31日まで）・1日最大2コマ）",
+   "monthly_fee": "全日フリープラン 14,080円／平日フリー 11,880円／休日フリー 11,880円／ナイトフリー（22:00〜翌6:00）7,260円／カジュアル 5,500円＋割引利用チケット1,100円／ビジター 0円＋通常利用チケット3,300円（税込・単月利用の月会費。6ヶ月継続利用は全日 12,980円・平日 10,780円・休日 10,780円・ナイト 6,160円・カジュアル 4,400円。入会金5,500円（公式の「今だけ0円」は2027年1月31日まで）・1日最大2コマ）",
    "usage_fee": null,
    "equipment": "トラックマン（Trackman）",
    "note": "運営は紀州ゴルフセンター。2店舗で相互利用可。",
    "official": "https://www.kisyugolf.com/private_indoor/",
    "source_url": "https://www.kisyugolf.com/private_indoor/",
-   "fetched_at": "2026-11-05"
+   "fetched_at": "2026-11-11"
   },
   {
    "segment": "indoor",
@@ -528,7 +528,7 @@
    "note": "公式サイトに料金表が2つあり、両方に載っている3プランだけ転記した。郵便番号は公式に記載が無く、住所から引いた（036-8087）。",
    "official": "https://golfplus-hirosaki.com/",
    "source_url": "https://golfplus-hirosaki.com/",
-   "fetched_at": "2026-10-04",
+   "fetched_at": "2026-11-11",
    "access": null
   },
   {
@@ -552,7 +552,7 @@
    "note": "レストラン併設。機種名は公式サイトに記載なし（ハイスピードカメラ搭載・120コース以上収録とある）。郵便番号は公式に記載が無く、住所から引いた（031-0031）。",
    "official": "https://www.green-family-club.com/",
    "source_url": "https://www.green-family-club.com/simulation/",
-   "fetched_at": "2026-10-04",
+   "fetched_at": "2026-11-11",
    "access": "JR本八戸駅より徒歩約10分"
   },
   {
@@ -576,7 +576,7 @@
    "note": "電話は運営会社（合同会社SOLBLANCO）の問い合わせ先（10:00〜21:00）。郵便番号は公式に記載が無く、住所から引いた（747-0024）。",
    "official": "https://solblancolcc.wixsite.com/indoorgolfhofu",
    "source_url": "https://solblancolcc.wixsite.com/indoorgolfhofu",
-   "fetched_at": "2026-10-04",
+   "fetched_at": "2026-11-11",
    "access": "防府駅から車で5分程度"
   },
   {
@@ -600,7 +600,7 @@
    "note": "営業時間は公式サイトに記載なし（「最終入店21:00」とある）。料金表は画像のため、公式が文字で示している料金例だけを転記した。",
    "official": "https://www.kuroshiosg.com/",
    "source_url": "https://www.kuroshiosg.com/%E6%96%99%E9%87%91%E8%A1%A8",
-   "fetched_at": "2026-10-04",
+   "fetched_at": "2026-11-11",
    "access": "高知黒潮ホテル敷地内（黒潮温泉駐車場内南西）／土佐くろしお鉄道のいち駅 徒歩10分"
   },
   {
@@ -625,7 +625,7 @@
    "note": "ホテル内の屋内練習場。公式に「打席利用のみのご予約も可能」（電話予約）とある。レンタルクラブ・シューズ・グローブあり。レッスンはオンライン形式。",
    "official": "https://tatsumi-kanyo.jp/golf/",
    "source_url": "https://tatsumi-kanyo.jp/golf/",
-   "fetched_at": "2026-10-05"
+   "fetched_at": "2026-11-11"
   },
   {
    "segment": "indoor",
@@ -642,13 +642,13 @@
    "bays_num": null,
    "private_room": true,
    "parking": null,
-   "monthly_fee": "ライト会員（月4コマ）9,800円／スタンダード会員（回数無制限・1日1コマ）12,900円／プレミアム会員（回数無制限・1日2コマ・同伴3名）21,800円。入会金10,000円。公式は各プランに12,800円／15,800円／25,600円も併記しており、安い方の適用条件は記載なし。1コマ55分",
-   "usage_fee": "チケット会員（月会費980円・入会金11,000円）：1コマ55分 デイリー2,400円（平日9〜18時・土日祝9〜13時）／ボリューム5,400円（平日18〜24時・土日祝13〜24時）／ナイト3,200円（24〜9時）",
+   "monthly_fee": "ライト会員（月4コマ）9,800円／スタンダード会員（回数無制限・1日1コマ）12,900円／プレミアム会員（回数無制限・1日2コマ・同伴3名）21,800円。入会金10,000円。公式は12,800円／15,800円／25,600円に訂正線を引いて併記。1コマ55分",
+   "usage_fee": "プラスワンチケット（プランの予約コマに追加して使う。スタンダード・プレミアム会員が購入可・ライト会員は購入不可）1,980円（公式は2,980円に訂正線を引いて併記）。月3コマ・1日1コマまで",
    "equipment": null,
    "note": "会員制の無人施設で、初回は無料体験から。打席数・シミュレーターの機種名・駐車場は公式サイトに記載なし。電話番号は公式サイトで非公開（問い合わせはメール・LINE）。左右打席・オートティーアップあり。",
    "official": "https://greegol.com/",
    "source_url": "https://greegol.com/",
-   "fetched_at": "2026-10-05"
+   "fetched_at": "2026-11-11"
   }
  ]
 }
