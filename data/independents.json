@@ -39,7 +39,7 @@
    "note": "旅館に併設。公式サイトに「ご宿泊のお客様以外の方もご利用いただけます」と記載。料金は公式のインドアゴルフのページ（https://www.kikusuikan.jp/indoor-golf）に掲載。営業時間・打席数は公式に記載なし（同ページの「受付時間 9:00〜20:00」は予約受付の時間）。",
    "official": "https://www.kikusuikan.jp/",
    "source_url": "https://www.kikusuikan.jp/indoor-golf",
-   "fetched_at": "2026-11-09",
+   "fetched_at": "2026-11-12",
    "usage_fee": "一般 1名様 3,000円／2名様 2,000円／3名様以上 1,500円、宿泊者 1,500円（1時間あたり・お一人様の目安）"
   },
   {
@@ -59,7 +59,7 @@
    "equipment": "トラックマンレンジ／トラックマン4",
    "official": "https://www.sailvangolf.com/",
    "source_url": "https://www.sailvangolf.com/",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-12"
   },
   {
    "segment": "indoor",
@@ -78,7 +78,7 @@
    "equipment": "トラックマン4／GOLFZON TWO VISION／DITECT／GOLFZON GDR+",
    "official": "https://gol-one.com/",
    "source_url": "https://gol-one.com/",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-12"
   },
   {
    "segment": "range",
@@ -98,7 +98,7 @@
    "distance_yard": 200,
    "official": "https://www.sunpowergolf.com/",
    "source_url": "https://www.sunpowergolf.com/",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-12"
   },
   {
    "segment": "indoor",
@@ -138,7 +138,7 @@
    "equipment": "SDRゴルフシミュレーター",
    "official": "https://poaannua-kochi.jp/",
    "source_url": "https://poaannua-kochi.jp/",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-12"
   },
   {
    "segment": "indoor",
@@ -160,7 +160,7 @@
    "note": "ブースごとの打席数は公式サイトに記載なし。料金は https://fusion-golf.com/indoor-price/ で確認。",
    "official": "https://fusion-golf.com/",
    "source_url": "https://fusion-golf.com/",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-12"
   },
   {
    "segment": "indoor",
@@ -182,7 +182,7 @@
    "note": "住所は公式サイトに「高知市追手筋1丁目7-11」と記載（県名は当サイトで補った）。",
    "official": "https://ninomiya.co.jp/",
    "source_url": "https://ninomiya.co.jp/",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-12"
   },
   {
    "segment": "indoor",
@@ -198,12 +198,12 @@
    "bays": "5打席（VIP会員向けの専用個室あり）",
    "bays_num": 5,
    "parking": "店舗前に無料駐車場10台",
-   "monthly_fee": "月々7,000円〜（平日会員・全日会員・VIP会員の3種。ビジターは55分2,500円。入会金11,000円・事務手数料3,300円）",
+   "monthly_fee": "平日会員 7,700円／全日会員 11,000円（半年継続 10,450円・1年継続 9,900円）／VIP会員 21,780円（半年継続 21,230円・1年継続 20,680円）／初心者応援プラン 6,600円（月3回まで）／レッスン付き全日プラン 17,600円（税込。ビジターは55分2,500円。入会金11,000円・事務手数料3,300円）",
    "equipment": "トラックマン4",
-   "note": "公式サイトに「人気シミュレーションマシンを2種類導入」とあるが、トラックマン以外の機種名は記載なし。会員種別ごとの月額は料金詳細ページ。",
+   "note": "公式サイトに「人気シミュレーションマシンを2種類導入」とあるが、トラックマン以外の機種名は記載なし。月額は公式の料金表ページ（https://indoorgolf-kouyasan.com/price/）で確認。",
    "official": "https://indoorgolf-kouyasan.com/",
    "source_url": "https://indoorgolf-kouyasan.com/",
-   "fetched_at": "2026-11-09"
+   "fetched_at": "2026-11-12"
   },
   {
    "segment": "indoor",
@@ -292,7 +292,7 @@
    "note": "郵便番号は公式に記載がなく、住所から郵便番号検索で引いた。",
    "official": "https://swingpark24.com/",
    "source_url": "https://swingpark24.com/access/",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-12"
   },
   {
    "segment": "indoor",
@@ -315,7 +315,7 @@
    "note": "ボクシング＆フィットネスジムに併設のゴルフ個室。郵便番号は公式に記載がなく、住所から郵便番号検索で引いた。",
    "official": "https://www.fitbox24.com/golf/",
    "source_url": "https://www.fitbox24.com/golf/",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-12"
   },
   {
    "segment": "indoor",
