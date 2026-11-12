@@ -26,7 +26,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const label = titleName(f.name)
   return {
     title: clip(`${label}｜${where}のシミュレーションゴルフ`),
-    description: facilityDescription(f),
+    // 2026-11-12 単語ブランド名で店舗ページに着地する店は、公式で確認した料金の答えを description に置く（official-checks の description がある店だけ）
+    description: f.official_check?.description ?? facilityDescription(f),
     ...pageUrlMeta(`/facility/${slug}/`),
   }
 }

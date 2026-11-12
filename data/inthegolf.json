@@ -383,8 +383,8 @@
    "address": "福岡県小郡市福童300-1 ミスターマックス小郡店内",
    "access": "小郡・鳥栖南ICから降りてすぐ／西鉄端間駅から徒歩約12〜16分",
    "tel": "050-1726-3191 一次受付専用・折り返しに時間がかかる場合があります",
-   "hours": "平日・土日祝 8:00〜21:00",
-   "open_24h": false,
+   "hours": "24時間365日",
+   "open_24h": true,
    "closed": null,
    "bays": "2ルーム（シミュレーター2台）",
    "bays_num": 2,
@@ -399,7 +399,8 @@
    "field_notes": {
     "bays": "https://inthegolf.com/list/lite-ogori/ 「2ルーム・2台設置」",
     "private_room": "https://inthegolf.com/list/lite-ogori/ 「2ルーム・2台設置 周囲を気にしにくいプライベート空間で、ショット練習もシミュレーションラウンドも利用できます。」",
-    "monthly_fee": "https://inthegolf.com/list/lite-ogori/ 料金表（月額＋税込）"
+    "monthly_fee": "https://inthegolf.com/list/lite-ogori/ 料金表（月額＋税込）",
+    "hours": "https://inthegolf.com/list/lite-ogori/ 店舗情報「営業時間 24時間365日」（2026-11-12 確認。10-16 取得時の 8:00〜21:00 から訂正）"
    }
   },
   {

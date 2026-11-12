@@ -38,7 +38,9 @@ export const BRAND_FACTS: Record<string, BrandFact> = {
     },
     company: null,
     storeList: 'https://www.stepgolf.co.jp/store/',
-    checked: '2026-11-02',
+    checked: '2026-11-12',
+    // 2026-11-12 公式の料金ページ（/system）の入会初期費用。プラン別の料金のしくみは page-official-tables の brand/stepgolf
+    feeNote: '別途 入会初期費用 税込43,780円（体験後7日以内の入会は32,780円）。',
   },
   mygol: {
     alt: 'MYGOL',
