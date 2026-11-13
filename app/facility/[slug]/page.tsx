@@ -8,6 +8,9 @@ import {
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
 import { BRAND_FACTS, brandLabel, feeRange, yen } from '../../../lib/brand-facts'
+import lessonFeeDefer from '../../../data/lesson-fee-defer.json'
+
+const LESSON_FEE_DEFER: Record<string, string> = lessonFeeDefer.defer
 import { JsonLd, breadcrumb, facilityCrumbs, facilityLd, facilityDescription, clip, titleName } from '../../../lib/seo'
 
 type Params = { slug: string }
@@ -195,7 +198,20 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
               <Row k="月会費" v={f.monthly_fee} />
               {f.usage_fee && <Row k="都度利用の料金" v={f.usage_fee} />}
             </>
-          : <Row k="弾道計測の利用料" v={f.usage_fee} />}
+          : f.segment === 'lesson' && f.monthly_fee && !(f.slug in LESSON_FEE_DEFER)
+            /* 2026-11-13 スクール（lesson）は月会費のデータがあっても「弾道計測の利用料：公式サイトに記載なし」
+               だけを出していた（258件）。月会費を出す。データの無い店（チキンゴルフ等）と、
+               10日ルールで見送り中の店（data/lesson-fee-defer.json）は従来どおり */
+            ? <>
+                <Row
+                  k="月会費"
+                  v={f.brand_slug === 'zengolf'
+                    ? `${f.monthly_fee}（レッスン会員・全日の料金。レンジ会員などほかの会員区分は公式サイトの料金表をご確認ください）`
+                    : f.monthly_fee}
+                />
+                {f.usage_fee && <Row k="弾道計測の利用料" v={f.usage_fee} />}
+              </>
+            : <Row k="弾道計測の利用料" v={f.usage_fee} />}
         {f.segment !== 'range' && f.equipment && (
           <Row k="計測機器" v={f.equipment} />
         )}
