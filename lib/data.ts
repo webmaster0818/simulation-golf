@@ -54,6 +54,8 @@ export type OfficialCheck = {
   corrections?: string[]
   quick?: { k: string; v: string }[]
   quick_note?: string
+  /** 2026-11-13 施設名＋地名＋料金の title（施設名の検索で着地する練習場など、ある施設だけ）。「｜SIM GOLF SEARCH」は layout が付ける */
+  title?: string
   /** 2026-11-12 検索結果の説明文（料金の答え・確認日）。ある施設だけ。160字以内 */
   description?: string
   /** 2026-11-05 ブランド一覧・同じ地域の店など、冒頭に置く導線。ある施設だけ */

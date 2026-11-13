@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   // 2026-10-16 店名にはビルド時にブランド名を付けている（build-facilities.py の display_name）
   const label = titleName(f.name)
   return {
-    title: clip(`${label}｜${where}のシミュレーションゴルフ`),
+    title: f.official_check?.title ?? clip(`${label}｜${where}のシミュレーションゴルフ`),
     // 2026-11-12 単語ブランド名で店舗ページに着地する店は、公式で確認した料金の答えを description に置く（official-checks の description がある店だけ）
     description: f.official_check?.description ?? facilityDescription(f),
     ...pageUrlMeta(`/facility/${slug}/`),
