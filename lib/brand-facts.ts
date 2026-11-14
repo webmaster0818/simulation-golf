@@ -74,7 +74,7 @@ export const BRAND_FACTS: Record<string, BrandFact> = {
   zengolf: {
     alt: 'ゼンゴルフ／ZENGOLF',
     officialCount: {
-      text: '公式サイトのトップページでは「ZENGOLF RANGE 首都圏50店舗以上」「ZENGOLF ACADEMY 首都圏7店舗」と案内されています',
+      text: '公式サイトのトップページでは ZENGOLF RANGE を「首都圏60店舗以上」、ZENGOLF ACADEMY を「首都圏7店舗」と案内しています。公式の店舗一覧には RANGE 54店（12月1日開業予定の新百合ヶ丘店を含む）・ACADEMY 7店・ZENGOLF LOUNGE 1店（六本木）が載っています',
       url: 'https://zengolf.jp/',
     },
     trial: {
@@ -86,7 +86,8 @@ export const BRAND_FACTS: Record<string, BrandFact> = {
       url: 'https://zengolf.jp/legal-notice/',
     },
     storeList: 'https://zengolf.jp/location/',
-    checked: '2026-11-04',
+    // 2026-11-14 店舗数（トップ）・体験（上尾店）・販売業者（特商法表記）を再確認
+    checked: '2026-11-14',
     feeFixed: {
       min: 8580, minSlug: 'zengolf-chibachuo', minName: 'ZEN GOLF RANGE 千葉中央店', minPlan: 'レンジ会員 ナイト（24:00〜翌6:55）',
       max: 22000, maxSlug: 'zengolf-ebisu', maxName: 'ZEN GOLF RANGE 恵比寿店', n: 60,
