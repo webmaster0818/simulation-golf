@@ -74,11 +74,11 @@
    "parking": "駐車場 2台",
    "monthly_fee": "ライト会員（4回枠/月） 月額12,000円(税抜)・税込13,200円／スタンダード会員（8回枠/月） 月額18,000円(税抜)・税込19,800円／アドバンス会員（12回枠/月） 月額24,000円(税抜)・税込26,400円／ナイト（４）会員（4回枠/月） 月額8,000円(税抜)・税込8,800円／ナイト（８）会員（8回枠/月） 月額12,000円(税抜)・税込13,200円",
    "equipment": "Trackman iO（トラックマンiO）",
-   "open": false,
+   "open": true,
    "official": "https://doortogolf.com/shop-post-newplan/fuseishi/",
    "source_url": "https://doortogolf.com/shop-post-newplan/fuseishi/",
-   "fetched_at": "2026-10-16",
-   "note": "お知らせ「【伏石駅前店】11月15日新規OPEN」（2026-11-06）: 2026年11月15日（日）新規オープン（2026-11-07 確認）"
+   "fetched_at": "2026-11-15",
+   "note": "公式お知らせ「【伏石駅前店】11月15日新規OPEN」（2026-11-06 掲載・https://doortogolf.com/fuseishi_open/）「2026年11月15日（日）、DOOR TO GOLF 伏石駅前店が新規オープンいたします」→ 開業日の 2026-11-15 に営業中へ（同日、/news・トップに延期の告知なし、店舗ページの住所・24時間・駐車場2台・5プランは掲載値どおり）"
   },
   {
    "brand": "DOOR TO GOLF",

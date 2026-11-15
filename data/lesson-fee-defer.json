@@ -1,8 +1,6 @@
 {
  "_note": "2026-11-13 店舗テンプレート修正（lesson の月会費を表示）を、直近10日以内に本文を変えた店舗ページでは見送る（10日ルール）。値＝表示してよい日（sitemap lastmod＋10日）。その日以降の作業でこのリストから外せば月会費が出る。",
  "defer": {
-  "sanctuarygolf-yokohama-sakuragicho": "2026-11-15",
-  "stepgolf-gj-aobadai": "2026-11-15",
   "inthegolf-ohashi": "2026-11-16",
   "stepgolf-saitama-chuo": "2026-11-16",
   "inthegolf-kitakyushu-honjo": "2026-11-17",
