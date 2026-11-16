@@ -19,7 +19,7 @@
    "equipment": "トラックマン4／GOLFZON T2 VISION／DITECT Golf Swing Better Prizm POD",
    "official": "https://indoorgolfpark-20do-c.jp/",
    "source_url": "https://indoorgolfpark-20do-c.jp/",
-   "fetched_at": "2026-11-11"
+   "fetched_at": "2026-11-16"
   },
   {
    "segment": "indoor",
@@ -338,7 +338,7 @@
    "note": "都度利用の室内練習場。公式に「左打ち不可」の記載あり。",
    "official": "https://www.golfin.jp/",
    "source_url": "https://www.golfin.jp/fee.php",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-16"
   },
   {
    "segment": "indoor",
@@ -384,7 +384,7 @@
    "note": "打席数は公式サイトに明記が無いため載せていない（FAQに「左利きは3打席で利用可能」とある）。",
    "official": "https://idgolf.jp/",
    "source_url": "https://idgolf.jp/",
-   "fetched_at": "2026-11-10",
+   "fetched_at": "2026-11-16",
    "access": null
   },
   {
@@ -408,7 +408,7 @@
    "note": "電話番号は運営会社（株式会社絆）のものしか公式に記載が無いため載せていない。",
    "official": "https://guln.kizuna-casa.com/",
    "source_url": "https://guln.kizuna-casa.com/",
-   "fetched_at": "2026-11-10",
+   "fetched_at": "2026-11-16",
    "access": null
   },
   {
@@ -432,7 +432,7 @@
    "note": "郵便番号は公式に記載が無く、住所から引いた（760-0033）。",
    "official": "https://granlab.jp/golf/",
    "source_url": "https://granlab.jp/golf/",
-   "fetched_at": "2026-11-10",
+   "fetched_at": "2026-11-16",
    "access": null
   },
   {
@@ -456,7 +456,7 @@
    "note": null,
    "official": "https://emon-golf.com/",
    "source_url": "https://emon-golf.com/",
-   "fetched_at": "2026-11-10",
+   "fetched_at": "2026-11-16",
    "access": "ことでんバス西植田線 西植田駅より徒歩2分"
   },
   {
@@ -480,7 +480,7 @@
    "note": null,
    "official": "https://golf-zero.wixsite.com/golf-zero",
    "source_url": "https://golf-zero.wixsite.com/golf-zero",
-   "fetched_at": "2026-11-10",
+   "fetched_at": "2026-11-16",
    "access": null
   },
   {
@@ -504,7 +504,7 @@
    "note": "入会手続き・年会費は無し（公式）。料金表は画像のため金額を転記していない。郵便番号は公式に記載が無く、住所から引いた（933-0941）。",
    "official": "https://www.golfers-takaoka.com/",
    "source_url": "https://www.golfers-takaoka.com/blank-1",
-   "fetched_at": "2026-11-10",
+   "fetched_at": "2026-11-16",
    "access": null
   },
   {
