@@ -747,3 +747,13 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 - 競合: WebSearch（US）は「ステップゴルフ」で minhyo.jp（口コミ）・shotnavi・bcnretail（企業ニュース・「月額5,478円から」）。店舗別の料金を出す上位は無し → 公式値で代替
 - テキストの変わったページは 1（1249 HTML 中）。sitemap lastmod は deploy の値のまま（この頁は今朝から 11-16）。計測リンク 0→0。公開前チェック ✅ 1247。
 - ソース c229e39 ／ deploy fa3156727e。
+
+### 2026-11-16（20:00 kwexp：競合 indoor-golf.jp のKWで新規5ページ・作成初日）
+- **新規**（施設データベースの外に置く静的ページ。lib/rizap.ts・data/kwexp/*.json。generate-sitemap.mjs に5URLを手で追加）:
+  `/lesson/beginner/`（ゴルフ 初心者 レッスン 月3,520：スクール9ブランドの体験料金＝公式 11/16 確認・料金の形・掲載データの月会費範囲〔ZEN は brand-facts の feeFixed〕・都道府県別スクール数）／
+  `/brand/rizapgolf/`（ライザップゴルフ 料金 1,280：公式 /plan と全19店舗の店舗ページで料金が全店同一を確認・1回あたり〔円未満切り捨て＝公式の「27,362円/回」と一致〕・PRIME・分割・返金保証・19店舗表）／
+  `/brand/rizapgolf/{nagoya,kyoto,ginza}/`（店舗の所在地・営業時間・駅・駐車場＋同じ市〔銀座は中央区〕の当サイト掲載施設の表）。
+- ⚠️ **RIZAP GOLF は facilities.json に入れていない**: 入れると19施設ページが一度に増え、エリア・掲載件数が全体で動く（kwexp は1日5本まで）。DB に入れるかは判断待ち。残りの「ライザップゴルフ ◯◯」（横浜・川崎・千葉・広島・神戸・梅田…）は同じ `[area]` 型で RIZAP_AREAS と rizapgolf.json の area を足せば作れる。
+- ⚠️ 公式HTMLの読み取りは `<!-- -->` を先に消す（GOLFTEC の体験 5,500円・JIN-golf の旧料金表がコメントアウトで残っていた）。
+- skip: 「ステップ/スマート/ゼン ゴルフ 評判」＝既存ブランドページと重複（口コミを載せないので中身が同じになる）・西葛西＝/area/tokyo/edogawa/・神戸/橋本＝市区町村ページ追加は判断待ち・ゴルフステーション新宿＝公式が見つからない・チキンゴルフ博多＝公式一覧に店舗なし。
+- テキストの変わった既存ページは /brand/ のみ（導線を追加）。sitemap 1247→1252、lastmod は新規5＋/brand/ だけ 11-16（他は deploy の値）。公開前チェック ✅ 1252・trust-audit 新規ページ指摘0・heading-lint 0。
