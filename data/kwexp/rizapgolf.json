@@ -1,0 +1,368 @@
+{
+ "brand": "RIZAP GOLF",
+ "brand_kana": "ライザップゴルフ",
+ "checked": "2026-11-16",
+ "official_count": {
+  "text": "公式サイトの店舗一覧では「全国19店舗に展開！」と案内されています",
+  "url": "https://www.rizap-golf.jp/golfschool"
+ },
+ "store_list": "https://www.rizap-golf.jp/golfschool",
+ "plan_url": "https://www.rizap-golf.jp/plan",
+ "course_fees": [
+  {
+   "lessons": 16,
+   "ex": 348000,
+   "inc": 382800
+  },
+  {
+   "lessons": 24,
+   "ex": 492000,
+   "inc": 541200
+  },
+  {
+   "lessons": 32,
+   "ex": 624000,
+   "inc": 686400
+  }
+ ],
+ "lesson_minutes": 50,
+ "admission_inc": 55000,
+ "prime": {
+  "from_inc": 154000,
+  "registration_inc": 495000,
+  "note": "PRIMEプランのコース料金は全16回（2ヶ月）税込154,000円〜。別途 入会金 税込55,000円と PRIMEプラン登録料 税込495,000円がかかります"
+ },
+ "diagnosis": {
+  "inc": 3300,
+  "minutes": 60,
+  "text": "体験レッスン付きゴルフ力診断（初回限定・60分）税込3,300円"
+ },
+ "refund": "入会時に契約したコースの初回ご利用日から30日間の全額返金保証（来店のうえ書面で手続き。物品と60分3,300円のゴルフ力診断は対象外。利用すると再入会できません）",
+ "installment": "分割払いの例：16回コース（入会金込み 税込437,800円）を60回払い・頭金0円の場合、初回14,362円・2回目以降 月々11,500円、支払総額692,862円（実質年率19.8%）",
+ "equipment": "全室に同一の高性能シミュレーター（GDR）を設置した完全個室",
+ "self_practice": "会員は予約の入っていないレッスンルームを1日1枠（50分）まで自主練習に利用可（前日または当日に予約）",
+ "rental": "クラブ・ウェア・シューズは無料レンタル（グローブは持参）",
+ "phone": "0120-063-700（8:00〜22:00・年中無休）",
+ "stores": [
+  {
+   "id": "5",
+   "name": "RIZAP GOLF 新宿南口店",
+   "zip": "151-0053",
+   "address": "東京都渋谷区代々木1-57-1 代々木センタービルディング6F",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": "近隣の有料コインパーキングをご利用下さいませ。",
+   "stations": [
+    "JR山手線 代々木駅 北口より徒歩1分 総武線代々木駅からも同様",
+    "都営大江戸線 代々木駅 A3出口より徒歩1分",
+    "小田急線 南新宿駅 徒歩5分",
+    "JR中央線 新宿駅 南口より徒歩8分 サザンテラス口より徒歩8分 JR各線:埼京線/湘南新宿ライン/総武線/山手線",
+    "京王線 新宿駅 徒歩8分"
+   ],
+   "area": null,
+   "source_url": "https://www.rizap-golf.jp/golfschool/5",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "6",
+   "name": "RIZAP GOLF 飯田橋店",
+   "zip": "162-0824",
+   "address": "東京都新宿区揚場町2-26 SKビル B1F",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": null,
+   "stations": [
+    "JR総武線 飯田橋駅 徒歩2分",
+    "東京メトロ有楽町線 飯田橋駅 B1出口より徒歩1分",
+    "東京メトロ東西線 飯田橋駅 B1出口より徒歩1分",
+    "東京メトロ南北線 飯田橋駅 B1出口より徒歩1分",
+    "都営大江戸線 飯田橋駅 B1出口より徒歩1分"
+   ],
+   "area": null,
+   "source_url": "https://www.rizap-golf.jp/golfschool/6",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "11",
+   "name": "RIZAP GOLF 六本木店",
+   "zip": "106-0032",
+   "address": "東京都港区六本木2-2-8 オーキッドプレイス六本木 B1F",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": "提携駐車場はありません。 車でお越しの場合は近隣のコインパーキングをご利用ください。",
+   "stations": [
+    "東京メトロ日比谷線 六本木駅 6番出口より徒歩11分",
+    "都営大江戸線 六本木駅 6番出口より徒歩11分",
+    "東京メトロ南北線 六本木一丁目駅 3番出口より徒歩4分",
+    "東京メトロ銀座線 溜池山王駅 12番出口より徒歩5分"
+   ],
+   "area": null,
+   "source_url": "https://www.rizap-golf.jp/golfschool/11",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "18",
+   "name": "RIZAP GOLF 三田店",
+   "zip": "108-0014",
+   "address": "東京都港区芝5-36-7 三田ベルジュビル2F",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": "店舗ビル地下に有料コインパーキング有。車でご来店いただけます。",
+   "stations": [
+    "都営三田線 三田駅 A4出口より徒歩5分",
+    "都営浅草線 三田駅 A4出口より徒歩5分",
+    "JR山手線 田町駅 西口より徒歩4分"
+   ],
+   "area": null,
+   "source_url": "https://www.rizap-golf.jp/golfschool/18",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "20",
+   "name": "RIZAP GOLF 銀座店",
+   "zip": "104-0061",
+   "address": "東京都中央区銀座7-13-12 サクセス銀座7ビル3F",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": null,
+   "stations": [
+    "JR山手線 新橋駅 銀座口、汐留口より徒歩8分",
+    "東京メトロ日比谷線 東銀座駅 A1出口より徒歩5分",
+    "都営大江戸線 築地市場駅 A3出口より徒歩7分"
+   ],
+   "area": "ginza",
+   "source_url": "https://www.rizap-golf.jp/golfschool/20",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "21",
+   "name": "RIZAP GOLF 立川店",
+   "zip": "190-8507",
+   "address": "東京都立川市曙町2-39-3 立川高島屋ショッピングセンター8F",
+   "hours": "平日祝10:00～23:00、土日8:00～19:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": null,
+   "stations": [
+    "JR中央線 立川駅 北口より徒歩5分 JR各線:南武線/青梅線",
+    "多摩都市モノレール 立川北駅 徒歩5分"
+   ],
+   "area": null,
+   "source_url": "https://www.rizap-golf.jp/golfschool/21",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "22",
+   "name": "RIZAP GOLF 大宮店",
+   "zip": "330-0846",
+   "address": "埼玉県さいたま市大宮区大門町2-22-1 TAiGAビル1F",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": null,
+   "stations": [
+    "JR埼京線 大宮駅 東口より徒歩3分",
+    "JR京浜東北（根岸）線 大宮駅 東口より徒歩3分"
+   ],
+   "area": null,
+   "source_url": "https://www.rizap-golf.jp/golfschool/22",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "23",
+   "name": "RIZAP GOLF 千葉店",
+   "zip": "260-0045",
+   "address": "千葉県千葉市中央区弁天1-5-1 オーパスビルディング 1F (旧:白樺ビル)",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": null,
+   "stations": [
+    "JR総武線 千葉駅 北口より徒歩3分",
+    "京成千葉線 京成千葉駅 西口より徒歩8分"
+   ],
+   "area": null,
+   "source_url": "https://www.rizap-golf.jp/golfschool/23",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "24",
+   "name": "RIZAP GOLF 川崎店",
+   "zip": "210-0006",
+   "address": "神奈川県川崎市川崎区砂子1-10-2 ソシオ砂子ビルB1F",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": null,
+   "stations": [
+    "JR京浜東北（根岸）線 川崎駅 中央口より徒歩10分 ※JR各線川崎駅 川崎市役所方面",
+    "京浜急行本線 京急川崎駅 中央改札より8分"
+   ],
+   "area": null,
+   "source_url": "https://www.rizap-golf.jp/golfschool/24",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "25",
+   "name": "RIZAP GOLF 横浜東口店",
+   "zip": "221-0052",
+   "address": "神奈川県横浜市神奈川区栄町1-1 KDX横浜ビル 1F",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": null,
+   "stations": [
+    "JR各線 横浜駅 きた東口 徒歩6分",
+    "東急東横線 横浜駅 きた東口 徒歩6分",
+    "京浜急行本線 横浜駅 きた東口 徒歩6分",
+    "相鉄線 横浜駅 きた東口 徒歩11分",
+    "横浜市営地下鉄ブルーライン 横浜駅 きた東口 徒歩約12分",
+    "京浜急行本線 神奈川駅 徒歩4分"
+   ],
+   "area": null,
+   "source_url": "https://www.rizap-golf.jp/golfschool/25",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "27",
+   "name": "RIZAP GOLF 名古屋栄店",
+   "zip": "460-0008",
+   "address": "愛知県名古屋市中区栄3-19-8 栄ミナミ平和ビルB1F",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": "最寄の有料【駐車場】はナディアパーク地下駐車場(呉服町通り側が入口)でございます。",
+   "stations": [
+    "市営地下鉄名城線 矢場町駅 6番出口より徒歩6分",
+    "市営地下鉄東山線 栄駅 西改札B1出口より徒歩8分"
+   ],
+   "area": "nagoya",
+   "source_url": "https://www.rizap-golf.jp/golfschool/27",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "28",
+   "name": "RIZAP GOLF 名古屋駅前店",
+   "zip": "450-0002",
+   "address": "愛知県名古屋市中村区名駅3-25-3 大橋ビルディング B1F",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": null,
+   "stations": [
+    "JR東海道線 名古屋駅 桜通口徒歩5分"
+   ],
+   "area": "nagoya",
+   "source_url": "https://www.rizap-golf.jp/golfschool/28",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "29",
+   "name": "RIZAP GOLF 京都店",
+   "zip": "600-8007",
+   "address": "京都府京都市下京区 四条通東洞院 東入立売西町66番地 京都証券ビル7F 706/707号室",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": "近隣の有料コインパーキングをご利用下さいませ。詳しい場所につきましては店舗スタッフにお尋ね下さいませ。",
+   "stations": [
+    "阪急京都線 烏丸駅 18番出口より徒歩1分",
+    "京都烏丸線 四条駅 1番出口より徒歩3分"
+   ],
+   "area": "kyoto",
+   "source_url": "https://www.rizap-golf.jp/golfschool/29",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "30",
+   "name": "RIZAP GOLF 神戸店",
+   "zip": "650-0037",
+   "address": "兵庫県神戸市中央区明石町32 明海ビルB1F",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": null,
+   "stations": [
+    "JR神戸線 元町駅 東改札口より徒歩5分",
+    "神戸地下鉄 旧居留地・大丸前駅 1番出口より徒歩3分"
+   ],
+   "area": null,
+   "source_url": "https://www.rizap-golf.jp/golfschool/30",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "31",
+   "name": "RIZAP GOLF 梅田店",
+   "zip": "530-0001",
+   "address": "大阪府大阪市北区梅田3-4-5 毎日インテシオ2F",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": null,
+   "stations": [
+    "JR東海道・山陽線 大阪駅 桜橋口より徒歩8分",
+    "御堂筋線 梅田駅 南改札出口より徒歩12分",
+    "四ツ橋線 西梅田駅 北改札出口より徒歩7分"
+   ],
+   "area": null,
+   "source_url": "https://www.rizap-golf.jp/golfschool/31",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "32",
+   "name": "RIZAP GOLF 天王寺店",
+   "zip": "545-0052",
+   "address": "大阪府大阪市阿倍野区阿倍野筋2-1-29 AITビル 10F",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": null,
+   "stations": [
+    "御堂筋線 天王寺駅 西口より徒歩5分",
+    "近畿日本鉄道 大阪阿部野橋駅 西口改札より徒歩3分"
+   ],
+   "area": null,
+   "source_url": "https://www.rizap-golf.jp/golfschool/32",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "33",
+   "name": "RIZAP GOLF 広島店",
+   "zip": "730-0012",
+   "address": "広島県広島市中区上八丁堀4-1 アーバンビューグランドタワー1F",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": "店舗付近に有料コインパーキング有。車でご来店いただけます。",
+   "stations": [
+    "広島電鉄 縮景園前駅 下車すぐ",
+    "JR西日本　山陽本線 広島駅 徒歩15分"
+   ],
+   "area": null,
+   "source_url": "https://www.rizap-golf.jp/golfschool/33",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "34",
+   "name": "RIZAP GOLF 博多店",
+   "zip": "812-0013",
+   "address": "福岡県福岡市博多区博多駅東2-8-33 TERASOⅢ 1F",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": null,
+   "stations": [
+    "JR九州　鹿児島本線 博多駅 徒歩10分"
+   ],
+   "area": null,
+   "source_url": "https://www.rizap-golf.jp/golfschool/34",
+   "fetched_at": "2026-11-16"
+  },
+  {
+   "id": "221",
+   "name": "RIZAP GOLF 神田店",
+   "zip": "101-0041",
+   "address": "東京都千代田区神田須田町1丁目34-3 D2SM 4F/5F",
+   "hours": "7:00～23:00",
+   "hours_note": "※従業員の稼働状況により、営業時間が短縮となる場合があります。",
+   "parking": "近隣の有料コインパーキングをご利用下さいませ。",
+   "stations": [
+    "東京メトロ銀座線 神田駅 5番出口より徒歩1分（※5番出口は7:00～21:00利用可能）",
+    "JR山手線・京浜東北線・中央線 神田駅 北口（モンダミン口）より徒歩3分",
+    "東京メトロ丸ノ内線 淡路町駅 A1出口より徒歩5分",
+    "都営新宿線 小川町駅 A1出口より徒歩5分",
+    "東京メトロ千代田線 新御茶ノ水駅 徒歩5分"
+   ],
+   "area": null,
+   "source_url": "https://www.rizap-golf.jp/golfschool/221",
+   "fetched_at": "2026-11-16"
+  }
+ ]
+}

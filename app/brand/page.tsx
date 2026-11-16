@@ -60,6 +60,16 @@ export default function BrandIndex() {
         「記載なし」は、該当ブランドの公式サイトの店舗ページに記載がないことを示しており、設備がないことを示すものではありません。
       </p>
 
+      <h2>店舗データベースに含めていないブランド</h2>
+      <p>
+        マンツーマンのコース制スクールであるライザップゴルフ（全19店舗）は、料金と店舗の一覧を別のページに掲載しています。
+        エリア・条件からの検索の対象には含めていません。
+      </p>
+      <div className="chips">
+        <Link href="/brand/rizapgolf/">ライザップゴルフの料金・店舗一覧</Link>
+        <Link href="/lesson/beginner/">ゴルフ初心者のレッスン選び（スクール9ブランドの体験と料金の形）</Link>
+      </div>
+
       {bs.map((b) => (
         <div key={b.slug} className="g-brand-block">
           <h2>{b.name}</h2>

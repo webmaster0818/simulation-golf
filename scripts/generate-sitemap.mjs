@@ -58,6 +58,9 @@ const urls = [
   ...brands.map((b) => `/brand/${b}/`),
   ...FEATURES.map((f) => `/feature/${f}/`),
   ...facilities.map((f) => `/facility/${f.slug}/`),
+  // 2026-11-16 kwexp：施設データベース外のページ（app/lesson・app/brand/rizapgolf）
+  '/lesson/beginner/', '/brand/rizapgolf/',
+  '/brand/rizapgolf/nagoya/', '/brand/rizapgolf/kyoto/', '/brand/rizapgolf/ginza/',
 ]
 
 const xml =
