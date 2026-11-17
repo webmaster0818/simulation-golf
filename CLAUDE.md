@@ -765,3 +765,9 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 - ⚠️ /brand/rizapgolf/{kyoto,nagoya}/ の施設表の並びがビルド環境で入れ替わる（`[area]/page.tsx` の `localeCompare` が LANG=ja_JP だと 中京区/左京区 等の順が変わる）。今回は deploy の版を out に戻して出した（テキスト差分 0）。直すなら比較を `<`/`>` のコードポイント順に固定する。
 - テキストの変わったページは 12（1255 HTML 中・/facility/ のみ）。sitemap lastmod はこの 12 だけ 11-17。計測リンク 0→0。公開前チェック ✅ 1252。
 - ソース bf1d14c ／ deploy a17bbe17f6。
+
+### 2026-11-17（20:00 kwexp：新規5ページ・2日目）
+- **新規**: `/brand/rizapgolf/{yokohama,kawasaki,chiba,hiroshima}/`（ライザップゴルフ 横浜/川崎/千葉/広島 各月88。RIZAP_AREAS に4地域を追加し rizapgolf.json の該当4店〔id 25/24/23/33〕に area を付与。4店の所在地・営業時間・駅・駐車場・料金は公式の店舗ページで 11/17 に再確認し一致→fetched_at 11-17。店舗一覧「全国19店舗」も一致）／
+  `/guide/indoor-golf/`（インドアゴルフとは 月72：施設の3つの形〔屋内シミュレーション・スクール・計測つき屋外練習場〕と、掲載データの形態別集計＝件数・24時間営業の明記・個室/半個室の記載・計測機器の機種確認・ブランド数・都道府県別。数値はすべて facilities.json から計算＝ビルド時に自動で追従）。
+- 導線: /guide/indoor-golf/ は /equipment/ の冒頭文と /lesson/beginner/ の都道府県節から（site-precheck [14] 被リンク1本以下を解消）。川崎区・広島市中区はエリアページが無いので areaLink は県ページ。
+- テキストの変わった既存ページは6（/brand/rizapgolf/ と nagoya/kyoto/ginza＝地域チップ追加・/equipment/・/lesson/beginner/）。kyoto/nagoya/ginza の施設表の並びは deploy と同じ（今回は入れ替わりなし）。sitemap 1252→1257、lastmod は新規5＋変更6だけ 11-17（他は deploy の値）。公開前チェック ✅ 1257・heading-lint 0・計測リンク 0。
