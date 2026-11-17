@@ -178,9 +178,9 @@
     "JR総武線 千葉駅 北口より徒歩3分",
     "京成千葉線 京成千葉駅 西口より徒歩8分"
    ],
-   "area": null,
+   "area": "chiba",
    "source_url": "https://www.rizap-golf.jp/golfschool/23",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-17"
   },
   {
    "id": "24",
@@ -194,9 +194,9 @@
     "JR京浜東北（根岸）線 川崎駅 中央口より徒歩10分 ※JR各線川崎駅 川崎市役所方面",
     "京浜急行本線 京急川崎駅 中央改札より8分"
    ],
-   "area": null,
+   "area": "kawasaki",
    "source_url": "https://www.rizap-golf.jp/golfschool/24",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-17"
   },
   {
    "id": "25",
@@ -214,9 +214,9 @@
     "横浜市営地下鉄ブルーライン 横浜駅 きた東口 徒歩約12分",
     "京浜急行本線 神奈川駅 徒歩4分"
    ],
-   "area": null,
+   "area": "yokohama",
    "source_url": "https://www.rizap-golf.jp/golfschool/25",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-17"
   },
   {
    "id": "27",
@@ -326,9 +326,9 @@
     "広島電鉄 縮景園前駅 下車すぐ",
     "JR西日本　山陽本線 広島駅 徒歩15分"
    ],
-   "area": null,
+   "area": "hiroshima",
    "source_url": "https://www.rizap-golf.jp/golfschool/33",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-17"
   },
   {
    "id": "34",

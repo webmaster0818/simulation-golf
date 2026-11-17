@@ -61,6 +61,9 @@ const urls = [
   // 2026-11-16 kwexp：施設データベース外のページ（app/lesson・app/brand/rizapgolf）
   '/lesson/beginner/', '/brand/rizapgolf/',
   '/brand/rizapgolf/nagoya/', '/brand/rizapgolf/kyoto/', '/brand/rizapgolf/ginza/',
+  // 2026-11-17 kwexp
+  '/brand/rizapgolf/yokohama/', '/brand/rizapgolf/kawasaki/', '/brand/rizapgolf/chiba/', '/brand/rizapgolf/hiroshima/',
+  '/guide/indoor-golf/',
 ]
 
 const xml =

@@ -31,6 +31,11 @@ export const RIZAP_AREAS: Record<string, { label: string; pref: string; city: st
   nagoya: { label: '名古屋', pref: '愛知県', city: '名古屋市', wards: ['名古屋市中区', '名古屋市中村区'] },
   kyoto: { label: '京都', pref: '京都府', city: '京都市', wards: ['京都市下京区', '京都市中京区'] },
   ginza: { label: '銀座', pref: '東京都', city: '中央区', wards: ['中央区'], areaLink: { href: '/area/tokyo/chuo/', label: '中央区のシミュレーションゴルフ施設をすべて見る' } },
+  // 2026-11-17 kwexp（4店舗の値は公式の店舗ページで 11/17 に再確認）
+  yokohama: { label: '横浜', pref: '神奈川県', city: '横浜市', wards: ['横浜市神奈川区'], areaLink: { href: '/area/kanagawa/yokohama-kanagawa/', label: '横浜市神奈川区のシミュレーションゴルフ施設をすべて見る' } },
+  kawasaki: { label: '川崎', pref: '神奈川県', city: '川崎市', wards: ['川崎市川崎区'], areaLink: { href: '/area/kanagawa/', label: '神奈川県のシミュレーションゴルフ施設をすべて見る' } },
+  chiba: { label: '千葉', pref: '千葉県', city: '千葉市', wards: ['千葉市中央区'], areaLink: { href: '/area/chiba/chiba-chuo/', label: '千葉市中央区のシミュレーションゴルフ施設をすべて見る' } },
+  hiroshima: { label: '広島', pref: '広島県', city: '広島市', wards: ['広島市中区'], areaLink: { href: '/area/hiroshima/', label: '広島県のシミュレーションゴルフ施設をすべて見る' } },
 }
 
 export const ymd = (d: string) => d.replace(/^(\d+)-0?(\d+)-0?(\d+)$/, '$1年$2月$3日')

@@ -142,7 +142,10 @@ export default function BeginnerLessonPage() {
       </dl>
 
       <h2>都道府県別のスクールの数（当サイト掲載）</h2>
-      <p>当サイトに掲載しているシミュレーター併設スクール{LESSON.length}店舗（ライザップゴルフを除く）の所在地です。</p>
+      <p>
+        当サイトに掲載しているシミュレーター併設スクール{LESSON.length}店舗（ライザップゴルフを除く）の所在地です。
+        コーチのつかない屋内シミュレーションゴルフとの違いは<Link href="/guide/indoor-golf/">インドアゴルフとは</Link>にまとめています。
+      </p>
       <div className="chips">
         {prefs.map(([p, n]) => (
           <Link key={p} href={`/area/${PREF_SLUG[p]}/`}>{p}<span className="c">{n}</span></Link>

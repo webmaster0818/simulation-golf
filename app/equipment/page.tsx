@@ -33,6 +33,7 @@ export default function EquipmentIndex() {
         <p className="lead">
           シミュレーションゴルフの使い心地は、画面の映像よりも、<strong>打球のどの数値を計測しているか</strong>によって異なります。
           このページでは、弾道計測の方式の違いと、公式サイトで計測機器を確認できた施設についてご紹介します。
+          施設の形（屋内シミュレーションゴルフ・スクール・練習場）の違いは<Link href="/guide/indoor-golf/">インドアゴルフとは</Link>にまとめています。
         </p>
       </section>
 
