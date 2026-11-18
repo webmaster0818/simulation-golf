@@ -788,3 +788,10 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 - 競合: WebSearch（US）は「ステップゴルフ」で minhyo（口コミ）・shotnavi・bcnretail（企業ニュース）、「スマートゴルフ」は GPS ナビアプリ「スマートゴルフナビ」・スマートウォッチ記事ばかりで、日本のインドアゴルフの上位は返らず → 公式値で代替し、語の取り違え防止の一文を足した。
 - テキストの変わったページは 4（1257 HTML 中）。sitemap lastmod はこの 4 だけ 11-18（deploy の sitemap を元に差し替え）。計測リンク 0→0。公開前チェック ✅ 1257。
 - ソース 7a85b47 ／ deploy 323eb98f3d。
+
+### 2026-11-18（20:00 kwexp：新規5ページ・3日目）
+- **新規**: `/brand/rizapgolf/{kobe,umeda,omiya,mita,tachikawa}/`（ライザップゴルフ 神戸 月72／梅田・大宮・三田 各56／立川 40）。RIZAP_AREAS に5地域を追加し rizapgolf.json の該当5店〔id 30/31/22/18/21〕に area を付与。5店の所在地・営業時間・駅・駐車場・料金（16/24/32回・入会金）は公式の店舗ページで 11/18 に再確認し一致→fetched_at 11-18。店舗一覧「全国19店舗」・/plan の 382,800円〜・入会金 55,000円も一致（top の checked は 11-16 のまま）。
+- areaLink: 三田＝/area/tokyo/minato/、神戸・梅田・大宮・立川は市区町村ページが無いので都府県ページ。立川市の当サイト掲載は1施設（サンクチュアリ立川）。
+- skip: 「ライザップゴルフ 日本橋」＝公式一覧に日本橋店なし／チキンゴルフ 八王子・神田・北九州・高槻・福井＝公式一覧（chicken-golf.com/schools/）に店舗なし／ビーグルゴルフ 横浜＝公式が見つからない／箕面・大宮・川越・相模原・三鷹＝市区町村ページ追加は判断待ち／蒲田＝/area/tokyo/ota/・元住吉＝/area/kanagawa/kawasaki-nakahara/・練馬・柏＝既存エリアページ／サンクチュアリ・チキンゴルフ 評判＝既存ブランドページ。queue の空欄は残り50。
+- テキストの変わった既存ページは8（/brand/rizapgolf/ と既存7地域＝地域チップ追加のみ。施設表の並びは deploy と同じ）。sitemap 1257→1262、lastmod は新規5＋変更8だけ 11-18（他は deploy の値）。公開前チェック ✅ 1262・heading-lint 0・計測リンク 0。trust-audit（--dry --site）指摘0。
+- ソース c8d482a ／ deploy c8b9c90a8c（反映まで約2分）。
