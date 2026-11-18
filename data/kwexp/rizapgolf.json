@@ -113,9 +113,9 @@
     "都営浅草線 三田駅 A4出口より徒歩5分",
     "JR山手線 田町駅 西口より徒歩4分"
    ],
-   "area": null,
+   "area": "mita",
    "source_url": "https://www.rizap-golf.jp/golfschool/18",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-18"
   },
   {
    "id": "20",
@@ -146,9 +146,9 @@
     "JR中央線 立川駅 北口より徒歩5分 JR各線:南武線/青梅線",
     "多摩都市モノレール 立川北駅 徒歩5分"
    ],
-   "area": null,
+   "area": "tachikawa",
    "source_url": "https://www.rizap-golf.jp/golfschool/21",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-18"
   },
   {
    "id": "22",
@@ -162,9 +162,9 @@
     "JR埼京線 大宮駅 東口より徒歩3分",
     "JR京浜東北（根岸）線 大宮駅 東口より徒歩3分"
    ],
-   "area": null,
+   "area": "omiya",
    "source_url": "https://www.rizap-golf.jp/golfschool/22",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-18"
   },
   {
    "id": "23",
@@ -277,9 +277,9 @@
     "JR神戸線 元町駅 東改札口より徒歩5分",
     "神戸地下鉄 旧居留地・大丸前駅 1番出口より徒歩3分"
    ],
-   "area": null,
+   "area": "kobe",
    "source_url": "https://www.rizap-golf.jp/golfschool/30",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-18"
   },
   {
    "id": "31",
@@ -294,9 +294,9 @@
     "御堂筋線 梅田駅 南改札出口より徒歩12分",
     "四ツ橋線 西梅田駅 北改札出口より徒歩7分"
    ],
-   "area": null,
+   "area": "umeda",
    "source_url": "https://www.rizap-golf.jp/golfschool/31",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-18"
   },
   {
    "id": "32",

@@ -36,6 +36,12 @@ export const RIZAP_AREAS: Record<string, { label: string; pref: string; city: st
   kawasaki: { label: '川崎', pref: '神奈川県', city: '川崎市', wards: ['川崎市川崎区'], areaLink: { href: '/area/kanagawa/', label: '神奈川県のシミュレーションゴルフ施設をすべて見る' } },
   chiba: { label: '千葉', pref: '千葉県', city: '千葉市', wards: ['千葉市中央区'], areaLink: { href: '/area/chiba/chiba-chuo/', label: '千葉市中央区のシミュレーションゴルフ施設をすべて見る' } },
   hiroshima: { label: '広島', pref: '広島県', city: '広島市', wards: ['広島市中区'], areaLink: { href: '/area/hiroshima/', label: '広島県のシミュレーションゴルフ施設をすべて見る' } },
+  // 2026-11-18 kwexp（5店舗の値は公式の店舗ページで 11/18 に再確認。神戸市・大阪市・さいたま市大宮区・立川市は市区町村ページが無いので areaLink は都府県ページ）
+  kobe: { label: '神戸', pref: '兵庫県', city: '神戸市', wards: ['神戸市中央区'], areaLink: { href: '/area/hyogo/', label: '兵庫県のシミュレーションゴルフ施設をすべて見る' } },
+  umeda: { label: '梅田', pref: '大阪府', city: '大阪市', wards: ['大阪市北区'], areaLink: { href: '/area/osaka/', label: '大阪府のシミュレーションゴルフ施設をすべて見る' } },
+  omiya: { label: '大宮', pref: '埼玉県', city: 'さいたま市', wards: ['さいたま市大宮区'], areaLink: { href: '/area/saitama/', label: '埼玉県のシミュレーションゴルフ施設をすべて見る' } },
+  mita: { label: '三田', pref: '東京都', city: '港区', wards: ['港区'], areaLink: { href: '/area/tokyo/minato/', label: '港区のシミュレーションゴルフ施設をすべて見る' } },
+  tachikawa: { label: '立川', pref: '東京都', city: '立川市', wards: ['立川市'], areaLink: { href: '/area/tokyo/', label: '東京都のシミュレーションゴルフ施設をすべて見る' } },
 }
 
 export const ymd = (d: string) => d.replace(/^(\d+)-0?(\d+)-0?(\d+)$/, '$1年$2月$3日')
