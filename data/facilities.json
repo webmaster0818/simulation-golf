@@ -11864,10 +11864,10 @@
    "parking": null,
    "monthly_fee": "・平日デイプラン 9,980円〜(税込10,978円〜)",
    "equipment": "GOLFZON GDR",
-   "open": false,
+   "open": true,
    "official": "https://www.stepgolf.co.jp/store/y-motomachi_extra",
    "source_url": "https://www.stepgolf.co.jp/store/y-motomachi_extra",
-   "fetched_at": "2026-10-22"
+   "fetched_at": "2026-11-19"
   },
   {
    "segment": "lesson",
@@ -25189,10 +25189,10 @@
    "parking": "提携駐車場のご用意はございません。お近くのパーキングをご利用ください。",
    "monthly_fee": "ブロンズプラン 22,000円／シルバープラン 25,000円／プラチナプラン 33,000円／ルビープラン 44,000円／シニアプラン 15,000円／回数プラン月3回 13,200円／回数プラン月2回 8,800円／回数プラン月1回 4,400円／ファミリープラン 29,700円（税込）",
    "equipment": null,
-   "open": false,
+   "open": true,
    "official": "https://sma-gol.com/shop/sugamo-1chome/",
    "source_url": "https://sma-gol.com/shop/sugamo-1chome/",
-   "fetched_at": "2026-10-16"
+   "fetched_at": "2026-11-19"
   },
   {
    "segment": "indoor",
@@ -27744,7 +27744,7 @@
    "open": true,
    "official": "https://indoorgolfpark-20do-c.jp/",
    "source_url": "https://indoorgolfpark-20do-c.jp/",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-19"
   },
   {
    "segment": "indoor",
@@ -28014,7 +28014,7 @@
    "open": true,
    "official": "https://genki-golf-studio.jimdofree.com/",
    "source_url": "https://genki-golf-studio.jimdofree.com/",
-   "fetched_at": "2026-11-17"
+   "fetched_at": "2026-11-19"
   },
   {
    "segment": "indoor",
@@ -28041,7 +28041,7 @@
    "open": true,
    "official": "https://www.kisyugolf.com/private_indoor/",
    "source_url": "https://www.kisyugolf.com/private_indoor/",
-   "fetched_at": "2026-11-17"
+   "fetched_at": "2026-11-19"
   },
   {
    "segment": "indoor",
@@ -28068,7 +28068,7 @@
    "open": true,
    "official": "https://www.kisyugolf.com/private_indoor/",
    "source_url": "https://www.kisyugolf.com/private_indoor/",
-   "fetched_at": "2026-11-17"
+   "fetched_at": "2026-11-19"
   },
   {
    "segment": "indoor",
@@ -28149,7 +28149,7 @@
    "open": true,
    "official": "https://www.golfin.jp/",
    "source_url": "https://www.golfin.jp/fee.php",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-19"
   },
   {
    "segment": "indoor",
@@ -28203,7 +28203,7 @@
    "open": true,
    "official": "https://idgolf.jp/",
    "source_url": "https://idgolf.jp/",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-19"
   },
   {
    "segment": "indoor",
@@ -28230,7 +28230,7 @@
    "open": true,
    "official": "https://guln.kizuna-casa.com/",
    "source_url": "https://guln.kizuna-casa.com/",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-19"
   },
   {
    "segment": "indoor",
@@ -28257,7 +28257,7 @@
    "open": true,
    "official": "https://granlab.jp/golf/",
    "source_url": "https://granlab.jp/golf/",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-19"
   },
   {
    "segment": "indoor",
@@ -28284,7 +28284,7 @@
    "open": true,
    "official": "https://emon-golf.com/",
    "source_url": "https://emon-golf.com/",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-19"
   },
   {
    "segment": "indoor",
@@ -28311,7 +28311,7 @@
    "open": true,
    "official": "https://golf-zero.wixsite.com/golf-zero",
    "source_url": "https://golf-zero.wixsite.com/golf-zero",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-19"
   },
   {
    "segment": "indoor",
@@ -28338,7 +28338,7 @@
    "open": true,
    "official": "https://www.golfers-takaoka.com/",
    "source_url": "https://www.golfers-takaoka.com/blank-1",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-19"
   },
   {
    "segment": "indoor",
