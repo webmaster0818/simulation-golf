@@ -72,6 +72,12 @@ export default async function RizapAreaPage({ params }: { params: Promise<Params
           {ss.map((s) => `${shortName(s.name)}は${s.stations[0].replace(/\s+/g, ' ')}`).join('、')}です。
           料金は全店共通で、通常コース全16回（2ヶ月）税込{yen(c16.inc)}〜、別途入会金 税込{yen(R.admission_inc)}です。
         </p>
+        {a.note && (
+          <p>
+            {a.note.text}
+            {a.note.link && <> <Link href={a.note.link.href}>{a.note.link.label}</Link></>}
+          </p>
+        )}
       </section>
 
       {ss.map((s) => (

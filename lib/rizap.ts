@@ -27,7 +27,7 @@ export const RIZAP = raw as typeof raw & { stores: RizapStore[] }
 /** 1回あたりの料金（税込・円未満切り捨て。公式の単価表示と同じ）。当サイトの計算 */
 export const perLesson = (inc: number, lessons: number) => Math.floor(inc / lessons)
 
-export const RIZAP_AREAS: Record<string, { label: string; pref: string; city: string; wards: string[]; areaLink?: { href: string; label: string } }> = {
+export const RIZAP_AREAS: Record<string, { label: string; pref: string; city: string; wards: string[]; areaLink?: { href: string; label: string }; note?: { text: string; link?: { href: string; label: string } } }> = {
   nagoya: { label: '名古屋', pref: '愛知県', city: '名古屋市', wards: ['名古屋市中区', '名古屋市中村区'] },
   kyoto: { label: '京都', pref: '京都府', city: '京都市', wards: ['京都市下京区', '京都市中京区'] },
   ginza: { label: '銀座', pref: '東京都', city: '中央区', wards: ['中央区'], areaLink: { href: '/area/tokyo/chuo/', label: '中央区のシミュレーションゴルフ施設をすべて見る' } },
@@ -42,6 +42,19 @@ export const RIZAP_AREAS: Record<string, { label: string; pref: string; city: st
   omiya: { label: '大宮', pref: '埼玉県', city: 'さいたま市', wards: ['さいたま市大宮区'], areaLink: { href: '/area/saitama/', label: '埼玉県のシミュレーションゴルフ施設をすべて見る' } },
   mita: { label: '三田', pref: '東京都', city: '港区', wards: ['港区'], areaLink: { href: '/area/tokyo/minato/', label: '港区のシミュレーションゴルフ施設をすべて見る' } },
   tachikawa: { label: '立川', pref: '東京都', city: '立川市', wards: ['立川市'], areaLink: { href: '/area/tokyo/', label: '東京都のシミュレーションゴルフ施設をすべて見る' } },
+  // 2026-11-19 kwexp（5店舗の値は公式の店舗ページで 11/19 に再確認。新宿南口店の所在地は渋谷区代々木のため、近くの施設は渋谷区で集計。大阪市・福岡市は市区町村ページが無いので areaLink は府県ページ）
+  tennoji: { label: '天王寺', pref: '大阪府', city: '大阪市', wards: ['大阪市阿倍野区'], areaLink: { href: '/area/osaka/', label: '大阪府のシミュレーションゴルフ施設をすべて見る' } },
+  shinjuku: {
+    label: '新宿', pref: '東京都', city: '渋谷区', wards: ['渋谷区'],
+    areaLink: { href: '/area/tokyo/shibuya/', label: '渋谷区のシミュレーションゴルフ施設をすべて見る' },
+    note: {
+      text: '新宿南口店の所在地は渋谷区代々木で、JR代々木駅北口・都営大江戸線代々木駅から徒歩1分、JR新宿駅南口からは徒歩8分です（公式の店舗ページの記載）。そのため、下の「ほかのシミュレーションゴルフ」は渋谷区の施設を掲載しています。新宿区内にあるライザップゴルフは飯田橋店（新宿区揚場町）です。',
+      link: { href: '/brand/rizapgolf/iidabashi/', label: 'ライザップゴルフ 飯田橋店を見る' },
+    },
+  },
+  roppongi: { label: '六本木', pref: '東京都', city: '港区', wards: ['港区'], areaLink: { href: '/area/tokyo/minato/', label: '港区のシミュレーションゴルフ施設をすべて見る' } },
+  hakata: { label: '博多', pref: '福岡県', city: '福岡市', wards: ['福岡市博多区'], areaLink: { href: '/area/fukuoka/', label: '福岡県のシミュレーションゴルフ施設をすべて見る' } },
+  iidabashi: { label: '飯田橋', pref: '東京都', city: '新宿区', wards: ['新宿区'], areaLink: { href: '/area/tokyo/shinjuku/', label: '新宿区のシミュレーションゴルフ施設をすべて見る' } },
 }
 
 export const ymd = (d: string) => d.replace(/^(\d+)-0?(\d+)-0?(\d+)$/, '$1年$2月$3日')

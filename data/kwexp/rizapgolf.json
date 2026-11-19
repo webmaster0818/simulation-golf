@@ -59,9 +59,9 @@
     "JR中央線 新宿駅 南口より徒歩8分 サザンテラス口より徒歩8分 JR各線:埼京線/湘南新宿ライン/総武線/山手線",
     "京王線 新宿駅 徒歩8分"
    ],
-   "area": null,
+   "area": "shinjuku",
    "source_url": "https://www.rizap-golf.jp/golfschool/5",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-19"
   },
   {
    "id": "6",
@@ -78,9 +78,9 @@
     "東京メトロ南北線 飯田橋駅 B1出口より徒歩1分",
     "都営大江戸線 飯田橋駅 B1出口より徒歩1分"
    ],
-   "area": null,
+   "area": "iidabashi",
    "source_url": "https://www.rizap-golf.jp/golfschool/6",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-19"
   },
   {
    "id": "11",
@@ -96,9 +96,9 @@
     "東京メトロ南北線 六本木一丁目駅 3番出口より徒歩4分",
     "東京メトロ銀座線 溜池山王駅 12番出口より徒歩5分"
    ],
-   "area": null,
+   "area": "roppongi",
    "source_url": "https://www.rizap-golf.jp/golfschool/11",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-19"
   },
   {
    "id": "18",
@@ -310,9 +310,9 @@
     "御堂筋線 天王寺駅 西口より徒歩5分",
     "近畿日本鉄道 大阪阿部野橋駅 西口改札より徒歩3分"
    ],
-   "area": null,
+   "area": "tennoji",
    "source_url": "https://www.rizap-golf.jp/golfschool/32",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-19"
   },
   {
    "id": "33",
@@ -341,9 +341,9 @@
    "stations": [
     "JR九州　鹿児島本線 博多駅 徒歩10分"
    ],
-   "area": null,
+   "area": "hakata",
    "source_url": "https://www.rizap-golf.jp/golfschool/34",
-   "fetched_at": "2026-11-16"
+   "fetched_at": "2026-11-19"
   },
   {
    "id": "221",

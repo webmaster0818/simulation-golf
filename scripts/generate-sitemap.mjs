@@ -66,6 +66,8 @@ const urls = [
   '/guide/indoor-golf/',
   // 2026-11-18 kwexp
   '/brand/rizapgolf/kobe/', '/brand/rizapgolf/umeda/', '/brand/rizapgolf/omiya/', '/brand/rizapgolf/mita/', '/brand/rizapgolf/tachikawa/',
+  // 2026-11-19 kwexp
+  '/brand/rizapgolf/tennoji/', '/brand/rizapgolf/shinjuku/', '/brand/rizapgolf/roppongi/', '/brand/rizapgolf/hakata/', '/brand/rizapgolf/iidabashi/',
 ]
 
 const xml =
