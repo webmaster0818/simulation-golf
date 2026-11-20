@@ -78,7 +78,7 @@
    "equipment": "トラックマン4／GOLFZON TWO VISION／DITECT／GOLFZON GDR+",
    "official": "https://gol-one.com/",
    "source_url": "https://gol-one.com/",
-   "fetched_at": "2026-11-18"
+   "fetched_at": "2026-11-20"
   },
   {
    "segment": "range",
@@ -160,7 +160,7 @@
    "note": "ブースごとの打席数は公式サイトに記載なし。料金は https://fusion-golf.com/indoor-price/ で確認。",
    "official": "https://fusion-golf.com/",
    "source_url": "https://fusion-golf.com/",
-   "fetched_at": "2026-11-18"
+   "fetched_at": "2026-11-20"
   },
   {
    "segment": "indoor",
@@ -203,7 +203,7 @@
    "note": "公式サイトに「人気シミュレーションマシンを2種類導入」とあるが、トラックマン以外の機種名は記載なし。月額は公式の料金表ページ（https://indoorgolf-kouyasan.com/price/）で確認。",
    "official": "https://indoorgolf-kouyasan.com/",
    "source_url": "https://indoorgolf-kouyasan.com/",
-   "fetched_at": "2026-11-18"
+   "fetched_at": "2026-11-20"
   },
   {
    "segment": "indoor",
@@ -315,7 +315,7 @@
    "note": "ボクシング＆フィットネスジムに併設のゴルフ個室。郵便番号は公式に記載がなく、住所から郵便番号検索で引いた。",
    "official": "https://www.fitbox24.com/golf/",
    "source_url": "https://www.fitbox24.com/golf/",
-   "fetched_at": "2026-11-18"
+   "fetched_at": "2026-11-20"
   },
   {
    "segment": "indoor",
@@ -528,7 +528,7 @@
    "note": "公式サイトに料金表が2つあり、両方に載っている3プランだけ転記した。郵便番号は公式に記載が無く、住所から引いた（036-8087）。",
    "official": "https://golfplus-hirosaki.com/",
    "source_url": "https://golfplus-hirosaki.com/",
-   "fetched_at": "2026-11-17",
+   "fetched_at": "2026-11-20",
    "access": null
   },
   {
@@ -552,7 +552,7 @@
    "note": "レストラン併設。機種名は公式サイトに記載なし（ハイスピードカメラ搭載・120コース以上収録とある）。郵便番号は公式に記載が無く、住所から引いた（031-0031）。",
    "official": "https://www.green-family-club.com/",
    "source_url": "https://www.green-family-club.com/simulation/",
-   "fetched_at": "2026-11-17",
+   "fetched_at": "2026-11-20",
    "access": "JR本八戸駅より徒歩約10分"
   },
   {
@@ -576,7 +576,7 @@
    "note": "電話は運営会社（合同会社SOLBLANCO）の問い合わせ先（10:00〜21:00）。郵便番号は公式に記載が無く、住所から引いた（747-0024）。",
    "official": "https://solblancolcc.wixsite.com/indoorgolfhofu",
    "source_url": "https://solblancolcc.wixsite.com/indoorgolfhofu",
-   "fetched_at": "2026-11-17",
+   "fetched_at": "2026-11-20",
    "access": "防府駅から車で5分程度"
   },
   {
@@ -600,7 +600,7 @@
    "note": "営業時間は公式サイトに記載なし（「最終入店21:00」とある）。料金表は画像のため、公式が文字で示している料金例だけを転記した。",
    "official": "https://www.kuroshiosg.com/",
    "source_url": "https://www.kuroshiosg.com/%E6%96%99%E9%87%91%E8%A1%A8",
-   "fetched_at": "2026-11-17",
+   "fetched_at": "2026-11-20",
    "access": "高知黒潮ホテル敷地内（黒潮温泉駐車場内南西）／土佐くろしお鉄道のいち駅 徒歩10分"
   },
   {
@@ -625,7 +625,7 @@
    "note": "ホテル内の屋内練習場。公式に「打席利用のみのご予約も可能」（電話予約）とある。レンタルクラブ・シューズ・グローブあり。レッスンはオンライン形式。",
    "official": "https://tatsumi-kanyo.jp/golf/",
    "source_url": "https://tatsumi-kanyo.jp/golf/",
-   "fetched_at": "2026-11-17"
+   "fetched_at": "2026-11-20"
   },
   {
    "segment": "indoor",
@@ -648,7 +648,7 @@
    "note": "会員制の無人施設で、初回は無料体験から。打席数・シミュレーターの機種名・駐車場は公式サイトに記載なし。電話番号は公式サイトで非公開（問い合わせはメール・LINE）。左右打席・オートティーアップあり。",
    "official": "https://greegol.com/",
    "source_url": "https://greegol.com/",
-   "fetched_at": "2026-11-17"
+   "fetched_at": "2026-11-20"
   }
  ]
 }
