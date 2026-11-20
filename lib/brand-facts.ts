@@ -23,6 +23,8 @@ export type BrandFact = {
   feeNote?: string
   /** 店舗ページ冒頭のブランド一覧への導線を出さない（ブランドページだけ変えて効果を切り分けるとき） */
   noStoreJump?: boolean
+  /** 店舗数の「公式の数には、当サイトで…確認できていない店舗が含まれる場合があります」を出さない（公式の数が掲載より少ないとき） */
+  countNoteOff?: boolean
 }
 
 export const BRAND_FACTS: Record<string, BrandFact> = {
@@ -94,6 +96,34 @@ export const BRAND_FACTS: Record<string, BrandFact> = {
     },
     feeNote: '多くの店舗で、月会費とは別に打席料（55分 税込550円）がかかります。',
     noStoreJump: true,
+  },
+  // 2026-11-20 「ラハゴルフ24」63@6.1・「ラハゴルフ」23@7.4 がブランドページに着地。公式の店舗一覧・店舗ページ・よくある質問・特商法表記を 11/20 に確認。
+  // 月会費は税込表記のある店舗（15店）の範囲。税抜表記のみの5店（茅ヶ崎南口・岡崎上里・草加・浦和・福知山）と、
+  // 「12月より会費￥9,900円（税込）」の藤沢遠藤店は範囲に含めず、page-official-tables の brand/lahagolf24 に別記。
+  // 店舗ページ冒頭のブランド導線は出さない（未クロールの店舗頁を動かさない）
+  lahagolf24: {
+    alt: 'LAHAGOLF24',
+    officialCount: {
+      text: '公式サイトの店舗一覧には21店舗が載っています。鶴間店（神奈川県大和市）は、公式のお知らせ（2026年10月2日）で「2026年10月31日（土）をもって営業を終了」と案内されています（当サイトの掲載件数には鶴間店が含まれています）',
+      url: 'https://laha-golf24.com/news/3980/',
+    },
+    trial: {
+      text: '公式サイトに「見学・体験予約」の案内があり、よくある質問では、グランドオープン後の店舗は「見学・体験予約」ボタンから申し込めること（会員登録が必要）とされています。体験の料金は公式サイトに記載がありません',
+      url: 'https://laha-golf24.com/faq/',
+    },
+    company: {
+      text: '販売事業者は株式会社LAHAGOLF（本社所在地 神奈川県川崎市中原区小杉町3-441 2F）です。公式のお知らせ（2026年7月7日）によると、会社分割により株式会社原トラストから事業を承継しています',
+      url: 'https://laha-golf24.com/law/',
+    },
+    storeList: 'https://laha-golf24.com/list/',
+    checked: '2026-11-20',
+    feeFixed: {
+      min: 10890, minSlug: 'lahagolf24-kawasaki-minamisaiwaicho', minName: 'ラハゴルフ24 川崎南幸町店', minPlan: '月会費 9,900円（税込10,890円）',
+      max: 17930, maxSlug: 'lahagolf24-funabashi-natsumidai', maxName: 'ラハゴルフ24 船橋夏見台店', n: 15,
+    },
+    feeNote: '別途 入会金 税込11,000円・セキュリティ管理料 税込3,300円（年1回）。',
+    noStoreJump: true,
+    countNoteOff: true,
   },
 }
 

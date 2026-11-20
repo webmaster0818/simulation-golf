@@ -120,7 +120,7 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
                   <>
                     {' '}{fact.officialCount.text}（
                     <a href={fact.officialCount.url} target="_blank" rel="noopener noreferrer">出典</a>
-                    ）。公式の数には、当サイトで店舗ページの記載を確認できていない店舗が含まれる場合があります。
+                    {fact.countNoteOff ? '）。' : '）。公式の数には、当サイトで店舗ページの記載を確認できていない店舗が含まれる場合があります。'}
                   </>
                 )}
               </dd>
