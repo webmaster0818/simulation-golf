@@ -19,7 +19,7 @@
    "equipment": "トラックマン4／GOLFZON T2 VISION／DITECT Golf Swing Better Prizm POD",
    "official": "https://indoorgolfpark-20do-c.jp/",
    "source_url": "https://indoorgolfpark-20do-c.jp/",
-   "fetched_at": "2026-11-19"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -39,7 +39,7 @@
    "note": "旅館に併設。公式サイトに「ご宿泊のお客様以外の方もご利用いただけます」と記載。料金は公式のインドアゴルフのページ（https://www.kikusuikan.jp/indoor-golf）に掲載。営業時間・打席数は公式に記載なし（同ページの「受付時間 9:00〜20:00」は予約受付の時間）。",
    "official": "https://www.kikusuikan.jp/",
    "source_url": "https://www.kikusuikan.jp/indoor-golf",
-   "fetched_at": "2026-11-18",
+   "fetched_at": "2026-11-21",
    "usage_fee": "一般 1名様 3,000円／2名様 2,000円／3名様以上 1,500円、宿泊者 1,500円（1時間あたり・お一人様の目安）"
   },
   {
@@ -59,7 +59,7 @@
    "equipment": "トラックマンレンジ／トラックマン4",
    "official": "https://www.sailvangolf.com/",
    "source_url": "https://www.sailvangolf.com/",
-   "fetched_at": "2026-11-18"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -98,7 +98,7 @@
    "distance_yard": 200,
    "official": "https://www.sunpowergolf.com/",
    "source_url": "https://www.sunpowergolf.com/",
-   "fetched_at": "2026-11-18"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -138,7 +138,7 @@
    "equipment": "SDRゴルフシミュレーター",
    "official": "https://poaannua-kochi.jp/",
    "source_url": "https://poaannua-kochi.jp/",
-   "fetched_at": "2026-11-18"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -182,7 +182,7 @@
    "note": "住所は公式サイトに「高知市追手筋1丁目7-11」と記載（県名は当サイトで補った）。",
    "official": "https://ninomiya.co.jp/",
    "source_url": "https://ninomiya.co.jp/",
-   "fetched_at": "2026-11-18"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -223,7 +223,7 @@
    "note": "月額の金額は公式の料金表が画像のため、当サイトでは転記していない。",
    "official": "https://genki-golf-studio.jimdofree.com/",
    "source_url": "https://genki-golf-studio.jimdofree.com/",
-   "fetched_at": "2026-11-19"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -246,7 +246,7 @@
    "note": "運営は紀州ゴルフセンター。2店舗で相互利用可。",
    "official": "https://www.kisyugolf.com/private_indoor/",
    "source_url": "https://www.kisyugolf.com/private_indoor/",
-   "fetched_at": "2026-11-19"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -269,7 +269,7 @@
    "note": "運営は紀州ゴルフセンター。2店舗で相互利用可。",
    "official": "https://www.kisyugolf.com/private_indoor/",
    "source_url": "https://www.kisyugolf.com/private_indoor/",
-   "fetched_at": "2026-11-19"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -292,7 +292,7 @@
    "note": "郵便番号は公式に記載がなく、住所から郵便番号検索で引いた。",
    "official": "https://swingpark24.com/",
    "source_url": "https://swingpark24.com/access/",
-   "fetched_at": "2026-11-18"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -348,9 +348,9 @@
    "zip": "9000011",
    "address": "沖縄県那覇市上之屋1丁目20-9 富士家オーシャンビル2F",
    "tel": "0120-426-847",
-   "hours": "24時間（会員は電子錠でいつでも入退館可）。公式アクセスページの営業時間は DAY 7:00〜19:00（18:00最終受付）／NIGHT 19:00〜26:00（25:00最終受付）",
+   "hours": "24時間（会員は電子錠でいつでも入退館可）",
    "open_24h": true,
-   "closed": "年中無休",
+   "closed": null,
    "bays": "完全個室3ルーム（A・Bルーム＝右打ち／Cルーム＝両打ち）",
    "bays_num": 3,
    "private_room": true,
@@ -358,10 +358,10 @@
    "monthly_fee": "会員の打席使用料 1コマ（50分）1,100円／2コマ（110分）1,980円。サブスク（1日1コマ打ち放題）は＋11,000円（いずれも税込。月会費・入会金の金額は公式の料金表で確認）",
    "usage_fee": "ビジター A・Bルーム 1コマ3,300円／2コマ6,050円、Cルーム 1コマ4,950円／2コマ8,800円（税込）",
    "equipment": "GOLFZON GDR",
-   "note": "料金表の月会費・入会金は項目名が画像で、金額だけでは判別できないため転記していない。営業時間・定休日は公式のアクセスページ（https://golf365.jp/access.html）の表記。",
+   "note": "料金表の月会費・入会金は項目名が画像で、金額だけでは判別できないため転記していない。",
    "official": "https://golf365.jp/",
    "source_url": "https://golf365.jp/access.html",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",

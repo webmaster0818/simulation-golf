@@ -27744,7 +27744,7 @@
    "open": true,
    "official": "https://indoorgolfpark-20do-c.jp/",
    "source_url": "https://indoorgolfpark-20do-c.jp/",
-   "fetched_at": "2026-11-19"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -27771,7 +27771,7 @@
    "open": true,
    "official": "https://www.kikusuikan.jp/",
    "source_url": "https://www.kikusuikan.jp/indoor-golf",
-   "fetched_at": "2026-11-18"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "range",
@@ -27798,7 +27798,7 @@
    "open": true,
    "official": "https://www.sailvangolf.com/",
    "source_url": "https://www.sailvangolf.com/",
-   "fetched_at": "2026-11-18"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -27852,7 +27852,7 @@
    "open": true,
    "official": "https://www.sunpowergolf.com/",
    "source_url": "https://www.sunpowergolf.com/",
-   "fetched_at": "2026-11-18"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -27906,7 +27906,7 @@
    "open": true,
    "official": "https://poaannua-kochi.jp/",
    "source_url": "https://poaannua-kochi.jp/",
-   "fetched_at": "2026-11-18"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -27960,7 +27960,7 @@
    "open": true,
    "official": "https://ninomiya.co.jp/",
    "source_url": "https://ninomiya.co.jp/",
-   "fetched_at": "2026-11-18"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -28014,7 +28014,7 @@
    "open": true,
    "official": "https://genki-golf-studio.jimdofree.com/",
    "source_url": "https://genki-golf-studio.jimdofree.com/",
-   "fetched_at": "2026-11-19"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -28041,7 +28041,7 @@
    "open": true,
    "official": "https://www.kisyugolf.com/private_indoor/",
    "source_url": "https://www.kisyugolf.com/private_indoor/",
-   "fetched_at": "2026-11-19"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -28068,7 +28068,7 @@
    "open": true,
    "official": "https://www.kisyugolf.com/private_indoor/",
    "source_url": "https://www.kisyugolf.com/private_indoor/",
-   "fetched_at": "2026-11-19"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -28095,7 +28095,7 @@
    "open": true,
    "official": "https://swingpark24.com/",
    "source_url": "https://swingpark24.com/access/",
-   "fetched_at": "2026-11-18"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
@@ -28162,9 +28162,9 @@
    "address": "沖縄県那覇市上之屋1丁目20-9 富士家オーシャンビル2F",
    "access": null,
    "tel": "0120-426-847",
-   "hours": "24時間（会員は電子錠でいつでも入退館可）。公式アクセスページの営業時間は DAY 7:00〜19:00（18:00最終受付）／NIGHT 19:00〜26:00（25:00最終受付）",
+   "hours": "24時間（会員は電子錠でいつでも入退館可）",
    "open_24h": true,
-   "closed": "年中無休",
+   "closed": null,
    "bays": "完全個室3ルーム（A・Bルーム＝右打ち／Cルーム＝両打ち）",
    "bays_num": 3,
    "private_room": true,
@@ -28176,7 +28176,7 @@
    "open": true,
    "official": "https://golf365.jp/",
    "source_url": "https://golf365.jp/access.html",
-   "fetched_at": "2026-11-10"
+   "fetched_at": "2026-11-21"
   },
   {
    "segment": "indoor",
