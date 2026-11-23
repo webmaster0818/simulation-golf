@@ -205,7 +205,9 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
             ? <>
                 <Row
                   k="月会費"
-                  v={f.brand_slug === 'zengolf'
+                  /* 2026-11-23 永福町（ZENGOLF ACADEMY）は公式の料金表がレッスン会員・全日の1区分だけ
+                     （/price/ でデイはコメントアウト・レンジ会員なし）＝共通注記が当たらないので外す */
+                  v={f.brand_slug === 'zengolf' && f.slug !== 'zengolf-eifukucho'
                     ? `${f.monthly_fee}（レッスン会員・全日の料金。レンジ会員などほかの会員区分は公式サイトの料金表をご確認ください）`
                     : f.monthly_fee}
                 />
