@@ -25,6 +25,8 @@ export type BrandFact = {
   noStoreJump?: boolean
   /** 店舗数の「公式の数には、当サイトで…確認できていない店舗が含まれる場合があります」を出さない（公式の数が掲載より少ないとき） */
   countNoteOff?: boolean
+  /** title の「の店舗一覧」の前に入れる語（例 '料金・' → 「◯◯の料金・店舗一覧」）。検索語に「料金」があるブランドだけ */
+  titleWord?: string
 }
 
 export const BRAND_FACTS: Record<string, BrandFact> = {
@@ -70,7 +72,9 @@ export const BRAND_FACTS: Record<string, BrandFact> = {
       url: 'https://doortogolf.com/company',
     },
     storeList: 'https://doortogolf.com/shop/',
-    checked: '2026-11-02',
+    // 2026-11-23 体験（公式トップ）・運営会社（/company）を再確認。「door to golf 料金」15@8.5 → title に「料金・」
+    checked: '2026-11-23',
+    titleWord: '料金・',
   },
   // 2026-11-04 掲載の monthly_fee は各店のレッスン会員・全日だけなので、下限は全60店の公式の料金表（店舗ページ・/price/）を読んだ値を持つ
   zengolf: {

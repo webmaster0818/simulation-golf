@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   if (fact && fr) {
     const label = brandLabel(slug, b.name)
     return {
-      title: `${label}の店舗一覧${b.count}件｜月会費 税込${yen(fr.min)}〜`,
+      title: `${label}の${fact.titleWord ?? ''}店舗一覧${b.count}件｜月会費 税込${yen(fr.min)}〜`,
       description:
         `${label}の全${b.count}店舗の月会費・営業時間・アクセスを公式サイトの掲載どおりに一覧で掲載。` +
         `月会費は店舗・プランにより税込${yen(fr.min)}〜${yen(fr.max)}。${fact.feeNote ?? ''}${b.prefs.length}都道府県に展開。` +
@@ -93,7 +93,7 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
 
       <section className="hero">
         <div className="kicker">{slug}</div>
-        <h1>{label}の店舗一覧（{b.count}件）</h1>
+        <h1>{fact?.titleWord ? <>{label}の{fact.titleWord}店舗一覧（{b.count}件）</> : <>{label}の店舗一覧（{b.count}件）</>}</h1>
         {fact && (
           <p className="lead">
             {label}の店舗を、公式サイトの店舗ページの掲載どおりに{b.prefs.length}都道府県・{b.count}件掲載しています。
