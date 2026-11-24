@@ -879,3 +879,9 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 - 競合: WebSearch（US）は「ジャンボゴルフガーデン 足利 料金」「ステップゴルフ 守谷」「door to golf 料金」とも日本の上位サイトを返さず（golf-jalan・Yahoo!マップ・無関係ページ）→ 公式値で代替。
 - テキストの変わったページは 4（1270 HTML 中）。sitemap lastmod はこの 4 だけ 11-23（deploy の sitemap を元に差し替え）。計測リンク 0→0。公開前チェック ✅ 1267。
 - ソース 74e62a9 ／ deploy 4de19e6d14。
+
+### 11/24 朝ルーチン（単独施設10件の照合＋開業予定の確認）
+- **単独施設10件（independents.json・確認日 11/21 の8件＋11/22 の2件）**: 全件一致で確認日だけ 11/24＝SUN POWER GOLF（営業時間は画像を目視：平日・土 7:00〜22:00／日祝 7:00〜21:00・定休なし）・ポアナ・追手筋GOLF・Genki Golf Studio（料金一覧ページで入会金5,000円・3種の会員を確認）・紀州インドアゴルフ2店（入会金「今だけ0円」2027/1/31 まで）・SWING PARK 24（公式アクセスの表記は「高野口大野」、掲載は「高野口町大野」のまま）・Indoor Golf 365（営業時間ブロックは今日もコメントアウト／pricelist.html の打席使用料一致）・ゴルワン・FUSION GOLF。ルアナ甲府（12/1 まで改修中）は触らず。
+- **開業予定（報告のみ・触らず）**: SMART GOLF 鶴舞駅前大須通 /shop/tsurumai-osu/ は「2026年12月14日 GRAND OPEN!」（プレ 11/30〜12/13）のまま・sitemap-0 /shop/ 221。DOOR TO GOLF は公式トップ／/news に 11/18 付「【弁天町店】12月27日OPEN予定」（ほか堺楠町 12/22・大府 12/15・平井 12/24）。/shop/ のカードは弁天町 2026/12/27・十日市場 2026/12/15。十日市場の店舗ページ /shop-post-newplan/tokaichiba/ ができた（緑区十日市場町837・24時間・Trackman iO。料金・開業日の記載なし）。
+- テキストの変わったページは 10（/facility/ のみ）。sitemap lastmod はこの 10 だけ 11-24（deploy の sitemap を元に差し替え）。計測リンク 0→0。公開前チェック ✅ 1267。
+- ソース a77d1a5 ／ deploy 90719c87c3。
