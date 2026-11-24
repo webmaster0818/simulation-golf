@@ -898,3 +898,10 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 - 屋内の確認: 5件とも公式で屋内シミュレーター（GOLF ZONE は「インドアゴルフレンジ用に専用設計」の 2F・八王子ゴルフはビル 5F）。
 - skip: つるやゴルフ 本店・ワールドスポーツ（富山）＝ゴルフ用品店／ナンバヒップス＝商業ビル名／コナミ府中・メガロス町田・鷺沼・立川北館・セントラル府中・イトマン流山＝総合スポーツクラブ／CLUB・NEST＝競合のリンク先が車のフィルム施工店（公式なし）／トップインドアステージ亀戸＝テニス＆ゴルフ併設（検索の主目的がテニスの可能性・要判断）／ゴルフパフォーマンス・GODAI亀戸＝チェーン（ブランド収集が必要・要判断）。ゴルフ サブスク・ゴルフレッスン マンツーマン（ガイド型）は空欄のまま。
 - facilities.json は build-facilities.py で再生成し generated_at は 2026-10-31 のまま（変えると全エリアページの「時点」が動く）。施設 1119→1124。フッターの都道府県件数（東京 391→395・千葉 59→60）で施設頁 457 などテキストの変わったページは 548。sitemap 1267→1272、lastmod は deploy の値を元にこの 548 だけ 11-25。公開前チェック ✅ 1272・heading-lint 0・計測リンク 0。
+
+### 2026-11-25（深夜04時 kwexp：競合 adonis のKWで新規5施設）
+- **新規（independents.json に単独施設5件・公式を 11/25 に取得）**: `/facility/golfair-kudanshita/`（GolFair 月704・千代田区九段北 B1F・TRACKMAN/AIGIA/JoyGolf Smart+・全打席半個室・24時間・/price/ の男女別月会費〔レギュラー 税込17,600/16,390円ほか〕。競合の表記は「神楽坂」だが公式は九段下駅7番出口 徒歩約1分）／`/facility/shonan-golf-resort/`（Shonan Golf Resort 月704・藤沢市片瀬海岸・3F ラウンドゾーン GOLFZON TWOVISION 9H 税込2,750円/18H 税込4,950円・2F トレーニングゾーン 30分1,000円〔税別〕・年中無休。打席数は公式に記載なし）／`/facility/toms-bishon-soka/`（Tom's Bishon 月704・草加市高砂 2F・SkyTrak・水木定休・ショート/ミドル/ロング 税込10,890/13,090/14,190円＝レッスン受け放題）／`/facility/indoor-golf-garden-6-asakusa/`（月576・台東区浅草 B1F・GOLFZON GDR 5打席＋VISION PLUS・/price/ の会員9種＋ビジター。税込表記は会員表だけ）／`/facility/juke-golf-club-namba/`（ジュークゴルフクラブ 月576・難波千日前・3フロア24打席・SkyTrak・火曜定休・/wp/info/ の料金〔税込/税抜の表記なし〕）。
+- 屋内の確認: 5件とも公式で屋内（GolFair・6 ASAKUSA は B1F、Tom's Bishon は 2F の「屋内・空調完備」、湘南は建物内の 2F/3F、ジュークは「インドアゴルフクラブ」3フロア）。
+- skip: GOLVIゴルフラウンジ銀座（公式に銀座・HANARE・札幌の3拠点）・THE EAGLE GOLF（南7条本店・24 月寒店）＝チェーン店の扱い A/B 判断待ち／UNIVERSAL GOLF LAND＝/plan/ の料金が画像のみ（料金画像の扱い判断待ち）／セントラルフィットネスクラブ 青砥＝総合スポーツクラブ。ゴルフ サブスク・ゴルフレッスン マンツーマン（ガイド型）は空欄のまま。
+- facilities.json は build-facilities.py で再生成し generated_at は 2026-10-31 のまま。施設 1124→1129。フッターの都道府県件数などでテキストの変わったページは 778。sitemap 1272→1277、lastmod は deploy の値を元に変更 778＋新規 5 だけ 11-25。公開前チェック ✅ 1277。
+- deploy 93a0f2b9a6。
