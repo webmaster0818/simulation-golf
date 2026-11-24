@@ -892,3 +892,9 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 - 競合: WebSearch（US）「ゴルフテック 名古屋 名駅 料金」は oceans・aumo のまとめ記事（15/25/40/52回の回数券価格を掲載・時期不明）のみ、「ゼンゴルフ zen golf range 料金 店舗」は日本の上位を返さず → 公式値で代替。
 - テキストの変わったページは 1（1267 HTML 中）。sitemap lastmod は deploy の sitemap を元にこの1件だけ 11-24。計測リンク 0→0。公開前チェック ✅ 1267。
 - ソース 51b3f85 ／ deploy 51ccdaf352（反映まで約1分）。
+
+### 2026-11-25（深夜02時 kwexp：競合 adonis・golmicio・golf-dayori のKWで新規5施設）
+- **新規（independents.json に単独施設5件・公式を 11/25 に取得）**: `/facility/and-golf-shibuya/`（and GOLF 月2,880・渋谷区桜丘町・QED 6ブース＋個室・会員制 税込27,500円）／`/facility/golf-zone-itabashi-yotsuba/`（GOLF ZONE 月2,320・板橋区四葉 2F・GOLFZON GDR 6＋SC4 1＋フリー1・木曜定休・/program/ の7会員プラン＋ビジター）／`/facility/golf-labo-chiba-wakaba/`（ゴルフラボ 月1,040・千葉市若葉区・トラックマン4×2/Swing Better Prizm×2/個室 Joy Golf Smart+・24時間・/price/）／`/facility/hachioji-golf/`（八王子ゴルフ 月1,040・三崎町・GOLFZON・5打席〔半個室3・個室2〕・/plan/ の10プラン〔税込/税抜の表記なし〕）／`/facility/bull-golf-aoyama/`（Bull Golf 月704・南青山・24時間・ブース3・/flow/ の料金。機種名の記載なし→equipment null・11/30 までのキャンペーンは未掲載）。
+- 屋内の確認: 5件とも公式で屋内シミュレーター（GOLF ZONE は「インドアゴルフレンジ用に専用設計」の 2F・八王子ゴルフはビル 5F）。
+- skip: つるやゴルフ 本店・ワールドスポーツ（富山）＝ゴルフ用品店／ナンバヒップス＝商業ビル名／コナミ府中・メガロス町田・鷺沼・立川北館・セントラル府中・イトマン流山＝総合スポーツクラブ／CLUB・NEST＝競合のリンク先が車のフィルム施工店（公式なし）／トップインドアステージ亀戸＝テニス＆ゴルフ併設（検索の主目的がテニスの可能性・要判断）／ゴルフパフォーマンス・GODAI亀戸＝チェーン（ブランド収集が必要・要判断）。ゴルフ サブスク・ゴルフレッスン マンツーマン（ガイド型）は空欄のまま。
+- facilities.json は build-facilities.py で再生成し generated_at は 2026-10-31 のまま（変えると全エリアページの「時点」が動く）。施設 1119→1124。フッターの都道府県件数（東京 391→395・千葉 59→60）で施設頁 457 などテキストの変わったページは 548。sitemap 1267→1272、lastmod は deploy の値を元にこの 548 だけ 11-25。公開前チェック ✅ 1272・heading-lint 0・計測リンク 0。
