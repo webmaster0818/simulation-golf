@@ -180,6 +180,8 @@ export default function IndoorGolfGuide() {
         <Link href="/feature/private-room/">個室で打てる施設</Link>
         <Link href="/feature/parking/">駐車場のある施設</Link>
         <Link href="/lesson/beginner/">初心者向けのレッスン選び（スクールの体験料金）</Link>
+        <Link href="/guide/golf-subscription/">ゴルフのサブスク（月額定額の施設の月会費）</Link>
+        <Link href="/lesson/private/">マンツーマンのゴルフレッスンの料金</Link>
         <Link href="/brand/">ブランドから探す</Link>
         <Link href="/equipment/">計測機器から探す</Link>
       </div>

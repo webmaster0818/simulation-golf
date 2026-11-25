@@ -137,7 +137,7 @@ export default function BeginnerLessonPage() {
         </div>
         <div>
           <dt>レッスンの形</dt>
-          <dd>マンツーマン（GOLFTEC・JIN-golf・ライザップゴルフ）と、セミパーソナル（チキンゴルフ・GANTT GOLF 江坂店）があります。形式の詳細は各公式サイトの案内をご確認ください。</dd>
+          <dd>マンツーマン（GOLFTEC・JIN-golf・ライザップゴルフ）と、セミパーソナル（チキンゴルフ・GANTT GOLF 江坂店）があります。形式の詳細は各公式サイトの案内をご確認ください。マンツーマンの1回の時間と料金は<Link href="/lesson/private/">ゴルフのマンツーマンレッスン</Link>、月会費制のスクールの料金の表記は<Link href="/guide/golf-subscription/">ゴルフのサブスク</Link>にまとめています。</dd>
         </div>
       </dl>
 
