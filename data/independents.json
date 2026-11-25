@@ -19,7 +19,7 @@
    "equipment": "トラックマン4／GOLFZON T2 VISION／DITECT Golf Swing Better Prizm POD",
    "official": "https://indoorgolfpark-20do-c.jp/",
    "source_url": "https://indoorgolfpark-20do-c.jp/",
-   "fetched_at": "2026-11-23"
+   "fetched_at": "2026-11-25"
   },
   {
    "segment": "indoor",
@@ -39,7 +39,7 @@
    "note": "旅館に併設。公式サイトに「ご宿泊のお客様以外の方もご利用いただけます」と記載。料金は公式のインドアゴルフのページ（https://www.kikusuikan.jp/indoor-golf）に掲載。営業時間・打席数は公式に記載なし（同ページの「受付時間 9:00〜20:00」は予約受付の時間）。",
    "official": "https://www.kikusuikan.jp/",
    "source_url": "https://www.kikusuikan.jp/indoor-golf",
-   "fetched_at": "2026-11-23",
+   "fetched_at": "2026-11-25",
    "usage_fee": "一般 1名様 3,000円／2名様 2,000円／3名様以上 1,500円、宿泊者 1,500円（1時間あたり・お一人様の目安）"
   },
   {
@@ -315,7 +315,7 @@
    "note": "ボクシング＆フィットネスジムに併設のゴルフ個室。郵便番号は公式に記載がなく、住所から郵便番号検索で引いた。",
    "official": "https://www.fitbox24.com/golf/",
    "source_url": "https://www.fitbox24.com/golf/",
-   "fetched_at": "2026-11-22"
+   "fetched_at": "2026-11-25"
   },
   {
    "segment": "indoor",
@@ -338,7 +338,7 @@
    "note": "都度利用の室内練習場。公式に「左打ち不可」の記載あり。",
    "official": "https://www.golfin.jp/",
    "source_url": "https://www.golfin.jp/fee.php",
-   "fetched_at": "2026-11-22"
+   "fetched_at": "2026-11-25"
   },
   {
    "segment": "indoor",
@@ -384,7 +384,7 @@
    "note": "打席数は公式サイトに明記が無いため載せていない（FAQに「左利きは3打席で利用可能」とある）。",
    "official": "https://idgolf.jp/",
    "source_url": "https://idgolf.jp/",
-   "fetched_at": "2026-11-22",
+   "fetched_at": "2026-11-25",
    "access": null
   },
   {
@@ -408,7 +408,7 @@
    "note": "電話番号は運営会社（株式会社絆）のものしか公式に記載が無いため載せていない。",
    "official": "https://guln.kizuna-casa.com/",
    "source_url": "https://guln.kizuna-casa.com/",
-   "fetched_at": "2026-11-22",
+   "fetched_at": "2026-11-25",
    "access": null
   },
   {
@@ -432,7 +432,7 @@
    "note": "郵便番号は公式に記載が無く、住所から引いた（760-0033）。",
    "official": "https://granlab.jp/golf/",
    "source_url": "https://granlab.jp/golf/",
-   "fetched_at": "2026-11-22",
+   "fetched_at": "2026-11-25",
    "access": null
   },
   {
@@ -456,7 +456,7 @@
    "note": null,
    "official": "https://emon-golf.com/",
    "source_url": "https://emon-golf.com/",
-   "fetched_at": "2026-11-22",
+   "fetched_at": "2026-11-25",
    "access": "ことでんバス西植田線 西植田駅より徒歩2分"
   },
   {
@@ -480,7 +480,7 @@
    "note": null,
    "official": "https://golf-zero.wixsite.com/golf-zero",
    "source_url": "https://golf-zero.wixsite.com/golf-zero",
-   "fetched_at": "2026-11-22",
+   "fetched_at": "2026-11-25",
    "access": null
   },
   {
@@ -504,7 +504,7 @@
    "note": "入会手続き・年会費は無し（公式）。料金表は画像のため金額を転記していない。郵便番号は公式に記載が無く、住所から引いた（933-0941）。",
    "official": "https://www.golfers-takaoka.com/",
    "source_url": "https://www.golfers-takaoka.com/blank-1",
-   "fetched_at": "2026-11-22",
+   "fetched_at": "2026-11-25",
    "access": null
   },
   {
