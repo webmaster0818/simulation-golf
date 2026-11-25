@@ -943,3 +943,11 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 - skip（朝に確認）: エースゴルフ（リンク先は「浅草Ａゴルフ」＝名称不一致）・リアルゴルフ（上野店・系列の有無が不明）・恵比寿 ゴルフレッスン（駅名エリアのレッスン一覧の型が未整備）・サイエンスゴルフアカデミー（フィッティング中心・練習利用の記載なし）。
 - facilities.json は build-facilities.py で再生成し generated_at は 2026-10-31 に戻した。施設 1132→1137。sitemap 1282→1287、lastmod は deploy の値を元にテキストの変わった 669（フッター県件数など）＋新規 5 だけ 11-26。公開前チェック ✅ 1287・trust-audit（新規5頁の check_page）指摘0。
 - ソース 6113eb2 ／ deploy b37ee41d3f。本番 5頁とも 200・h1 一致・sitemap 1287。
+
+### 2026-11-26（深夜04時 kwexp：競合 adonis のKWで新規5施設）
+- **新規（independents.json に単独施設5件・公式を 11/26 に取得）**: `/facility/ripple-golf-shinjuku/`（リップルゴルフ新宿 月312・lesson・新宿3丁目 SHOWAKAN-BLD B1・/lesson.html の通い放題〔2/4/6/12ヶ月〕・レッスン4回/8回・自主練ONLY・入会金30,000円〔税込/税抜の表記なし〕。シミュレーターは「日本製」のみ→equipment null）／`/facility/uemachidai-golf24/`（上町台ゴルフ24 月312・上本町6丁目 上六三和会館6F・24時間無人・6ブース・5会員〔税込〕。機種名は本文になし〔ロゴ画像の alt に OK ON GOLF〕→equipment null）／`/facility/golf-funp-tokyo/`（GOLF FUNP 東京 月256・千代田区一番町 B1F・半蔵門駅・/price/ の男女別練習会員・ビジター・回数券・ラウンド〔税込〕。毎月末日休館。機種名の記載なし→equipment null）／`/facility/golf-switch-minoh/`（GOLF SWITCH 箕面桜店 月256・箕面市桜・4〜26時・2打席・Xswing-G・7会員〔税込〕。入会金/事務手数料が 8,800/3,300 と 8,000/3,000 の2通り＝note のみ）／`/facility/golfwith-minoh/`（箕面ゴルフレンジ GOLFWITH 月256・箕面市萱野・3打席・GTRAK・5会員〔税込/税抜の表記なし〕）。
+- 屋内の確認: 5件とも公式で屋内（リップル・FUNP は地下1階、上町台はビル6F、SWITCH は「インドアゴルフレンジ」冷暖房完備、GOLFWITH は「インドアゴルフ練習場」橋本ハイツ1F）。
+- 空欄のまま（チェーン店の扱い A/B 判断待ち）: ミズノゴルフスタジオ 天神（ミズノのゴルフスクール）／水道橋ゴルフラボ（グループに青葉台ゴルフラボ）／西中島駅前ゴルフスクール（ekimaegolf-school の店舗）／クローバービレッジ（十三・福島の2店）／立川駅前ゴルフクラブ（ekimae-golfclub の店舗）。
+- skip（朝に確認）: サラゴルフスクール（料金表が画像・シミュレーター/計測器の記載なし）・ONE ON GOLF（公式のお知らせが2021年で止まっている）。
+- facilities.json は build-facilities.py で再生成し generated_at は 2026-10-31 に戻した。施設 1137→1142。sitemap 1287→1292、lastmod は deploy の値を元にテキストの変わった 551（フッター県件数など）＋新規 5 だけ 11-26。公開前チェック ✅ 1292・trust-audit（新規5頁の check_page）指摘0。
+- ソース 4414a13 ／ deploy 3ebfe83776。本番 5頁とも 200・h1 一致・sitemap 1292。
