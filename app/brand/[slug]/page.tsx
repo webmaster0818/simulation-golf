@@ -26,11 +26,13 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const fr = fact ? feeRange(slug, byBrand(slug)) : null
   if (fact && fr) {
     const label = brandLabel(slug, b.name)
+    const fMin = fact.answer?.feeMin ?? fr.min
+    const fMax = fact.answer?.feeMax ?? fr.max
     return {
-      title: `${label}の${fact.titleWord ?? ''}店舗一覧${b.count}件｜月会費 税込${yen(fr.min)}〜`,
+      title: `${label}の${fact.titleWord ?? ''}店舗一覧${b.count}件｜月会費 税込${yen(fMin)}〜`,
       description:
         `${label}の全${b.count}店舗の月会費・営業時間・アクセスを公式サイトの掲載どおりに一覧で掲載。` +
-        `月会費は店舗・プランにより税込${yen(fr.min)}〜${yen(fr.max)}。${fact.feeNote ?? ''}${b.prefs.length}都道府県に展開。` +
+        `月会費は店舗・プランにより税込${yen(fMin)}〜${yen(fMax)}。${fact.feeNote ?? ''}${b.prefs.length}都道府県に展開。` +
         (fact.trial ? '公式の体験の案内も掲載しています。' : ''),
       ...pageUrlMeta(`/brand/${slug}/`),
     }
@@ -97,7 +99,7 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
         {fact && (
           <p className="lead">
             {label}の店舗を、公式サイトの店舗ページの掲載どおりに{b.prefs.length}都道府県・{b.count}件掲載しています。
-            {fr && <>月会費は店舗・プランにより税込{yen(fr.min)}〜{yen(fr.max)}です。</>}
+            {fr && <>月会費は店舗・プランにより税込{yen(fact.answer?.feeMin ?? fr.min)}〜{yen(fact.answer?.feeMax ?? fr.max)}です。</>}
             {fact.trial && <>公式サイトに体験の案内があります。</>}
           </p>
         )}
@@ -107,6 +109,30 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
         </p>
         <div className="g-brand-hero-shot"><BrandShot slug={slug} name={b.name} /></div>
       </section>
+
+      {fact?.answer && (
+        <>
+          <h2>{fact.answer.heading}</h2>
+          <div className="tablewrap">
+            <table>
+              <thead><tr><th>項目</th><th>公式サイトの記載</th></tr></thead>
+              <tbody>
+                {fact.answer.rows.map((r) => <tr key={r.k}><td>{r.k}</td><td>{r.v}</td></tr>)}
+              </tbody>
+            </table>
+          </div>
+          <p className="source">
+            出典：
+            {fact.answer.sources.map((s, i) => (
+              <span key={s.url}>
+                {i > 0 && '／'}
+                <a href={s.url} target="_blank" rel="noopener noreferrer">{s.label}</a>
+              </span>
+            ))}
+            （{fact.answer.checked.replace(/^(\d+)-0?(\d+)-0?(\d+)$/, '$1年$2月$3日')}に公式サイトで確認）。料金・営業時間は変更される場合がありますので、ご利用前に公式サイトにてご確認ください。
+          </p>
+        </>
+      )}
 
       {fact && (
         <>
@@ -134,6 +160,7 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
                   {fr.minPlan && <>の「{fr.minPlan}」</>}、
                   最も高い額は<Link href={`/facility/${fr.maxSlug}/`}>{fr.maxName}</Link>の掲載）。
                   プランの利用時間帯などの条件は店舗ごとに異なります。各店舗の金額は下の「店舗ごとの月会費」をご覧ください。
+                  {fact.answer?.feeMin != null && <>当サイトの一覧は各店舗の代表的なプランの掲載です。公式の料金表全体の幅は上の早見表のとおり税込{yen(fact.answer.feeMin)}〜{yen(fact.answer.feeMax ?? fr.max)}です。</>}
                   {fact.feeNote ?? ''}
                 </dd>
               </div>
