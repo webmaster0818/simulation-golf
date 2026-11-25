@@ -927,3 +927,11 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 - 競合（WebSearch・US）: 「シミュレーションゴルフ 大阪」は aumo（おすすめ13選）・instabase（時間貸しの1時間料金）、「ゴルフ レッスン 千代田区」は楽天GORA（GEN-TEN・Stylish Golf Studio）、「マイゴル 店舗」は無関係の結果のみ。うちに無いのは instabase の時間貸し料金（第三者の値なので載せない）。
 - テキストの変わったページは 3（1277 HTML 中）。sitemap lastmod は deploy の sitemap を元に /brand/mygol/ だけ 11-25（他2頁は既に 11-25）。計測リンク 0→0。公開前チェック ✅ 1277。
 - ソース 729fbdc ／ deploy 2180b2cffa（反映まで約1分）。本番 ?cb= で3頁とも新内容・旧 title 0件。
+
+### 2026-11-25（20:00 kwexp：ガイド2本＋単独施設3件）
+- **新規ガイド**: `/guide/golf-subscription/`（ゴルフ サブスク 月1,040：屋内の掲載973件中 月会費の記載924件をブランド別に集計。表記は各ブランドの最も多い表記をそのまま＋例の店舗の確認日。マイゴルは brand-facts の answer、ZEN・ラハゴルフ24 は feeFixed の幅に差し替え〔最も多い表記がマイゴルフレンジの料金・ZEN のレッスン会員だけになるため〕）／`/lesson/private/`（ゴルフレッスン マンツーマン 月800：data/kwexp/private-lessons.json の7施設。GOLFTEC〔official-checks 11/25〕・RIZAP〔11/19〕・JIN-golf /plan/〔金額は画像でテキストなし＝「計算できません」〕・ガントゴルフ千里中央〔30分 回数券 6,600〜8,250円/回〕・豊洲ゴルフベース・Bull Golf・6 ASAKUSA。1回あたりは公式記載または総額÷回数）。
+- **新規施設（independents.json・公式 11/25 取得）**: `/facility/kitaurawa-golf/`（北浦和ゴルフ 月576・24時間・3D BIGBAN 7台・フルタイム 税込8,800円）／`/facility/toyosu-golf-base/`（豊洲ゴルフベース 月576・lesson・豊洲センタービル B1・GCQuad／Mevo+・営業時間は 2025.03.29 のお知らせ）／`/facility/diverse-golf-tsukuba/`（DIVERSE GOLF 月384・lesson・GCQuad/GC3。定休日はトップが「日曜日」のまま、フッターと 2024.12.31 のお知らせは GW・お盆・年末年始＝お知らせを採用。体験は /trial-lesson/ 5,500円・/lesson/ 5,000円と食い違い＝note のみ）。
+  - ⚠️ independents の segment=lesson は今回が初。lesson の usage_fee は施設ページで「弾道計測の利用料」と出るので使わず、ビジター・体験は monthly_fee の文に入れた。independents の note はページに出ない。
+- skip: イトマンスポーツスクエア 春日部＝総合スポーツクラブ（02時のイトマン流山と同じ扱い）。GODAI 横浜・白楽＝チェーン店 A/B 判断待ちのため空欄のまま。
+- 導線: /guide/indoor-golf/ のチップと /lesson/beginner/ の「レッスンの形」から新ガイド2本。sitemap 1277→1282、lastmod は deploy の値を元にテキストの変わった 596 だけ 11-25（フッター県件数など）。公開前チェック ✅ 1282・heading-lint 0・計測リンク 0。
+- ソース 889f223 ／ deploy e3ec7a767f。
