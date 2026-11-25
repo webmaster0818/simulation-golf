@@ -935,3 +935,11 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 - skip: イトマンスポーツスクエア 春日部＝総合スポーツクラブ（02時のイトマン流山と同じ扱い）。GODAI 横浜・白楽＝チェーン店 A/B 判断待ちのため空欄のまま。
 - 導線: /guide/indoor-golf/ のチップと /lesson/beginner/ の「レッスンの形」から新ガイド2本。sitemap 1277→1282、lastmod は deploy の値を元にテキストの変わった 596 だけ 11-25（フッター県件数など）。公開前チェック ✅ 1282・heading-lint 0・計測リンク 0。
 - ソース 889f223 ／ deploy e3ec7a767f。
+
+### 2026-11-26（深夜02時 kwexp：競合 adonis のKWで新規5施設）
+- **新規（independents.json に単独施設5件・公式を 11/26 に取得）**: `/facility/golf-view-tsukuba/`（GOLF VIEWつくば 月384・lesson・つくば市谷田部・GCQuad/スイングナビ/Mevo+/CAPTO・/plan/ の Monthly 4/8/12/4+・Practice 8/4・通い放題 デイ/全日。営業時間は /access/ の店舗概要を採用〔サイト下部の時間と食い違い＝note のみ〕）／`/facility/golf-base-kawaguchi/`（ゴルフベース川口 月384・川口市神戸・OK ON GOLF 7打席・/fee/ の5会員〔税込/税抜の表記なし〕・駐車場は 14台/11台の2通りの記載＝両方書いた）／`/facility/eva-golf-studio-jiyugaoka/`（EVA GOLF STUDIO 月312・目黒区自由が丘 B1・Joy Golf Smart+ 3ブース＋バー・24時間〔スタッフ 10〜22時〕・/lesson-plan の7会員と /pricesystem のビジター）／`/facility/golfbox-matsudo-koganehara/`（GOLFBOX 松戸小金原 月312・完全個室 GDR 3＋T2VISION 1・水曜定休・月会費の記載なし＝都度利用の1室料金・税込）／`/facility/cherry-golf-garage-sapporo/`（チェリーゴルフガレージ 月312・lesson・札幌市中央区南6条東・GOLFZON 4台〔個室3〕・/lesson の自主練習通い放題・回数券・体験。HTML コメント内の12/16回コース・月額会員コースは非表示なので載せていない）。
+- 屋内の確認: 5件とも公式で屋内（GOLF VIEW は「インドアスタジオ」〔屋外はバンカー/アプローチエリアのみ〕・GOLFBOX は「屋内練習場」完全個室・他3件はビル内）。
+- 空欄のまま（チェーン店の扱い A/B 判断待ち）: GODAI 横浜・白楽／Gatee Golf Studio（市ヶ谷・門前仲町の2店）／SWING MASTERS 武蔵小杉（MEGAドンキかわさき店と2店）／X-GOLF倶楽部 名古屋城北／ゴルフレックス大阪24（夙川と2店）／ヴィクトリアゴルフ 五反田。
+- skip（朝に確認）: エースゴルフ（リンク先は「浅草Ａゴルフ」＝名称不一致）・リアルゴルフ（上野店・系列の有無が不明）・恵比寿 ゴルフレッスン（駅名エリアのレッスン一覧の型が未整備）・サイエンスゴルフアカデミー（フィッティング中心・練習利用の記載なし）。
+- facilities.json は build-facilities.py で再生成し generated_at は 2026-10-31 に戻した。施設 1132→1137。sitemap 1282→1287、lastmod は deploy の値を元にテキストの変わった 669（フッター県件数など）＋新規 5 だけ 11-26。公開前チェック ✅ 1287・trust-audit（新規5頁の check_page）指摘0。
+- ソース 6113eb2 ／ deploy b37ee41d3f。本番 5頁とも 200・h1 一致・sitemap 1287。
