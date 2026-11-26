@@ -62,8 +62,19 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
   //    その場合は同じ地方の施設に広げて導線を作る。
   const samePref = f.pref ? byPref(f.pref).filter((x) => x.slug !== f.slug) : []
   const region = f.pref ? REGIONS.find((r) => r.prefs.includes(f.pref as string)) : undefined
+  // ⚠️ 県内8件目以降の単独施設（ブランド頁なし）で市区町村ページも無いものは、どの施設頁の6件にも入らず
+  //    県一覧からの1本だけになる（2026-11-27 街ゴルフ 仙台＝宮城県10件目で判明）。
+  //    同じ市区町村の施設頁の「ほかの施設」に入っていなければ、末尾と入れ替えて導線を作る（最大2件）。
+  const hasCityPage = (x: typeof f) => {
+    const w = wardOf(x)
+    return !!(x.pref && w && cityPagesOf().some((c) => c.pref === x.pref && c.city === w))
+  }
+  const baseNear = samePref.slice(0, 6)
+  const lonely = ward
+    ? samePref.filter((x) => !x.brand_slug && wardOf(x) === ward && !baseNear.includes(x) && !hasCityPage(x)).slice(0, 2)
+    : []
   const near = samePref.length
-    ? samePref.slice(0, 6)
+    ? [...baseNear.slice(0, 6 - lonely.length), ...lonely]
     : region
       ? OPEN_FACILITIES.filter((x) => x.pref && region.prefs.includes(x.pref) && x.slug !== f.slug).slice(0, 6)
       : []
