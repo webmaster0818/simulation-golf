@@ -964,3 +964,11 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
   - 店舗数は 11/14 と同じ（RANGE 54・ACADEMY 7・LOUNGE 1）。戸越銀座店は RANGE 側（rangetogoshiginza）。新百合ヶ丘・LOUNGE 六本木の追加は判断待ちのまま。
   - テキストの変わったページは 1（1295 HTML 中）。sitemap lastmod は deploy の sitemap を元にこの1件だけ 11-26。計測リンク 0→0。公開前チェック ✅ 1292。
   - ソース 39792db ／ deploy 9c0c3f9acd（約1分で反映）。
+
+### 2026-11-26（20:00 kwexp：競合 adonis のKWで新規5施設）
+- **新規（independents.json に単独施設5件・公式を 11/26 に取得）**: `/facility/rough-golf-range-hommachi/`（ラフゴルフレンジ 本店 月256・西区靱本町 B1・SkyTrak 4打席・月曜定休・/price.html の3プラン＋都度 55分 2,000円〔税込/税抜の表記なし・入会金の記載なし〕。2022/12 に西本町店→靭公園店のお知らせ＝現在は1店）／`/facility/golfnavi-hazawa-lounge/`（GOLFNAVI HAZAWA LOUNGE 月208・羽沢横浜国大駅1分 HAZAAR 3F・GOLFNAVI GTR SP 3ルーム半個室・5:00〜25:00 無休・4プラン税込〔レギュラーは「現在の募集はありません」〕・入会金 33,000円。メーカー初の直営＝単独。電話の記載なし）／`/facility/igl-studio-shibuya/`（IGL・スタジオ渋谷 月208・lesson・桜丘町 502・2スタジオ6打席・/system.html の5会員 税込・入会金 5,500円。機種名の記載なし）／`/facility/rk-golf-studio-24/`（RK GOLF STUDIO 24 月208・中央区淡路町 B1・24時間・完全個室・GOLFZON TWOVISION/GDR plus・/plan/ の6会員〔税の表記なし・入会金額の記載なし〕。打席数の記載なし）／`/facility/pr-golf-studio-nishiki/`（PRゴルフスタジオ 月208・lesson・錦2 5階・伏見駅2分・金曜定休・/price/ のメンバー月 9,900円＋打席料・ビジター回数券〔税込〕。機種名・打席数の記載なし）。
+- 屋内の確認: 5件とも公式で屋内（ラフ・RK は B1、HAZAWA は 3F「直営インドアゴルフ」、IGL は 5階のインドアゴルフスクール、PR は 5階のインドアゴルフスクール）。
+- 空欄のまま: ファミリーゴルフスクールエパック 浦安本校（公式に浦安本店・浦安駅前校・銀座校の3校＝チェーン店 A/B 判断待ち）。上野 ゴルフスクール・沖縄/尼崎 ゴルフレッスン・横浜 ゴルフスクール（駅名・地域のレッスン一覧の型が未整備＝恵比寿と同じ扱い）、東川口ゴルフラボ・ゴルフ市場Premium は今回未確認。
+- skip: 加瀬のシミュレーションゴルフ（公式ページが見つからない）。
+- facilities.json は build-facilities.py で再生成し generated_at は 2026-10-31 に戻した。施設 1142→1147。sitemap 1292→1297、lastmod は deploy の値を元にテキストの変わった 773（フッター県件数など）＋新規 5 だけ 11-26。公開前チェック ✅ 1297・heading-lint 0・trust-audit（新規5頁の check_page）指摘0。
+- ソース f437585 ／ deploy 3ba455ee86。本番 5頁とも 200・h1 一致・sitemap 1297。
