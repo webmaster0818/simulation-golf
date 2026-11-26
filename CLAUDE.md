@@ -972,3 +972,13 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 - skip: 加瀬のシミュレーションゴルフ（公式ページが見つからない）。
 - facilities.json は build-facilities.py で再生成し generated_at は 2026-10-31 に戻した。施設 1142→1147。sitemap 1292→1297、lastmod は deploy の値を元にテキストの変わった 773（フッター県件数など）＋新規 5 だけ 11-26。公開前チェック ✅ 1297・heading-lint 0・trust-audit（新規5頁の check_page）指摘0。
 - ソース f437585 ／ deploy 3ba455ee86。本番 5頁とも 200・h1 一致・sitemap 1297。
+
+### 2026-11-27（深夜02時 kwexp：競合 adonis のKWで新規5施設＋孤立しやすい単独施設の導線）
+- **新規（independents.json に単独施設5件・公式を 11/27 に取得）**: `/facility/join-simulation-golf-akasaka/`（JOINシミュレーションゴルフ 東京・赤坂店 月208・赤坂3丁目 4F・GOLFZON VISION PLUS 完全個室・12:00〜0:00＋0:00〜6:00 予約制・年中無休・/price の18H 5,000円/9H 2,500円/1時間 2,500円〔税の表記なし〕。料金表の「利用者/n 5,000円」と公式トップの利用例「ブース代 5,000円＋プレイ代 5,000円×3人」で計算方法が読み切れない＝note のみ。月会費・年会費は不要〔公式トップ〕）／`/facility/puttsalon-tokyo-kanda/`（PUTTSALON TOKYO 月208・lesson・神田錦町 8F・TRACKMAN iO＋TOURPUTT・6:00〜24:00 不定休・4プラン＋レッスンオンリー〔税の表記なし〕。最寄り駅は口コミ欄にしか無い＝access null）／`/facility/try-urban-golf-hachioji/`（トライアーバンゴルフ八王子 月208・lesson・三崎町 B1F・全9打席・SEGA REC CHECK・/menu/ の4コース 税込・駐車場 89台）／`/facility/yokohama-indoor-golf-wakabadai/`（ヨコハマインドアゴルフ 月208・lesson・旭区若葉台 ショッピングタウンわかば・FlightScope Range Gen2/Mevo Gen2。レッスン料金表は画像のみ＝月会費欄に「画像で掲載」と体験 2,000円だけ）／`/facility/machi-golf-sendai-ichibancho/`（街ゴルフ 仙台ゴルフレッスンスタジオ一番町 月208・lesson・一番町 プラスビル2/3F・月会員 男女別〔税抜〕。シミュレーターは画像の alt「シュミレーション導入」のみ＝equipment null・営業時間の記載なし）。
+- ⚠️ lesson の `usage_fee` は施設ページで「弾道計測の利用料」と表示される。レッスン料・体験料を入れると見出しと中身が食い違うので monthly_fee 側に書いた（街ゴルフ・ヨコハマ）。
+- 屋内の確認: JOIN・PUTTSALON・街ゴルフはビル内、トライアーバンは B1F、ヨコハマは「シミュレーター全打席設置」の商業施設内スクール。
+- **導線（`app/facility/[slug]/page.tsx`）**: 街ゴルフが宮城県10件目＝どの施設頁の「ほかの施設」6件にも入らず site-precheck [14]（被リンク1本）で落ちた。ブランド頁が無く市区町村ページも無い単独施設は、同じ市区町村の施設頁の6件に入っていなければ末尾と入れ替える（最大2件）。この変更で「ほかの施設」が変わった施設頁 110。
+- skip: スポーツクラブNASあべの・フェローズ スポーツ（総合スポーツ施設）／ウィナーズゴルフアカデミー（練習レンジが屋外の可能性・朝に確認）／東川口ゴルフラボ（リンク先 business.site が 404）・ゴルフ市場Premium（locaop の JS 描画）・ゴルファーズスペースR（hacomono の予約画面のみ）＝朝に確認。
+- 空欄のまま（チェーン店の扱い A/B 判断待ち）: Tac Tac Golf（Be Sure Golf Academy の会場）・ゴルフパートナー 南流山・スポーツプラス新大阪・二木ゴルフ 藤沢・京橋駅前ゴルフスクール・横浜本牧インドア（True Golf academy）・エースゴルフクラブ赤坂（西神田と2店）。カメカムゴルフクラブ（大阪・単独・シミュレーションあり）は5本に達したので次の回へ。
+- facilities.json は build-facilities.py で再生成し generated_at は 2026-10-31 に戻した。施設 1147→1152。sitemap 1297→1302、lastmod は deploy の値を元にテキストの変わった 742（フッター県件数・ほかの施設）＋新規 5 だけ 11-27。公開前チェック ✅ 1302・heading-lint 0・trust-audit（新規5頁の check_page）指摘0・計測リンク 0。
+- ソース f4e0c74 ／ deploy 5198db4fe7。本番 5頁とも 200・h1 一致・sitemap 1302。
