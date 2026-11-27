@@ -1022,3 +1022,10 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 - skip: GOLF TRAIL TSUKUBA（公式に「つくば新店」＝他店舗の有無が読み切れない・料金の記載なし＝朝に確認）／Mixa Wellness Studio（総合ウェルネス施設）。
 - facilities.json は build-facilities.py で再生成し generated_at は 2026-10-31 に戻した。施設 1162→1167。`/brand/rizapgolf/*/` の並び替えだけの7頁と 404 は deploy の版を out に戻した。sitemap 1312→1317、lastmod は deploy の値を元にテキストの変わった 707＋新規 5 だけ 11-28。公開前チェック ✅ 1317・heading-lint 0・trust-audit（新規5頁の check_page）指摘0・計測リンク 35→35。
 - ソース 5766208 ／ deploy 22b3c72720。本番 5頁とも 200・h1 一致・sitemap 1317。
+
+### 2026-11-28（深夜04時 kwexp：競合 adonis のKWで新規5施設）
+- **新規（independents.json に単独施設5件・公式を 11/28 に取得）**: `/facility/golfdog-omiya/`（ゴルフドッグ大宮 月136・indoor・上小町 キングファミリー2階・9:00〜25:00 不定休・フロア SkyTrak／個室 GC3・月額制9プラン〔税込〕・入会金 11,000円〔体験会後の入会は0円〕・無料駐車場〔共有〕。最寄り駅・打席数の記載なし）／`/facility/sankyu-golf-nishiogikubo/`（サンキューGOLF 西荻窪 月136・lesson・ACE西荻窪6F・西荻窪駅北口 徒歩30秒・24時間〔第2・第4木曜休館〕・シミュレーション機4打席＋スイング解析機2打席・/price/ の6会員〔税込〕・入会金0円。レギュラー・ゴールドのレッスン回数は表組みから読めない＝載せない・機種名の記載なし）／`/facility/golf-guts-ebisu/`（GOLF GUTS 月112・lesson・恵比寿南 EBISU FORT B2F・全打席 GCQuad・月会費なし＝レッスン回数券4種〔税抜〕・初回スイングdock 8,000円・セルフプラクティス 3,182円〔単位の記載なし〕は note）／`/facility/caddy-golf-atsugi/`（シミュレーションゴルフCaddy 月112・indoor・厚木市鳶尾・24時間・練習のみ5＋練習＋レッスン10プラン〔税込〕・入会金/年会費無料・駐車場はスーパーの駐車場。機種名・打席数・最寄り駅の記載なし）／`/facility/smart-shots-shinjuku/`（スマートショット新宿 月112・indoor・新宿5丁目 新宿光陽ビル1階・8:00〜23:00 年中無休・完全個室2室・SkyTrak・月会員 11,000円〔10,000pt〕／スクール 22,000円・ビジター 1時間 3,000pt。電話の記載なし）。
+- 屋内の確認: ゴルフドッグはキングファミリー2階、サンキューは「空調を完備した完全インドア環境」、GOLF GUTS は B2F、Caddy は「エアコンの効いた快適な室内」、スマートショットは「室内ゴルフ練習場」。5件とも公式に他店舗の記載なし（単独）。
+- skip（朝に確認）: GOLF WAVE 亀戸（公式に「GOLFWAVE39ゴルフレンジ校」の記載＝他校・屋外レンジか読み切れない）／Precise Golf Lab（公式が JS の確認画面＝回避しない）。空欄のまま（チェーン A/B 判断待ち）: スイングアーツ（心斎橋・上本町）・ドリームゴルフ新宿（銀座・池袋・明治神宮外苑）・JoaGOLF STUDIO KOBE（7店）・The Golf House 白金広尾。
+- facilities.json は build-facilities.py で再生成し generated_at は 2026-10-31 に戻した。施設 1167→1172。`/brand/rizapgolf/*/` の並び替えだけの6頁と 404 は deploy の版を out に戻した（iidabashi・shinjuku・omiya は新規施設が表に入るので新しい版）。sitemap 1317→1322、lastmod は deploy の値を元にテキストの変わった 743＋新規 5 だけ 11-28。公開前チェック ✅ 1322・trust-audit（新規5頁の check_page）指摘0・計測リンク 7頁→7頁（変化なし）。
+- ソース 05dced4 ／ deploy d51445f4e4。本番 5頁とも 200・h1 一致・sitemap 1322。
