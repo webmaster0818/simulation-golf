@@ -7,6 +7,8 @@ import {
   cities as cityPagesOf, asOf, REGIONS, formatZip,
 } from '../../../lib/data'
 import FacilityCard from '../../../components/FacilityCard'
+import AffiliateCta from '../../../components/AffiliateCta'
+import { affiliateFor } from '../../../lib/affiliate'
 import { BRAND_FACTS, brandLabel, feeRange, yen } from '../../../lib/brand-facts'
 import lessonFeeDefer from '../../../data/lesson-fee-defer.json'
 
@@ -299,6 +301,8 @@ export default async function FacilityPage({ params }: { params: Promise<Params>
           </a>
         )}
       </p>
+
+      {affiliateFor(f.brand_slug) && <AffiliateCta a={affiliateFor(f.brand_slug)!} name={f.brand ?? f.name} />}
 
       <p className="source">
         出典：

@@ -385,3 +385,9 @@ header.site nav a:hover { color: var(--trace); }
 /* 2026-11-02 店舗ページ冒頭からブランドの全店舗一覧へ（ブランド名だけの検索の着地を寄せる） */
 .g-brand-jump { margin: .4rem 0 1.4rem; padding: .7rem 1rem; border: 1px solid var(--line); border-left: 3px solid var(--trace); background: var(--base-2); border-radius: 6px; font-size: 14px; }
 .g-brand-jump a { font-weight: 700; }
+
+/* 広告リンク（PR表記）2026-11-27 */
+.affiliate-cta { margin: 16px 0; padding: 12px 14px; border: 1px solid #e5d9b6; border-radius: 8px; background: #fffaf0; font-size: 15px; }
+.affiliate-cta .pr { display: inline-block; font-size: 11px; font-weight: 700; padding: 1px 6px; border: 1px solid #b08a2e; border-radius: 4px; color: #8a6a1e; }
+.affiliate-cta a { font-weight: 700; }
+.affiliate-cta small { color: #666; font-size: 12px; }

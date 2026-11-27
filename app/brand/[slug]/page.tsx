@@ -1,6 +1,8 @@
 import { pageUrlMeta } from '../../../lib/meta'
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AffiliateCta from '../../../components/AffiliateCta'
+import { affiliateFor } from '../../../lib/affiliate'
 import BrandShot from '../../../components/BrandShot'
 import {
   SITE, PREF_SLUG, brands, byBrand, cityOf, asOf, GENERATED_AT,
@@ -109,6 +111,7 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
         </p>
         <div className="g-brand-hero-shot"><BrandShot slug={slug} name={b.name} /></div>
       </section>
+      {affiliateFor(slug) && <AffiliateCta a={affiliateFor(slug)!} name={b.name} />}
 
       {fact?.answer && (
         <>
