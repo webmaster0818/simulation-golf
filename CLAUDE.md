@@ -1015,3 +1015,10 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 - skip: 学園ゴルフサービス（公式サイトが見つからない）。空欄のまま: 上本町駅前・和泉中央駅前・心斎橋・本町駅前・西長堀駅前ゴルフスクール（駅前ゴルフスクール系＝チェーン A/B 判断待ち）。
 - facilities.json は build-facilities.py で再生成し generated_at は 2026-10-31 に戻した。施設 1157→1162。`/brand/rizapgolf/*/` の並び替えだけの15頁と 404 は deploy の版を out に戻した（kawasaki・yokohama は新規施設が表に入るので新しい版）。sitemap 1307→1312、lastmod は deploy の値を元にテキストの変わった 313＋新規 5 だけ 11-27。公開前チェック ✅ 1312・heading-lint 0・trust-audit（新規5頁の check_page）指摘0。
 - ソース b6742bb ／ deploy 684bdf3e17。本番 5頁とも 200・h1 一致・sitemap 1312。
+
+### 2026-11-28（深夜02時 kwexp：競合 adonis のKWで新規5施設）
+- **新規（independents.json に単独施設5件・公式を 11/28 に取得）**: `/facility/base-golf-himeji/`（BASE GOLF 月136・indoor・姫路市砥堀・打席5＋シミュレーションブース2〔個室〕・月極会員 5:00〜24:00／ビジター 9:00〜21:00・/menu/ の月極5プラン＋非会員料金〔税込〕・駐車場15台。料金表のシルバー入会金だけ「税別」、カード発行費はトップ 3,300円／料金表 3,000円、電話はヘッダー 080-／店舗情報・特商法 079-240-6322＝note に記載。機種名の記載なし）／`/facility/bobby-golf-studio-funabashi/`（BOBBYゴルフスタジオ 月136・lesson・船橋市前原西 津田沼コーポ1階・JR津田沼駅北口 徒歩6分・木曜定休・R/G/P会員〔税込〕・SkyTrak〔第1打席〕。打席数の記載なし）／`/facility/bibi-golf-kokura/`（BiBi GOLF 月136・indoor・小倉北区白銀 半田ビル1階・12:00〜24:00 年中無休・メンバー 月8時間 11,000／通い放題 15,400円・一般 1時間 2,200／1,650円〔税込〕・駐車場3台。受付終了がトップ「19:00」と料金ページ「21時」で食い違う＝note・機種名の記載なし）／`/facility/do-golf-studio-minamihorie/`（DO GOLF STUDIO 月136・lesson・南堀江 8階・A〔練習〕/B〔レッスン受け放題〕×8会員種別〔税込〕・SkyTrak のシミュレーター 1時間 会員 3,000／非会員 5,000円＝usage_fee。最寄り駅・駐車場・打席数の記載なし）／`/facility/owl-golf-higashiikebukuro/`（アウルゴルフ 月136・lesson・東池袋 アウルタワー1F・3打席・弾道測定器〔機種名なし〕・月謝5種＋回数券〔税込〕・練習24時間。定休日は電話受付の「月曜定休」だけ＝「記載なし（電話受付は月曜定休）」。入会金キャンペーンの表記が同じページで食い違う＝note）。
+- 屋内の確認: BASE GOLF「1年中いつでも変わらないインドア空間」、BOBBY はビル1階のスタジオ、BiBi「インドア練習場」、DO GOLF はビル8階の「室内ゴルフレッスン」、アウル「当施設はインドアゴルフ練習場」。5件とも公式に他店舗の記載なし（単独）。
+- skip: GOLF TRAIL TSUKUBA（公式に「つくば新店」＝他店舗の有無が読み切れない・料金の記載なし＝朝に確認）／Mixa Wellness Studio（総合ウェルネス施設）。
+- facilities.json は build-facilities.py で再生成し generated_at は 2026-10-31 に戻した。施設 1162→1167。`/brand/rizapgolf/*/` の並び替えだけの7頁と 404 は deploy の版を out に戻した。sitemap 1312→1317、lastmod は deploy の値を元にテキストの変わった 707＋新規 5 だけ 11-28。公開前チェック ✅ 1317・heading-lint 0・trust-audit（新規5頁の check_page）指摘0・計測リンク 35→35。
+- ソース 5766208 ／ deploy 22b3c72720。本番 5頁とも 200・h1 一致・sitemap 1317。
