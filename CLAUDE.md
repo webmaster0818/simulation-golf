@@ -1008,3 +1008,10 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 - 競合（WebSearch・US）: 3語とも日本の上位サイトが返らず（atpress のつくば店開業記事・oceans の「2ヶ月通い放題」紹介のみ）→ 公式値で代替。
 - ⚠️ `/brand/rizapgolf/*/` 11頁と 404 がビルド環境で並び・title が変わる（11/17 の記録と同じ localeCompare）→ deploy の版を out に戻して出した。テキストの変わったページは3（1310 HTML 中）。sitemap lastmod は deploy の sitemap を元に3頁だけ 11-27。計測リンク 35→35。公開前チェック ✅ 1307・heading-lint 0。
 - ソース bde2f11 ／ deploy 6303a5354d（約30秒で反映）。本番 ?cb= で3頁とも新 title・早見表あり・旧 title 0件。
+
+### 2026-11-27（20:00 kwexp：競合 adonis のKWで新規5施設）
+- **新規（independents.json に単独施設5件・公式を 11/27 に取得）**: `/facility/birdie-totsuka/`（バーディ戸塚 月168・indoor・戸塚区上矢部町・4:00〜0:00 365日・10打席〔公式「内2打席増設予定」〕＋VIPルーム・トラックマン/GDR＋/TWOVISION＋・会員5種〔税込〕・駐車場10台。郵便番号の記載なし）／`/facility/basegolf-sagamiono/`（ベースゴルフ相模大野 月168・lesson・ボーノ相模大野 サウスモール1F・全5打席トラックマン・/price/ の会員〔税込〕＋打席料 50分 500円。ゴールドシニア会員は料金表 13,090円とプラン欄 8,800/7,700円が食い違う＝掲載せず note のみ）／`/facility/nakahara72-golf-school/`（中原72ゴルフスクール 月168・lesson・上小田中・火曜定休・SkyTrak/Golf Swing Better POD・/price/〔税込〕。打席数の記載なし）／`/facility/smile-golf-24-sendai/`（スマイルゴルフ24 月168・lesson・一番町 太陽南町通りビル4階・24時間・3打席 SkyTrak。税の表記が公式トップ内で「税別」と「税込5390円」で食い違う＝料金ページの金額のまま・note に記載。受付時間はトップの曜日別を採用〔料金ページは 11〜22時〕）／`/facility/always-golf-24-kawagoe/`（オールウェイズゴルフ24 月136・lesson・川越市中原町 カシーラ彩食館3階・24時間・7打席・/price/ の4プラン〔税込〕・機種名の記載なし）。
+- 屋内の確認: バーディ戸塚は「冷暖房完備インドア」、ベースゴルフはショッピングモール1F、中原72は「インドアレッスン」、スマイルは4階、オールウェイズは3階。5件とも公式に他店舗の記載なし（単独）。
+- skip: 学園ゴルフサービス（公式サイトが見つからない）。空欄のまま: 上本町駅前・和泉中央駅前・心斎橋・本町駅前・西長堀駅前ゴルフスクール（駅前ゴルフスクール系＝チェーン A/B 判断待ち）。
+- facilities.json は build-facilities.py で再生成し generated_at は 2026-10-31 に戻した。施設 1157→1162。`/brand/rizapgolf/*/` の並び替えだけの15頁と 404 は deploy の版を out に戻した（kawasaki・yokohama は新規施設が表に入るので新しい版）。sitemap 1307→1312、lastmod は deploy の値を元にテキストの変わった 313＋新規 5 だけ 11-27。公開前チェック ✅ 1312・heading-lint 0・trust-audit（新規5頁の check_page）指摘0。
+- ソース b6742bb ／ deploy 684bdf3e17。本番 5頁とも 200・h1 一致・sitemap 1312。
