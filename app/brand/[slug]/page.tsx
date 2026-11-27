@@ -36,6 +36,15 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
         `${label}の全${b.count}店舗の月会費・営業時間・アクセスを公式サイトの掲載どおりに一覧で掲載。` +
         `月会費は店舗・プランにより税込${yen(fMin)}〜${yen(fMax)}。${fact.feeNote ?? ''}${b.prefs.length}都道府県に展開。` +
         (fact.trial ? '公式の体験の案内も掲載しています。' : ''),
+      ...(fact.description ? { description: fact.description } : {}),
+      ...pageUrlMeta(`/brand/${slug}/`),
+    }
+  }
+  // 2026-11-27 公式に月会費の金額が無いブランド（チキンゴルフ）も、両表記と料金の答えを title に出す
+  if (fact && fact.titleTail) {
+    return {
+      title: `${brandLabel(slug, b.name)}の${fact.titleWord ?? ''}店舗一覧${b.count}件｜${fact.titleTail}`,
+      description: fact.description ?? `${brandLabel(slug, b.name)}の店舗${b.count}件を、公式サイトの情報をもとに掲載しています。`,
       ...pageUrlMeta(`/brand/${slug}/`),
     }
   }
