@@ -27736,7 +27736,7 @@
    "bays": "10打席",
    "bays_num": 10,
    "private_room": null,
-   "parking": null,
+   "parking": "会員向けの無料駐車場あり",
    "monthly_fee": "深夜会員 7,700円／平日会員 11,000円／全日会員 14,300円／VIP会員 27,500円（税込・入会金11,000円と事務手数料3,300円が別途）",
    "usage_fee": null,
    "equipment": "トラックマン4／GOLFZON T2 VISION／DITECT Golf Swing Better Prizm POD",
@@ -27744,7 +27744,7 @@
    "open": true,
    "official": "https://indoorgolfpark-20do-c.jp/",
    "source_url": "https://indoorgolfpark-20do-c.jp/",
-   "fetched_at": "2026-11-25"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -27771,7 +27771,7 @@
    "open": true,
    "official": "https://www.kikusuikan.jp/",
    "source_url": "https://www.kikusuikan.jp/indoor-golf",
-   "fetched_at": "2026-11-25"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "range",
@@ -27906,7 +27906,7 @@
    "open": true,
    "official": "https://poaannua-kochi.jp/",
    "source_url": "https://poaannua-kochi.jp/",
-   "fetched_at": "2026-11-24"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -27933,7 +27933,7 @@
    "open": true,
    "official": "https://fusion-golf.com/",
    "source_url": "https://fusion-golf.com/",
-   "fetched_at": "2026-11-24"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -27960,7 +27960,7 @@
    "open": true,
    "official": "https://ninomiya.co.jp/",
    "source_url": "https://ninomiya.co.jp/",
-   "fetched_at": "2026-11-24"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -28014,7 +28014,7 @@
    "open": true,
    "official": "https://genki-golf-studio.jimdofree.com/",
    "source_url": "https://genki-golf-studio.jimdofree.com/",
-   "fetched_at": "2026-11-24"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -28041,7 +28041,7 @@
    "open": true,
    "official": "https://www.kisyugolf.com/private_indoor/",
    "source_url": "https://www.kisyugolf.com/private_indoor/",
-   "fetched_at": "2026-11-24"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -28068,7 +28068,7 @@
    "open": true,
    "official": "https://www.kisyugolf.com/private_indoor/",
    "source_url": "https://www.kisyugolf.com/private_indoor/",
-   "fetched_at": "2026-11-24"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -28095,7 +28095,7 @@
    "open": true,
    "official": "https://swingpark24.com/",
    "source_url": "https://swingpark24.com/access/",
-   "fetched_at": "2026-11-24"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -28176,7 +28176,7 @@
    "open": true,
    "official": "https://golf365.jp/",
    "source_url": "https://golf365.jp/access.html",
-   "fetched_at": "2026-11-24"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -29136,7 +29136,7 @@
    "tel": "06-6447-1077",
    "hours": "12:00〜22:00（最終受付21:00）",
    "open_24h": false,
-   "closed": "毎週月曜日（又は大型連休等）",
+   "closed": "毎週月曜日・年末（12月30日〜1月3日）（又は大型連休等）",
    "bays": "4打席",
    "bays_num": 4,
    "private_room": null,
@@ -29148,7 +29148,7 @@
    "open": true,
    "official": "https://rough-golf.net/",
    "source_url": "https://rough-golf.net/price.html",
-   "fetched_at": "2026-11-26"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -29175,7 +29175,7 @@
    "open": true,
    "official": "https://golfnavi.co.jp/hazawa",
    "source_url": "https://golfnavi.co.jp/hazawa",
-   "fetched_at": "2026-11-26"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "lesson",
@@ -29202,7 +29202,7 @@
    "open": true,
    "official": "https://www.igl-studioshibuya.com/",
    "source_url": "https://www.igl-studioshibuya.com/system.html",
-   "fetched_at": "2026-11-26"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -29229,7 +29229,7 @@
    "open": true,
    "official": "https://rk-golf.com/",
    "source_url": "https://rk-golf.com/plan/",
-   "fetched_at": "2026-11-26"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "lesson",
@@ -29256,7 +29256,7 @@
    "open": true,
    "official": "https://prgolf.jp/",
    "source_url": "https://prgolf.jp/price/",
-   "fetched_at": "2026-11-26"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -29519,7 +29519,7 @@
    "bays_num": 3,
    "private_room": null,
    "parking": "無料駐車場あり（徒歩4分・台数に限りあり）",
-   "monthly_fee": "フル会員 11,000円／平日フル会員 7,000円／平日時間帯限定会員（9:00〜15:00）5,000円／休日会員（土・日・祝）7,000円（税別・入会金と年会費なし）",
+   "monthly_fee": "フル会員 11,000円／平日フル会員 7,000円／平日時間帯限定会員（平日 9:00〜15:00 に利用開始）5,000円／休日会員（土・日・祝）7,000円（税別・入会金と年会費なし）",
    "usage_fee": null,
    "equipment": "SDR Golf Simulator",
    "distance_yard": null,

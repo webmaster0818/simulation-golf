@@ -15,11 +15,12 @@
    "closed": null,
    "bays": "10打席",
    "bays_num": 10,
+   "parking": "会員向けの無料駐車場あり",
    "monthly_fee": "深夜会員 7,700円／平日会員 11,000円／全日会員 14,300円／VIP会員 27,500円（税込・入会金11,000円と事務手数料3,300円が別途）",
    "equipment": "トラックマン4／GOLFZON T2 VISION／DITECT Golf Swing Better Prizm POD",
    "official": "https://indoorgolfpark-20do-c.jp/",
    "source_url": "https://indoorgolfpark-20do-c.jp/",
-   "fetched_at": "2026-11-25"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -39,7 +40,7 @@
    "note": "旅館に併設。公式サイトに「ご宿泊のお客様以外の方もご利用いただけます」と記載。料金は公式のインドアゴルフのページ（https://www.kikusuikan.jp/indoor-golf）に掲載。営業時間・打席数は公式に記載なし（同ページの「受付時間 9:00〜20:00」は予約受付の時間）。",
    "official": "https://www.kikusuikan.jp/",
    "source_url": "https://www.kikusuikan.jp/indoor-golf",
-   "fetched_at": "2026-11-25",
+   "fetched_at": "2026-11-27",
    "usage_fee": "一般 1名様 3,000円／2名様 2,000円／3名様以上 1,500円、宿泊者 1,500円（1時間あたり・お一人様の目安）"
   },
   {
@@ -138,7 +139,7 @@
    "equipment": "SDRゴルフシミュレーター",
    "official": "https://poaannua-kochi.jp/",
    "source_url": "https://poaannua-kochi.jp/",
-   "fetched_at": "2026-11-24"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -160,7 +161,7 @@
    "note": "ブースごとの打席数は公式サイトに記載なし。料金は https://fusion-golf.com/indoor-price/ で確認。",
    "official": "https://fusion-golf.com/",
    "source_url": "https://fusion-golf.com/",
-   "fetched_at": "2026-11-24"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -182,7 +183,7 @@
    "note": "住所は公式サイトに「高知市追手筋1丁目7-11」と記載（県名は当サイトで補った）。",
    "official": "https://ninomiya.co.jp/",
    "source_url": "https://ninomiya.co.jp/",
-   "fetched_at": "2026-11-24"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -223,7 +224,7 @@
    "note": "月額の金額は公式の料金表が画像のため、当サイトでは転記していない。",
    "official": "https://genki-golf-studio.jimdofree.com/",
    "source_url": "https://genki-golf-studio.jimdofree.com/",
-   "fetched_at": "2026-11-24"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -246,7 +247,7 @@
    "note": "運営は紀州ゴルフセンター。2店舗で相互利用可。",
    "official": "https://www.kisyugolf.com/private_indoor/",
    "source_url": "https://www.kisyugolf.com/private_indoor/",
-   "fetched_at": "2026-11-24"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -269,7 +270,7 @@
    "note": "運営は紀州ゴルフセンター。2店舗で相互利用可。",
    "official": "https://www.kisyugolf.com/private_indoor/",
    "source_url": "https://www.kisyugolf.com/private_indoor/",
-   "fetched_at": "2026-11-24"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -292,7 +293,7 @@
    "note": "郵便番号は公式に記載がなく、住所から郵便番号検索で引いた。",
    "official": "https://swingpark24.com/",
    "source_url": "https://swingpark24.com/access/",
-   "fetched_at": "2026-11-24"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -361,7 +362,7 @@
    "note": "料金表の月会費・入会金は項目名が画像で、金額だけでは判別できないため転記していない。",
    "official": "https://golf365.jp/",
    "source_url": "https://golf365.jp/access.html",
-   "fetched_at": "2026-11-24"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -1213,7 +1214,7 @@
    "tel": "06-6447-1077",
    "hours": "12:00〜22:00（最終受付21:00）",
    "open_24h": false,
-   "closed": "毎週月曜日（又は大型連休等）",
+   "closed": "毎週月曜日・年末（12月30日〜1月3日）（又は大型連休等）",
    "bays": "4打席",
    "bays_num": 4,
    "private_room": null,
@@ -1224,7 +1225,7 @@
    "note": "料金は https://rough-golf.net/price.html で確認（税込/税抜の表記なし・入会金の記載なし）。練習チケット 11枚 15,000円（有効期限4ヶ月）・単発レッスン 10分 2,000円（初回）／3,500円（2回目以降・打席料込）。クラブ・シューズ・ロッカーのレンタル無料。所在地・営業時間・定休日は /company.html、打席数（シミュレーションマシン4打席）と機種（SKYTRAK）は公式トップで確認。2022年12月12日に西本町店から「靭公園店」としてリニューアル（公式のお知らせ）。",
    "official": "https://rough-golf.net/",
    "source_url": "https://rough-golf.net/price.html",
-   "fetched_at": "2026-11-26"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -1248,7 +1249,7 @@
    "note": "料金・店舗情報・打席案内は公式ページ（https://golfnavi.co.jp/hazawa）で確認。ゴルフシミュレーターメーカー GOLFNAVI（株式会社ゴルフナビ）初の直営インドアゴルフ。ROOM1 は GTR SP と GOLFNAVI の2機、ROOM3 は左右打席。9モーター式3Dスイングプレート（ROOM2）・RONFIC GOLF FITNESS マシンあり。原則会員のみ利用可（同伴は会員プランによる）。電話番号の記載なし（公式 LINE・Web 予約）。",
    "official": "https://golfnavi.co.jp/hazawa",
    "source_url": "https://golfnavi.co.jp/hazawa",
-   "fetched_at": "2026-11-26"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "lesson",
@@ -1272,7 +1273,7 @@
    "note": "料金は https://www.igl-studioshibuya.com/system.html で確認（2024年4月分より料金変更と記載）。受け放題は空きがある中で1日1回まで。体験当日に入会手続き完了で体験レッスン料と入会金が無料。会員のフリー打席利用（レッスンなし）55分 1,100円。コーチ1名に生徒最大3名の少人数制。全6打席にシミュレーター（弾道解析器）とスイングモニターと記載、機種名の記載なし。所在地・アクセスは /access.html。運営は株式会社ソーシャルイノベーション。",
    "official": "https://www.igl-studioshibuya.com/",
    "source_url": "https://www.igl-studioshibuya.com/system.html",
-   "fetched_at": "2026-11-26"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -1296,7 +1297,7 @@
    "note": "料金は https://rk-golf.com/plan/ で確認（税込/税抜の表記なし・入会金の金額の記載なし。公式トップのお知らせに「入会金＆初月月会費が0円」のキャンペーン〔2026.10.05〕）。体験レッスン 30分 1,100円・施設体験無料。マンツーマンレッスン 50分 5,500円。機種は /facilities/ で確認、打席数の記載なし。公式トップに「完全個室」「24時間365日営業（月に1度メンテナンス日あり）」。ゴルフ工房併設。",
    "official": "https://rk-golf.com/",
    "source_url": "https://rk-golf.com/plan/",
-   "fetched_at": "2026-11-26"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "lesson",
@@ -1320,7 +1321,7 @@
    "note": "料金は https://prgolf.jp/price/ で確認（「上記表示金額には消費税が含まれています」）。クラブレンタル無料・シューズレンタル 100円/回。公式トップに「機械を使って飛距離や方向、弾道などをデータ化」とあるが機種名・打席数の記載なし。1回50分から練習可。酸素カプセルあり。",
    "official": "https://prgolf.jp/",
    "source_url": "https://prgolf.jp/price/",
-   "fetched_at": "2026-11-26"
+   "fetched_at": "2026-11-27"
   },
   {
    "segment": "indoor",
@@ -1485,7 +1486,7 @@
    "monthly_fee": "月2回コース 13,200円／月4回コース 19,800円／月6回コース 25,300円／全日受け放題コース 42,900円／ジュニア会員（月4回・18歳まで）16,500円（税込）。入会金・年会費 各5,500円（税込）",
    "usage_fee": "シミュレーション 1回 1,650円／10回チケット 11,000円（税込）",
    "equipment": null,
-   "note": "料金は https://kamecomegolf.com/lesson-menu.html 、所在地・営業時間は /access.html で確認（税込）。体験レッスン（50分）3,980円・ビジターレッスン 30分 3,300円〜・レッスンなしの打ち放題 40分 1,100円／50分 1,430円（税込）。シミュレーションの機種名・打席数の本文記載なし。最大4名までの少人数制ゴルフスクールで完全予約制。",
+   "note": "料金は https://kamecomegolf.com/lesson-menu.html 、所在地・営業時間は /access.html で確認（税込）。体験レッスン（50分）3,980円・ビジターレッスン 40分 7,700円／50分 8,800円（30分 3,300円の行はページの HTML コメント内だけで表示されていない・11/27 確認）・レッスンなしの打ち放題 40分 1,100円／50分 1,430円（税込）。シミュレーションの機種名・打席数の本文記載なし。最大4名までの少人数制ゴルフスクールで完全予約制。",
    "official": "http://kamecomegolf.com/",
    "source_url": "http://kamecomegolf.com/lesson-menu.html",
    "fetched_at": "2026-11-27"
@@ -1509,7 +1510,7 @@
    "monthly_fee": "プレミアム（レッスン受け放題）18,700円／スタンダード（レッスン月4回・練習打ち放題）13,200円／フリー（練習のみ・平日10:00〜17:00）5,500円／ベーシック 月会費0円・レッスン1回 3,300円（税込）。入会金 11,000円",
    "usage_fee": null,
    "equipment": "SkyTrak（弾道測定機）",
-   "note": "料金は https://www.firstone.jp/lesson/charge/ （月会費は税込表記）、所在地・営業時間は /info/overview/、設備は /studio/feature/ で確認。料金ページに入会金を無料・半額にする新規入会キャンペーンの表示があるが、同ページ内に「2024年11月末まで」の古い期間表記が残っているため金額は通常の入会金だけを載せた。利用時間は全コース60分、打席料・ボール代・レンタル料は不要と記載。バンカーレンジ・パッティンググリーンあり。",
+   "note": "料金は https://www.firstone.jp/lesson/charge/ （月会費は税込表記）、所在地・営業時間は /info/overview/、設備は /studio/feature/ で確認。料金ページに新規入会キャンペーン（プレミアム・スタンダードは入会金0円、ベーシックは半額 5,500円）の表示があるが期間の記載なし（11/26 時点にあった「2024年11月末まで」の表記は 11/27 には無い）ため、金額は通常の入会金だけを載せた。利用時間は全コース60分、打席料・ボール代・レンタル料は不要と記載。バンカーレンジ・パッティンググリーンあり。",
    "official": "https://www.firstone.jp/",
    "source_url": "https://www.firstone.jp/lesson/charge/",
    "fetched_at": "2026-11-27"
@@ -1554,7 +1555,7 @@
    "bays_num": 3,
    "private_room": null,
    "parking": "無料駐車場あり（徒歩4分・台数に限りあり）",
-   "monthly_fee": "フル会員 11,000円／平日フル会員 7,000円／平日時間帯限定会員（9:00〜15:00）5,000円／休日会員（土・日・祝）7,000円（税別・入会金と年会費なし）",
+   "monthly_fee": "フル会員 11,000円／平日フル会員 7,000円／平日時間帯限定会員（平日 9:00〜15:00 に利用開始）5,000円／休日会員（土・日・祝）7,000円（税別・入会金と年会費なし）",
    "usage_fee": null,
    "equipment": "SDR Golf Simulator",
    "note": "料金・打席数は https://saintfgolf-lh.com/fee/ 、設備は /facility/、駐車場は /access/ で確認（月額は税別）。会員以外の同伴者1名無料・専用ロッカー 2,000円〜・無料体験（60分・初回限定）あり。営業時間は料金ページの「OPEN 6時〜23時」。",
