@@ -4,7 +4,7 @@
   {"brand_slug": "stepgolf", "trial": "体験レッスン無料（公式トップ「入会金。体験レッスン無料！」）", "trial_inc": 0, "format": "定額の月会費でレッスンに通う形式（店舗・プランにより料金が異なります）", "url": "https://www.stepgolf.co.jp/"},
   {"brand_slug": "zengolf", "trial": "体験レッスン 3,300円⇒0円（公式の店舗ページ「2026年11月のお得なキャンペーン」）", "trial_inc": 0, "format": "定額の月会費（多くの店舗で別途打席料 55分 税込550円）", "url": "https://zengolf.jp/ageo/"},
   {"brand_slug": "chickengolf", "trial": "無料カウンセリング。希望者は＋3,000円でお試しレッスン", "trial_inc": 3000, "format": "セミパーソナルレッスン（50分）の通い放題・回数プラン。入会金 35,000円", "url": "https://chicken-golf.com/price/"},
-  {"brand_slug": "sanctuarygolf", "trial": "初回体験レッスン（インストラクターとのマンツーマン50分）。体験ページに料金の記載なし", "trial_inc": null, "format": "月会費制（会員種別により料金が異なります）", "url": "https://www.sanctuarygolf.jp/trial"},
+  {"brand_slug": "sanctuarygolf", "trial": "初回体験レッスン（インストラクターとのマンツーマン50分）。体験レッスン代2,000円（税込2,200円）", "trial_inc": 2200, "format": "月会費制（会員種別により料金が異なります）", "url": "https://www.sanctuarygolf.jp/trial"},
   {"brand_slug": "inthegolf", "trial": "無料体験（30分）", "trial_inc": 0, "format": "月会費制（レッスン店舗は習い放題・打ち放題）", "url": "https://inthegolf.com/"},
   {"brand_slug": "golftec", "trial": "初回スイング診断（体験レッスン付き・60分）10,000円（税込11,000円）", "trial_inc": 11000, "format": "マンツーマンレッスン", "url": "https://golftec.golfdigest.co.jp/swing/"},
   {"brand_slug": "ganttgolf", "trial": "初回体験レッスン（50分・江坂店）3,300円（税込）", "trial_inc": 3300, "format": "セミパーソナル・マンツーマン・セルフ練習場のプラン", "url": "https://ganttgolf.com/esaka/esaka-first-lesson/"},
