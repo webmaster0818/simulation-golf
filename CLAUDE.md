@@ -1034,3 +1034,9 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 - **GOLF PLUS+ 弘前** の equipment を null→「DITECT」（公式トップ本文「高性能ｼｭﾐﾚｰﾀｰ「DITECT」」・HTMLコメント外を確認）。比較表「シミュレーター種類 2種類導入」・導入マシン欄のバナー alt に「GOLFNAVI GTR ST」があるが本文に機種名として無いので載せず note のみ。テキストの変わったページ 4（施設・/data 640→641・/equipment・/guide/indoor-golf）＋ rizapgolf 6頁と 404 は deploy の版に戻した。公開前チェック ✅ 1322・計測リンク 7頁→7頁。ソース d4e80c0 ／ deploy daa36149ba（約30分反映せず、空コミット b0725efdd1 後 10:07 に反映）。ACADEMY 他6店の ZEN 共通注記は触らず。
 - skip の2施設（作成せず）: GOLF TRAIL TSUKUBA（trailerhousegolf.wixsite.com/tsukuba・IVT株式会社・つくば市下広岡1040-1・0120-196-641・QED・トレーラーハウス完全個室1ブース。他店舗の記載は無いが「つくば新店」表記、営業時間・税表記・月会費単体の記載なし）／Mixa Wellness Studio（mixa.life/golf/・北青山3-15-9 AOYAMA101 B1F・GTRAK・完全個室・営業時間「スケジュールにより異なる」・不定休。月会費/チケットは /price/ の画像のみ）。
 - 確認日の古い5施設（FITBOX・ゴルフィン・IDGOLF与次郎・G!-guln・GRANLAB）は全項目一致。確認日の更新はビルド混雑のため見送り（fetched_at は 11-25 のまま）。ルアナ甲府は 12/1 まで改修中で触らず。
+
+### 2026-11-28（12:00 成長ルーチン）11/27 の残り2件の誤記訂正
+- **/facility/sanctuarygolf-ikebukuro/** の営業時間 平日 7:00～23:00→**7:00～22:00**（公式 /ikebukuro/「平日（月～金） 7：00～22：00」を 11/28 に確認）。住所・電話・アクセス・休館日・打席数・月会費（店舗ページ本文の税込額）も一致 → fetched_at 10-16→11-28。
+- **/lesson/beginner/** のサンクチュアリゴルフの体験「体験ページに料金の記載なし」→「体験レッスン代2,000円（税込2,200円）」・trial_inc 2200（公式 /trial/「体験レッスン代2,000円」＝税の表記なし／店舗ページ「体験レッスン 2,200円（税込）／50分」→ 2,000円は税抜。/brand/sanctuarygolf/ の「2,000円（税込2,200円）」とも一致）。lesson-trials.json の checked は 11-16 のまま。
+- テキストの変わったページは2（1325 HTML 中）。`/brand/rizapgolf/*/` 6頁と 404 は deploy の版に戻した。sitemap は deploy の版（2頁とも既に 11-28）。公開前チェック ✅ 1322・heading-lint 0・計測リンク rentracks 35/7頁→35/7頁。
+- ソース c09466e ／ deploy 536755d705（約1分で反映）。Indexing は 429（Google 側の枠切れ）→ sitemap 再送信（URL プレフィックス 204）。
