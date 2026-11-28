@@ -28360,12 +28360,12 @@
    "parking": "会員専用の無料駐車場あり",
    "monthly_fee": "平日day会員（平日10〜17時）7,700円／全日会員（5〜24時）11,000円／プレミア会員 17,600円（税込）。入会金 11,000円",
    "usage_fee": null,
-   "equipment": null,
+   "equipment": "DITECT",
    "distance_yard": null,
    "open": true,
    "official": "https://golfplus-hirosaki.com/",
    "source_url": "https://golfplus-hirosaki.com/",
-   "fetched_at": "2026-11-26"
+   "fetched_at": "2026-11-28"
   },
   {
    "segment": "indoor",
