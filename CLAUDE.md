@@ -1029,3 +1029,8 @@ Next.js 15 / 静的書き出し（`output:'export'` `trailingSlash:true`）/ プ
 - skip（朝に確認）: GOLF WAVE 亀戸（公式に「GOLFWAVE39ゴルフレンジ校」の記載＝他校・屋外レンジか読み切れない）／Precise Golf Lab（公式が JS の確認画面＝回避しない）。空欄のまま（チェーン A/B 判断待ち）: スイングアーツ（心斎橋・上本町）・ドリームゴルフ新宿（銀座・池袋・明治神宮外苑）・JoaGOLF STUDIO KOBE（7店）・The Golf House 白金広尾。
 - facilities.json は build-facilities.py で再生成し generated_at は 2026-10-31 に戻した。施設 1167→1172。`/brand/rizapgolf/*/` の並び替えだけの6頁と 404 は deploy の版を out に戻した（iidabashi・shinjuku・omiya は新規施設が表に入るので新しい版）。sitemap 1317→1322、lastmod は deploy の値を元にテキストの変わった 743＋新規 5 だけ 11-28。公開前チェック ✅ 1322・trust-audit（新規5頁の check_page）指摘0・計測リンク 7頁→7頁（変化なし）。
 - ソース 05dced4 ／ deploy d51445f4e4。本番 5頁とも 200・h1 一致・sitemap 1322。
+
+### 11/28 朝ルーチン（既定案＝GOLF PLUS+ 弘前 DITECT・skip 2施設の確認・確認日の古い5施設）
+- **GOLF PLUS+ 弘前** の equipment を null→「DITECT」（公式トップ本文「高性能ｼｭﾐﾚｰﾀｰ「DITECT」」・HTMLコメント外を確認）。比較表「シミュレーター種類 2種類導入」・導入マシン欄のバナー alt に「GOLFNAVI GTR ST」があるが本文に機種名として無いので載せず note のみ。テキストの変わったページ 4（施設・/data 640→641・/equipment・/guide/indoor-golf）＋ rizapgolf 6頁と 404 は deploy の版に戻した。公開前チェック ✅ 1322・計測リンク 7頁→7頁。ソース d4e80c0 ／ deploy daa36149ba（約30分反映せず、空コミット b0725efdd1 後 10:07 に反映）。ACADEMY 他6店の ZEN 共通注記は触らず。
+- skip の2施設（作成せず）: GOLF TRAIL TSUKUBA（trailerhousegolf.wixsite.com/tsukuba・IVT株式会社・つくば市下広岡1040-1・0120-196-641・QED・トレーラーハウス完全個室1ブース。他店舗の記載は無いが「つくば新店」表記、営業時間・税表記・月会費単体の記載なし）／Mixa Wellness Studio（mixa.life/golf/・北青山3-15-9 AOYAMA101 B1F・GTRAK・完全個室・営業時間「スケジュールにより異なる」・不定休。月会費/チケットは /price/ の画像のみ）。
+- 確認日の古い5施設（FITBOX・ゴルフィン・IDGOLF与次郎・G!-guln・GRANLAB）は全項目一致。確認日の更新はビルド混雑のため見送り（fetched_at は 11-25 のまま）。ルアナ甲府は 12/1 まで改修中で触らず。
